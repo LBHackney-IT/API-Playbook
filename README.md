@@ -1,5 +1,7 @@
 # API Playbook
 
+A guide on Hackney's development practices, and how to follow them.
+
 ## Application standards
 
 ### Open source on GitHub
