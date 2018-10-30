@@ -1,4 +1,4 @@
-# API Playbook
+# API Playbook
 
 ## Application standards
 
@@ -107,7 +107,7 @@ For an example of using Docker with other tools, see the [Universal Housing Simu
 
 ## Hosting
 
-### ECS
+### ECS
 
 We use ECS on AWS to run Docker containers in the cloud. This allows us to use the same Docker containers we use in development, for actually serving in production. ECS orchestrates deployments of new images, running them on our own EC2 machines.
 
