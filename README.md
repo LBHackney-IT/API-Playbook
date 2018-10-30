@@ -8,15 +8,17 @@
 >
 > I want my code to be open source and public
 >
-> So I can showcase my work, get review and feedback from a wider group than just my colleagues
+> So I can showcase my work and contribute to the wider community
 
-> As a developer outside of Hackney
->
-> I want Hackney's code to be open source and public
->
-> So I can be inspired by and utilise code developed at Hackney
+- why GitHub
+- how to work in open source securely
 
 ### Test-driven approach
+
+- why we use tdd practice
+- resources for learning tdd
+- (triangulation)
+- how to use a test suite to ensure quality is high
 
 ## Monitoring
 
@@ -60,23 +62,119 @@ In a Ruby application, you install the New Relic gem and configure it with envir
 
 ### Centralised uptime monitoring
 
+- pingdom?
+- alerts responsible team members when the site goes down
+- useful as a maintainer because you know when to take action
+
 ### Centralised exception logging
+
+- sentry
+- logs every error that happens within the system
+- attaches metadata including which user experienced the error, what request they were trying to make, how many times this has occurred, and which release it started with
+- useful for developers/maintainers to investigate and fix application errors
+
+![sentry](images/sentry.png)
+
+### 12 Factor
+
+- https://docs.google.com/document/d/1ERHoLvT4q4xFtWzoxs3b-v3FF1aLknrFMyc4NaiT5WU/edit#heading=h.i16rhbmwmkxq
+- platform agnostic
+- can be run on any cloud provider environment or on premises
+- do not have to change application code to change config
+- 12 factor etc
+
+## Containers
+
+- to be used in both development and hosted environments
+- use docker-compose to define dependencies when running locally. this ensures all developers are running in reasonable parity with production when developing the application
+- use docker in hosted environments. ECS is covered below
+- example: income-api (ruby - example of using docker with rails)
+- example: tenancy-api (c# - example of using docker with .NET Core)
+- example: universal-housing-simulator (sql server - example of using docker to run dependencies)
 
 ## Hosting
 
+### ECS
+
+- hosted docker on AWS
+- runs on EC2 instances
+- configured to use our own EC2 instances
+- why? because it fit into the AWS ecosystem. because it's a fairly simple and cost effective approach to running docker in production. because it can be securely connected to API Gateway.
+- downsides? lots of steps involved in setting up. can be difficult to configure manually. fix: terraform
+
+### API Gateway
+
+- provides authentication
+- securely connects to EC2 instances running applications
+- provides a single domain in front of all the apps
+
+### Developing for ECS
+
+- we use a VPN connection between our AWS VPC (Virtual Private Cloud) and the Hackney on-premises network. This permits access to services, databases and webservices hosted on premises, from ECS. We restrict IP ranges of available services, so you may need to adjust this if you require service access that hasn't been required before.
+
+### Future
+
+- because all applications should be containerised, we can change the hosting provider with minimal to no interruption of service, and no application code change
+- considering Kubernetes on AWS currently
+- might replace AWS API Gateway with a more feature rich gateway
+
+### Past
+
+- trialled Heroku Enterprise
+
 ## Deployment pipeline
+
+- single standard method of deploying to production
+- automated steps, so little room for human error
+- reproducible releases. we can see what happened on each one
+- enforces automated checks before releasing to staging or production. tests must pass. linting must pass. there must be no obvious vulnerabilities.
+- means staging must be deployed before production, and a developer must approve a production release. this makes it more likely for developers to test in staging before promoting a change to production
+
+- typically four stages:
+  - build and check
+  - staging release
+  - hold for production confirmation
+  - production release
+
+- check typically involves:
+  - automated tests passing
+  - linting passing
+  - vulnerability checker passing
+
+![Circle CI](images/circleci.png)
 
 ## Documentation standards
 
 - Business context
+  - who was this made for? why was this made? who was the product owner?
 - Stack
+  - what did we build this with? why did we choose that?
 - Installation
+  - how do I get set up with the application as a new developer?
 - Development practices
+  - what practices should I adhere to when writing code?
 - Release process
+  - when do I release to production? what should I know beforehand? how to get code reviewed and approved?
 - Deployment pipeline
+  - what tools do I use to release to production? (circle)
 - Common problems
+  - errors and issues developers experienced with the project will have all seen. useful for new developers to have a reference
 - Useful contacts
+  - active maintainers (developers, delivery managers, stakeholders)
+  - other contacts  (developers, delivery managers, stakeholders)
+  - include name, title, company and email address for each
 - API endpoints (probably to come automatically)
+  - generated from swagger
+
+### Swagger
+
+- we use swagger to get:
+  - human readable and simple to use. can be viewed by more than just developers
+  - a list of all endpoints available in the app, with detailed documentation of inputs and outputs
+  - other teams can use our swagger documentation to consume our APIs
+  - integrations between applications can be built more easily with better endpoint documentation
+- tenancy api example: c# using swashbuckle
+- income api example: ruby using swagger-blocks
 
 [papertrail]: http://example.com
 [newrelic]: http://example.com
