@@ -6,40 +6,19 @@ A guide on Hackney's development practices, and how to follow them.
 
 ### Open source on GitHub
 
-> As a developer
->
-> I want my code to be open source and public
->
-> So I can showcase my work and contribute to the wider community
-
 Our mission is to open source 100% of our code, and start in the open whenever starting new projects. All of our code repositories are on GitHub, over half are currently open source.
 
 By employing a [12 Factor](#12-factor) methodology, we keep any secrets such as API tokens outside of our repositories, and instead injected as environment variables in trusted runtime environments. This allows us to write code which interacts with private systems without exposing information.
 
 ### Test-driven approach
 
-We use Test Driven Development discipline when writing new code, as it makes it easier to build functionality progressively, helps reduce error rate in production, and helps prevent against feature regressions after changes.
+We use Test Driven Development discipline when writing new code, as it makes it easier to build functionality progressively, helps reduce error rate in production, and helps prevent against feature regressions after changes. We sometimes employ [Clean Architecture][ca] which allows us to easily test each unit of our applications.
 
-- why we use tdd practice
-- resources for learning tdd
-- (triangulation)
-- how to use a test suite to ensure quality is high
+There are some resources for learning and improving TDD practice on the [Learn Tech website][learn-tech-tdd] under "Sections".
 
 ## Monitoring
 
 ### Centralised logging
-
-> As a developer
->
-> I want to be able to see logs for all applications in one place
->
-> So I can debug problems across microservices and resolve them
-
-> As a support analyst
->
-> I want to be able to see logs for all applications in one place
->
-> So I can identify errors
 
 ![Papertrail Example](images/papertrail.png)
 
@@ -51,19 +30,13 @@ If you are deployed to the [Hackney ECS environment](#hosting), your service wil
 
 ### Centralised application performance monitoring
 
-> As a developer or a support analyst
->
-> I want to able to able to see a breakdown of transactions
->
-> So I can measure application performance and find performance bottlenecks
-
 ![New Relic Screenshot](images/newrelic.png)
 
 We use [**New Relic**][newrelic] as a centralised application performance monitoring tool, as it is capable of instrumenting applications in many languages, including C# and Ruby. It allows us to see requests going through an application and where time is spent during those requests. For example, if a large SQL call is what is hurting performance.
 
-In a .NET application, you install a New Relic Agent on the machine, which will automatically instrument any .NET apps running. You can find an example of setting this up in the [Tenancy API](dotnet-newrelic-example).
+In a .NET application, you install a New Relic Agent on the machine, which will automatically instrument any .NET apps running. You can find an example of setting this up in the [Tenancy API][dotnet-newrelic-example].
 
-In a Ruby application, you install the New Relic gem and configure it with environment variables. You can find an example of setting this up in the [Income API](ruby-newrelic-example).
+In a Ruby application, you install the New Relic gem and configure it with environment variables. You can find an example of setting this up in the [Income API][ruby-newrelic-example].
 
 <!-- ### Centralised uptime monitoring
 
@@ -73,19 +46,19 @@ In a Ruby application, you install the New Relic gem and configure it with envir
 
 ### Centralised exception logging
 
+![sentry](images/sentry.png)
+
 We use [**Sentry**][sentry] as a centralised exception logging platform, as it's able to receive exceptions from many languages, including C# and Ruby, and has good tooling around releases. It logs every error which occurs in any of our systems, attaching metadata including which user experienced the error, what request they were trying to make, how many times that error has occurred, and which code release likely introduced the error.
 
 It is very useful for developers/maintainers to investigate and fix application errors, including more information to aid diagnosis than stack traces in logging will.
 
-In a .NET application, you install a Sentry package using NuGet and use it to send messages to Sentry when handling uncaught exceptions. You can find an example of this in the [Tenancy API](dotnet-sentry-example).
+In a .NET application, you install a Sentry package using NuGet and use it to send messages to Sentry when handling uncaught exceptions. You can find an example of this in the [Tenancy API][dotnet-sentry-example].
 
-In a Ruby application, you install the Sentry gem and configure it to add additional context. You can find an example of setting this up in the [Income API](ruby-sentry-example).
-
-![sentry](images/sentry.png)
+In a Ruby application, you install the Sentry gem and configure it to add additional context. You can find an example of setting this up in the [Income API][ruby-sentry-example].
 
 ### 12 Factor
 
-We follow 12 Factor principles when building new applications. You can find out more about why [in our 12 Factor documentation][12-factor-documentation].
+We follow 12 Factor principles when building new applications. You can find out more about why [in our Hackney Development Standards documentation][12-factor-documentation].
 
 Following these principles allows our applications to be platform agnostic, meaning we're not tied down to running them on any specific vendor's platform, and don't have to make changes to application code in order to migrate them somewhere else.
 
@@ -197,6 +170,7 @@ In a .NET application, you can use a NuGet package called Swashbuckle to generat
 
 In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL for defining Swagger documentation automatically. You can find an example of setting this up in the [Income API][ruby-swagger-example].
 
+[sentry]: https://sentry.io/welcome/
 [papertrail]: http://papertrailapp.com
 [newrelic]: https://newrelic.com
 [tenancy-api]: https://github.com/LBHackney-IT/LBHTenancyAPI
@@ -205,8 +179,10 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [ruby-newrelic-example]: https://github.com/LBHackney-IT/lbh-income-api/commit/98f7c574449c732962d73c4b907daaa1ed2e9b42
 [dotnet-sentry-example]: https://github.com/LBHackney-IT/LBHTenancyAPI/blob/bd56e77d10f61598be778e7b65630e7632c2afc7/LBHTenancyAPI/Infrastructure/V1/Logging/SentryLogger.cs
 [ruby-sentry-example]: https://github.com/LBHackney-IT/lbh-income-api/commit/058a87b7de1a71c922ac5d9eaac9117b10df88d2
-[12-factor-documentation]: https://docs.google.com/document/d/1ERHoLvT4q4xFtWzoxs3b-v3FF1aLknrFMyc4NaiT5WU/edit#heading=h.i16rhbmwmkxq
+[12-factor-documentation]: https://github.com/LBHackney-IT/Hackney-Development-Standards
 [universal-housing-simulator]: http://example.com
 [made-tech]: https://www.madetech.com/
 [dotnet-swagger-example]: https://github.com/LBHackney-IT/LBHTenancyAPI/blob/master/LBHTenancyAPI/Startup.cs#L65-L112
 [ruby-swagger-example]: https://github.com/LBHackney-IT/lbh-income-api
+[learn-tech-tdd]: https://learn.madetech.com/core-skills/tdd/
+[ca]: https://github.com/madetech/clean-architecture
