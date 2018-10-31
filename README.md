@@ -32,7 +32,7 @@ By employing a [12 Factor](#12-factor) methodology, we keep any secrets such as 
 
 We use Test Driven Development discipline when writing new code, as it makes it easier to build functionality progressively, helps reduce error rate in production, and helps prevent against feature regressions after changes. We sometimes employ [Clean Architecture][ca] which allows us to easily test each unit of our applications.
 
-There are some resources for learning and improving TDD practice on the [Learn Tech website][learn-tech-tdd] under "Sections".
+There are some resources for [learning][learn-tech-learn-tdd] and [practicing][learn-tech-practice-tdd] TDD discipline on the [Learn Tech website][learn-tech].
 
 ## Monitoring
 
@@ -202,5 +202,7 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [made-tech]: https://www.madetech.com/
 [dotnet-swagger-example]: https://github.com/LBHackney-IT/LBHTenancyAPI/blob/master/LBHTenancyAPI/Startup.cs#L65-L112
 [ruby-swagger-example]: https://github.com/LBHackney-IT/lbh-income-api
-[learn-tech-tdd]: https://learn.madetech.com/core-skills/tdd/
+[learn-tech]: https://learn.madetech.com
+[learn-tech-learn-tdd]: https://learn.madetech.com/ideas/learn-to-tdd.html
+[learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
