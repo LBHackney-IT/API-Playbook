@@ -85,7 +85,7 @@ We follow 12 Factor principles when building new applications. You can find out 
 Following these principles allows our applications to be platform agnostic, meaning we're not tied down to running them on any specific vendor's platform, and don't have to make changes to application code in order to migrate them somewhere else.
 
 ## Containers
-
+++Add docker pull image file name for testing.
 We use Docker containers when building new applications to allow them to be run anywhere without tedious environment set up. We run the both in development and in hosted environments, such as production environments.
 
 We define `Dockerfile`s for each of our applications, generally building from a base language specific image, installing necessary system tools for our application to run, copying files onto the image and compiling the application. The built image can then be used in both development and production, as well as other hosted environments.
@@ -103,7 +103,7 @@ For an example of using Docker with Ruby, see the [Income API][income-api].
 For an example of using Docker with other tools, see the [Universal Housing Simulator][universal-housing-simulator] which creates and starts a SQL Server instance.
 
 ## Hosting
-
+++Use different examples of using on different platforms for agnostic use cases
 ### ECS
 
 We use ECS on AWS to run Docker containers in the cloud. This allows us to use the same Docker containers we use in development, for actually serving in production. ECS orchestrates deployments of new images, running them on our own EC2 machines.
