@@ -56,11 +56,15 @@ In a .NET application, you install a New Relic Agent on the machine, which will 
 
 In a Ruby application, you install the New Relic gem and configure it with environment variables. You can find an example of setting this up in the [Income API][ruby-newrelic-example].
 
-<!-- ### Centralised uptime monitoring
+### Centralised uptime monitoring
 
-- pingdom
-- alerts responsible team members when the site goes down
-- useful as a maintainer because you know when to take action -->
+![Pingdom](images/pingdom.png)
+
+We use [**Pingdom**][pingdom] as a centralised uptime monitoring service, as it's a more cost effective solution than competitors for basic service.
+
+We configure it to make a simple HTTPS request to an endpoint in each application in each environment, every minute, to track uptime of our services.
+
+If the applications go down, automated alerts are sent to responsible team members. This lets them know when they need to take action, and informs them of potential problems in their production environments before users have to raise issues.
 
 ### Centralised exception logging
 
@@ -206,3 +210,4 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [learn-tech-learn-tdd]: https://learn.madetech.com/ideas/learn-to-tdd.html
 [learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
+[pingdom]: https://www.pingdom.com
