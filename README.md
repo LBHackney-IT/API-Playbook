@@ -192,6 +192,10 @@ In a .NET application, you can use a NuGet package called Swashbuckle to generat
 
 In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL for defining Swagger documentation automatically. You can find an example of setting this up in the [Income API][ruby-swagger-example].
 
+### API Authentication
+
+Building APIs without authentication represents an API design failure that can threaten a database. Ignoring proper authentication — even if transport layer encryption (TLS) is used — can cause problems. industry standards. OAuth/OpenID Connect, in conjunction with TLS, are therefore critical.
+
 [sentry]: https://sentry.io/welcome/
 [papertrail]: http://papertrailapp.com
 [newrelic]: https://newrelic.com
@@ -211,3 +215,4 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
 [pingdom]: https://www.pingdom.com
+[OAuth]: https://oauth.net
