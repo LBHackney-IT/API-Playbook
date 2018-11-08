@@ -103,7 +103,7 @@ For an example of using Docker with Ruby, see the [Income API][income-api].
 For an example of using Docker with other tools, see the [Universal Housing Simulator][universal-housing-simulator] which creates and starts a SQL Server instance.
 
 ## Hosting
-
+### If we say platform agnostic why are we only using example of AWS
 ### ECS
 
 We use ECS on AWS to run Docker containers in the cloud. This allows us to use the same Docker containers we use in development, for actually serving in production. ECS orchestrates deployments of new images, running them on our own EC2 machines.
