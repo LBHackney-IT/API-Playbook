@@ -2,6 +2,7 @@
 
 A guide on Hackney's development practices, and how to follow them.
 
+- [API Standards Checklist](#api-standards-checklist)
 - [Application standards](#application-standards)
   - [Open source on GitHub](#open-source-on-GitHub)
   - [Test-driven approach](#test-driven-approach)
@@ -19,6 +20,27 @@ A guide on Hackney's development practices, and how to follow them.
 - [Deployment pipeline](#deployment-pipeline)
 - [Documentation standards](#documentation-standards)
   - [Swagger](#swagger)
+
+## API Standards Checklist
+
+A single checklist for a high quality Hackney API.
+
+- [ ] Open Source
+- [ ] Test driven
+- [ ] Endpoint documentation
+- [ ] Centralised logging
+- [ ] Centralised application monitoring
+- [ ] Centralised uptime monitoring
+- [ ] Centralised exception monitoring
+- [ ] Authentication
+- [ ] Live service plan and maintainers
+- [ ] Deployment pipeline to production
+- [ ] Automated tests
+- [ ] 12 Factor Conformant / Platform Agnostic
+- [ ] Cloud hosted
+- [ ] Automated linting (if available)
+- [ ] Automated vulnerability testing (if available)
+- [ ] Documentation
 
 ## Application standards
 
