@@ -8,6 +8,7 @@ A guide on Hackney's development practices, and how to follow them.
 - [Monitoring](#monitoring)
   - [Centralised logging](#centralised-logging)
   - [Centralised application performance monitoring](#centralised-application-performance-monitoring)
+  - [Centralised uptime monitoring](#centralised-uptime-monitoring)
   - [Centralised exception logging](#centralised-exception-logging)
   - [12 Factor](#12-factor)
 - [Containers](#containers)
@@ -65,6 +66,8 @@ We use [**Pingdom**][pingdom] as a centralised uptime monitoring service, as it'
 We configure it to make a simple HTTPS request to an endpoint in each application in each environment, every minute, to track uptime of our services.
 
 If the applications go down, automated alerts are sent to responsible team members. This lets them know when they need to take action, and informs them of potential problems in their production environments before users have to raise issues.
+
+If you are hosting your application on the Hackney ECS Platform, you should [make your Swagger documentation pages public][make-swagger-docs-public], and configure Pingdom to make a health-check request to those. This is to avoid giving Pingdom any private API tokens.
 
 ### Centralised exception logging
 
@@ -211,3 +214,4 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
 [pingdom]: https://www.pingdom.com
+[make-swagger-docs-public]: https://github.com/LBHackney-IT/API-Platform#making-swagger-documentation-public
