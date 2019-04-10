@@ -26,11 +26,12 @@ pagination.
 **Note:** To provide a consistent look and feel of pagination patterns,
 you must stick to the [common query parameter names](naming.md#must-stick-to-conventional-query-parameters).
 
-# SHOULD Prefer Cursor-Based Pagination, Avoid Offset-Based Pagination
+# SHOULD Assess whether cursor or offset based pagination is most suitable
 
 Cursor-based pagination is usually better and more efficient when
 compared to offset-based pagination. Especially when it comes to
-high-data volumes and / or storage in NoSQL databases.
+high-data volumes and / or storage in NoSQL databases. However, cursor based
+pagination can also be harder to use as an API consumer.
 
 Before choosing cursor-based pagination, consider the following
 trade-offs:

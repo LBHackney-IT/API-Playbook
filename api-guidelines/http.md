@@ -150,30 +150,6 @@ depending on how the resource is represented after deletion. Under no
 circumstances the resource must be accessible after this operation on
 its endpoint.
 
-## HEAD
-
-HEAD requests are used to **retrieve** the header information of single
-resources and resource collections.
-
-  - HEAD has exactly the same semantics as GET, but returns headers
-    only, no body.
-
-## OPTIONS
-
-OPTIONS requests are used to **inspect** the available operations (HTTP
-methods) of a given endpoint.
-
-  - OPTIONS responses usually either return a comma separated list of
-    methods in the `Allow` header or as a structured list of link
-    templates
-
-**Note:** OPTIONS is rarely implemented, though it could be used to
-self-describe the full functionality of a resource.
-
-This section describes a handful of headers, which we found raised the
-most questions in our daily usage, or which are useful in particular
-circumstances but not widely known.
-
 # MUST Use Content Headers Correctly
 
 Content or entity headers are headers with a `Content-` prefix. They
@@ -228,8 +204,6 @@ Method implementations must fulfill the following basic properties:
 
 | HTTP method | safe | idempotent |
 | ----------- | ---- | ---------- |
-| OPTIONS     | Yes  | Yes        |
-| HEAD        | Yes  | Yes        |
 | GET         | Yes  | Yes        |
 | PUT         | No   | Yes        |
 | POST        | No   | No         |
@@ -296,7 +270,7 @@ responses:
     content:
       "application/problem+json":
         schema:
-          $ref: 'https://zalando.github.io/problem/schema.yaml#/Problem'
+          $ref: 'https://github.io/problem/schema.yaml#/Problem'
 ```
 
 API designers should also think about a **troubleshooting board** as
@@ -360,15 +334,9 @@ response.
 | 401  | Unauthorized - the users must log in (this often means "Unauthenticated")                                                                                     | All                      |
 | 403  | Forbidden - the user is not authorized to use this resource                                                                                                   | All                      |
 | 404  | Not found - the resource is not found                                                                                                                         | All                      |
-| 405  | Method Not Allowed - the method is not supported, see OPTIONS                                                                                                 | All                      |
+| 405  | Method Not Allowed - the method is not supported                                                                                                 | All                      |
 | 406  | Not Acceptable - resource can only generate content not acceptable according to the Accept headers sent in the request                                        | All                      |
-| 408  | Request timeout - the server times out waiting for the resource                                                                                               | All                      |
-| 409  | Conflict - request cannot be completed due to conflict, e.g. when two clients try to create the same resource or if there are concurrent, conflicting updates | POST, PUT, DELETE, PATCH |
-| 410  | Gone - resource does not exist any longer, e.g. when accessing a resource that has intentionally been deleted                                                 | All                      |
-| 412  | Precondition Failed - returned for conditional requests, e.g. If-Match if the condition failed. Used for optimistic locking.                                  | PUT, DELETE, PATCH       |
 | 415  | Unsupported Media Type - e.g. clients sends request body without content type                                                                                 | POST, PUT, DELETE, PATCH |
-| 423  | Locked - Pessimistic locking, e.g. processing states                                                                                                          | PUT, DELETE, PATCH       |
-| 428  | Precondition Required - server requires the request to be conditional (e.g. to make sure that the "lost update problem" is avoided).                          | All                      |
 | 429  | Too many requests - the client does not consider rate limiting and sent too many requests. See [MUST Use Code 429 with Headers for Rate Limits](#153).      | All                      |
 
 ## Server Side Error Codes:
@@ -376,7 +344,6 @@ response.
 | Code | Meaning                                                                                                                                                                                                                                                                                                                               | Methods |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 500  | Internal Server Error - a generic error indication for an unexpected server execution problem (here, client retry may be sensible)                                                                                                                                                                                                    | All     |
-| 501  | Not Implemented - server cannot fulfill the request (usually implies future availability, e.g. new feature).                                                                                                                                                                                                                          | All     |
 | 503  | Service Unavailable - service is (temporarily) not available (e.g. if a required component or downstream service is not available) — client retry may be sensible. If possible, the service should indicate how long the client should wait by setting the ['Retry-After'](https://tools.ietf.org/html/rfc7231#section-7.1.3) header. | All     |
 
 # MUST Use Most Specific HTTP Status Codes

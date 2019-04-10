@@ -22,14 +22,6 @@ Usually, a collection of resource instances is provided (at least API
 should be ready here). The special case of a resource singleton is a
 collection with cardinality 1.
 
-# MAY Use /api as first Path Segment
-
-In most cases, all resources provided by a service are part of the
-public API, and therefore should be made available under the root "/"
-base path. If the service should also support non-public, internal APIs
-— for specific operational support functions, for example — add "/api"
-as base path to clearly separate public and non-public API resources.
-
 # MUST Avoid Trailing Slashes
 
 The trailing slash must not have specific semantics. Resource paths must

@@ -15,7 +15,7 @@ endpoint. Producers should help consumers migrate to a new
 endpoint (i.e. by providing a migration manual). After all clients are
 migrated, the producer may shut down the deprecated API.
 
-# MUST External Partners Must Agree on Deprecation Timespan
+# MUST Agree Deprecation Timespan with External Partners
 
 If the API is consumed by any external partner, the producer must define
 a reasonable timespan that the API will be maintained after the producer

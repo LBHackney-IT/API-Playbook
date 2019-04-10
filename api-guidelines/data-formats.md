@@ -1,8 +1,85 @@
-# MUST Use JSON:API to Encode Structured Data
+# MUST Use JSON to Encode Structured Data
 
-APIs could represent resources with many different structures, but picking a standard is a good thing.
-[JSON:API](https://jsonapi.org/) is a good approach and enables useful things like including related resources in the same request.
-I tend to prefer a minimal JSON:API implementation to start with and add features if required.
+We use a minimal JSON representation to output objects from the API. This may in the future be extended to use  [JSON:API](https://jsonapi.org/) if the functionality it offers is beneficial, however we are taking the approach of starting simple and extending if necessary. This could be done in a backwards compatible way by representing the same objects in a JSON:API structure as well as the simple JSON structure.
+
+The structure we currently use is:
+
+*A single object*
+A simple collection of attributes and their values. The attributes should be camel-cased.
+
+```JSON
+{
+  "id" : 1,
+  "title" : "A blog post",
+  "body" : "Some useful content"
+}
+```
+
+*A collection of objects*
+This should have a root element matching the pluralised name of the object:
+
+```JSON
+{
+  posts: [
+    {
+      "id" : 1,
+      "title" : "A blog post",
+      "body" : "Some useful content"
+    },
+    {
+      "id" : 2,
+      "title" : "Another blog post",
+      "body" : "More content"
+    }
+  ]
+}
+```
+
+*An error object*
+We use the status code to represent the success or failure of a request. We also pass back an object with more information about the error:
+
+```JSON
+{
+    "status" : "fail",
+    "data" : { "title" : "A title is required" }
+}
+```
+
+# MUST use camelCase property names: `^[a-z][A-Z0-9]*$`
+
+Property names are restricted to ASCII strings. The first character must
+be a letter, or an underscore, and subsequent characters can be a
+letter, or a number.
+
+# MUST pluralise array names
+
+To indicate they contain multiple values we prefer to pluralise array
+names. This implies that object names should in turn be singular.
+
+# MUST Boolean property values must not be null
+
+Schema based JSON properties that are by design booleans must not be
+presented as nulls. A boolean is essentially a closed enumeration of two
+values, true and false. If the content has a meaningful null value,
+strongly prefer to replace the boolean with enumeration of named values
+or statuses - for example acceptedTermsAndConditions with true or
+false can be replaced with termsAndConditions with values yes, no
+and unknown.
+
+# SHOULD Null values should have their fields removed
+
+OpenAPI, which is in common use, doesn’t support null field values (it
+does allow omitting that field completely if it is not marked as
+required). However that doesn’t prevent clients and servers sending and
+receiving those fields with null values. Also, in some cases null may be
+a meaningful value - for example, JSON Merge Patch
+[RFC 7382](https://tools.ietf.org/html/rfc7386)) using null to indicate
+property deletion.
+
+# MUST Empty array values should not be null
+
+Empty array values can unambiguously be represented as the empty list,
+`[]`.
 
 # MAY Use non-JSON Media Types for Binary Data or Alternative Content Representations
 
@@ -87,42 +164,6 @@ components:
           format: int32
           example: 42
 ```
-
-# MUST use camelCase property names: `^[a-z][A-Z0-9]*$`
-
-Property names are restricted to ASCII strings. The first character must
-be a letter, or an underscore, and subsequent characters can be a
-letter, or a number.
-
-# MUST pluralize array names
-
-To indicate they contain multiple values prefer to pluralize array
-names. This implies that object names should in turn be singular.
-
-# MUST Boolean property values must not be null
-
-Schema based JSON properties that are by design booleans must not be
-presented as nulls. A boolean is essentially a closed enumeration of two
-values, true and false. If the content has a meaningful null value,
-strongly prefer to replace the boolean with enumeration of named values
-or statuses - for example acceptedTermsAndConditions with true or
-false can be replaced with termsAndConditions with values yes, no
-and unknown.
-
-# SHOULD Null values should have their fields removed
-
-OpenAPI, which is in common use, doesn’t support null field values (it
-does allow omitting that field completely if it is not marked as
-required). However that doesn’t prevent clients and servers sending and
-receiving those fields with null values. Also, in some cases null may be
-a meaningful value - for example, JSON Merge Patch
-[RFC 7382](https://tools.ietf.org/html/rfc7386)) using null to indicate
-property deletion.
-
-# MUST Empty array values should not be null
-
-Empty array values can unambiguously be represented as the empty list,
-`[]`.
 
 # SHOULD Date property values should conform to RFC 3339
 
