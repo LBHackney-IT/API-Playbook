@@ -1,23 +1,25 @@
-# API Standards
+# Hackney API Implementation Guidelines
 
 ## Introduction
 
-These are a set of API guidelines based on the excellent set created by [Zalando](https://github.com/zalando/restful-api-guidelines).
+There are an increasing number of APIs being developed at Hackney and these guidelines are designed to provide a clear set of implementation guides to bring consistency between the different endpoints.
+
+They are based on the excellent set created by [Zalando](https://github.com/zalando/restful-api-guidelines).
 
 ## Contents
 
-* [Design Principles](./standards/design-principles.md)
-* [General Guidelines](./standards/general-guidelines.md)
-* [Security](./standards/security.md)
-* [Compatibility](./standards/compatibility.md)
-* [Deprecation](./standards/deprecation.md)
-* [Naming](./standards/naming.md)
-* [HTTP](./standards/http.md)
-* [Resources](./standards/resources.md)
-* [Pagination](./standards/pagination.md)
-* [Data Formats](./standards/data-formats.md)
-* [Operation](./standards/operation.md)
-* [References](./standards/references.md)
+* [Design Principles](design-principles.md)
+* [General Guidelines](general-guidelines.md)
+* [Security](security.md)
+* [Compatibility](compatibility.md)
+* [Deprecation](deprecation.md)
+* [Naming](naming.md)
+* [HTTP](http.md)
+* [Resources](resources.md)
+* [Pagination](pagination.md)
+* [Data Formats](data-formats.md)
+* [Operation](operation.md)
+* [References](references.md)
 
 ## Conventions
 
