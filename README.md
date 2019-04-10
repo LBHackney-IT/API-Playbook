@@ -4,6 +4,7 @@ A guide on Hackney's development practices, and how to follow them.
 
 - [Application standards](#application-standards)
   - [Open source on GitHub](#open-source-on-GitHub)
+  - [Follow the API Guidelines](#follow-the-api-guidelines)
   - [Test-driven approach](#test-driven-approach)
   - [12 Factor](#12-factor)
 - [Monitoring](#monitoring)
@@ -27,6 +28,10 @@ A guide on Hackney's development practices, and how to follow them.
 Our mission is to open source 100% of our code, and start in the open whenever starting new projects. All of our code repositories are on GitHub, over half are currently open source.
 
 By employing a [12 Factor](#12-factor) methodology, we keep any secrets such as API tokens outside of our repositories, and instead injected as environment variables in trusted runtime environments. This allows us to write code which interacts with private systems without exposing information.
+
+### Follow the API Guidelines
+
+We have documented our [guidelines][guidelines] for building ReSTful APIs for use in Hackney. These cover the specifics of how an API should be built, including how we implement ReST, HTTP standards, JSON data format, etc. This ensures that all Hackney APIs are built to the same standard and hva consistency across all endpoints.
 
 ### 12 Factor
 
@@ -211,3 +216,4 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
 [pingdom]: https://www.pingdom.com
+[guidelines]: api-guidelines/README.md
