@@ -1,12 +1,8 @@
 # Security
 
-# MUST Only expose external APIs via SSL
+# MUST Only expose APIs via SSL
 
-Any external API service must be encrypted using the current best practice for SSL connectivity. Plain HTTP connections should not be redirected to HTTPS, rather they should return an error code (normally a 403 Forbidden error)
-
-# MAY Expose internal APIs via SSL
-
-Depending on the network configuration it may or may not be appropriate to apply SSL encryption on APIs that are used internally.
+Any API service must be encrypted using the current best practice for SSL connectivity. Plain HTTP connections should not be redirected to HTTPS, rather they should return an error code (normally a 403 Forbidden error)
 
 # SHOULD Use a standard authentication mechanism
 
