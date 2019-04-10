@@ -10,7 +10,9 @@ A guide on Hackney's development practices, and how to follow them.
 - [Monitoring](#monitoring)
   - [Centralised logging](#centralised-logging)
   - [Centralised application performance monitoring](#centralised-application-performance-monitoring)
+  - [Centralised uptime monitoring](#centralised-uptime-monitoring)
   - [Centralised exception logging](#centralised-exception-logging)
+  - [Health Checks](#health-checks)
 - [Containers](#containers)
 - [Hosting](#hosting)
   - [ECS](#ecs)
@@ -88,6 +90,12 @@ It is very useful for developers/maintainers to investigate and fix application 
 In a .NET application, you install a Sentry package using NuGet and use it to send messages to Sentry when handling uncaught exceptions. You can find an example of this in the [Tenancy API][dotnet-sentry-example].
 
 In a Ruby application, you install the Sentry gem and configure it to add additional context. You can find an example of setting this up in the [Income API][ruby-sentry-example].
+
+### Health Checks
+
+As a developer I should make sure that I build 'Health Check API endpoints' to monitor is service up and report back if it goes down.
+
+Also health checks can also be used by monitoring tools to track and alert on the availability and performance of the service, where they serve as early problem indicators. For eg Sentry for exception logging,New relic for application monitoring.
 
 ## Containers
 
