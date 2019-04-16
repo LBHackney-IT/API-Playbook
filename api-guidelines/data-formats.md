@@ -76,7 +76,7 @@ a meaningful value - for example, JSON Merge Patch
 [RFC 7382](https://tools.ietf.org/html/rfc7386)) using null to indicate
 property deletion.
 
-# MUST Empty array values should not be null
+# MUST not use null values for empty array
 
 Empty array values can unambiguously be represented as the empty list,
 `[]`.

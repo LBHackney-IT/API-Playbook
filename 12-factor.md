@@ -9,7 +9,7 @@ The Twelve Factor App Methodology is suggested by developers for smoothly workin
 For example :https://github.com/LBHackney-IT/LBHTenancyAPI
 
 You should always have one repository for an individual application to ease CI/CD pipelines. Also you can have multiple repositories for a microservice.
-The codebase is the same across all deployments, although different versions may be active in each deployment. For example, a developer has some commits not yet deployed to staging; staging will have some commits which are not yet deployed to production environment. But they all share the same codebase, thus making them identifiable as different deployments of the same application. Working in the open allows us to have feedback from a wider audience thus giving an opportunity to improve the code quality.
+The codebase is the same across all deployments, although different versions may be active in each deployment. For example, a developer has some commits not yet deployed to staging; staging will have some commits which are not yet deployed to the production environment. But they all share the same codebase, thus making them identifiable as different deployments of the same application. Deployments should only be normally made from the CI, not from developers machine.  Working in the open allows us to have feedback from a wider audience thus giving an opportunity to improve the code quality.
 
 ## 2. Explicitly declare and isolate dependencies
 
