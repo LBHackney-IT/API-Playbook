@@ -4,12 +4,15 @@ A guide on Hackney's development practices, and how to follow them.
 
 - [Application standards](#application-standards)
   - [Open source on GitHub](#open-source-on-GitHub)
+  - [Follow the API Guidelines](#follow-the-api-guidelines)
   - [Test-driven approach](#test-driven-approach)
+  - [12 Factor](#12-factor)
 - [Monitoring](#monitoring)
   - [Centralised logging](#centralised-logging)
   - [Centralised application performance monitoring](#centralised-application-performance-monitoring)
+  - [Centralised uptime monitoring](#centralised-uptime-monitoring)
   - [Centralised exception logging](#centralised-exception-logging)
-  - [12 Factor](#12-factor)
+  - [Health Checks](#health-checks)
 - [Containers](#containers)
 - [Hosting](#hosting)
   - [ECS](#ecs)
@@ -27,6 +30,16 @@ A guide on Hackney's development practices, and how to follow them.
 Our mission is to open source 100% of our code, and start in the open whenever starting new projects. All of our code repositories are on GitHub, over half are currently open source.
 
 By employing a [12 Factor](#12-factor) methodology, we keep any secrets such as API tokens outside of our repositories, and instead injected as environment variables in trusted runtime environments. This allows us to write code which interacts with private systems without exposing information.
+
+### Follow the API Guidelines
+
+We have documented our [guidelines][guidelines] for building ReSTful APIs for use in Hackney. These cover the specifics of how an API should be built, including how we implement ReST, HTTP standards, JSON data format, etc. This ensures that all Hackney APIs are built to the same standard and hva consistency across all endpoints.
+
+### 12 Factor
+
+We follow 12 Factor principles when building new applications. You can find out more about why [in our Hackney Development Standards documentation][12-factor-documentation].
+
+Following these principles allows our applications to be platform agnostic, meaning we're not tied down to running them on any specific vendor's platform, and don't have to make changes to application code in order to migrate them somewhere else.
 
 ### Test-driven approach
 
@@ -78,11 +91,11 @@ In a .NET application, you install a Sentry package using NuGet and use it to se
 
 In a Ruby application, you install the Sentry gem and configure it to add additional context. You can find an example of setting this up in the [Income API][ruby-sentry-example].
 
-### 12 Factor
+### Health Checks
 
-We follow 12 Factor principles when building new applications. You can find out more about why [in our Hackney Development Standards documentation][12-factor-documentation].
+As a developer I should make sure that I build 'Health Check API endpoints' to monitor is service up and report back if it goes down.
 
-Following these principles allows our applications to be platform agnostic, meaning we're not tied down to running them on any specific vendor's platform, and don't have to make changes to application code in order to migrate them somewhere else.
+Also health checks can also be used by monitoring tools to track and alert on the availability and performance of the service, where they serve as early problem indicators. For eg Sentry for exception logging,New relic for application monitoring.
 
 ## Containers
 
@@ -201,7 +214,7 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [ruby-newrelic-example]: https://github.com/LBHackney-IT/lbh-income-api/commit/98f7c574449c732962d73c4b907daaa1ed2e9b42
 [dotnet-sentry-example]: https://github.com/LBHackney-IT/LBHTenancyAPI/blob/bd56e77d10f61598be778e7b65630e7632c2afc7/LBHTenancyAPI/Infrastructure/V1/Logging/SentryLogger.cs
 [ruby-sentry-example]: https://github.com/LBHackney-IT/lbh-income-api/commit/058a87b7de1a71c922ac5d9eaac9117b10df88d2
-[12-factor-documentation]: https://github.com/LBHackney-IT/Hackney-Development-Standards
+[12-factor-documentation]: ./12-factor.md
 [universal-housing-simulator]: http://example.com
 [made-tech]: https://www.madetech.com/
 [dotnet-swagger-example]: https://github.com/LBHackney-IT/LBHTenancyAPI/blob/master/LBHTenancyAPI/Startup.cs#L65-L112
@@ -211,3 +224,4 @@ In a Ruby application you can use the `swagger-blocks` gem, which provides a DSL
 [learn-tech-practice-tdd]: https://learn.madetech.com/core-skills/tdd/
 [ca]: https://github.com/madetech/clean-architecture
 [pingdom]: https://www.pingdom.com
+[guidelines]: api-guidelines/README.md
