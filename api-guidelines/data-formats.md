@@ -41,7 +41,7 @@ We use the status code to represent the success or failure of a request. We also
 ```JSON
 {
     "status" : "fail",
-    "data" : { "title" : "A title is required" }
+    "errors" : [ "A title is required" ]
 }
 ```
 
