@@ -24,7 +24,7 @@ collection with cardinality 1.
 
 # MUST use Outsider Understandable Property and Variable Names
 
-Property and variable names should not contain acronyms word shortenings that require any project or database specific knowledge to decipher. 
+Property and variable names should not contain acronyms or word shortenings that require any project or database specific knowledge to decipher. 
 
 Examples:
 
