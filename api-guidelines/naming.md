@@ -34,11 +34,11 @@ Examples:
 
 The shortenings like `id` and `ref` are considered acceptable as they are universally understood.
 
-# MUST use camelCase Property Names:
+# MUST use camelCase Property Names
 
 Data formats - [camel casing](data-formats.md#must-use-camelcase-property-names-a-za-z0-9).
 
-# MUST Pluralise Array Names:
+# MUST Pluralise Array Names
 
 Data formats - [array names](data-formats.md#must-pluralise-array-names).
 
