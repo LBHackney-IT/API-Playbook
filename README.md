@@ -98,7 +98,7 @@ As a developer I should make sure that I build 'Health Check API endpoints' to m
 Also health checks can also be used by monitoring tools to track and alert on the availability and performance of the service, where they serve as early problem indicators. For eg Sentry for exception logging,New relic for application monitoring.
 
 ## Containers
-
+++Add docker pull image file name for testing.
 We use Docker containers when building new applications to allow them to be run anywhere without tedious environment set up. We run the both in development and in hosted environments, such as production environments.
 
 We define `Dockerfile`s for each of our applications, generally building from a base language specific image, installing necessary system tools for our application to run, copying files onto the image and compiling the application. The built image can then be used in both development and production, as well as other hosted environments.
@@ -116,7 +116,7 @@ For an example of using Docker with Ruby, see the [Income API][income-api].
 For an example of using Docker with other tools, see the [Universal Housing Simulator][universal-housing-simulator] which creates and starts a SQL Server instance.
 
 ## Hosting
-
+++Use different examples of using on different platforms for agnostic use cases
 ### ECS
 
 We use ECS on AWS to run Docker containers in the cloud. This allows us to use the same Docker containers we use in development, for actually serving in production. ECS orchestrates deployments of new images, running them on our own EC2 machines.
