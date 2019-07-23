@@ -22,6 +22,26 @@ Usually, a collection of resource instances is provided (at least API
 should be ready here). The special case of a resource singleton is a
 collection with cardinality 1.
 
+# MUST use Outsider Understandable Property and Variable Names
+
+Property and variable names should not contain acronyms or word shortenings that require any project or database specific knowledge to decipher. 
+
+Examples:
+
+    use `modificationProcess` rather than `modProc`
+    use `propertyRef` rather than `propRef`
+    use `dateOfBirth` rather than `DOB`
+
+The shortenings like `id` and `ref` are considered acceptable as they are universally understood.
+
+# MUST use camelCase Property Names
+
+Data formats - [camel casing](data-formats.md#must-use-camelcase-property-names-a-za-z0-9).
+
+# MUST Pluralise Array Names
+
+Data formats - [array names](data-formats.md#must-pluralise-array-names).
+
 # MUST Avoid Trailing Slashes
 
 The trailing slash must not have specific semantics. Resource paths must
