@@ -33,7 +33,7 @@ By employing a [12 Factor](#12-factor) methodology, we keep any secrets such as 
 
 ### Follow the API Guidelines
 
-We have documented our [guidelines][guidelines] for building ReSTful APIs for use in Hackney. These cover the specifics of how an API should be built, including how we implement ReST, HTTP standards, JSON data format, etc. This ensures that all Hackney APIs are built to the same standard and hva consistency across all endpoints.
+We have documented our [guidelines][guidelines] for building ReSTful APIs for use in Hackney. These cover the specifics of how an API should be built, including how we implement ReST, HTTP standards, JSON data format, etc. This ensures that all Hackney APIs are built to the same standard and have consistency across all endpoints.
 
 ### 12 Factor
 
@@ -99,7 +99,7 @@ Also health checks can also be used by monitoring tools to track and alert on th
 
 ## Containers
 
-We use Docker containers when building new applications to allow them to be run anywhere without tedious environment set up. We run the both in development and in hosted environments, such as production environments.
+We use Docker containers when building new applications to allow them to be run anywhere without tedious environment set up. We run them both in development and in hosted environments, such as production environments.
 
 We define `Dockerfile`s for each of our applications, generally building from a base language specific image, installing necessary system tools for our application to run, copying files onto the image and compiling the application. The built image can then be used in both development and production, as well as other hosted environments.
 
