@@ -25,14 +25,13 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
+    <div id="main_content_wrap" class="outer">    
+        <section id="side_nav">
+            Our table of contents
+        </section>
       <section id="main_content" class="inner">
         {{ content }}
       </section>
-    </div>
-
-    <div id="side_nav">
-        Our table of contents
     </div>
 
     <!-- FOOTER  -->
@@ -41,7 +40,6 @@
         {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
