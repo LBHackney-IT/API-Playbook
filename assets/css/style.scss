@@ -2,8 +2,21 @@
 ---
 
 @import "{{ site.theme }}";
-.toc {
-    background: #114738;
-    width: 100px;
-    height: 100px;
+#toc_container {
+    background: #114738 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
 }
