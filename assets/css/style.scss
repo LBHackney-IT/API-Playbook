@@ -1,6 +1,6 @@
 ---
 ---
-
+@import "{{ site.theme }}";
 #toc_container {
     background: #ffffff none repeat scroll 0 0;
     display: table;
@@ -8,14 +8,6 @@
     margin-bottom: 1em;
     padding: 20px;
     width: auto;
-}
-
-.header-main {
-    background: #525a5b;
-}
-
-.header-main h1, h2 {
-    color: #fff;
 }
 
 .grid-container {
