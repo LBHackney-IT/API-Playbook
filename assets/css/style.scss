@@ -10,6 +10,14 @@
     width: auto;
 }
 
+.header-main {
+    background: #525a5b;
+}
+
+.header-main h1, h2 {
+    color: #fff;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
