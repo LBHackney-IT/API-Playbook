@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html class="govuk-template lbh-template" lang="{{ site.lang | default: "en-US" }}">
-
+<html lang="en" class="govuk-template lbh-template">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
+    <title>API Playbook | Hackney Council</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#0b0c0c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/lbh-frontend-1.9.5.min.css?v=' | append: site.github.build_revision | relative_url }}">
-{% seo %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/lbh-frontend-1.9.5.min.css?v=' | append: site.github.build_revision | relative_url }}"> #}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
-
   <body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    <a href="#main-content" class="govuk-skip-link lbh-skip-link">Skip to main content</a>
     <header class="lbh-header  ">
       <div class="lbh-header__main">
        <div class="lbh-container lbh-header__wrapper ">
@@ -51,65 +54,40 @@
       <div class="lbh-container">
         <!-- Main content components go here -->
 
-        <!-- HEADER -->
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-              <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-              <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-            </header>
-        </div>
-
         <!-- MAIN CONTENT -->
-        <div id="main_content_wrap" class="outer grid-container">    
-            <!-- <div id="toc_container">
-                <p class="toc_title">Contents</p>
-                <ol class="lbh-list lbh-list--number">
-                    <li><a class="lbh-link" href="/API-Playbook/">Introduction</a>
-                    <ul>
+            <div id="main_content_wrap" class="outer grid-container">    
+              <div class="row">
+                <div class="col-md-3">
+                  <div id="toc_container">
+                    <p class="toc_title">Contents</p>
+                    <ol class="lbh-list lbh-list--number">
+                        <li><a class="lbh-link" href="/API-Playbook/">Introduction</a></li>
                         <li><a class="lbh-link" href="#Topic_1">Topic 1</a></li>
                         <li><a class="lbh-link" href="#Topic_2">Topic 2</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="lbh-link" href="/API-Playbook/tdd.html">TDD Principles</a></li>
-                    <li><a class="lbh-link" href="#Topic_4">Topic 4</a></li>
-                </ul>
-            </div> -->
-
-            <main class="lbh-main-wrapper " id="main-content" role="main">
-              <div class="lbh-container">
-                <!-- Main content components go here -->
-                <section id="main_content" class="inner">
-                  {{ content }}
-                </section>
-                <!-- Finish main components -->
+                        <li><a class="lbh-link" href="/API-Playbook/tdd.html">TDD Principles</a></li>
+                        <li><a class="lbh-link" href="#Topic_4">Topic 4</a></li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                      <!-- Main content components go here -->
+                      <section id="main_content" class="inner">
+                         {{ content }}
+                      </section>
+                      <!-- Finish main components -->
+                </div>
               </div>
-            </main>
-        </div>
-
-
+            </div>
         <!-- Finish main components -->
       </div>
     </main>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-      </footer>
-    </div>
+    <footer class="footer">
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+    </footer>
+
+    <!-- Put your path to the LBHFrontend JS File in the src attribute here -->
     <script src="js/lbh-frontend-1.9.5.min.js"></script>
     <script>window.LBHFrontend.initAll()</script>
   </body>
