@@ -1,35 +1,46 @@
 ---
 ---
 @import "{{ site.theme }}";
-#toc_container {
-    background: #ffffff none repeat scroll 0 0;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
+.header-outer {
+    margin: 0;
+    background: #212121;
+    padding: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". .";
-  }  
-
-.toc_title {
-    font-weight: 700;
-    color: #0b0c0c;
+.banner-head-h1,
+.banner-head-h3 {
+    color: #fff;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
+.banner-head-h1 {
+    font-size: 2rem;
 }
 
-#toc_container li a {
-    color: #0b0c0c;
-    text-decoration: none;
+.banner-head-h3 {
+    font-size: 1.75rem;
+    
+}
+
+.footer {
+    background: #0b0c0c;
+    min-height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-outer {
+        padding: 20px;
+    }
+
+    .banner-head-h1 {
+        font-size: 1.2rem;
+    }
+    
+    .banner-head-h3 {
+        font-size: 0.85rem;
+        
+    }
 }
