@@ -2,10 +2,10 @@
 APIs have become an essential part of Hackney’s digital transformation.  They are the building blocks of the majority of our newer internal systems and are part of the foundation of our cloud based architecture.  They provide the opportunity for reuse and the flexibility to combine data and services in new and previously unimaginable ways.
 
 This API playbook will help readers to understand:
-* Why APIs have become so important to our software development process
-* How we go about building our APIs
-* How we support and maintain our APIs
-* Some best practices that we have adopted as standard in our development of APIs
+ - Why APIs have become so important to our software development process
+ - How we go about building our APIs
+ - How we support and maintain our APIs
+ - Some best practices that we have adopted as standard in our development of APIs
 
 ## Why a Playbook?
 Some people may wonder why we have decided to establish a playbook.  Well during our journey of digital transformation we were fortunate to work with a number of partners/agencies from whom we gained a significant amount of knowledge and learned to do things in so many different ways.  What we also discovered was that the various ways APIs were implemented across our projects meant that there was no consistency, making it a bit of a challenge to maintain.  We decided that if we had a consistent standard of implementation, it would make it easier for us to maintain services as well as to get new developers onboard.
