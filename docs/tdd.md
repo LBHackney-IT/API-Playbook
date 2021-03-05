@@ -1,4 +1,7 @@
-# Good TDD Principles
+---
+id: tdd
+title: Good TDD Principles
+---
 
 ## Purpose
 The purpose of this section is to provide some general guidelines on how we conduct testing in our applications.  This will give our developers some baseline standards on how to go about testing.  These guidelines are not intended to be prescriptive on what developers should test but to ensure that with a consistent understanding of our tests, it will be easy to grasp by other developers.
