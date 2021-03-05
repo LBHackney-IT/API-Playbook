@@ -8,7 +8,7 @@ module.exports = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
   organizationName: "lbhackney-it",
-  projectName: "lbh-frontend",
+  projectName: "API-Playbook",
   themeConfig: {
     navbar: {
       title: "API Playbook",
