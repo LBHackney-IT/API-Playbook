@@ -42,5 +42,4 @@ jobs:
           else
           npm i
           fi
-          npm run build:sassdoc
           npx docusaurus deploy
