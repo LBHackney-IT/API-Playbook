@@ -8,13 +8,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Principles',
-      items: ['tdd'],
+      items: ['tdd', 'documentation'],
     },
-    {
-      type: 'category',
-      label: 'Principles',
-      items: ['documentation'],
-    },
-
   ],
 };
