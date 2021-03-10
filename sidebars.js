@@ -10,5 +10,11 @@ module.exports = {
       label: 'Principles',
       items: ['tdd'],
     },
+    {
+      type: 'category',
+      label: 'Principles',
+      items: ['documentation'],
+    },
+
   ],
 };
