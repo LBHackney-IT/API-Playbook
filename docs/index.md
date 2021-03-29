@@ -23,3 +23,7 @@ This playbook is primarily used to onboard new developers, whether they are new 
 
 ## Help us improve
 We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook Github repo suggesting ways we could improve these pages.
+
+
+## For a better understanding of The Basic API, please watch our tutorial below:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
