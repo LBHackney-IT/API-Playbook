@@ -3,12 +3,12 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index',],
+      items: ['index','api_standards'],
     },
     {
       type: 'category',
       label: 'Principles',
-      items: ['tdd', 'documentation'],
+      items: ['tdd', 'documentation',],
     },
   ],
 };
