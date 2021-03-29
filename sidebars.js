@@ -3,7 +3,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards'],
+      items: ['index','api_standards', 'platform_api_vs_service_api'],
     },
     {
       type: 'category',
