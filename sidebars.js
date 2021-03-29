@@ -13,7 +13,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Development Process',
-      items: ['api_design_principles', 'api_implementation_guidelines'],
+      items: ['api_design_principles', 'api_implementation_guidelines', 'naming_conventions'],
     },
   ],
 };
