@@ -10,5 +10,10 @@ module.exports = {
       label: 'Principles',
       items: ['tdd', 'documentation',],
     },
+    {
+      type: 'category',
+      label: 'Development Process',
+      items: ['api_design_principles', 'api_implementation_guidelines'],
+    },
   ],
 };
