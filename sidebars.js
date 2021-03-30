@@ -31,6 +31,10 @@ module.exports = {
     {
     'Monitoring': ['centralised_logging', 'uptime_monitoring', 'security_monitoring', 'alerting']
     },
+
+    {
+    'Securing your API': ['api_keys', 'lambda_authoriser',]
+    },
    ]
   }
  ],
