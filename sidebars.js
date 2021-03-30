@@ -20,13 +20,18 @@ module.exports = {
       },
       'naming_conventions',
       'branching_strategy',
+
       {
-      'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
-    },
+        'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
+      },
     {
     'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
-  },
-  ]
-}
-],
+    },
+
+    {
+    'Monitoring': ['centralised_logging', 'uptime_monitoring', 'security_monitoring', 'alerting']
+    },
+   ]
+  }
+ ],
 };
