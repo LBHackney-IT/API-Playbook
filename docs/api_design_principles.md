@@ -2,8 +2,12 @@
 id: api_design_principles
 title: API Design Principles
 ---
+## Introduction
 
 Comparing SOA web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialized. In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
+
+
+## Purpose
 
 We prefer REST-based APIs with JSON payloads.
 An important principle for API design and usage is Postel’s Law, aka The Robustness Principle (see also RFC 1122):
@@ -11,53 +15,56 @@ An important principle for API design and usage is Postel’s Law, aka The Robus
 Be liberal in what you accept, be conservative in what you send
 Readings: Some interesting reads on the RESTful API design style and service architecture:
 
-Book: Irresistable APIs: Designing web APIs that developers will love
+1. Book: Irresistable APIs: Designing web APIs that developers will love
 
-Book: REST in Practice: Hypermedia and Systems Architecture
+2. Book: REST in Practice: Hypermedia and Systems Architecture
 
-Book: Build APIs You Won’t Hate
+3. Book: Build APIs You Won’t Hate
 
-InfoQ eBook: Web APIs: From Start to Finish
+4. InfoQ eBook: Web APIs: From Start to Finish
 
-Lessons-learned blog: Thoughts on RESTful API Design
+5. Lessons-learned blog: Thoughts on RESTful API Design
 
-Fielding Dissertation: Architectural Styles and the Design of Network-Based Software Architectures
+5. Fielding Dissertation: Architectural Styles and the Design of Network-Based Software Architectures
 
-Designing APIs
+
+##  Designing APIs
+
 APIs should adhere to the same design principles as any well managed product:
 
-Treat your API as product and act like a product owner
+Treat your API as product and act like a product owner;
 
-Put yourself into the place of your customers; be an advocate for their needs
+Put yourself into the place of your customers; be an advocate for their needs;
 
-Emphasize simplicity, comprehensibility, and usability of APIs to make them irresistible for client engineers
+Emphasize simplicity, comprehensibility, and usability of APIs to make them irresistible for client engineers;
 
-Actively improve and maintain API consistency over the long term
+Actively improve and maintain API consistency over the long term;
 
-Make use of customer feedback and provide service level support
+Make use of customer feedback and provide service level support;
 
 Understand the concrete use cases of your API consumers and carefully check the trade-offs of your API design variants with a product mindset. Avoid short-term implementation optimizations at the expense of unnecessary client side obligations, and have a high attention on API quality and client developer experience.
 
-API First
+
+## API First
+
 API First is one of our principles. In a nutshell API First requires two aspects:
 
 define APIs first, before coding its implementation, using a standard specification language
 
 get early review feedback from peers and client developers
 
-By defining APIs outside the code, we want to facilitate early review feedback and also a development discipline that focus service interface design on...
+By defining APIs outside the code, we want to facilitate early review feedback and also a development discipline that focus service interface design on
 
-profound understanding of the domain and required functionality
-
-generalized business entities / resources, i.e. avoidance of use case specific APIs
+profound understanding of the domain and required functionality generalized business entities / resources, i.e. avoidance of use case specific APIs
 
 clear separation of WHAT vs. HOW concerns, i.e. abstraction from implementation aspects — APIs should be stable even if we replace complete service implementation including its underlying technology stack
+
 
 Moreover, API definitions with standardized specification format also facilitate...
 
 single source of truth for the API specification; it is a crucial part of a contract between service provider and client users
 
-infrastructure tooling for API discovery, API GUIs, API documents, automated quality checks
+Infrastructure tooling for API discovery, API GUIs, API documents, automated quality checks
 
 Elements of API First are also these standards and a standardized API review process (TBC) as to get early review feedback from peers and client developers. Peer review is important for us to get high quality APIs, to enable architectural and design alignment and to supported development of client applications decoupled from service provider engineering life cycle.
 
