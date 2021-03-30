@@ -37,7 +37,8 @@ h.Links to GitHub existing terraform templates?
       https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit
 
 
-**   HackIT Infrastructure as code **
+
+**   <u> HackIT Infrastructure as code </u> **
 
 ** <u> What is infrastructure as code (IaC)? </u> **
 

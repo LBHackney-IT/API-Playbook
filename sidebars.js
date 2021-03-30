@@ -23,6 +23,9 @@ module.exports = {
       {
       'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
     },
+    {
+    'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
+  },
   ]
 }
 ],
