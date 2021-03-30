@@ -11,7 +11,7 @@ module.exports = {
       items: ['tdd', 'documentation',],
     },
 
-    {
+      {
       type: 'category',
       label: 'Development Process',
       items: [
@@ -19,8 +19,11 @@ module.exports = {
         'Designing your API': ['api_design_principles', 'api_implementation_guidelines',]
       },
       'naming_conventions',
-      'branching_strategy'
-    ]
+      'branching_strategy',
+      {
+      'DevOps Practices': ['development', 'deployment_pipeline',]
+    },
+  ]
 }
 ],
 };
