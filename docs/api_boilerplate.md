@@ -12,4 +12,6 @@ Be sure to remove these comments when they aren't needed anymore.
 
 You can find further information, explanations and examples of certain tools and technique we are using in API's in this wiki.
 
+## Our GitHub Repo
+
         https://github.com/LBHackney-IT/lbh-base-api
