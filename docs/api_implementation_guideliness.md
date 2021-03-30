@@ -1,42 +1,46 @@
 ---
 id: api_implementation_guidelines
-title: Hackney API Implementation Guidelines
+title: API Implementation Guidelines
 ---
 
-Introduction
+## Introduction
 
 There are an increasing number of APIs being developed at Hackney and these guidelines are designed to provide a clear set of implementation guides to bring consistency between the different endpoints.
 
 They are based on the excellent set created by Zalando.
 
-Contents
+1. Contents
 
-Design Principles
+2. Design Principles
 
-General Guidelines
+3. General Guidelines
 
-Security
+4. Security
 
-Compatibility
+5. Compatibility
 
-Deprecation
+6. Deprecation
 
-Naming
+7. Naming
 
-HTTP
+8. HTTP
 
-Resources
+9. Resources
 
-Pagination
+10. Pagination
 
-Data Formats
+11. Data Formats
 
-Operation
+12. Operation
 
-References
+13. References
 
-Conventions
+1. Conventions
 
-The requirement level keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" used in this document (case insensitive) are to be interpreted as described in RFC2119.
+The requirement level keywords :  ** "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", **  and ** "OPTIONAL" ** used in this document (case insensitive) are to be interpreted as described in RFC2119.
 
 The titles are marked with the corresponding labels.
+
+For more information, please check our API Guidelines GitHub Repo:
+
+          https://github.com/LBHackney-IT/API-Playbook-v2-beta/tree/master/api-guidelines

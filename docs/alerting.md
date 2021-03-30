@@ -3,7 +3,7 @@ id: alerting
 title: Alerting
 ---
 
-** Application monitoring and alerting: **
+## Application monitoring and alerting
 
 In Hackney, we use AWS Cloudwatch to implement monitoring and alerting.
 
@@ -12,7 +12,7 @@ Any logs created in our APIs are recorded and accessible in AWS CloudWatch.
 Creation of log groups is automated via the current serverless setup.
 
 
-** <u> Metrics filters: </u> **
+## Metrics filters
 
 
 ** <u> Filter and Pattern Syntax </u> **
@@ -41,22 +41,23 @@ We use AWS CloudWatch Canaries to monitor the availability of our APIs and front
 
 ** <u> AWS CloudWatch Canaries for APIs: </u> **
 
-Set to run every 5 mins
+a. Set to run every 5 mins
 
-A canary invokes an API endpoint to check it’s availability
+b. A canary invokes an API endpoint to check it’s availability
 
-Needs to be set up per API endpoint to ensure all endpoints provided by an API are functioning as expected
+c. Needs to be set up per API endpoint to ensure all endpoints provided by an API are functioning as expected
 
-The current creation process for a canary is manual
+d. he current creation process for a canary is manual
 
-How to set up a canary :
+** How to set up a canary : **
+
         https://github.com/LBHackney-IT/lbh-base-api/wiki/Setting-up-Canaries
 
 Can it be automated?
 
 
 
-** <u> AWS Canaries for front end applications </u> **
+## AWS Canaries for front end applications
 
 Can monitor the availability of a web page
 
@@ -72,17 +73,17 @@ The canary crawls through the links and returns the first broken link identified
 
 
 
-** <u> AWS Cloudwatch Alarms </u> **
+## AWS Cloudwatch Alarms
 
 We also use Cloudwatch alarms to monitor for specific events in the log streams.
  Specific metrics can be established as triggers on application logs which can fire off alerts in the form of emails or other messaging mediums.  We can create up to 5000 alarms per region per account which should give us sufficient capacity.
 It may also be possible to consolidate these alarms if we have a standard format for logs (this may also be achievable by creating composite alarms but uses up available alarms.
 
-  ** Request tracing **
+** Request tracing **
 
 AWS X-Ray is an AWS managed service that provides the functionality to debug and analyze distributed applications.
 
-** More on what X-Ray is: **
+## More on what X-Ray is
 
         https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html
 
@@ -103,7 +104,7 @@ Individual end-to-end visual representation for a single request
 
 
 
-** <u> Benefits of AWS X-Ray </u> **
+## Benefits of AWS X-Ray
 
 1. Provides a way to collect logs and metrics, for all services an API integrates with, including databases or other APIs;
 
@@ -128,7 +129,7 @@ Individual end-to-end visual representation for a single request
     v. In summary, the process will take longer as developers will have to go through multiple steps and logs in order to narrow down the cause, which results in more development time spent on debugging, instead of resolving the issue.
 
 
-** <u>  How to enable and use X-Ray in our APIs: </u> **
+##  How to enable and use X-Ray in our APIs
 
 Serverless can be used to automatically enable X-Ray on our APIs.
 
@@ -143,7 +144,7 @@ Enable C# tracing when using AWS Lambda
 
       https://docs.aws.amazon.com/lambda/latest/dg/csharp-tracing.html
 
-** <u>     X-Ray with Postgres: </u> **
+##    X-Ray with Postgres
 
 X-Ray can be enabled for Postgres to trace down to the database query level.
 
@@ -154,7 +155,7 @@ X-Ray can be enabled for Postgres to trace down to the database query level.
 
 
 
-**    X-Ray with API Gateway: **
+##   X-Ray with API Gateway
 
 X-Ray can also be enabled for API Gateway to provide tracing for calls starting at API Gateway.
 
@@ -183,7 +184,7 @@ Traces scanned cost $0.50 per 1 million traces scanned ($0.0000005 per trace).
 
 
 
-  **    Performance monitoring **
+  ##   Performance monitoring
 
       AWS Lambda insights for performance monitoring
 
@@ -212,7 +213,7 @@ The solution collects, aggregates, and summarizes system-level metrics including
          We need to evaluate if we are interested in monitoring all 8 metrics
 
 
-**  <u> Define Metrics for Alerts </u> **
+## Define Metrics for Alerts
 
 What metrics can be used to trigger alerts, eg, how many exceptions within a defined period.  A one size fit for metrics may not be suitable for all applications.
 

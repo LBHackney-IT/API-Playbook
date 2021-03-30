@@ -3,9 +3,8 @@ id: api_standards
 title: API Standards
 ---
 
- API Standards 
 
-Your API will need to meet the following standards for it to be accepted into service:
+** Your API will need to meet the following standards for it to be accepted into service: **
 
 1.There is clear evidence of user need - the API provides the data needed to power one or more digital services.
 

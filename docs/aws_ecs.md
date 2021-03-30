@@ -2,7 +2,9 @@
 id: aws_ecs
 title: AWS / ECS with Fargate and when to use
 ---
-** ECS/Fargate **
+
+## ECS/Fargate
+
 All new Hackney APIs developed usinguse AWS Lambda as a serverless way of hosting APIs.
 
 There are APIs, developed before we adopted the serverless approach, which use ECS with Fargate or EC2 as a hosting option.
@@ -36,7 +38,7 @@ In certain scenarios, an API might be required to take as an input a large objec
 
 Fargate should be used in the above scenario as Lambda would not be suitable for this type of APIs.
 
-Possible work-around:
+## Possible work-around
 
 1. Even if a request/response payload is large, we can still use Lambda by inserting the request/response object into S3 and accept/return a link to the file in S3.only take as an input / return as an output an S3 link for retrieving the file.
 
@@ -53,7 +55,7 @@ Lambda has the limitation of a memory range from 128 to 3008 MB.
 
 This means that if any large file needs to be stored at run time to be accessed later on in the function, Lambda might not be the best a possible solution., in which case Fargate should be used, as we have  Fargate allows us control over the memory allocation for containers.
 
-** How to create an app / API with ECS/Fargate hosting setup? **
+## How to create an app / API with ECS/Fargate hosting setup? 
 
 It is recommended that you use Terraform to provision AWS resources. We already have produced a terraform template that generates all necessary resources for an API/app that is to be hosted using ECS with Fargate.
 

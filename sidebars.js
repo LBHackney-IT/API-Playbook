@@ -33,7 +33,7 @@ module.exports = {
     },
 
     {
-    'Securing your API': ['api_keys', 'lambda_authoriser',]
+    'Securing your API': ['api_keys', 'lambda_authoriser','generating_tokens']
     },
    ]
   }

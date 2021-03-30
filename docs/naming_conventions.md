@@ -4,23 +4,21 @@ title: Naming Conventions
 ---
 
 
-Name of the data source to represent the data:
+** Name of the data source to represent the data: **
 
-Use ‘-’ to separate words
+1. Use ‘-’ to separate words
 
-All lowercase.
+2. Use all lowercase.
 
-For eg : mosaic-resident-information-api
+      For eg : mosaic-resident-information-api
 
 
+3. Use of Views ?
 
-Use of Views ?
-
-Actual API output : translate the inner column names
+** Actual API output : translate the inner column names **
 
 
 For each individual Platform API:
-
 
 
 ![alt text](./doc-images/naming_conventions.png)

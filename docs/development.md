@@ -1,25 +1,23 @@
 ---
 id: development
-title: Hackney DevOps Practices
+title: DevOps Best Practices
 ---
 
-** Development **
-
+## Development
 
 ** GitHub is used for version control and source code management. **
 
 
 ** When a new repository is created: **
 
-  Use the lbh-base-api template if creating a new API
+  1. Use the lbh-base-api template if creating a new API
 
-  Ensure you set the project up on CircleCI for CI/CD
+  2. Ensure you set the project up on CircleCI for CI/CD
 
-  By default, repositories should be kept public, unless there is a specific need and justification not to do so.
+  3. By default, repositories should be kept public, unless there is a specific need and justification not to do so.
 
 
-** <u> Branch definitions: </u> **
-
+## Branch Definitions
 
   ** GitFlow **
 
@@ -65,7 +63,8 @@ Hot-fixes applied should be merged directly to master as this triggers separate 
 
 
 
-** Trunk Based Development  
+## Trunk Based Development  
+
     (https://trunkbaseddevelopment.com/) **
 
 Trunk based development is the most common branching strategy used for a microservice architecture. This is a fast workflow with minimal merging.
@@ -90,7 +89,7 @@ but defer the decision to release for another day.  Turn off the feature flag an
 
 
 
-** <u> Environments </u> **
+## Environments
 
 ** Pull requests: **
 
@@ -104,7 +103,7 @@ There needs to be a minimum of 1 approver per PR prior to merging
 
 
 
-** Continuous testing: **
+## Continuous testing:
 
 At Hackney, unit and integration tests must be run as part of the CI/CD pipeline at the point of:
 
@@ -118,7 +117,7 @@ At Hackney, unit and integration tests must be run as part of the CI/CD pipeline
 
 
 
-** <u> APIs </u> **
+## APIs
 
 For APIs, we use docker-compose to build image(s) and run the test suite.
 
@@ -126,7 +125,7 @@ For the purpose of end-to-end tests, we create a docker image of a database to r
 
 
 
-** Continuous Integration and Deployment: **
+## Continuous Integration and Deployment
 
 
 Once a pull request has been merged, it will trigger a CircleCI workflow to automatically deploy to Development, Staging and Production respectively.
@@ -138,7 +137,7 @@ Once a pull request has been merged, it will trigger a CircleCI workflow to auto
 
 
 
-** Development workflow: **
+## Development workflow
 
 
 Merging into a ‘development’ branch triggers the ‘development deployment’ workflow:
@@ -147,13 +146,13 @@ Merging into a ‘development’ branch triggers the ‘development deployment�
 
 
 
-** Staging and Production workflow: **
+## Staging and Production workflow
 
 Merging into the ‘master’ branch automatically deploys to the staging environment. For production release, a manual approval stage in CircleCI is required.
 ![alt text](./doc-images/staging_workflow.png)
 
 
-** Continuous monitoring: **
+## Continuous monitoring
 
 AWS CloudWatch
 
@@ -166,15 +165,15 @@ Using Canaries for up-time monitoring
 Integrated with slack channel to get notifications when an alarm is triggered
 
 
-    More on monitoring can be found in our API Playbook [Link TBC]
+  **  More on monitoring can be found in our API Playbook [Link TBC] **
 
 
 
-** AWS Cloudtrail: **
+## AWS Cloudtrail
 
 Used to monitor activities within our AWS accounts
 
-** AWS Security Hub: **
+## AWS Security Hub
 
 Using AWS Security Hub to ensure our accounts are safe and resources adhere to AWS best security practices
 
@@ -182,7 +181,7 @@ Alerts us when a security configuration rule compliance has changed
 
 
 
-** Infrastructure as code (IaC) : **
+## Infrastructure as code (IaC)
 
       More on IaC in our API playbook here [Link TBC]]
 
@@ -192,7 +191,7 @@ Our IaC deployment process is automated via our CI/CD pipeline.
 
 
 
-** Serverless framework: **
+## Serverless framework
 
 We use the serverless framework to help us deploy Lambda functions and related resources.
 
@@ -206,7 +205,7 @@ Lambda IAM role;
 Although serverless allows for other AWS resources to be provisioned using IaC approach, we use Terraform for provisioning other resources, such as DMS (Data migration service) tasks, S3 buckets, etc.
 
 
-** Terraform: **
+## Terraform
 
 Used for provisioning all other AWS resources, apart from the Lambda related resources listed above.
 

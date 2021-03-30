@@ -3,7 +3,7 @@ id: api_keys
 title: API Keys
 ---
 
-** <u> Securing our APIs </u>  **
+## Securing our APIs
 
 ** What to cover: **
 
@@ -52,84 +52,13 @@ title: API Keys
    **  <u> Securing our APIs: </u> **
 
 
-**  <u> What do we use to secure our APIs </u> **
+** What do we use to secure our APIs? ** 
+
 We have now changed our approach to using a Lambda authorizer function to secure our APIs.
 
-**  What is a Lambda authorizer? **
-
- AWS documentation:
-
-            https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
-
-** Custom implementation of a Lambda authorizer: **
-
-  For a Lambda authorizer, we use a  custom Lambda function that has been developed in-house.
-      Repository:
-
-            https://github.com/LBHackney-IT/api-auth-token-generator
-
-It allows for granular access control per API endpoint per environment. To gain access to a given API endpoint, the consuming service will need to supply an authorization token as part of the request, passed in the HTTP header “Authorisation”.
-
-In the first iteration of this solution, the following applies:
-
-  a. Tokens are issued per service
-
-  b. Tokens do not expire
-
-Each service that requires a token will need to request it via the API Hub. The API Hub makes use of an auth token generator endpoint, which generates a JWT token and inserts data about the token (such as who requested it, which API endpoint it allows access to, which environment and more) into a Postgres database.  For request information, please look at the Swagger documentation:
-
-          https://app.swaggerhub.com/apis/Hackney/authorisation-token-generator-api/1.0
 
 
-Each time a consumer makes an API request and supplies the JWT auth token, our custom Lambda function takes the token, validates and decrypts it, retrieves data about the token from the database and compares the data from the database to the API request information.
-
-** <u> When is a token valid: </u> **
-
-1. If the “Enabled” flag is set to true
-
-   a. This means that the token has not been revoked
-
-2. If a token has an expiry date, it should not be a past date
-
-3. The environment recorded in the database should match the one from the request
-
-4. The API endpoint name should match the one from the request
-
-5. The API name should match the one from the request
-
-6. The HTTP method (GET/POST/etc) should match the one from the request
-
-        **   NB: The Lambda authorizer approach described above is a new solution and not all APIs have been updated to use it. **
-
-Lambda authorizer documentation:
-
-              https://docs.google.com/document/d/1mpTY-sfYwR2brIF_8KjxiYzW6zgkjbv4Pi-9Y5LRlBA/edit#
-
-  ** When to use? **
-
-HackIT’s custom Lambda authorizer should be used for all new APIs that are to be created. It has been created in a generic way, making it possible to be used across multiple APIs.
-
-  The only configuration required would be to insert the lookup values into the lookup tables (API name, API endpoint).
-
-The above is to be automated as part of our API Hub upcoming work.
-
-** Google Groups based authorization: **
-
-In addition to the custom build lambda authorizer mentioned above, we have also implemented Google groups based authorization in some of our projects.
-When developing APIs for internal use, the most convenient way to authenticate users is to use Google SSO. Once the user/client has been authenticated, authorization can be handled at the API level to ensure the user/client has access to the requested resource.
-
-Sample implementation with serverless and .NET Core can be found here:
-
-        https://github.com/LBHackney-IT/comino-printing  
-
-In the above solution, each Lambda function that is deployed to API gateway has the authorizer set to the custom API authorizer.
-
-Each time a request is made to one of the end points in question, the authorizer will take the provided JWT token and check what Google Groups the client is in. If the client is authenticated and is in one of the allowed groups, the request is authorized. Otherwise access is denied. In both cases the standard AWS IAM policy statement is returned indicating whether the request was authorized or not, and then depending on the result either the requested Lambda resource is called or the client gets an unauthorized response.
-
-Implementing authorization this way requires a bit more development work, but completely takes a way the necessity to manage API keys in the infrastructure. This also gives the business the power to manage their own resources and determine who has access to them.
-
-
-** <u> API keys to secure our APIs: </u> **
+## API keys to secure our APIs
 
 Some of our APIs still use API keys to manage access to the APIs. This was our initial approach, but it has proven to be insufficient as it does not allow for granular access control and reporting, and it is associated with a big maintenance overhead.
 
@@ -138,7 +67,7 @@ AWS documentation on API keys and Usage plans:
             https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
 
 
-** What is an API key? **
+## What is an API key?
 
 An API key in this context is a solution provided by AWS for managing access when using AWS API Gateway. Each resource (endpoint) within an API can be set to require an API key to be supplied, when making a request.
 
@@ -148,7 +77,7 @@ An API key in this context is a solution provided by AWS for managing access whe
 When this option is enabled, the API will return a status code of 401 Unauthorized if the consumer has not supplied the API key value within an ‘x-api-key’ HTTP header.
 
 
-** What is a stage?**
+** What is a stage? **
 
 Before API is deployed to the API gateway, it must have a stage. Depending on the account setup, API typically has either one or three stages. If an account is set up to use one API per environment (development, staging and production), then API will have only one stage. Sometimes we have just one API for all three environments, in which case we use three different stages.
 
@@ -170,7 +99,7 @@ Usage plans control the quota (requests per day/week/month), rate (requests per 
 
 Throttling can be made more granular by enabling method throttling for a stage, which means that different HTTP methods for the API stage can have different limits.
 
-** Guide for enabling and disabling API keys **
+## Guide for enabling and disabling API keys
 
 Guide describing how to enable and disable API key requirement:
 
