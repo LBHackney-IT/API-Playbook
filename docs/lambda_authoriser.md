@@ -1,5 +1,5 @@
 ---
-id: lambda_authoriser
+id: Lambda authoriser
 title: Lambda Authoriser
 ---
 

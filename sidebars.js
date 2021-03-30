@@ -33,7 +33,12 @@ module.exports = {
     },
 
     {
-    'Securing your API': ['api_keys', 'lambda_authoriser','generating_tokens']
+    'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
+    },
+
+    {
+    'How to build an API': ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'integration_tests', 'containerisation']}
+      ]
     },
    ]
   }
