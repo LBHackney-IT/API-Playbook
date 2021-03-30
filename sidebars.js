@@ -21,7 +21,7 @@ module.exports = {
       'naming_conventions',
       'branching_strategy',
       {
-      'DevOps Practices': ['development', 'deployment_pipeline',]
+      'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
     },
   ]
 }
