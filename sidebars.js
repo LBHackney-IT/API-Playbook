@@ -42,7 +42,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Other Useful Information',
-      items: ['rds_access', 'ec2_access','postgresql', 'data_migration'],
+      items: ['rds_access', 'ec2_access','postgresql', 'data_migration', 'contact_us'],
     },
 
    ]
