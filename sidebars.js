@@ -39,6 +39,12 @@ module.exports = {
     'How to build an API': ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['unit_test', 'integration_tests', 'containerisation']}
       ]
     },
+    {
+      type: 'category',
+      label: 'Other Useful Information',
+      items: ['rds_access', 'ec2_access','postgresql', 'data_migration'],
+    },
+
    ]
   }
  ],
