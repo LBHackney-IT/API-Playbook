@@ -3,14 +3,13 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api'],
+      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation'],
     },
     {
       type: 'category',
       label: 'Principles',
-      items: ['tdd', 'documentation',],
+      items: [],
     },
-
       {
       type: 'category',
       label: 'Development Process',
@@ -20,32 +19,32 @@ module.exports = {
       },
       'naming_conventions',
       'branching_strategy',
-
       {
-        'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
+        'API Practices and Tools': ['linting','static_code_analysis', 'storing_secrets']
+      },
+      {
+        'DevOps Practices': ['deployment_pipeline', 'infrastructure']
       },
     {
     'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
     },
-
     {
     'Monitoring': ['centralised_logging', 'uptime_monitoring', 'security_monitoring', 'alerting']
     },
-
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
-    },
-    {
-    'How to build an API': ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['unit_test', 'integration_tests', 'containerisation']}
-      ]
-    },
-    {
-      type: 'category',
-      label: 'Other Useful Information',
-      items: ['rds_access', 'ec2_access','postgresql', 'data_migration', 'contact_us'],
-    },
-
-   ]
+    }
+  ]
+  },
+  {
+    type: 'category',
+    label: 'How to build an API',
+    items: ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests', 'containerisation']}]
+  },
+  {
+    type: 'category',
+    label: 'Other Useful Information',
+    items: ['rds_access', 'ec2_access','postgresql', 'data_migration', 'contact_us']
   }
- ],
+]
 };

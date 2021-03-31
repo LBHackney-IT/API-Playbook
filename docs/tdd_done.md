@@ -1,4 +1,0 @@
----
-id: tdd
-title: TDD 
----

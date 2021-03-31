@@ -18,11 +18,20 @@ We have chosen SwaggerHub as a tool to document our APIs as it contributes to th
 
 ## SwaggerHub
 
+** You can start by watching our basic Tutorial Video for Swagger : **
+
+## Video Tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 SwaggerHub is an integrated API development platform that brings together all the core capabilities of the open source Swagger framework, along with additional advanced capabilities to build, document, manage, and deploy your APIs.
 
 SwaggerHub allows us to build an implementation specification, and serves as a documentation of the API we are developing. In this way, developers have clearly defined requirements of how the API endpoint they are working on needs to look — this includes request parameters, response object and error responses.
 
 Additionally, we share the API blueprint with other relevant parties, such as the Product Owner, to confirm that the data, that is part of the request and response of the API, is correct, based on the business area understanding of the wider team and any prior discovery work completed. It is a way of getting everyone from the team to work towards the same, shared goal.
+
+
 
 ## Documenting APIs
 
@@ -42,6 +51,9 @@ SwaggerHub’s online editor automatically validates the yaml file produced and 
 Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API. This is beneficial for the team as we can refer to the swagger docs to confirm that the API is functioning as specified and that the completed API matches the swagger doc specification. At the end of the project, we can continue to use SwaggerHub as documentation, giving an easy summary of the functions of the API.
 Additionally, SwaggerHub provides a way to mock the APIs developed via the tool and make requests against them. This is particularly useful when front end and back end teams are working on the same project. Often, front end work might get blocked as it has a dependency on an API. Providing a mock API and API blueprints will remove this blocker as it will give the front end developers all the information they need to proceed with their work, while back end developers can focus on developing good, reliable and resilient APIs. This is highly important as often back-end developers would be rushed to deliver something in a quicker manner, as it is blocking other project work, which may result in lower quality APIs.
 
+
+## Where to find SwaggerHub
+
 Hackney SwaggerHub is located at:
 
     https://app.swaggerhub.com/organizations/Hackney.
@@ -52,7 +64,3 @@ All the Platform APIs in development have been documented and are viewable on th
 For more detail please find visit our Hackney Training video:
 
       https://drive.google.com/drive/u/0/folders/1GXp-Pbyp-1GeqrJ1Ky6frrwoROl3FfB3
-
-You can also watch our basic Tutorial Video for Swagger :
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -5,11 +5,11 @@ title: Alerting
 
 ## Application monitoring and alerting
 
-In Hackney, we use AWS Cloudwatch to implement monitoring and alerting.
+- In Hackney, we use AWS Cloudwatch to implement monitoring and alerting.
 
-Any logs created in our APIs are recorded and accessible in AWS CloudWatch.
+- Any logs created in our APIs are recorded and accessible in AWS CloudWatch.
 
-Creation of log groups is automated via the current serverless setup.
+- Creation of log groups is automated via the current serverless setup.
 
 
 ## Metrics filters
@@ -17,11 +17,11 @@ Creation of log groups is automated via the current serverless setup.
 
 ** <u> Filter and Pattern Syntax </u> **
 
-Metric filters are a useful feature that allows you to find patterns and terms in your logs. Following the logging standards identified earlier in this document, metric filters can be created to easily identify logs related to a certain phrase or term like ‘ERROR’.
+- Metric filters are a useful feature that allows you to find patterns and terms in your logs. Following the logging standards identified earlier in this document, metric filters can be created to easily identify logs related to a certain phrase or term like ‘ERROR’.
 
-Using the filters, developers can easily narrow down the logs they see to only the ones related to any error that has occurred, hiding all other logs such as ones for successful requests.
+- Using the filters, developers can easily narrow down the logs they see to only the ones related to any error that has occurred, hiding all other logs such as ones for successful requests.
 
-CloudWatch also provides a way to create alarms based on metric filters, so we can get notified if a log with matching a certain pattern/term has occurred.
+- CloudWatch also provides a way to create alarms based on metric filters, so we can get notified if a log with matching a certain pattern/term has occurred.
 
 ** <u> Metric filters that should be created per API: </u> **
 
@@ -59,25 +59,27 @@ Can it be automated?
 
 ## AWS Canaries for front end applications
 
-Can monitor the availability of a web page
+- Can monitor the availability of a web page
 
-Alarms can be set to alert if availability of a given web page falls down
+- Alarms can be set to alert if availability of a given web page falls down
 
-Logs recorded can be used to identify performance issues associated with loading a specific item
+- Logs recorded can be used to identify performance issues associated with loading a specific item
 
-Can check for broken links
+- Can check for broken links
 
-A max number of links to follow is set up
+- A max number of links to follow is set up
 
-The canary crawls through the links and returns the first broken link identified
+- The canary crawls through the links and returns the first broken link identified
 
 
 
 ## AWS Cloudwatch Alarms
 
-We also use Cloudwatch alarms to monitor for specific events in the log streams.
- Specific metrics can be established as triggers on application logs which can fire off alerts in the form of emails or other messaging mediums.  We can create up to 5000 alarms per region per account which should give us sufficient capacity.
-It may also be possible to consolidate these alarms if we have a standard format for logs (this may also be achievable by creating composite alarms but uses up available alarms.
+- We also use Cloudwatch alarms to monitor for specific events in the log streams.
+
+- Specific metrics can be established as triggers on application logs which can fire off alerts in the form of emails or other messaging mediums.  We can create up to 5000 alarms per region per account which should give us sufficient capacity.
+
+- It may also be possible to consolidate these alarms if we have a standard format for logs (this may also be achievable by creating composite alarms but uses up available alarms.
 
 ** Request tracing **
 
@@ -87,12 +89,12 @@ AWS X-Ray is an AWS managed service that provides the functionality to debug and
 
         https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html
 
-X-Ray provides an end-to-end request view - it will show you the full trace for an API invocation, including any other components/services it invokes.
+- X-Ray provides an end-to-end request view - it will show you the full trace for an API invocation, including any other components/services it invokes.
 
-The tool is used for identifying the root cause to an issue, discovering performance bottlenecks and seeing real-time data regarding high latency requests.
+- The tool is used for identifying the root cause to an issue, discovering performance bottlenecks and seeing real-time data regarding high latency requests.
 AWS X-Ray collects logs and makes use of a Service Map to visualize the dependencies and calls to other services made in an API request.
 
-X-Ray can be used to identify API requests, currently not monitored by Canaries by comparing the user requests and those made by Canaries. This is useful to identify if any of the implemented API endpoints is currently not monitored for availability.
+- X-Ray can be used to identify API requests, currently not monitored by Canaries by comparing the user requests and those made by Canaries. This is useful to identify if any of the implemented API endpoints is currently not monitored for availability.
 
 ** Service Maps **
 
@@ -157,15 +159,15 @@ X-Ray can be enabled for Postgres to trace down to the database query level.
 
 ##   X-Ray with API Gateway
 
-X-Ray can also be enabled for API Gateway to provide tracing for calls starting at API Gateway.
+- X-Ray can also be enabled for API Gateway to provide tracing for calls starting at API Gateway.
 
-For all of our APIs, we use API Gateway to expose them for consumption.
+- For all of our APIs, we use API Gateway to expose them for consumption.
 
-X-Ray will provide a trace of requests from the moment an API is invoked at API Gateway level to all services the requests travel to.
+- X-Ray will provide a trace of requests from the moment an API is invoked at API Gateway level to all services the requests travel to.
 
-We use a custom Lambda authorizer, so enabling X-Ray at API Gateway will provide an easy way to identify if an issue has occurred at API level or during the authorization step.
+- We use a custom Lambda authorizer, so enabling X-Ray at API Gateway will provide an easy way to identify if an issue has occurred at API level or during the authorization step.
 
-The logging and tracing can be customized to only sample requests containing a certain header value and similar.
+- The logging and tracing can be customized to only sample requests containing a certain header value and similar.
 
 ** How to enable X-Ray for API Gateway: **
 
@@ -201,7 +203,7 @@ The solution collects, aggregates, and summarizes system-level metrics including
 
   **        Lambda insights cost   **
 
-  1.  Standard CloudWatch cost strategy applies
+1.  Standard CloudWatch cost strategy applies
 
 2.  It depends how many metrics are we monitoring
 
@@ -225,7 +227,7 @@ What metrics can be used to trigger alerts, eg, how many exceptions within a def
 
  ** X-ray js: **
 
-https://docs.aws.amazon.com/xray/latest/devguide/scorekeep-client.html
+            https://docs.aws.amazon.com/xray/latest/devguide/scorekeep-client.html
 
  ** Dashboard **
 
