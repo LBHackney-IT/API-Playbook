@@ -4,7 +4,7 @@ title: Contact The Hackney API Team
 ---
 ## Contact Our Technical Team
 
-** <u> For any enquiries please speak to: </u> ** 
+** <u> For any enquiries please speak to: </u> **
 
 - ** Rashmi Shetty ** [rashmi.shetty@hackney.gov.uk] - Product Owner of Platform APIs
 
@@ -20,5 +20,10 @@ title: Contact The Hackney API Team
 
 - ** Atiyyah Rawat ** [atiyyah.rawat@hackney.gov.uk]- Maintainer and Collaborator
 
+- ** Alex Demetriou ** [Alex.Demetriou@hackney.gov.uk] - Content creator
 
-  ![alt text](./doc-images/api_team_logo.jpg)
+- ** Bukky Omotoso ** [Bukky.Omotoso@hackney.gov.uk] - Content creator
+
+- ** Elena Evans ** [Elena.Evans@hackney.gov.uk] - Content creator
+
+- ** Humairaa Mulla ** [Humairaa.Mulla@hackney.gov.uk] - Content creator
