@@ -20,6 +20,8 @@ We have chosen SwaggerHub as a tool to document our APIs as it contributes to th
 
 ** You can start by watching our basic Tutorial Video for Swagger : **
 
+## Video Tutorial
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
