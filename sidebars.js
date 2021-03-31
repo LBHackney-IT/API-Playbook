@@ -19,12 +19,20 @@ module.exports = {
       },
       'naming_conventions',
       'branching_strategy',
+
       {
         'API Practices and Tools': ['linting','static_code_analysis', 'storing_secrets']
       },
       {
         'DevOps Practices': ['deployment_pipeline', 'infrastructure']
       },
+
+      {
+        type: 'category',
+        label: 'How to build an API',
+        items: ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests', 'containerisation']}]
+      },
+
     {
     'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
     },
@@ -36,11 +44,7 @@ module.exports = {
     }
   ]
   },
-  {
-    type: 'category',
-    label: 'How to build an API',
-    items: ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests', 'containerisation']}]
-  },
+
   {
     type: 'category',
     label: 'Other Useful Information',
