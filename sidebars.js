@@ -8,7 +8,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Principles',
-      items: ['tdd',],
+      items: [],
     },
 
       {
@@ -39,7 +39,7 @@ module.exports = {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
     },
     {
-    'How to build an API': ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['unit_test', 'integration_tests', 'containerisation']}
+    'How to build an API': ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests', 'containerisation']}
       ]
     },
     {
