@@ -3,14 +3,20 @@ id: static_code_analysis
 title: Static Code Analysis Tools Spike Notes
 ---
 
-The decision from team discussion: use FxCop
+The decision from team discussion:
+
+ ## Use FxCop
 
   Using ReSharper Command Line Tools (Website):
 
-    (Spike PR: https://github.com/LBHackney-IT/lbh-base-api/pull/19)
+          https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
+
+Spike PR:
+
+            https://github.com/LBHackney-IT/lbh-base-api/pull/19
 
 
-** Running locally: **
+##  Running locally
 
 This can be downloaded either as a NuGet package or directly from the Jetbrains Website.
 
@@ -19,7 +25,7 @@ Decided to try this as the description mentions it being a stand-alone cross-pla
 Outputs the results to a specified file format (.xml or .html).
 
 
-** Running in the CI pipeline: **
+## Running in the CI pipeline
 
 The `inspectcode` script/executable, returns a “command not found” error in the build pipeline.
 
@@ -43,11 +49,11 @@ To run the command line within a CI server, the server has to support windows an
 
 No explicit documentation on how to set it up in a CI pipeline.
 
-** Using FxCop (Website): **
+## Using FxCop (Website)
 
     (Spike branch: https://github.com/LBHackney-IT/lbh-base-api/tree/add-static-code-analysis-to-ci-pipeline)
 
-** Running locally: **
+** Running locally **
 
 This can be added to the project as a NuGet package.
 
@@ -58,23 +64,26 @@ Setting up the failures for specific errors should be possible by adding the rel
 
 Outputs warnings and errors after building the project in the respective code editor.
 
+
 ** Running in the CI pipeline: **
 
 Since the analyser runs when the project is built, it runs as part of the build stage of the pipeline and uses the same settings for running the analyser locally.
 
   The warnings messages could be suppressed from showing in the build pipeline by setting: `dotnet_analyzer_diagnostic.severity = none` in the .editorConfig file.
 
+  You can also add:
 
-    You can also add: <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+              <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+
 
 to the relevant project’s .csproj file.
 
     Any errors that we want the build to fail on could be set by:
-      `dotnet_diagnostic.<category or ruleId>.severity = error`
+              `dotnet_diagnostic.<category or ruleId>.severity = error`
 
 ** Pros: **
 
-** Simple to set up: **
+Simple to set up
 
 Installation of NuGet package
 
@@ -96,30 +105,31 @@ No explicit documentation on how to set it up in a CI pipeline.
 
 ** FxCop Error categories we have decided to NOT suppress: **
 
-CA1707: Identifiers should not contain underscores
+- CA1707: Identifiers should not contain underscores
 
-CA1052: Static holder types should be Static or NotInheritable
+- CA1052: Static holder types should be Static or NotInheritable
 
-CA1307: Specify StringComparison
+- CA1307: Specify StringComparison
 
-CA1822: Mark members as static
+- CA1822: Mark members as static
 
-CA1001: Types that own disposable fields should be disposable
+- CA1001: Types that own disposable fields should be disposable
 
-CA1823: Avoid unused private fields
+- CA1823: Avoid unused private fields
 
-CA1051: Do not declare visible instance fields
+- CA1051: Do not declare visible instance fields
+
 
 ** FxCop Error Categories we have decided to suppress: **
 
-CA1032: Implement standard exception constructors
+- CA1032: Implement standard exception constructors
 
-CA1062: Validate arguments of public methods
+- CA1062: Validate arguments of public methods
 
-CA1303: Do not pass literals as localized parameters
+- CA1303: Do not pass literals as localized parameters
 
 
-** Using Sonar (Website): **
+## Using Sonar (Website)
 
 ** Setting up Sonar can be done following this blog here. **
 
