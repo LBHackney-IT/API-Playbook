@@ -25,6 +25,7 @@ title: API Keys
   f. Link to step-by-step guide of how to apply/modify
 
 
+
 ** 3. New approach - Lambda authorizer **
 
   a. What is a Lambda authorizer (include AWS diagram), what is Hackney’s solution and how to use it
@@ -36,6 +37,7 @@ title: API Keys
   d. When to use it
 
   e. Link to step-by-step guide of how to apply for new APIs
+
 
 
 ** 4. Google auth (TK)  **
@@ -52,7 +54,7 @@ title: API Keys
    **  <u> Securing our APIs: </u> **
 
 
-** What do we use to secure our APIs? ** 
+** What do we use to secure our APIs? **
 
 We have now changed our approach to using a Lambda authorizer function to secure our APIs.
 
