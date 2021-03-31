@@ -3,6 +3,7 @@ id: api_standards
 title: API Standards
 ---
 
+## Standards  Criteria
 
 ** Your API will need to meet the following standards for it to be accepted into service: **
 
