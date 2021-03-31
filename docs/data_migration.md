@@ -236,5 +236,3 @@ The configuration for the source S3 bucket is done using the pipeline’s server
  - Add the extension to the database: CREATE EXTENSION IF NOT EXISTS aws_s3 CASCADE;
  - RDS needs permissions to access the S3 bucket - GetObject and ListBucket.
  - Policy created and role added then added that role to the RDS instance….(Manually at the moment - how to automate?)
-
- 
