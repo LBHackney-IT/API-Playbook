@@ -3,12 +3,12 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api'],
+      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation'],
     },
     {
       type: 'category',
       label: 'Principles',
-      items: ['tdd', 'documentation',],
+      items: ['tdd',],
     },
 
       {
@@ -22,7 +22,10 @@ module.exports = {
       'branching_strategy',
 
       {
-        'DevOps Practices': ['development', 'deployment_pipeline', 'infrastructure']
+        'API Practices and Tools': ['linting','static_code_analysis', 'storing_secrets']
+      },
+      {
+        'DevOps Practices': ['deployment_pipeline', 'infrastructure']
       },
     {
     'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
