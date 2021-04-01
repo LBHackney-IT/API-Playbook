@@ -12,13 +12,6 @@ This API playbook will help readers to understand:
  - How we support and maintain our APIs
  - Some best practices that we have adopted as standard in our development of APIs
 
-## Basic API Video Tutorial
-
-** For a better understanding of The Basic API, please watch our tutorial below: **
-
- <iframe width="560" height="315" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 ## Why a Playbook?
 Some people may wonder why we have decided to establish a playbook.  Well during our journey of digital transformation we were fortunate to work with a number of partners/agencies from whom we gained a significant amount of knowledge and learned to do things in so many different ways.  What we also discovered was that the various ways APIs were implemented across our projects meant that there was no consistency, making it a bit of a challenge to maintain.  We decided that if we had a consistent standard of implementation, it would make it easier for us to maintain services as well as to get new developers onboard.
 
