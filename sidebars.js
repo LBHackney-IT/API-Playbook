@@ -21,7 +21,7 @@ module.exports = {
       'branching_strategy',
 
       {
-        'API Practices and Tools': ['linting','static_code_analysis', 'storing_secrets']
+        'API Practices and Tools': ['linting','static_code_analysis',]
       },
       {
         'DevOps Practices': ['deployment_pipeline', 'infrastructure']
@@ -30,14 +30,14 @@ module.exports = {
       {
         type: 'category',
         label: 'How to build an API',
-        items: ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests', 'containerisation']}]
+        items: ['preferred_tech_stack', 'api_boilerplate',{'Testing': ['tdd', 'unit_test', 'integration_tests']}]
       },
 
     {
-    'Deploying your API': ['aws_lambda', 'aws_ecs', 'aws_good_practices']
+    'Deploying your API': [ 'aws_ecs',]
     },
     {
-    'Monitoring': ['centralised_logging', 'uptime_monitoring', 'security_monitoring', 'alerting']
+    'Monitoring': ['centralised_logging', 'uptime_monitoring','alerting']
     },
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
