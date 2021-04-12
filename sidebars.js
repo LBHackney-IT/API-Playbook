@@ -37,7 +37,7 @@ module.exports = {
     'Deploying your API': [ 'aws_ecs', 'lambda_best_practices']
     },
     {
-    'Monitoring': ['centralised_logging', 'uptime_monitoring','alerting']
+    'Monitoring': ['centralised_logging', 'uptime_monitoring','alerting', 'serverless_lambda']
     },
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
