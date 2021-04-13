@@ -24,5 +24,3 @@ You can find further information, explanations and examples of certain tools and
  <figure class="video-container">
   <iframe src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%"></iframe>
 </figure>
-
-![alt text](./doc-images/api_team_logo.jpg)
