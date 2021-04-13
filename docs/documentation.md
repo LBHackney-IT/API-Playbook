@@ -12,7 +12,9 @@ Opportunity to share and reach a common agreement of what the API request and re
 
 ## Purpose
 
-The documentation aids our collaboration process, as it is shared with the whole team. People, both from technical and non-technical backgrounds, can provide feedback and request changes. This can save hours of development and also ensures that every team member has an understanding of the main question — what will this API do?
+The documentation aids our collaboration process, as it is shared with the whole team.
+People, both from technical and non-technical backgrounds, can provide feedback and request changes.
+ This can save hours of development and also ensures that every team member has an understanding of the main question — what will this API do?
 
 We have chosen SwaggerHub as a tool to document our APIs as it contributes to the efficiency of our development process, by giving us a central point of reference, built collaboratively, with a defined objective for the eventual shape of the API.
 
@@ -20,12 +22,14 @@ We have chosen SwaggerHub as a tool to document our APIs as it contributes to th
 
 ** You can start by watching our basic Tutorial Video for Swagger : **
 
-## Video Tutorial
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-SwaggerHub is an integrated API development platform that brings together all the core capabilities of the open source Swagger framework, along with additional advanced capabilities to build, document, manage, and deploy your APIs.
+
+
+** SwaggerHub ** is an integrated API development platform that brings together all the core capabilities of the open source Swagger framework, along with additional advanced capabilities to build, document, manage, and deploy your APIs.
 
 SwaggerHub allows us to build an implementation specification, and serves as a documentation of the API we are developing. In this way, developers have clearly defined requirements of how the API endpoint they are working on needs to look — this includes request parameters, response object and error responses.
 
@@ -48,8 +52,16 @@ SwaggerHub’s online editor automatically validates the yaml file produced and 
 ![alt text](./doc-images/screenshot4.png)
 
 
-Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API. This is beneficial for the team as we can refer to the swagger docs to confirm that the API is functioning as specified and that the completed API matches the swagger doc specification. At the end of the project, we can continue to use SwaggerHub as documentation, giving an easy summary of the functions of the API.
-Additionally, SwaggerHub provides a way to mock the APIs developed via the tool and make requests against them. This is particularly useful when front end and back end teams are working on the same project. Often, front end work might get blocked as it has a dependency on an API. Providing a mock API and API blueprints will remove this blocker as it will give the front end developers all the information they need to proceed with their work, while back end developers can focus on developing good, reliable and resilient APIs. This is highly important as often back-end developers would be rushed to deliver something in a quicker manner, as it is blocking other project work, which may result in lower quality APIs.
+
+Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API.
+This is beneficial for the team as we can refer to the swagger docs to confirm that the API is functioning as specified and that the completed API matches the swagger doc specification.
+
+At the end of the project, we can continue to use SwaggerHub as documentation, giving an easy summary of the functions of the API.
+Additionally, SwaggerHub provides a way to mock the APIs developed via the tool and make requests against them. This is particularly useful when front end and back end teams are working on the same project. Often, front end work might get blocked as it has a dependency on an API.
+
+Providing a mock API and API blueprints will remove this blocker as it will give the front end developers all the information they need to proceed with their work, while back end developers can focus on developing good, reliable and resilient APIs.
+
+**This is highly important as often back-end developers would be rushed to deliver something in a quicker manner, as it is blocking other project work, which may result in lower quality APIs. **
 
 
 ## Where to find SwaggerHub
