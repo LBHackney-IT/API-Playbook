@@ -22,7 +22,9 @@ We have chosen SwaggerHub as a tool to document our APIs as it contributes to th
 
 ## Video Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="video-container">
+    <iframe src="https://www.youtube.com/embed/QYQNgeDuqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%"></iframe>
+</figure>
 
 
 SwaggerHub is an integrated API development platform that brings together all the core capabilities of the open source Swagger framework, along with additional advanced capabilities to build, document, manage, and deploy your APIs.

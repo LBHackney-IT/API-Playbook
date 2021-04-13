@@ -20,15 +20,16 @@ You can find further information, explanations and examples of certain tools and
 
 ** For a better understanding on how to use The Base API, please watch our tutorial below: **
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <figure class="video-container">
+  <iframe src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%"></iframe>
+</figure>
 
 ## Clean Architecture
 
  ** You can also have a look at our video about Clean Architecture and our API Folder Structure: **
-
- <iframe width="560" height="315" src="https://www.youtube.com/embed/zhGG9jt4iBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+  <figure class="video-container">
+    <iframe src="https://www.youtube.com/embed/zhGG9jt4iBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%"></iframe>
+  </figure>
 
 ## Contact Our Technical Team
 
