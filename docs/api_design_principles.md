@@ -9,11 +9,11 @@ Comparing SOA web service interfacing style of SOAP vs. REST, the former tend to
 
 ## Purpose
 
-We prefer REST-based APIs with JSON payloads.
-An important principle for API design and usage is Postel’s Law, aka The Robustness Principle (see also RFC 1122):
+We prefer ** REST-based APIs with JSON ** payloads.
+An important principle for API design and usage is ** Postel’s Law, aka The Robustness Principle **  (see also RFC 1122):
 
 Be liberal in what you accept, be conservative in what you send
-Readings: Some interesting reads on the RESTful API design style and service architecture:
+Readings: Some interesting reads on the ** RESTful API ** design style and service architecture:
 
 1. Book: Irresistable APIs: Designing web APIs that developers will love
 
