@@ -33,9 +33,8 @@ module.exports = {
       {
         type: 'category',
         label: 'How to build an API',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', {'Testing': ['tdd', 'unit_test', 'integration_tests']}]
+        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', {'Testing': ['tdd', 'unit_test', 'integration_tests']},'serverless_lambda',]
       },
-       'serverless_lambda',
 
     {
     'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']
@@ -46,13 +45,20 @@ module.exports = {
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
     }
+
   ]
   },
 
   {
     type: 'category',
     label: 'Other Useful Information',
-    items: ['rds_access', 'ec2_access','postgresql', 'data_migration', 'contact_us']
-  }
+    items: ['rds_access', 'ec2_access','postgresql', 'data_migration']
+  },
+  {
+    type: 'category',
+    label: 'Contact Us',
+    items: ['contact_us'],
+  },
+
 ]
 };
