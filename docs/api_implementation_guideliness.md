@@ -37,7 +37,7 @@ They are based on the excellent set created by Zalando.
 
 1. Conventions
 
-The requirement level keywords :  ** "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", **  and ** "OPTIONAL" ** used in this document (case insensitive) are to be interpreted as described in RFC2119.
+The requirement level keywords :  ** "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", **  and ** "OPTIONAL" ** used in this document (case insensitive) are to be interpreted as described in ** RFC2119 **.
 
 The titles are marked with the corresponding labels.
 
