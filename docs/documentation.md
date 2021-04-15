@@ -68,7 +68,7 @@ Providing a mock API and API blueprints will remove this blocker as it will give
 
 Hackney SwaggerHub is located at:
 
-    https://app.swaggerhub.com/organizations/Hackney.
+    https://app.swaggerhub.com/organizations/Hackney
 
 All the Platform APIs in development have been documented and are viewable on the SwaggerHub.
 
