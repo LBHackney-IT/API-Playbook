@@ -40,7 +40,7 @@ module.exports = {
     'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']
     },
     {
-    'Monitoring': ['centralised_logging', 'uptime_monitoring','alerting', 'application_logging']
+    'Monitoring': ['alerting', 'application_logging', 'centralised_logging', 'uptime_monitoring']
     },
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
@@ -52,7 +52,7 @@ module.exports = {
   {
     type: 'category',
     label: 'Other Useful Information',
-    items: ['rds_access', 'ec2_access','postgresql', 'data_migration']
+    items: ['rds_access', 'ec2_access','postgresql', {'Data Migration': ['data_migration','pipeline_implementation']}]
   },
   {
     type: 'category',
