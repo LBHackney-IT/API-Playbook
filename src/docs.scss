@@ -48,3 +48,19 @@
       fill: var(--ifm-alert-color);
     }
   }
+  .video-container {
+    height: 0;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
