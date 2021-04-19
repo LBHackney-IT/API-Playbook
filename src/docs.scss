@@ -7,44 +7,44 @@
 
 /* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #00664f;
-    --ifm-color-primary-dark: #005c47;
-    --ifm-color-primary-darker: #005743;
-    --ifm-color-primary-darkest: #004737;
-    --ifm-color-primary-light: #007057;
-    --ifm-color-primary-lighter: #00755b;
-    --ifm-color-primary-lightest: #008567;
-  
-    --ifm-code-font-size: 95%;
-  
-    --ifm-font-family-base: "Open Sans", sans-serif;
+  --ifm-color-primary: #00664f;
+  --ifm-color-primary-dark: #005c47;
+  --ifm-color-primary-darker: #005743;
+  --ifm-color-primary-darkest: #004737;
+  --ifm-color-primary-light: #007057;
+  --ifm-color-primary-lighter: #00755b;
+  --ifm-color-primary-lightest: #008567;
+
+  --ifm-code-font-size: 100%;
+
+  --ifm-font-family-base: "Open Sans", sans-serif;
+}
+
+html[data-theme="dark"] {
+  --ifm-color-primary: #a4d65e;
+  --ifm-color-primary-dark: #96d045;
+  --ifm-color-primary-darker: #8fcd39;
+  --ifm-color-primary-darkest: #76ac2c;
+  --ifm-color-primary-light: #b2dc77;
+  --ifm-color-primary-lighter: #b9df83;
+  --ifm-color-primary-lightest: #cee9a8;
+}
+
+html[data-theme="dark"] .navbar__logo {
+  filter: grayscale(1) brightness(20);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.alert--warning {
+  --ifm-alert-color: var(--ifm-color-gray-900);
+
+  .admonition-icon svg {
+    fill: var(--ifm-alert-color);
   }
-  
-  html[data-theme="dark"] {
-    --ifm-color-primary: #a4d65e;
-    --ifm-color-primary-dark: #96d045;
-    --ifm-color-primary-darker: #8fcd39;
-    --ifm-color-primary-darkest: #76ac2c;
-    --ifm-color-primary-light: #b2dc77;
-    --ifm-color-primary-lighter: #b9df83;
-    --ifm-color-primary-lightest: #cee9a8;
-  }
-  
-  html[data-theme="dark"] .navbar__logo {
-    filter: grayscale(1) brightness(20);
-  }
-  
-  .docusaurus-highlight-code-line {
-    background-color: rgb(72, 77, 91);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
-  }
-  
-  .alert--warning {
-    --ifm-alert-color: var(--ifm-color-gray-900);
-  
-    .admonition-icon svg {
-      fill: var(--ifm-alert-color);
-    }
-  }
+}
