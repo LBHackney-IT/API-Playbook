@@ -33,9 +33,11 @@ module.exports = {
       {
         type: 'category',
         label: 'How to build an API',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', {'Testing': ['tdd', 'unit_test', 'integration_tests']},'serverless_lambda',]
+        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda',]
       },
-
+     {
+      'Testing': ['tdd', 'unit_test', 'integration_tests']
+    },
     {
     'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']
     },
