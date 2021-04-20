@@ -12,6 +12,13 @@ As we are creating and deploying multiple APIs in AWS It’s necessary to be abl
 
 We can monitor the uptime performance of individual endpoints and APIs using AWS Canaries.
 
+## Video Tutorial
+
+** You can start by having a look at our tutorial video: **
+
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/bYMdvCz0QUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## AWS Canaries
 

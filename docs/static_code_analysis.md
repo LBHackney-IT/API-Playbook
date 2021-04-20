@@ -1,6 +1,6 @@
 ---
 id: static_code_analysis
-title: Static Code Analysis Tools Spike Notes
+title: Static Code Analysis 
 ---
 
 The decision from team discussion:

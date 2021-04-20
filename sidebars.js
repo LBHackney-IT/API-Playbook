@@ -20,7 +20,7 @@ module.exports = {
       label: 'Development Process',
       items: [
       {
-        'Designing your API': ['api_design_principles', 'api_implementation_guidelines','naming_conventions']
+        'Designing your API': ['api_design_principles', 'api_implementation_guidelines', 'error_codes','naming_conventions']
       },
 
       {
@@ -40,12 +40,11 @@ module.exports = {
     'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']
     },
     {
-    'Monitoring': ['alerting', 'application_logging', 'centralised_logging', 'uptime_monitoring']
+    'Monitoring': ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', {'Request Tracing': ['x_ray']}]
     },
     {
     'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
-    }
-
+    },
   ]
   },
 
