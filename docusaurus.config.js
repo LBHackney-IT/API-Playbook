@@ -3,7 +3,7 @@ module.exports = {
   tagline:
     "A guide on Hackney's development practices, and how to follow them",
   url: "https://lbhackney-it.github.io/API-Playbook",
-  baseUrl: "/API-Playbook/",
+  baseUrl: "/home/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
