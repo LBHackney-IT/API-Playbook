@@ -6,7 +6,7 @@ title: Static Code Analysis
 
  ## Use FxCop
 
-  Using ReSharper Command Line Tools (Website):
+Using ReSharper Command Line Tools (Website):
 
           https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
 
@@ -33,7 +33,6 @@ The `inspectcode` script/executable, returns a “command not found” error in 
 The command-line tools are not dependent on a specific IDE.
 
 We could potentially have used this tool for both static-code analysis and linting. (So that we use only one tool)
-
 
 ** Cons: **
 
