@@ -1,6 +1,6 @@
 ---
 id: static_code_analysis
-title: Static Code Analysis 
+title: Static Code Analysis
 ---
 
 The decision from team discussion:
@@ -51,7 +51,7 @@ No explicit documentation on how to set it up in a CI pipeline.
 
 ## Using FxCop (Website)
 
-    (Spike branch: https://github.com/LBHackney-IT/lbh-base-api/tree/add-static-code-analysis-to-ci-pipeline)
+    (Evaluation : https://github.com/LBHackney-IT/lbh-base-api/tree/add-static-code-analysis-to-ci-pipeline)
 
 ** Running locally **
 
@@ -99,9 +99,7 @@ Doesn’t seem to be an auto-correct function but this wasn’t explored much fo
 
 No explicit documentation on how to set it up in a CI pipeline.
 
-
-
-** (At the time of the Spike) FxCop warnings found in the Base API and Test Project: **
+** FxCop warnings found in the Base API and Test Project: **
 
 ** FxCop Error categories we have decided to NOT suppress: **
 
