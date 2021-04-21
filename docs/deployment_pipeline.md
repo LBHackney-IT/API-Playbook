@@ -11,7 +11,9 @@ A Deployment pipeline is the process of taking code from a version control repo,
 
 ** For a better understanding of our Deployment Pipeline, please watch our short video tutorial: **
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X68e_wdII2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/X68e_wdII2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## CI/CD
 

@@ -21,8 +21,8 @@ You can find further information, explanations and examples of certain tools and
 
 ** For a better understanding on how to use The Base API, please watch our tutorial below: **
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ![alt text](./doc-images/api_team_logo.jpg)
