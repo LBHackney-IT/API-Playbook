@@ -3,7 +3,7 @@ id: static_code_analysis
 title: Static Code Analysis
 ---
 
-The decision from team discussion:
+
 
  ## Use FxCop
 
@@ -14,7 +14,6 @@ Using ReSharper Command Line Tools (Website):
 Spike PR:
 
             https://github.com/LBHackney-IT/lbh-base-api/pull/19
-
 
 ##  Running locally
 
@@ -63,7 +62,6 @@ Setting up the failures for specific errors should be possible by adding the rel
 
 Outputs warnings and errors after building the project in the respective code editor.
 
-
 ** Running in the CI pipeline: **
 
 Since the analyser runs when the project is built, it runs as part of the build stage of the pipeline and uses the same settings for running the analyser locally.
@@ -73,7 +71,6 @@ Since the analyser runs when the project is built, it runs as part of the build 
   You can also add:
 
               <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
-
 
 to the relevant project’s .csproj file.
 
@@ -98,7 +95,8 @@ Doesn’t seem to be an auto-correct function but this wasn’t explored much fo
 
 No explicit documentation on how to set it up in a CI pipeline.
 
-** FxCop warnings found in the Base API and Test Project: **
+** (At the time of the Spike) FxCop warnings found in the Base API and Test Project: **
+
 
 ** FxCop Error categories we have decided to NOT suppress: **
 
