@@ -7,7 +7,7 @@ title: Lambda Authoriser
 
 **  AWS documentation: **
 
-            https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
+https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
 
 ** Custom implementation of a Lambda authorizer: **
 
@@ -15,7 +15,7 @@ title: Lambda Authoriser
 
   Repository:
 
-            https://github.com/LBHackney-IT/api-auth-token-generator
+https://github.com/LBHackney-IT/api-auth-token-generator
 
 It allows for granular access control per API endpoint per environment. To gain access to a given API endpoint, the consuming service will need to supply an authorization token as part of the request, passed in the HTTP header “Authorisation”.
 
@@ -34,7 +34,7 @@ When developing APIs for internal use, the most convenient way to authenticate u
 
 Sample implementation with serverless and .NET Core can be found here:
 
-        https://github.com/LBHackney-IT/comino-printing  
+https://github.com/LBHackney-IT/comino-printing  
 
 In the above solution, each Lambda function that is deployed to API gateway has the authorizer set to the custom API authorizer.
 

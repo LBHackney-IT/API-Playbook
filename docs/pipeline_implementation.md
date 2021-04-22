@@ -30,7 +30,7 @@ The configuration for the source S3 bucket is done using the pipeline’s server
 
  A template repository has been created for the data pipeline code implementation:
 
-            https://github.com/LBHackney-IT/s3-to-postgres-data-pipeline
+https://github.com/LBHackney-IT/s3-to-postgres-data-pipeline
 
  1. Create a repository for your pipeline by using the above template
  2. Update the code by replacing the names of the existing pipeline to the name of your project’s pipeline

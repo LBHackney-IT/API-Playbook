@@ -13,9 +13,9 @@ There are APIs, developed before we adopted the serverless approach, which use E
 
 Fargate is an AWS service that works with AWS ECS and AWS Kubernetes. It is a severless way to manage containers, without the need to manage and provision servers.
 
-More information:
+** More information: **
 
-            https://aws.amazon.com/fargate/
+https://aws.amazon.com/fargate/
 
 ** When to use Fargate? **
 
@@ -29,9 +29,9 @@ Lambda has the following request/response payload limitations:
 
 6 MB (synchronous) / 256 KB (asynchronous)
 
-More details here:
+** More details here: **
 
-            https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html
+https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html
 
 
 In certain scenarios, an API might be required to take as an input a large object (e.g. a file) or need to return a large object.
@@ -55,7 +55,7 @@ Lambda has the limitation of a memory range from 128 to 3008 MB.
 
 This means that if any large file needs to be stored at run time to be accessed later on in the function, Lambda might not be the best a possible solution., in which case Fargate should be used, as we have  Fargate allows us control over the memory allocation for containers.
 
-## How to create an app / API with ECS/Fargate hosting setup? 
+## How to create an app / API with ECS/Fargate hosting setup?
 
 It is recommended that you use Terraform to provision AWS resources. We already have produced a terraform template that generates all necessary resources for an API/app that is to be hosted using ECS with Fargate.
 
@@ -88,4 +88,4 @@ c. Network load-balancer listener
 
 ** Step-by-step how to use guide for the terraform template: **
 
-        https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy

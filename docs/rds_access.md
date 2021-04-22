@@ -11,16 +11,16 @@ The instructions will help you connect to an AWS RDS instance without the need f
 
 1. The aws cli installed - guide:
 
-        https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 
 2. The aws session manager plugin installed - guide:
 
-        https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
+https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
 
 
  3.An ssh client installed (don’t think it comes as standard in Windows) - guide:
 
-        https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
+https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
 
 4. Your Google account be given the relevant permissions to the AWS account and the EC2 instance (jumpbox)
 5. The instance ID of the jumpbox
@@ -44,13 +44,13 @@ d. The database credentials for the RDS instance you want to connect to
 Ensure that you have up to date AWS credentials for the account you want to access.
 There are multiple ways to do this:
 
-        https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 ** Here we will describe one of them: **
 
 1. Go to :
 
-        https://hackney.awsapps.com/start#/
+https://hackney.awsapps.com/start#/
 
 and log in using your Google account credentials
 

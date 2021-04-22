@@ -9,11 +9,11 @@ The decision from team discussion:
 
   Using ReSharper Command Line Tools (Website):
 
-          https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
+https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
 
-Spike PR:
+** Spike PR: **
 
-            https://github.com/LBHackney-IT/lbh-base-api/pull/19
+https://github.com/LBHackney-IT/lbh-base-api/pull/19
 
 
 ##  Running locally
@@ -42,8 +42,9 @@ The command-line tools do not seem to work well on macOS/Linux.
 
 Related Issue discussion:
 
-    https://youtrack.jetbrains.com/issue/RSRP-466029
-    https://youtrack.jetbrains.com/issue/RSRP-475696
+https://youtrack.jetbrains.com/issue/RSRP-466029
+
+https://youtrack.jetbrains.com/issue/RSRP-475696
 
 To run the command line within a CI server, the server has to support windows and the Host OS of the container must be windows.
 

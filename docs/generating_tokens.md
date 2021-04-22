@@ -37,13 +37,13 @@ title: Generating Tokens
   AWS documentation:
 
 
-          https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
+https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html
 
 ## Custom implementation of a Lambda authorizer
 
 For a Lambda authorizer, we use a  custom Lambda function that has been developed in-house. Repository:
 
-              https://github.com/LBHackney-IT/api-auth-token-generator
+https://github.com/LBHackney-IT/api-auth-token-generator
 
 It allows for granular access control per API endpoint per environment. To gain access to a given API endpoint, the consuming service will need to supply an authorization token as part of the request, passed in the HTTP header “Authorisation”.
 
@@ -67,7 +67,7 @@ Each time a consumer makes an API request and supplies the JWT auth token, our c
 
 Lambda authorizer documentation:
 
-            https://docs.google.com/document/d/1mpTY-sfYwR2brIF_8KjxiYzW6zgkjbv4Pi-9Y5LRlBA/edit#
+https://docs.google.com/document/d/1mpTY-sfYwR2brIF_8KjxiYzW6zgkjbv4Pi-9Y5LRlBA/edit#
 
 ## When to use?
 
@@ -83,7 +83,7 @@ In addition to the custom build lambda authorizer mentioned above, we have also 
 When developing APIs for internal use, the most convenient way to authenticate users is to use Google SSO. Once the user/client has been authenticated, authorization can be handled at the API level to ensure the user/client has access to the requested resource.
 Sample implementation with serverless and .NET Core can be found here:
 
-              https://github.com/LBHackney-IT/comino-printing
+https://github.com/LBHackney-IT/comino-printing
 In the above solution, each Lambda function that is deployed to API gateway has the authorizer set to the custom API authorizer.
 
 Each time a request is made to one of the end points in question, the authorizer will take the provided JWT token and check what Google Groups the client is in. If the client is authenticated and is in one of the allowed groups, the request is authorized. Otherwise access is denied. In both cases the standard AWS IAM policy statement is returned indicating whether the request was authorized or not, and then depending on the result either the requested Lambda resource is called or the client gets an unauthorized response.
@@ -96,7 +96,7 @@ Some of our APIs still use API keys to manage access to the APIs. This was our i
 
 AWS documentation on API keys and Usage plans:
 
-        https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
 
 ##  What is an API key?
 
@@ -132,7 +132,7 @@ Throttling can be made more granular by enabling method throttling for a stage, 
 
 Guide describing how to enable and disable API key requirement:
 
-                https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
+https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
 
 ** How are API keys added to our Lambda based APIs? **
 
@@ -140,8 +140,8 @@ For any API, where we use Lambda as our hosting option, the configuration to use
 
 ![alt text](./doc-images/api_keys.png)
 
-Ref:
+** Ref: ** 
 
-              https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
+https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
 
 For APIs that use EC2/Fargate, we create and add API keys via Terraform.

@@ -44,15 +44,15 @@ title: Linting
 
 - editorconfig files:
 
-          https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019
+https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019
 
 - dotnet format project site:
 
-          https://github.com/dotnet/format
+https://github.com/dotnet/format
 
 - How to include in CI:
 
-          https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.html  
+https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.html  
 
 
 ** Stylecop.analysers: **
@@ -60,7 +60,7 @@ title: Linting
 ## Project site
 
 
-                https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 
 
 ** Need to make a .ruleset file + stylecop.json to implement rules **
@@ -114,13 +114,16 @@ As an alternative to the paid version, there is a free command line tool but Iâ€
 - .editorconfig + dotnet format
 
 - editorconfig files:
-    https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019
+
+https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019
 
 - dotnet format project site:
-    https://github.com/dotnet/format
+
+https://github.com/dotnet/format
 
 - How to include in CI:
-      https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.htm
+
+https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.htm
 
 ** How to: **
 

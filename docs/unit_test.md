@@ -10,7 +10,7 @@ In the tests, we can then just pass in a mock implementation of this interface i
 
 There is some good advice for mocking and writing unit tests here:
 
-          https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
 
 ## Setting up and using mocks
 
@@ -32,4 +32,4 @@ might look like..
 
 These examples are just a couple of common use cases for using Moq, check out the documentation link below for more examples and use cases:
 
-        https://github.com/Moq/moq4/wiki/Quickstart
+https://github.com/Moq/moq4/wiki/Quickstart
