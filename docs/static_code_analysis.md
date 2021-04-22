@@ -7,7 +7,7 @@ title: Static Code Analysis
 
  ## Use FxCop
 
-  Using ReSharper Command Line Tools (Website):
+Using ReSharper Command Line Tools (Website):
 
           https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
 
@@ -34,7 +34,6 @@ The command-line tools are not dependent on a specific IDE.
 
 We could potentially have used this tool for both static-code analysis and linting. (So that we use only one tool)
 
-
 ** Cons: **
 
 The command-line tools do not seem to work well on macOS/Linux.
@@ -50,7 +49,7 @@ No explicit documentation on how to set it up in a CI pipeline.
 
 ## Using FxCop (Website)
 
-    (Spike branch: https://github.com/LBHackney-IT/lbh-base-api/tree/add-static-code-analysis-to-ci-pipeline)
+    (Evaluation : https://github.com/LBHackney-IT/lbh-base-api/tree/add-static-code-analysis-to-ci-pipeline)
 
 ** Running locally **
 
@@ -96,8 +95,8 @@ Doesn’t seem to be an auto-correct function but this wasn’t explored much fo
 
 No explicit documentation on how to set it up in a CI pipeline.
 
-
 ** (At the time of the Spike) FxCop warnings found in the Base API and Test Project: **
+
 
 ** FxCop Error categories we have decided to NOT suppress: **
 
