@@ -57,9 +57,13 @@ module.exports = {
   },
   {
     type: 'category',
+    label: 'End to End Training',
+    items: ['first_end_point'],
+  },
+  {
+    type: 'category',
     label: 'Contact Us',
     items: ['contact_us'],
   },
-
 ]
 };
