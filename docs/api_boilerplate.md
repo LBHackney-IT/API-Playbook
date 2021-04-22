@@ -14,7 +14,7 @@ You can find further information, explanations and examples of certain tools and
 
 ## Our GitHub Repo
 
-        https://github.com/LBHackney-IT/lbh-base-api
+https://github.com/LBHackney-IT/lbh-base-api
 
 
 ## Base API Video Tutorial

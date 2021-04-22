@@ -65,7 +65,7 @@ Hot-fixes applied should be merged directly to master as this triggers separate 
 
 ## Trunk Based Development  
 
-    (https://trunkbaseddevelopment.com/) **
+(https://trunkbaseddevelopment.com/) **
 
 Trunk based development is the most common branching strategy used for a microservice architecture. This is a fast workflow with minimal merging.
 Essentially in this model, master is the only branch which is maintained over time and other branches are considered transient and short lived.

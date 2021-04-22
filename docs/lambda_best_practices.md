@@ -38,7 +38,7 @@ We use the Serverless service to deploy our Lambda functions to AWS.  Serverless
 -Ensure that Serverless is able to find any required secrets stored in Systems Manager.
 -A good example of a Serverless configuration file can be found in our BaseAPI here:
 
-                  https://github.com/LBHackney-IT/lbh-base-api/blob/master/BaseApi/serverless.yml
+https://github.com/LBHackney-IT/lbh-base-api/blob/master/BaseApi/serverless.yml
 
 ** Running your Lambda locally vs Running in the cloud (AWS). **
 
@@ -56,10 +56,10 @@ BaseApi’s serverless configuration includes the basic setup for policies requi
 
 In some cases it’s useful to have a bit more insight on how the Lambda is performing. In that case services like X-Ray can be implemented. They require some additional configuration to the application, but are generally relatively easy to implement at any point. More about X-Ray here:
 
-                https://lbhackney-it.github.io/API-Playbook/alerting#more-on-what-x-ray-is
+https://lbhackney-it.github.io/API-Playbook/alerting#more-on-what-x-ray-is
 
 ** Alerts **
 
 For more details on logging and alerts in general, please see below:
 
-               https://lbhackney-it.github.io/API-Playbook/alerting
+https://lbhackney-it.github.io/API-Playbook/alerting

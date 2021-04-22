@@ -43,4 +43,4 @@ The titles are marked with the corresponding labels.
 
 For more information, please check our API Guidelines GitHub Repo:
 
-          https://github.com/LBHackney-IT/API-Playbook-v2-beta/tree/master/api-guidelines
+https://github.com/LBHackney-IT/API-Playbook-v2-beta/tree/master/api-guidelines

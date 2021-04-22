@@ -66,7 +66,7 @@ Some of our APIs still use API keys to manage access to the APIs. This was our i
 
 AWS documentation on API keys and Usage plans:
 
-            https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
 
 
 ## What is an API key?
@@ -105,7 +105,7 @@ Throttling can be made more granular by enabling method throttling for a stage, 
 
 Guide describing how to enable and disable API key requirement:
 
-        https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
+https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
 
 
 ** How are API keys added to our Lambda based APIs?  **
@@ -116,8 +116,8 @@ For any API, where we use Lambda as our hosting option, the configuration to use
 ![alt text](./doc-images/api_keys.png)
 
 
-Ref:
+** Ref: **
 
-        https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
+https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
 
 For APIs that use EC2/Fargate, we create and add API keys via Terraform.

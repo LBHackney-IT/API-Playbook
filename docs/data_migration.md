@@ -5,7 +5,7 @@ title: Setting Up DMS
 
 ## Data migration using AWS DMS
 
-## What is AWS DMS? ## 
+## What is AWS DMS? ##
 
 AWS Data Migration Service (DMS) is a service that allows us to migrate data between a source (in our case, on-premises database) and a target (in our case, Postgres database hosted in AWS).
 
@@ -79,11 +79,11 @@ AWS Data Migration Service (DMS) is a service that allows us to migrate data bet
 
  DMS with SQL CDC
 
-        https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit
+https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit
 
 DMS with MS Replication
 
-        https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing
+https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing
 
 AWS DMS set up via Terraform
 
@@ -93,7 +93,7 @@ Both DMS and Postgres can be created via Terraform.
 
 Template repository and example usage:
 
-        https://github.com/LBHackney-IT/aws-dms-terraform
+https://github.com/LBHackney-IT/aws-dms-terraform
 
 
 ![alt text](./doc-images/data_migration.png)

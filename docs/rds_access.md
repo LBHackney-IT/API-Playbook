@@ -43,6 +43,7 @@ d. The database credentials for the RDS instance you want to connect to
 
 Ensure that you have up to date AWS credentials for the account you want to access.
 There are multiple ways to do this:
+
 https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 
 ** Here we will describe one of them: **

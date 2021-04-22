@@ -45,7 +45,7 @@ Accessing the dashboard for a Canary in CloudWatch lets you view the status of t
 
 - In the aws console go to, cloud watch then click on ** canaries ** .
 
-          https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Feu-west-2.console.aws.amazon.com%2Fcloudwatch%2Fhome%3Fregion%3Deu-west-2%26state%3DhashArgs%2523synthetics%253Acanary%252Flist%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fcloudwatch&forceMobileApp=0&code_challenge=afPX8AredTuJ4RR-8tmbbYoDccc2YpaukmzbN5Up2z4&code_challenge_method=SHA-256
+https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Feu-west-2.console.aws.amazon.com%2Fcloudwatch%2Fhome%3Fregion%3Deu-west-2%26state%3DhashArgs%2523synthetics%253Acanary%252Flist%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fcloudwatch&forceMobileApp=0&code_challenge=afPX8AredTuJ4RR-8tmbbYoDccc2YpaukmzbN5Up2z4&code_challenge_method=SHA-256
 
 - Click on ** "Create Canary" ** , choose ** "Use a blueprint" ** and  ** "Heartbeat monitoring"** .
 
@@ -58,4 +58,4 @@ Accessing the dashboard for a Canary in CloudWatch lets you view the status of t
 
 For more information, check out the aws documentation below:
 
-              https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html
