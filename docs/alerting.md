@@ -51,7 +51,7 @@ d. he current creation process for a canary is manual
 
 ** How to set up a canary : **
 
-        https://github.com/LBHackney-IT/lbh-base-api/wiki/Setting-up-Canaries
+https://github.com/LBHackney-IT/lbh-base-api/wiki/Setting-up-Canaries
 
 Can it be automated?
 
@@ -87,7 +87,7 @@ AWS X-Ray is an AWS managed service that provides the functionality to debug and
 
 ## More on what X-Ray is
 
-        https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html
+https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html
 
 - X-Ray provides an end-to-end request view - it will show you the full trace for an API invocation, including any other components/services it invokes.
 
@@ -137,14 +137,14 @@ Serverless can be used to automatically enable X-Ray on our APIs.
 
 How to enable X-Ray tracing:
 
-      https://www.serverless.com/framework/docs/providers/aws/guide/functions/#aws-x-ray-tracing/
+https://www.serverless.com/framework/docs/providers/aws/guide/functions/#aws-x-ray-tracing/
 
 This will enable it within Lambda and grant it the necessary IAM permissions
 
 X-Ray needs additional C# configuration to capture metadata and trace downstream calls
 Enable C# tracing when using AWS Lambda
 
-      https://docs.aws.amazon.com/lambda/latest/dg/csharp-tracing.html
+https://docs.aws.amazon.com/lambda/latest/dg/csharp-tracing.html
 
 ##    X-Ray with Postgres
 
@@ -153,7 +153,7 @@ X-Ray can be enabled for Postgres to trace down to the database query level.
 
 **       How to enable X-ray for database: **
 
-            https://net-immersionday.workshop.aws/6-using-x-ray-in-dotnet-application/8-entity-framework-tracing.html
+https://net-immersionday.workshop.aws/6-using-x-ray-in-dotnet-application/8-entity-framework-tracing.html
 
 
 
@@ -171,7 +171,7 @@ X-Ray can be enabled for Postgres to trace down to the database query level.
 
 ** How to enable X-Ray for API Gateway: **
 
-            https://docs.aws.amazon.com/xray/latest/devguide/xray-services-apigateway.html
+https://docs.aws.amazon.com/xray/latest/devguide/xray-services-apigateway.html
 
   **        X-Ray cost  **
 
@@ -198,7 +198,7 @@ The solution collects, aggregates, and summarizes system-level metrics including
 
 **      How to enable Lambda insights **
 
-            https://docs.aws.amazon.com/lambda/latest/dg/monitoring-insights.html
+https://docs.aws.amazon.com/lambda/latest/dg/monitoring-insights.html
 
 
   **        Lambda insights cost   **
@@ -223,11 +223,11 @@ What metrics can be used to trigger alerts, eg, how many exceptions within a def
 
  How can we ship front end logs back to a central logging repository?
 
-           https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-configuration.html
+https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-configuration.html
 
  ** X-ray js: **
 
-            https://docs.aws.amazon.com/xray/latest/devguide/scorekeep-client.html
+https://docs.aws.amazon.com/xray/latest/devguide/scorekeep-client.html
 
  ** Dashboard **
 
@@ -238,4 +238,4 @@ We want to be able to be proactive in responding to alerts/issues.
 
 Thoughts/Ideas regarding monitoring and alerts:
 
-           https://ideaflip.com/b/uunp6r5hrxar/
+https://ideaflip.com/b/uunp6r5hrxar/
