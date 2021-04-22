@@ -3,18 +3,17 @@ id: static_code_analysis
 title: Static Code Analysis
 ---
 
-The decision from team discussion:
+
 
  ## Use FxCop
 
-  Using ReSharper Command Line Tools (Website):
+Using ReSharper Command Line Tools (Website):
 
 https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
 
 ** Spike PR: **
 
 https://github.com/LBHackney-IT/lbh-base-api/pull/19
-
 
 ##  Running locally
 
@@ -34,7 +33,6 @@ The `inspectcode` script/executable, returns a “command not found” error in 
 The command-line tools are not dependent on a specific IDE.
 
 We could potentially have used this tool for both static-code analysis and linting. (So that we use only one tool)
-
 
 ** Cons: **
 
@@ -65,7 +63,6 @@ Setting up the failures for specific errors should be possible by adding the rel
 
 Outputs warnings and errors after building the project in the respective code editor.
 
-
 ** Running in the CI pipeline: **
 
 Since the analyser runs when the project is built, it runs as part of the build stage of the pipeline and uses the same settings for running the analyser locally.
@@ -75,7 +72,6 @@ Since the analyser runs when the project is built, it runs as part of the build 
   You can also add:
 
               <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
-
 
 to the relevant project’s .csproj file.
 
@@ -100,7 +96,8 @@ Doesn’t seem to be an auto-correct function but this wasn’t explored much fo
 
 No explicit documentation on how to set it up in a CI pipeline.
 
-** FxCop warnings found in the Base API and Test Project: **
+** (At the time of the Spike) FxCop warnings found in the Base API and Test Project: **
+
 
 ** FxCop Error categories we have decided to NOT suppress: **
 
@@ -126,36 +123,3 @@ No explicit documentation on how to set it up in a CI pipeline.
 - CA1062: Validate arguments of public methods
 
 - CA1303: Do not pass literals as localized parameters
-
-
-## Using Sonar (Website)
-
-** Setting up Sonar can be done following this blog here. **
-
-
-This was explored before this spike, so not much work went into trying it for this spike.
-
-From the previous attempt by the HackIT devs, it seems this was relatively straightforward to set up but required setting it up via the UI.
-There is also a Circeci Orb for Sonar.
-
-
-** Why was this not explored much for this spike? **
-
-FxCop was easier and quicker to setup
-
-It was mentioned that when Sonar was set up, it was reporting the code to be fine, even though there was a deliberate error in code to test it.
-
-
-** Pros (from documentation and discussion): **
-
-Has it’s own Circleci orb
-
-Has documentation on how to set it up in a CI pipeline.
-
-The platform has a free & open source edition.
-
-
-** Cons: **
-May require to set up via their platform if using the NuGet package
-
-The platform has other editions, so features may be limited if using the free & open source edition.
