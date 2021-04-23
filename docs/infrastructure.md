@@ -26,8 +26,10 @@ https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/
 
 ##  Video Tutorial
 ** For a better understanding, you can watch our video on Terraform **
-TBC
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ue2OGXFmoYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<figure class="video-container">
+<iframe width="100" src="https://www.youtube.com/embed/sGbjWgSTpnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 We use Terraform as our infrastructure-as-code tool - it is provider agnostic and makes use of HashiCorp Configuration Language (HCL).
 
