@@ -24,25 +24,7 @@ At Hackney, we use the following Standardised Error messages for our APIs:
 
 Basic Errors
  
-404- Not Found - If an item(requested resource) was not found
-{
-	“devErrorMessages”: [“debug info or stack trace”],
-	“userErrorMessage”: “The item you search for was not found”
-}
- 
- 
-400 - Bad request : When the client sent an invalid request for eg : missing required header body or parameter
-{
-	“DevErrorMessages”: [“validation errors”],
-	“UserErrorMessage”: “Your item could not be created for the following  
-       reasons...”
-}
- 
-500 - Internal Server Error - Generic error occurred
-{
-	“DevErrorMessage”: “debug info or stack trace”,
-	“UserErrorMessage”: “The item you search for was not found”
-}
+![alt text](./doc-images/error_messages.PNG)
 
 
 

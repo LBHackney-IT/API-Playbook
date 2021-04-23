@@ -211,10 +211,3 @@ Used for provisioning all other AWS resources, apart from the Lambda related res
 
 Terraform Hackney Guide - Note: This will be evolving from its current state as currently the Cloud Deployment team are producing more Terraform templates.
 
-
-
-** Still to do: **
-
-Define and implement;
-
-DevSecOps practices;

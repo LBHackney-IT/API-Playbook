@@ -5,61 +5,6 @@ title: API Keys
 
 ## Securing our APIs
 
-** What to cover: **
-
-** 1. What to use to secure our APIs (explain new solution and that it should be used going forward + some APIs still use old solution) **
-
-
-** 2. Existing approach to securing our APIs **
-
-  a. API keys - what are those and how to use
-
-  b. Specify that when you select the option to use an API key, the API within the API Gateway needs to be deployed for the changes to apply
-
-  c. What is a usage plan and how to use it
-
-  d. What is a stage and how to use it
-
-  e. Reference to serverless.yml and how by default an API key is added to each new API
-
-  f. Link to step-by-step guide of how to apply/modify
-
-
-
-** 3. New approach - Lambda authorizer **
-
-  a. What is a Lambda authorizer (include AWS diagram), what is Hackney’s solution and how to use it
-
-  b. Link to authorizer repo
-
-  c. Flow chart to explain flow of authorizer (Hackney’s implementation for an authorizer)
-
-  d. When to use it
-
-  e. Link to step-by-step guide of how to apply for new APIs
-
-
-
-** 4. Google auth (TK)  **
-
-  a. What is it and how to use
-
-  b. Which projects use it
-
-  c. When to use
-
-  d. Sample implementations?
-
-
-   **  <u> Securing our APIs: </u> **
-
-
-** What do we use to secure our APIs? **
-
-We have now changed our approach to using a Lambda authorizer function to secure our APIs.
-
-
-
 ## API keys to secure our APIs
 
 Some of our APIs still use API keys to manage access to the APIs. This was our initial approach, but it has proven to be insufficient as it does not allow for granular access control and reporting, and it is associated with a big maintenance overhead.
