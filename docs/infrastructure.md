@@ -24,9 +24,10 @@ For more details, please read our HackIT Terraform Guide, containing all details
 
 https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit?usp=sharing
 
-Video, providing an overview of Terraform and how we use it:
-
-https://drive.google.com/file/d/1thdyJ6f7vHIwJsaK2-kAe4o-bEv45oJK/view
+##  Video Tutorial
+** For a better understanding, you can watch our video on Terraform **
+TBC
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ue2OGXFmoYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 We use Terraform as our infrastructure-as-code tool - it is provider agnostic and makes use of HashiCorp Configuration Language (HCL).
 
