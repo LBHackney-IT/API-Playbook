@@ -132,12 +132,12 @@ https://github.com/LBHackney-IT/aws-dms-terraform
 
   **    What is a data pipeline? **
 
-      A data pipeline is an automated flow that gets data stored in one location (source) and uploads it to a target destination.
+  A data pipeline is an automated flow that gets data stored in one location (source) and uploads it to a target destination.
 
   **      Data pipeline - csv to Postgres **
 
-      As of 26/06/2020, we have implemented one data pipeline.
+  As of 26/06/2020, we have implemented one data pipeline.
 
-      The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
+  The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
 
   ![alt text](./doc-images/data4.png)

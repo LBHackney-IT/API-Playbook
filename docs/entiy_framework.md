@@ -16,5 +16,5 @@ This means that instead of writing code to directly interact with our databases,
 ##  Video Tutorial
 ** For a better understanding, you can watch our video on Entity Framework Core **
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=qNsqZCKefcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qNsqZCKefcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
