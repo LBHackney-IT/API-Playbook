@@ -33,7 +33,7 @@ module.exports = {
       {
         type: 'category',
         label: 'API Setup',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entiy_framework']
+        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entity_framework']
       }
   ]
   },
