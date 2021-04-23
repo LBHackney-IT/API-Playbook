@@ -3,41 +3,6 @@ id: infrastructure
 title: Infrastucture as Code
 ---
 
-** What to cover: **
-
-** <u> Quick overview of what infrastructure as code means done </u>  **
-
-## Terraform
-
-a.Links to existing guides/tutorials done
-
-b.What goes in the main.tf (e.g. state file, provider, etc)
-
-c.Introduction to LBH templates done
-
-d.Deployment per environment (describe folder structure and the use of each subfolder/main.tf) done
-
-e.Deployment via CircleCI (for API related resources) done
-
-f.How to deploy terraform manually (not recommended)
-
-g.Cross check spreadsheet with IP ranges used and available for network setup
-
-
-h.Links to GitHub existing terraform templates?
-
-  i. Common terraform done
-
-        1. Account network setup
-
-        2. DB set up
-
-  ii. DMS repo done
-
-https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit
-
-
-
 ##  HackIT Infrastructure as code
 
 ** <u> What is infrastructure as code (IaC)? </u> **
@@ -127,15 +92,15 @@ https://github.com/LBHackney-IT/aws-dms-terraform
 ** <u> More on Lambda APIs </u> **
 
 
-For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources
+For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources:
 
-Lambda functions
+- Lambda functions
 
-Cloud watch logs
+- CloudWatch logs
 
-IAM roles
+- IAM roles
 
-API Gateway, including usage plan and keys
+- API Gateway, including usage plan and keys
 
 
 ## Deployment per environment for APIs/apps

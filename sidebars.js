@@ -33,7 +33,7 @@ module.exports = {
       {
         type: 'category',
         label: 'How to build an API',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda',]
+        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entiy_framework']
       },
      {
       'Testing': ['tdd', 'unit_test', 'integration_tests']
@@ -59,6 +59,11 @@ module.exports = {
     type: 'category',
     label: 'End to End Training',
     items: ['first_end_point'],
+  },
+  {
+    type: 'category',
+    label: 'Developer API Hub',
+    items: ['developer_hub'],
   },
   {
     type: 'category',

@@ -12,18 +12,18 @@ Hackney’s development standards have evolved over the past couple of years and
 ## TDD Principles
 The following are some of the principles we have adopted as part of our TDD principles.  These are meant to be used as guidelines for testing your application:
 
-## Test Setup
+** Test Setup **
 Always`` follow the triple ‘A’ structure - Arrange, Act, Assert [AAAs]
 What we should be testing for
 
-## Test Naming
+** Test Naming **
 Tests should be clearly named - ideally the name of the test should describe the implementation you are trying to deliver.  For example
 public void Test1() - Not good
 public void GetResidentWithValidIdReturnsCorrectRecord() - Better
 Unit Tests
 Unit tests should provide good coverage of the various scenarios that may be encountered; from the main success scenario to any exceptionals or edge cases.
 
-## Red-Green-Refactor-Commit
+** Red-Green-Refactor-Commit **
 Red
 Write the unit test as the basic function you want the code to fulfil which will fail
 Write only as much code as is required to resolve the current error
@@ -51,6 +51,4 @@ We use a number of different tools to ‘fake’ or simulate the output of depen
 When to fake it:
 When a unit being tested has a dependency on another unit whose output is not directly part of a test, the dependency’s output can be faked.  For example if you are testing a unit that call another unit for data and you are not directly testing the data that gets returned, only what the unit does with the data.  The unit that returns the data can be faked.
 When not to fake it:
-If you are testing a piece of code’s output you will not fake the output you expect from the unit as you will not be able to get a useful test outcome.  For example,  in the following test:
-	[add example test]
-if your unit accepts two numbers (2 and 2) and you are testing that it returns 4.  You will not create a fake output of ‘4’ in our implementation and test that your unit returns ‘4’
+If you are testing a piece of code’s output you will not fake the output you expect from the unit as you will not be able to get a useful test outcome.  For example, if your unit accepts two numbers (2 and 2) and you are testing that it returns 4.  You will create a fake output of ‘4’ in your implementation and test that your unit returns ‘4’

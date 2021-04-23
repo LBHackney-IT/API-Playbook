@@ -32,11 +32,11 @@ We use the Serverless service to deploy our Lambda functions to AWS.  Serverless
 
  There are a few things to consider when setting up your serverless configuration:
 
--Ensure that your lambda function is suitably named so it can be easily identified when added to the HackIt API ecosystem.
--Ensure that your API Gateway is set up to use the relevant authorizers and relevant measurement and rate limiting is set.
--Ensure that logging is implemented for your functions
--Ensure that Serverless is able to find any required secrets stored in Systems Manager.
--A good example of a Serverless configuration file can be found in our BaseAPI here:
+- Ensure that your lambda function is suitably named so it can be easily identified when added to the HackIt API ecosystem.
+- Ensure that your API Gateway is set up to use the relevant authorizers and relevant measurement and rate limiting is set.
+- Ensure that logging is implemented for your functions
+- Ensure that Serverless is able to find any required secrets stored in Systems Manager.
+- A good example of a Serverless configuration file can be found in our BaseAPI here:
 
 https://github.com/LBHackney-IT/lbh-base-api/blob/master/BaseApi/serverless.yml
 
