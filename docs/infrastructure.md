@@ -3,41 +3,6 @@ id: infrastructure
 title: Infrastucture as Code
 ---
 
-** What to cover: **
-
-** <u> Quick overview of what infrastructure as code means done </u>  **
-
-## Terraform
-
-a.Links to existing guides/tutorials done
-
-b.What goes in the main.tf (e.g. state file, provider, etc)
-
-c.Introduction to LBH templates done
-
-d.Deployment per environment (describe folder structure and the use of each subfolder/main.tf) done
-
-e.Deployment via CircleCI (for API related resources) done
-
-f.How to deploy terraform manually (not recommended)
-
-g.Cross check spreadsheet with IP ranges used and available for network setup
-
-
-h.Links to GitHub existing terraform templates?
-
-  i. Common terraform done
-
-        1. Account network setup
-
-        2. DB set up
-
-  ii. DMS repo done
-
-https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit
-
-
-
 ##  HackIT Infrastructure as code
 
 ** <u> What is infrastructure as code (IaC)? </u> **
@@ -59,9 +24,12 @@ For more details, please read our HackIT Terraform Guide, containing all details
 
 https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit?usp=sharing
 
-Video, providing an overview of Terraform and how we use it:
+##  Video Tutorial
+** For a better understanding, you can watch our video on Terraform **
 
-https://drive.google.com/file/d/1thdyJ6f7vHIwJsaK2-kAe4o-bEv45oJK/view
+<figure class="video-container">
+<iframe width="100" src="https://www.youtube.com/embed/sGbjWgSTpnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 We use Terraform as our infrastructure-as-code tool - it is provider agnostic and makes use of HashiCorp Configuration Language (HCL).
 
@@ -127,15 +95,15 @@ https://github.com/LBHackney-IT/aws-dms-terraform
 ** <u> More on Lambda APIs </u> **
 
 
-For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources
+For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources:
 
-Lambda functions
+- Lambda functions
 
-Cloud watch logs
+- CloudWatch logs
 
-IAM roles
+- IAM roles
 
-API Gateway, including usage plan and keys
+- API Gateway, including usage plan and keys
 
 
 ## Deployment per environment for APIs/apps

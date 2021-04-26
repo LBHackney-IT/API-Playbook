@@ -4,7 +4,7 @@ title: API Design Principles
 ---
 ## Introduction
 
-Comparing SOA web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialized. In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
+Comparing SOA (Service-Oriented Architecture) web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialised. In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardised CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
 
 
 ## Purpose
@@ -60,7 +60,7 @@ Moreover, API definitions with standardized specification format also facilitate
 
 ** Infrastructure tooling for API discovery, API GUIs, API documents, automated quality checks **
 
-Elements of API First are also these standards and a standardized API review process (TBC) as to get early review feedback from peers and client developers. Peer review is important for us to get high quality APIs, to enable architectural and design alignment and to supported development of client applications decoupled from service provider engineering life cycle.
+Elements of API First are also these standards and a standardized API review process as to get early review feedback from peers and client developers. Peer review is important for us to get high quality APIs, to enable architectural and design alignment and to supported development of client applications decoupled from service provider engineering life cycle.
 
 It is important to learn, that API First is not in conflict with the agile development principles that we love. Applications should evolve incrementally — and so its APIs. Of course, our API specification will and should evolve iteratively in different cycles; however, each starting with draft status and early team and peer review feedback. API may change and profit from implementation concerns and automated testing feedback.
 

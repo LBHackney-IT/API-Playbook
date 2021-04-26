@@ -9,11 +9,11 @@ title: Platform API vs Service API
 
 ## A. Service APIs  
 
- Are used for specific data representation. Service APIs have additional data processing to satisfy a specific service need.
+ Service APIs are used for specific data representation. Service APIs have additional data processing to satisfy a specific service need.
 
 ** Criteria: **
 
- 1. Consumes 1 or more platform APIs and customize the JSON to their needs.
+ 1. Consumes 1 or more platform APIs and customise the JSON to their needs.
 
  a) Platform APIs is to provide all available data for a given domain (i.e. transactions) in a generic format. Service APIs should consume the platform API and modify the response object to meet their specific needs (if required).
 
@@ -35,9 +35,7 @@ title: Platform API vs Service API
 
 **  Are data-driven, domain modeled APIs that expose generic data for re-use for several services of similar datasets. It is a holistic representation of a domain specified. It is the foundation layer for the <u> API ecosystem </u> allowing higher-level APIs access to the data sources below.
 
-All platform APIs will be listed in our API Hub.
-
-https://developer.api.hackney.gov.uk/
+All platform APIs will be listed in our [API Hub](https://developer.api.hackney.gov.uk/)
 
 ## Criteria:
 

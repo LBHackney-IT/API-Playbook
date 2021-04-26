@@ -32,24 +32,26 @@ module.exports = {
 
       {
         type: 'category',
-        label: 'How to build an API',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda',]
-      },
-     {
-      'Testing': ['tdd', 'unit_test', 'integration_tests']
-    },
-    {
-    'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']
-    },
-    {
-    'Monitoring': ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', {'Request Tracing': ['x_ray']}]
-    },
-    {
-    'Securing your API': ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
-    },
+        label: 'API Setup',
+        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entity_framework']
+      }
   ]
   },
-
+  {
+    type: 'category',
+    label: "How to build an API",
+    items: [{'Testing': ['tdd', 'unit_test', 'integration_tests']},{'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']}]
+  },
+  {
+    type: 'category',
+    label: 'Monitoring',
+    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', {'Request Tracing': ['x_ray']}]
+  },
+  {
+    type: 'category',
+    label: 'Securing your API',
+    items: ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
+  },
   {
     type: 'category',
     label: 'Other Useful Information',
@@ -59,6 +61,11 @@ module.exports = {
     type: 'category',
     label: 'End to End Training',
     items: ['first_end_point'],
+  },
+  {
+    type: 'category',
+    label: 'Developer API Hub',
+    items: ['developer_hub'],
   },
   {
     type: 'category',

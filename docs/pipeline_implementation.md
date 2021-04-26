@@ -41,9 +41,3 @@ https://github.com/LBHackney-IT/s3-to-postgres-data-pipeline
 
  1. You need to create the S3 bucket separately and provide the name in the serverless.yml file of the pipeline repository.
  2. You need to create the Postgres separately and create the table that will be the “target” with the same columns as the ones expected to be present in the .csv that will be uploaded to S3
-
-**  Matt notes to be tidied up: **
-
- - Add the extension to the database: CREATE EXTENSION IF NOT EXISTS aws_s3 CASCADE;
- - RDS needs permissions to access the S3 bucket - GetObject and ListBucket.
- - Policy created and role added then added that role to the RDS instance….(Manually at the moment - how to automate?)

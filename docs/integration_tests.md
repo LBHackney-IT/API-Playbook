@@ -9,6 +9,8 @@ When creating a new endpoint or adding new functionality to an API it's good pra
 
 ## Postgres
 
+PostgreSQL is an object-relational database system that uses SQL language along with many other features to securely store and scale all data workloads including the most complicated ones.
+
 To write Integration tests, inherit the IntegrationTest class for some useful test setup.
 
 ![alt text](./doc-images/postgres1.png)
@@ -19,11 +21,13 @@ This will set up a web application factory so that you can make calls to endpoin
 
 It will also set up a database connection and register it in a mock startup class. You can also use this connection in the test setup if you need to add anything to the database to test against.
 
-An example of an integration test for a GET endpoint would be to add entities to the database and then assert they get returned in the response from the endpoint. Here is a simplified example of this.
+An example of an integration test for a GET endpoint would be to add entities to the database and then assert they get returned in the response from the endpoint. Here is a simplified example of this:
 
 ![alt text](./doc-images/postgres3.png)
 
 ## DynamoDb
+
+DynamoDB is a NoSQL database service that provides fast and foreseeable performance with minimal scalability. Amazon DynamoDB removes the burden of operating and scaling distributed database
 
 ** Database connection **
 
