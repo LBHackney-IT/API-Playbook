@@ -10,6 +10,9 @@ module.exports = {
   organizationName: "lbhackney-it",
   projectName: "API-Playbook",
   themeConfig: {
+    prism: {
+      additionalLanguages: ["csharp"],
+    },
     navbar: {
       title: "API Playbook",
       logo: {
