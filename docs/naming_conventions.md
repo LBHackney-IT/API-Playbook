@@ -3,22 +3,26 @@ id: naming_conventions
 title: Naming Conventions
 ---
 
+### Name of the data source to represent the data
 
-** Name of the data source to represent the data: **
+* Use ‘-’ to separate words
+* Use all lowercase
+  * E.G. 'mosaic-resident-information-api'
+* Use of Views ?
 
-1. Use ‘-’ to separate words
-
-2. Use all lowercase.
-
-      For eg : mosaic-resident-information-api
-
-
-3. Use of Views ?
-
-** Actual API output : translate the inner column names **
-
+### Actual API output - translate the inner column names
 
 For each individual Platform API:
 
-
-![alt text](./doc-images/naming_conventions.png)
+| Data | Field Naming Convention |
+| ---- | ----------------------- |
+| First Name(s) | firstName |
+| Middle Name (if any is available in the underlying datasource) | middleName |
+| Last Name (surname) | lastName |
+| Date of Birth (if any) | dateOfBirth |
+| National Insurance Number (if any) | nationalInsuranceNumber |
+| NHS Number (if any) | nhsNumber |
+| Phone Numbers, Phone Type (if any), Date Last Modified (if any) | **In one object**: phoneNumber, phoneType, dateLastModified |
+| Email, Email Type (if any), Date Last Modified (if any) | **In one object**: emailAddress, emailType, dateLastModified |
+| UPRN (if any) | uprn |
+| Address | **In one object**: addressLine1, addressLine2, addressLine3, postCode, addressType <br/><br/>**When address is saved in one column**: fullAddress, postCode|
