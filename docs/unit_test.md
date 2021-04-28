@@ -3,7 +3,7 @@ id: unit_test
 title: Setting Up Unit Tests
 ---
 
-## Purpose
+## Purpose
 
 The purpose of this document is to demonstrate how we go about setting up our test environment.  
 Once you've been through this document, you should be able to understand unit tests across the majority of our projects.
