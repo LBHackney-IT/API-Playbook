@@ -1,6 +1,6 @@
 ---
 id: unit_testing
-title: Writing Unit Tests (v2)
+title: Writing Unit Tests
 ---
 ## Introduction
 
@@ -37,7 +37,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
 
-namespace TestApi.Tests.V1.Gateways 
+namespace TestApi.Tests.V1.Gateways
 {
   [TestFixture]
   public class GreetingGatewayTests {
@@ -66,7 +66,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
 
-namespace TestApi.Tests.V1.Gateways 
+namespace TestApi.Tests.V1.Gateways
 {
   [TestFixture]
   public class GreetingGatewayTests {
@@ -112,11 +112,11 @@ error CS0103: The name 'GreetingGateway' does not exist in the current context [
   the problem that the output describes.*
 
 The output tells us that `GreetingGateway` doesn't exist. That's true - we
-haven't made it yet! 
+haven't made it yet!
 
 ### Create the Implementation
 
-We will write the most minimal piece of code that will pass the test. 
+We will write the most minimal piece of code that will pass the test.
 ```dotnet title="GreetingGateway.cs"
 namespace TestApi.V1.Gateways
 {
@@ -138,7 +138,7 @@ namespace TestApi.V1.Gateways
 We have addressed the error in the previous test run's output by creating the
 class that didn't exist, `GreetingGateway` (and added the method pre-emptively,
 to save some test runs).
-   
+
 ```bash title="Terminal" {14}
 ~/tdd_practice$ dotnet test
 
@@ -178,7 +178,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
 
-namespace TestApi.Tests.V1.Gateways 
+namespace TestApi.Tests.V1.Gateways
 {
   [TestFixture]
   public class GreetingGatewayTests {
@@ -263,7 +263,7 @@ namespace TestApi.V1.Gateways
 }
 ```
 
-Check the tests again: 
+Check the tests again:
 
 ```bash title="Terminal" {14}
 ~/tdd_practice$ dotnet test
@@ -304,7 +304,7 @@ using NUnit.Framework;
 using TestApi.V1.Gateways;
 using Bogus;
 
-namespace TestApi.Tests.V1.Gateways 
+namespace TestApi.Tests.V1.Gateways
 {
   [TestFixture]
   public class GreetingGatewayTests {
@@ -344,6 +344,3 @@ Passed!  - Failed:  0, Passed:  23, Skipped:  0, Total:  23, Duration: 939 ms - 
 
 Everything is still passing! The feature is complete and we have a robust test
 for it.
-
-
-
