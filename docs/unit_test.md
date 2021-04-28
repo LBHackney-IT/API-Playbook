@@ -1,8 +1,8 @@
 ---
 id: unit_test
-title: Set Up Unit Tests
+title: Setting Up Unit Tests
 ---
-## Introduction
+## Purpose
 
 Unit tests are used to test the functionality of a class in isolation.
 So if a class depends on another we will need to mock any interactions with that class. We are using <u> dependency injection </u>  so any class which needs to interact with another will be passed an interface, which the depended on class subscribes to, in the constructor.
