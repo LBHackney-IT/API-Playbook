@@ -2,7 +2,13 @@
 id: unit_test
 title: Setting Up Unit Tests
 ---
-## Purpose
+
+## Purpose
+
+The purpose of this document is to demonstrate how we go about setting up our test environment.  
+Once you've been through this document, you should be able to understand unit tests across the majority of our projects.
+
+## Introduction
 
 Unit tests are used to test the functionality of a class in isolation.
 So if a class depends on another we will need to mock any interactions with that class. We are using <u> dependency injection </u>  so any class which needs to interact with another will be passed an interface, which the depended on class subscribes to, in the constructor.
