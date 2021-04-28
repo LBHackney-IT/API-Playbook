@@ -3,41 +3,6 @@ id: infrastructure
 title: Infrastucture as Code
 ---
 
-** What to cover: **
-
-** <u> Quick overview of what infrastructure as code means done </u>  **
-
-## Terraform
-
-a.Links to existing guides/tutorials done
-
-b.What goes in the main.tf (e.g. state file, provider, etc)
-
-c.Introduction to LBH templates done
-
-d.Deployment per environment (describe folder structure and the use of each subfolder/main.tf) done
-
-e.Deployment via CircleCI (for API related resources) done
-
-f.How to deploy terraform manually (not recommended)
-
-g.Cross check spreadsheet with IP ranges used and available for network setup
-
-
-h.Links to GitHub existing terraform templates?
-
-  i. Common terraform done
-
-        1. Account network setup
-
-        2. DB set up
-
-  ii. DMS repo done
-
-        https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit
-
-
-
 ##  HackIT Infrastructure as code
 
 ** <u> What is infrastructure as code (IaC)? </u> **
@@ -57,11 +22,14 @@ For example, if a resource is accidentally terminated, the IaC can be used to re
 
 For more details, please read our HackIT Terraform Guide, containing all details of what Terraform is, how to use it, how we use Terraform and how to use our Terraform templates, including deployment steps:
 
-          https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit?usp=sharing
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit?usp=sharing
 
-Video, providing an overview of Terraform and how we use it:
+##  Video Tutorial
+** For a better understanding, you can watch our video on Terraform **
 
-          https://drive.google.com/file/d/1thdyJ6f7vHIwJsaK2-kAe4o-bEv45oJK/view
+<figure class="video-container">
+<iframe width="100" src="https://www.youtube.com/embed/sGbjWgSTpnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 We use Terraform as our infrastructure-as-code tool - it is provider agnostic and makes use of HashiCorp Configuration Language (HCL).
 
@@ -82,12 +50,12 @@ The ‘common layer’ is the infrastructure required to be set up for each acco
 
   GitHub repository:
 
-          https://github.com/LBHackney-IT/aws-hackney-common-terraform
+https://github.com/LBHackney-IT/aws-hackney-common-terraform
 
 
   Detailed guide on how to use it, including screenshots and step-by-step instructions:
 
-          https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.553ntygln9sl
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.553ntygln9sl
 
 
 ## Components per service layer infrastructure
@@ -99,12 +67,12 @@ The ‘common layer’ is the infrastructure required to be set up for each acco
 
   GitHub repository:
 
-          https://github.com/LBHackney-IT/aws-hackney-components-per-service-terraform
+https://github.com/LBHackney-IT/aws-hackney-components-per-service-terraform
 
 
   Detailed guide on how to use it, including screenshots and step-by-step instructions:
 
-          https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy
 
 
 ## DMS Terraform  
@@ -120,22 +88,22 @@ DMS task and instance provisioning (full set up)
 
 How to use notes, including example usage file can be found here:
 
-            https://github.com/LBHackney-IT/aws-dms-terraform
+https://github.com/LBHackney-IT/aws-dms-terraform
 
 ##   Lambda APIs deployment
 
 ** <u> More on Lambda APIs </u> **
 
 
-For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources
+For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources:
 
-Lambda functions
+- Lambda functions
 
-Cloud watch logs
+- CloudWatch logs
 
-IAM roles
+- IAM roles
 
-API Gateway, including usage plan and keys
+- API Gateway, including usage plan and keys
 
 
 ## Deployment per environment for APIs/apps
@@ -176,7 +144,7 @@ Note: the terraform apply -auto-approve is a command used to force apply (withou
 
 More details can be found here:
 
-          https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.1q32ztqxg199
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.1q32ztqxg199
 
 
   ##   How to apply Terraform manually
@@ -189,13 +157,13 @@ For example, our individual AWS account network set up is currently applied manu
 
 More information and guide can be found here:
 
-        https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.pdxhd5fuwdpm
+https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.pdxhd5fuwdpm
 
 
 ##  How to find what has been applied in our AWS accounts (non API specific Terraform)
 
 The networking set up and other shared resources have been created via our ‘common Terraform’ template repository. Every time someone makes a change a new PR needs to be created against the following repository:
 
-            https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/applied_terraform
+https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/applied_terraform
 
 This ensures that although there is a state file, developers will be able to see the configuration files of what has been applied and make changes to it, while being aware of what has previously been provisioned.

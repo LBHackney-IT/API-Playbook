@@ -15,7 +15,7 @@ title: API Standards
 
 4.You have identified the capacity, resources and technical flexibility to iterate and improve the service frequently.
 
-5.Work out what success looks like for your service and identify metrics which will tell you what’s working and what can be improved, combined with user research (uptake, calls per hour, availability).
+5.Work out what success looks like for your service and identify metrics that will tell you what’s working and what can be improved, combined with user research (uptake, calls per hour, availability).
 
 6.Optimise for performance, minimise service downtime and have a plan to deal with it when it does happen.
 

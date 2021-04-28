@@ -6,9 +6,9 @@ title: API Documentation
 ## Introduction
 
 At Hackney, we believe in working in a collaborative way and this is embedded into our API development process. Before commencing the implementation stage, each API endpoint will first need to be documented to ensure using SwaggerHub. The benefits include:
-Open specification standards.
-Opportunity to mock the API and avoid possible blockers for front end development.
-Opportunity to share and reach a common agreement of what the API request and response should look like before any work has commenced.
+- Open specification standards.
+- Opportunity to mock the API and avoid possible blockers for front end development.
+- Opportunity to share and reach a common agreement of what the API request and response should look like before any work has commenced.
 
 ## Purpose
 
@@ -70,11 +70,11 @@ Providing a mock API and API blueprints will remove this blocker as it will give
 
 Hackney SwaggerHub is located at:
 
-    https://app.swaggerhub.com/organizations/Hackney
+https://app.swaggerhub.com/organizations/Hackney
 
 All the Platform APIs in development have been documented and are viewable on the SwaggerHub.
 
 
 For more detail please find visit our Hackney Training video:
 
-      https://drive.google.com/drive/u/0/folders/1GXp-Pbyp-1GeqrJ1Ky6frrwoROl3FfB3
+https://drive.google.com/drive/u/0/folders/1GXp-Pbyp-1GeqrJ1Ky6frrwoROl3FfB3

@@ -26,8 +26,7 @@ Exceptions is an execution flow mechanism used to interrupt the current processi
 Whether an application executes a task successfully or not is often highly dependent on the input from the user. As a result, this contextual information may be vital when trying to diagnose a fault.
 
 This can be achieved by setting a property of your logging platform during the startup of a component.
-This allows to view the unified stream of "events", but also to segregate per role when required to troublesh
-oot an individual component.
+This allows to view the unified stream of "events", but also to segregate per role when required to troubleshoot an individual component.
 Every operation in an application is initiated by a trigger either externally or internally (synchronous processing). In general, these triggers do not have visibility of the behaviour for each service, and just expect a result as output from a request.
 In many cases, these operations may trigger operations into dependent services to accomplish the initial operation. These chain of events need to be correlated in order to identify possible failures or for auditing purposes. For this reason, enter into scene the CorrelationId and TracingContext.
 

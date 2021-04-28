@@ -5,7 +5,7 @@ title: Setting Up DMS
 
 ## Data migration using AWS DMS
 
-## What is AWS DMS? ## 
+## What is AWS DMS? ##
 
 AWS Data Migration Service (DMS) is a service that allows us to migrate data between a source (in our case, on-premises database) and a target (in our case, Postgres database hosted in AWS).
 
@@ -79,11 +79,11 @@ AWS Data Migration Service (DMS) is a service that allows us to migrate data bet
 
  DMS with SQL CDC
 
-        https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit
+https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit
 
 DMS with MS Replication
 
-        https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing
+https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing
 
 AWS DMS set up via Terraform
 
@@ -93,7 +93,7 @@ Both DMS and Postgres can be created via Terraform.
 
 Template repository and example usage:
 
-        https://github.com/LBHackney-IT/aws-dms-terraform
+https://github.com/LBHackney-IT/aws-dms-terraform
 
 
 ![alt text](./doc-images/data_migration.png)
@@ -132,12 +132,12 @@ Template repository and example usage:
 
   **    What is a data pipeline? **
 
-      A data pipeline is an automated flow that gets data stored in one location (source) and uploads it to a target destination.
+  A data pipeline is an automated flow that gets data stored in one location (source) and uploads it to a target destination.
 
   **      Data pipeline - csv to Postgres **
 
-      As of 26/06/2020, we have implemented one data pipeline.
+  As of 26/06/2020, we have implemented one data pipeline.
 
-      The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
+  The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
 
   ![alt text](./doc-images/data4.png)

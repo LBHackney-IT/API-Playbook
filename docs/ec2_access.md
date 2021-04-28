@@ -32,7 +32,7 @@ Run the following command to configure your AWS credentials:
 
 1. Go to the SSO portal and navigate to the account in which the EC2 instance is hosted.
 
-  ![alt text](./doc-images/ec2.png)
+![alt text](./doc-images/ec2.png)
 
 
 2. Click on ‘Command line or programmatic access’

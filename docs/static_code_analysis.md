@@ -9,11 +9,7 @@ title: Static Code Analysis
 
 Using ReSharper Command Line Tools (Website):
 
-          https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
-
-Spike PR:
-
-            https://github.com/LBHackney-IT/lbh-base-api/pull/19
+https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html
 
 ##  Running locally
 
@@ -40,8 +36,9 @@ The command-line tools do not seem to work well on macOS/Linux.
 
 Related Issue discussion:
 
-    https://youtrack.jetbrains.com/issue/RSRP-466029
-    https://youtrack.jetbrains.com/issue/RSRP-475696
+https://youtrack.jetbrains.com/issue/RSRP-466029
+
+https://youtrack.jetbrains.com/issue/RSRP-475696
 
 To run the command line within a CI server, the server has to support windows and the Host OS of the container must be windows.
 
@@ -55,7 +52,7 @@ No explicit documentation on how to set it up in a CI pipeline.
 
 This can be added to the project as a NuGet package.
 
-Hypothesis: FxCop runs code analysis when the project is built. So adding the FxCop NuGet package should allow us to run this locally and adding properties on the relevant project should cause this build to fail if there are any issues.
+FxCop runs code analysis when the project is built. So adding the FxCop NuGet package should allow us to run this locally and adding properties on the relevant project should cause this build to fail if there are any issues.
 
 
 Setting up the failures for specific errors should be possible by adding the relevant setting to the .editorConfig file and to the project’s .csproj file.

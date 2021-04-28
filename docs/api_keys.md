@@ -5,68 +5,13 @@ title: API Keys
 
 ## Securing our APIs
 
-** What to cover: **
-
-** 1. What to use to secure our APIs (explain new solution and that it should be used going forward + some APIs still use old solution) **
-
-
-** 2. Existing approach to securing our APIs **
-
-  a. API keys - what are those and how to use
-
-  b. Specify that when you select the option to use an API key, the API within the API Gateway needs to be deployed for the changes to apply
-
-  c. What is a usage plan and how to use it
-
-  d. What is a stage and how to use it
-
-  e. Reference to serverless.yml and how by default an API key is added to each new API
-
-  f. Link to step-by-step guide of how to apply/modify
-
-
-
-** 3. New approach - Lambda authorizer **
-
-  a. What is a Lambda authorizer (include AWS diagram), what is Hackney’s solution and how to use it
-
-  b. Link to authorizer repo
-
-  c. Flow chart to explain flow of authorizer (Hackney’s implementation for an authorizer)
-
-  d. When to use it
-
-  e. Link to step-by-step guide of how to apply for new APIs
-
-
-
-** 4. Google auth (TK)  **
-
-  a. What is it and how to use
-
-  b. Which projects use it
-
-  c. When to use
-
-  d. Sample implementations?
-
-
-   **  <u> Securing our APIs: </u> **
-
-
-** What do we use to secure our APIs? **
-
-We have now changed our approach to using a Lambda authorizer function to secure our APIs.
-
-
-
 ## API keys to secure our APIs
 
 Some of our APIs still use API keys to manage access to the APIs. This was our initial approach, but it has proven to be insufficient as it does not allow for granular access control and reporting, and it is associated with a big maintenance overhead.
 
 AWS documentation on API keys and Usage plans:
 
-            https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html
 
 
 ## What is an API key?
@@ -105,7 +50,7 @@ Throttling can be made more granular by enabling method throttling for a stage, 
 
 Guide describing how to enable and disable API key requirement:
 
-        https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
+https://docs.google.com/document/d/1RVJ8f4T6-2m0QqJ9xO-f15FSP7AT4xv0ts8CZGvGR6Y/edit?usp=sharing
 
 
 ** How are API keys added to our Lambda based APIs?  **
@@ -116,8 +61,8 @@ For any API, where we use Lambda as our hosting option, the configuration to use
 ![alt text](./doc-images/api_keys.png)
 
 
-Ref:
+** Ref: **
 
-        https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
+https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8
 
 For APIs that use EC2/Fargate, we create and add API keys via Terraform.
