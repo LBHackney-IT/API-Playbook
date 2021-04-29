@@ -18,10 +18,7 @@ Clean architecture was created by Robert C. Martin and promoted on his blog, Unc
 
 ** You can watch our video for a brief intro about Clean Architecture at Hackney Council: **
 
-<figure class="video-container">
-  <iframe width="100%" src="https://www.youtube.com/embed/zhGG9jt4iBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zhGG9jt4iBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Base API Folder Structure
 
@@ -95,8 +92,4 @@ This is where we handle all of the behaviour from our application
 - The Interface Folder defines the contract for your implementation
 - Any class that implements an Interface MUST have the 'Execute' method, otherwise your program won't compile properly
 
-
  ![alt text](./doc-images/request_workflow.png)
-=======
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zhGG9jt4iBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
->>>>>>> Stashed changes
