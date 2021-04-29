@@ -1,7 +1,13 @@
 ---
 id: unit_test
-title: Writing Unit Tests
+title: Setting Up Unit Tests
 ---
+
+## Purpose
+
+The purpose of this document is to demonstrate how we go about setting up our test environment.  
+Once you've been through this document, you should be able to understand unit tests across the majority of our projects.
+
 ## Introduction
 
 Unit tests are used to test the functionality of a class in isolation.

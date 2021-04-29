@@ -48,3 +48,41 @@
       fill: var(--ifm-alert-color);
     }
   }
+
+}
+
+.video-container {
+  height: 0;
+  margin: 0 0 30px;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.prism-code {
+  counter-reset: line-number;
+}
+
+.prism-code.language-cs .token-line::before,
+.prism-code.language-csharp .token-line::before,
+.prism-code.language-dotnet .token-line::before {
+  counter-increment: line-number;
+  content: counter(line-number);
+  margin-right: calc(var(--ifm-pre-padding) * 1.5);
+  text-align: right;
+  min-width: 2.5rem;
+  display: inline-block;
+  opacity: .3;
+  position: sticky;
+  left: var(--ifm-pre-padding);
+}
+
