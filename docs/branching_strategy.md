@@ -125,17 +125,6 @@ Using AWS Security Hub to ensure our accounts are safe and resources adhere to A
 Alerts us when a security configuration rule compliance has changed
 
 
-
-## Infrastructure as code (IaC)
-
-      More on IaC in our API playbook here [Link TBC]]
-
-Each API is responsible for maintaining its own infrastructure.
-
-Our IaC deployment process is automated via our CI/CD pipeline.
-
-
-
 ## Serverless framework
 
 We use the serverless framework to help us deploy Lambda functions and related resources.
