@@ -71,8 +71,6 @@ If we look at our implementation Folder, we will notice that our code is structu
 ```
 * _The three highlighted lines above are the **behavioural** folders_
 
-
-
 ### Explore Our Folders
 
 1. **Boundary**
