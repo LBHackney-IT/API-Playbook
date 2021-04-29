@@ -10,7 +10,9 @@ The Serverless Framework provides support when developing and deploying AWS (Ama
 
 ** For a better understanding, you can start by having a look at our  Serverless Lambda Framework configuration tutorial: **
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EnID_C4yB_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/EnID_C4yB_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 
 ## Functions:

@@ -16,7 +16,9 @@ In order to do this there needs to be a way to spin up multiple containers and m
 
 ## Docker Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Kz-tTwSePoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/Kz-tTwSePoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 Here is where docker-compose comes in.
 
