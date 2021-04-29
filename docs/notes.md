@@ -1,5 +1,5 @@
 ---
 id: notes
-title: Notes
+title: Release Notes
 ---
 TBC

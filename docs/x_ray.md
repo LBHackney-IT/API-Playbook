@@ -1,6 +1,6 @@
 ---
 id: x_ray
-title: X Ray
+title: Request Tracing
 ---
 
 ## X-Ray

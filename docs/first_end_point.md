@@ -1,6 +1,6 @@
 ---
 id: first_end_point
-title: Create your first End Point
+title: End to End Training
 ---
 ## End-to-End Pipeline
 At Hackney, we have created a video that gives developers a good understanding of how we build API Endpoints from beginning to end following best practices. The video below will go through the following steps:
