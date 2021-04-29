@@ -61,7 +61,7 @@ It is recommended that you use Terraform to provision AWS resources. We already 
 
 In this playbook, please refer to the Terraform section to find out more about the templates and how to use them. The template has configuration both for front end apps and for back end services that are to use ECS with Fargate.
 
-** The Terraform template creates the following resources: **
+** The Tterraform template creates the following resources: **
 
 **  <u> Common layer Fargate  </u> **
 
