@@ -1,57 +1,51 @@
-@import "base";
-
-@import "core/all";
-@import "objects/all";
-
-@import "components/all";
-
-@import "utilities/all";
-@import "overrides/all";
+---
+---
 
 body {
-  background: #fff;
+    background: #fff;
 }
 
 .header-outer {
-  margin: 0;
-  background: #212121;
-  padding: 0.5em;
-  padding-left: 15em;
-  padding-right: 15em;
+    margin: 0;
+    background: #212121;
+    padding: 0.5em;
+    padding-left: 15em;
+    padding-right: 15em;
 }
 
 .banner-head-h1,
 .banner-head-h3 {
-  color: #fff;
-  text-align: center;
-  font-family: "Open Sans";
+    color: #fff;
+    text-align: center;
+    font-family: 'arial';
 }
 
 .banner-head-h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .banner-head-h3 {
-  margin-top: 0.5em;
-  font-size: 1.75rem;
+    margin-top: 0.5em;
+    font-size: 1.75rem;
+
 }
 
 .footer {
-  background: #0b0c0c;
-  min-height: 50px;
+    background: #0b0c0c;
+    min-height: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  .header-outer {
-    padding: 20px;
-  }
+    .header-outer {
+        padding: 20px;
+    }
 
-  .banner-head-h1 {
-    font-size: 1.2rem;
-  }
+    .banner-head-h1 {
+        font-size: 1.2rem;
+    }
 
-  .banner-head-h3 {
-    font-size: 0.85rem;
-  }
+    .banner-head-h3 {
+        font-size: 0.85rem;
 
+    }
 }
