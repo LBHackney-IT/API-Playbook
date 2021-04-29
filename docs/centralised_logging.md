@@ -19,9 +19,12 @@ Application level logging is an integral part of the application development pro
 ** Leveraging Existing Tooling **
 
 There are a number of tools that exist that provide robust, battle tested logging mechanisms.  Some of these that we have used in the past include:
+
 1. NLog
 2. Log4net
 3. Asp.net core logging framework
+4. AWS Lambda Logger
+
 4. AWS Lambda Logger
 
 While there is not a set standard for which tool to utilise, it is important that applications do emit logs so that any issues can be easily traced to its source.
@@ -34,15 +37,14 @@ It is also reasonable to define our own custom logging solution which could be s
 
 Logs must be emitted in JSON format and, in order to have a clear view and a consistent understanding of log entries, it is best to define a meaningful structure for your log entries:
 
-      {
-          “Log type”: “Captain’s log”
-
-          “Date”: “3443.2”
-
-          “Log Details”: “We have reached the Veridian mining colony.”
-
-          “Correlation Id”: "2a571fc5-3770-4aa6-aa5e-587b58d9a5fa"
-        }
+```json
+{
+  "Log type": "Captain's Log",
+  "Date": "3443.2",
+  "Log Details": "We have reached the Veridian Mining Colony",
+  "Correlation ID": "2a571fc5-3770-4aa6-aa5e-587b58d9a5fa"
+}
+```
 
 With a consistent standard of logging.  Logs can be scrutinised by a person or be consumed by another tool to extend our insight capabilities.
 
