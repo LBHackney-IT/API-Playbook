@@ -42,7 +42,7 @@ We use the Test-Driven Development (TDD) approach when writing code.
 
 Each project’s test suite must include units tests produced as part of TDD as well as integration tests.
 
-** More on practices in Hackney for writing tests here: [TDD Practices](tdd.md) **
+** More on practices in Hackney for writing tests here: [TDD Practices](/tdd) **
 
 ## Environments
 
