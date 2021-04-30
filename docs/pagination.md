@@ -15,7 +15,7 @@ There are two well known page iteration techniques:
 The technical conception of pagination should also consider user experience related issues. As mentioned in this
 [article](https://www.smashingmagazine.com/2016/03/pagination-infinite-scrolling-load-more-buttons/), jumping to a specific page is far less used than navigation via `next`/`prev` page links. This favours cursor-based over offset-based pagination.
 
-**Note:** To provide a consistent look and feel of pagination patterns, you must stick to the [common query parameter names](naming_convention.md#must-stick-to-conventional-query-parameters).
+**Note:** To provide a consistent look and feel of pagination patterns, you must stick to the [common query parameter names](naming_conventions.md#must-stick-to-conventional-query-parameters).
 
 ## SHOULD Assess whether cursor or offset based pagination is most suitable
 
