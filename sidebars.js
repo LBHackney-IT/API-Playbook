@@ -20,11 +20,7 @@ module.exports = {
       label: 'Development Process',
       items: [
       {
-        'Designing your API': [ 'api_implementation_guidelines',
-          {
-            'Implementation Guidelines': ['api_design_principles', 'general_guidelines,security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
-          }, 
-        'error_codes']
+        'Designing your API': ['api_design_principles', 'api_implementation_guidelines', 'error_codes','naming_conventions']
       },
 
       {
