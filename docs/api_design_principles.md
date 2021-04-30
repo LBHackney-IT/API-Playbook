@@ -55,14 +55,28 @@ API First is one of our principles. In a nutshell API First requires two aspects
 
 By defining APIs outside the code, we want to facilitate early review feedback and also a development discipline that focus service interface design on profound understanding of the domain and required functionality generalized business entities / resources, i.e. avoidance of use case specific APIs clear separation of WHAT vs. HOW concerns, i.e. abstraction from implementation aspects — APIs should be stable even if we replace complete service implementation including its underlying technology stack
 
+  - profound understanding of the domain and required functionality
+
+  - generalized business entities / resources, i.e. avoidance of use
+    case specific APIs
+
+  - clear separation of WHAT vs. HOW concerns, i.e. abstraction from
+    implementation aspects — APIs should be stable even if we replace
+    complete service implementation including its underlying technology
+    stack
 
 Moreover, API definitions with standardized specification format also facilitate single source of truth for the API specification; it is a crucial part of a contract between service provider and client users.
 
-** Infrastructure tooling for API discovery, API GUIs, API documents, automated quality checks **
+  - single source of truth for the API specification; it is a crucial
+    part of a contract between service provider and client users
+
+  - infrastructure tooling for API discovery, API GUIs, API documents,
+    automated quality checks
+
 
 Elements of API First are also these standards and a standardized API review process as to get early review feedback from peers and client developers. Peer review is important for us to get high quality APIs, to enable architectural and design alignment and to supported development of client applications decoupled from service provider engineering life cycle.
 
-It is important to learn, that API First is not in conflict with the agile development principles that we love. Applications should evolve incrementally — and so its APIs. Of course, our API specification will and should evolve iteratively in different cycles; however, each starting with draft status and early team and peer review feedback. API may change and profit from implementation concerns and automated testing feedback.
+It is important to learn, that API First is **not in conflict with the agile development principles**. Applications should evolve incrementally — and so its APIs. Of course, our API specification will and should evolve iteratively in different cycles; however, each starting with draft status and early team and peer review feedback. API may change and profit from implementation concerns and automated testing feedback.
 
 API evolution during development life cycle may include breaking changes for not yet productive features and as long as we have aligned the changes with the clients. Hence, API First does not mean that you must have 100% domain and requirement understanding and can never produce code before you have defined the complete API and get it confirmed by peer review.
 
