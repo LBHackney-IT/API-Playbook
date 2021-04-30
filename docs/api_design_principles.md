@@ -1,4 +1,8 @@
-# API Design Principles
+---
+id: api_design_principles
+title: API Design Principles
+---
+## API Design Principles
 
 Comparing SOA web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialized. In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardized CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
 
@@ -23,7 +27,7 @@ service architecture:
 
   - Fielding Dissertation: [Architectural Styles and the Design of Network-Based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
-# Designing APIs
+## Designing APIs
 
 APIs should adhere to the same design principles as any well managed product:
 
@@ -41,7 +45,7 @@ APIs should adhere to the same design principles as any well managed product:
 
 Understand the concrete use cases of your API consumers and carefully check the trade-offs of your API design variants with a product mindset. Avoid short-term implementation optimizations at the expense of unnecessary client side obligations, and have a high attention on API quality and client developer experience.
 
-# API First
+## API First
 
 API First is one of our principles. In a nutshell API First requires two aspects:
 
