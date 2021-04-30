@@ -1,6 +1,6 @@
 ---
-id: date-formats
-title: Date Formats
+id: data-formats
+title: Data Formats
 ---
 ## MUST Use JSON to Encode Structured Data
 
