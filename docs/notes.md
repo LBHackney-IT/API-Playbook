@@ -1,6 +1,6 @@
 ---
 id: notes
-title: Notes
+title: Release Notes
 ---
 ## Target Audience
 
