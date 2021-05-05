@@ -1,10 +1,6 @@
 module.exports = {
   docs: [
-    {
-      type: 'category',
-      label: 'Release Notes',
-      items: ['notes'],
-    },
+    'notes',
     {
       type: 'category',
       label: 'Home',
@@ -49,7 +45,7 @@ module.exports = {
   {
     type: 'category',
     label: 'Monitoring',
-    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', {'Request Tracing': ['x_ray']}]
+    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', 'x_ray']
   },
   {
     type: 'category',
@@ -61,20 +57,8 @@ module.exports = {
     label: 'Other Useful Information',
     items: ['rds_access', 'ec2_access','postgresql', {'Data Migration': ['data_migration','pipeline_implementation']}]
   },
-  {
-    type: 'category',
-    label: 'End to End Training',
-    items: ['first_end_point'],
-  },
-  {
-    type: 'category',
-    label: 'Developer API Hub',
-    items: ['developer_hub'],
-  },
-  {
-    type: 'category',
-    label: 'Contact Us',
-    items: ['contact_us'],
-  },
+  'first_end_point',
+  'developer_hub',
+  'contact_us'
 ]
 };

@@ -14,12 +14,12 @@
     --ifm-color-primary-light: #007057;
     --ifm-color-primary-lighter: #00755b;
     --ifm-color-primary-lightest: #008567;
-  
+
     --ifm-code-font-size: 95%;
-  
+
     --ifm-font-family-base: "Open Sans", sans-serif;
   }
-  
+
   html[data-theme="dark"] {
     --ifm-color-primary: #a4d65e;
     --ifm-color-primary-dark: #96d045;
@@ -29,25 +29,24 @@
     --ifm-color-primary-lighter: #b9df83;
     --ifm-color-primary-lightest: #cee9a8;
   }
-  
+
   html[data-theme="dark"] .navbar__logo {
     filter: grayscale(1) brightness(20);
   }
-  
+
   .docusaurus-highlight-code-line {
     background-color: rgb(72, 77, 91);
     display: block;
     margin: 0 calc(-1 * var(--ifm-pre-padding));
     padding: 0 var(--ifm-pre-padding);
   }
-  
+
   .alert--warning {
     --ifm-alert-color: var(--ifm-color-gray-900);
-  
+
     .admonition-icon svg {
       fill: var(--ifm-alert-color);
     }
-  }
 
 }
 
@@ -85,4 +84,3 @@
   position: sticky;
   left: var(--ifm-pre-padding);
 }
-
