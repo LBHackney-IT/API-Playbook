@@ -12,24 +12,22 @@ This document outlines our approach to monitoring and alerting in our APIs and s
 
 ## Logging Practices
 
-** Application Level Logging **
+### Application Level Logging
 
 Application level logging is an integral part of the application development process.  It provides useful insight into what is happening under the hood when your application runs.  Now that our applications are becoming more cloud native it has become even more important to have useful information emitting from your application for monitoring and debugging purposes.  This document aims to highlight some logging standards and best practices for our applications.
 
-** Leveraging Existing Tooling **
+### Leveraging Existing Tooling
 
 There are a number of tools that exist that provide robust, battle tested logging mechanisms.  Some of these that we have used in the past include:
 
-1. NLog
-2. Log4net
-3. Asp.net core logging framework
-4. AWS Lambda Logger
-
-4. AWS Lambda Logger
+- NLog
+- Log4net
+- Asp.net core logging framework
+- AWS Lambda Logger
 
 While there is not a set standard for which tool to utilise, it is important that applications do emit logs so that any issues can be easily traced to its source.
 
-** Developing a Custom Solution **
+### Developing a Custom Solution
 
 It is also reasonable to define our own custom logging solution which could be shared across all projects, possibly by building a Nuget package module which can be added to our base API as well as referenced in any existing projects
 
@@ -48,12 +46,13 @@ Logs must be emitted in JSON format and, in order to have a clear view and a con
 
 With a consistent standard of logging.  Logs can be scrutinised by a person or be consumed by another tool to extend our insight capabilities.
 
-** Log Properties **
+### Log Properties
 Possible properties for a log entry could include:
 
-1. Date
-2. Type of entry eg Information, Debug, Warning, Error, Critical
-3. Message detail
-4. Debug information
-5. Component that created the entry
-6. Correlation Id
+- Date
+- Type of entry 
+  * E.G. Information, Debug, Warning, Error, Critical
+- Message details
+- Debug information
+- Component that created the entry
+- Correlation Id
