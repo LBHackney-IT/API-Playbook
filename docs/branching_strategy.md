@@ -3,8 +3,6 @@ id: branching_strategy
 title: Branching Strategy
 ---
 
-## Development
-
 ** GitHub is used for version control and source code management. **
 
 
@@ -19,55 +17,55 @@ title: Branching Strategy
 
 ## Branch Definitions
 
-  ** GitFlow **
+### GitFlow
+
+[Inrtoduction to Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+_Note: GitFlow is not strictly followed throughout projects, projects can evaluate and choose a branching strategy suitable for their needs._
+
+![Gitflow Diagram](https://lh3.googleusercontent.com/proxy/GUPTglsVdpF4qXX1MB59hFVIwC34Osc5_-e1JcineRgJu52Ln_LskSYIAt6OVmIS_7KUqQQDgtovK-ZPtPoZv0Em0sB42sMyZCDg8YcyTYqMy1gP)
+
+_A simple gitflow diagram_
+
+#### Master branch
+
+The branch that holds the code currently in production.
+
+This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet)
 
 
-Note: GitFlow is not strictly followed throughout projects, projects can evaluate and choose a branching strategy suitable for their needs.
+#### Development branch
 
+The branch that holds any changes currently in development stage that are not yet pushed to a staging or production environment.
 
-** Master branch **
+If using development and master branches, a release to Staging/Production environments happens by a Pull Request from development to master.
 
-The branch that holds the code currently in production;
+#### Feature branch
 
-This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet);
+A branch containing any new changes as per requirements for the given project.
 
-
-
-** Development branch **
-
-The branch that holds any changes currently in development stage that are not yet pushed to a staging or production environment;
-
-If using development and master branches, a release to Staging/Production environments happens by a PR from development to master;
-
-
-
-** Feature branch **
-
-A branch containing any new changes as per requirements for the given project;
-
-A feature branch should be created from the ‘development’ branch;
+A feature branch should be created from the ‘development’ branch.
 
 Once happy with the changes in the feature branch, a pull request to merge the changes into the ‘development’ branch should be made.
 
 
+#### Hot-fix branch
 
-** Hot-fix branch **
+A branch containing fixes to code already in production state.
 
-A branch containing fixes to code already in production state;
+A hot-fix branch should be created from the master branch.
 
-A hot-fix branch should be created from the master branch;
+Any changes in the hot-fix branch should be merged into the master branch following a pull request review.
 
-Any changes in the hot-fix branch should be merged into the master branch following a pull request review;
-
-Hot-fixes applied should be merged directly to master as this triggers separate CircleCI workflow that will ensure that any changes currently in development are not overwritten;
-
+Hot-fixes applied should be merged directly to master as this triggers separate CircleCI workflow that will ensure that any changes currently in development are not overwritten.
 
 
-## Trunk Based Development  
+### Trunk Based Development  
 
-(https://trunkbaseddevelopment.com/) **
+[Introduction to Trunk Based Development](https://trunkbaseddevelopment.com/)
 
 Trunk based development is the most common branching strategy used for a microservice architecture. This is a fast workflow with minimal merging.
+
 Essentially in this model, master is the only branch which is maintained over time and other branches are considered transient and short lived.
 
 Feature branches should be as short lived as possible – the longer the branch is open for then the higher the risk of merge conflicts.
@@ -76,80 +74,28 @@ All commits to feature branches should be built and tested on the CI/CD platform
 
 The cadence of release branches should align with an individual’s services release schedule. Some projects may only create release branches at the end of a sprint, whilst others might create several per-week.
 
+![Truck Based Development Diagram](./doc-images/devops.png)
+_A simple Trunk Based Development workflow diagram_
 
-![alt text](./doc-images/devops.png)
-
-![alt text](./doc-images/branch_policies.png)
+| Branch Name | Branch Policies | Build & Test | Publish Artefacts | Deploy to Environments |
+| ----------- | --------------- | ------------ | ----------------- | ---------------------- |
+| feature/* | | Yes | No | N/A |
+| master | Require pull request<br/>Build validation | Yes | Yes | Development |
+| release/* | | Yes | Yes | Staging<br/>Production |
 
 Trunk-based development is a mindset more than a practice.  It forces the developers to think early on about how not to break the build, instead of waiting to think about this when merging the branch.
+
 Trunk-based development becomes more natural to adopt when you use feature flags in your continuous integration pipeline.  
+
 Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it,
 even if you haven't finished the feature yet. You'll be able to deploy at any time,
 but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
-
-
-
-## Environments
-
-** Pull requests: **
-
-All tests need to be passing prior to merging code
-
-GitHub PR template needs to be completed as detailed as possible, including a link to the JIRA ticket of the work done
-
-There needs to be a minimum of 1 approver per PR prior to merging
-
-![alt text](./doc-images/pull_requests.png)
-
-
-
-## Continuous testing:
-
-At Hackney, unit and integration tests must be run as part of the CI/CD pipeline at the point of:
-
-1. Code committed to remote branch
-2. Deployment to different environments
-
-  We use Test Driven Development (TDD) approach when writing code.
-  Each project’s test suite must include tests produced as part of TDD as well as integration tests.
-
-** More on practices in Hackney for writing tests here: [Link TBC in API playbook] **
-
-
 
 ## APIs
 
 For APIs, we use docker-compose to build image(s) and run the test suite.
 
 For the purpose of end-to-end tests, we create a docker image of a database to run tests against
-
-
-
-## Continuous Integration and Deployment
-
-
-Once a pull request has been merged, it will trigger a CircleCI workflow to automatically deploy to Development, Staging and Production respectively.
-
-** Note: Deployment to Production requires a manual approval step within CircleCI first. **
-
-
-![alt text](./doc-images/pull_request2.png)
-
-
-
-## Development workflow
-
-
-Merging into a ‘development’ branch triggers the ‘development deployment’ workflow:
-
-![alt text](./doc-images/dev_workflow.png)
-
-
-
-## Staging and Production workflow
-
-Merging into the ‘master’ branch automatically deploys to the staging environment. For production release, a manual approval stage in CircleCI is required.
-![alt text](./doc-images/staging_workflow.png)
 
 
 ## Continuous monitoring
@@ -168,7 +114,6 @@ Integrated with slack channel to get notifications when an alarm is triggered
   **  More on monitoring can be found in our API Playbook [Link TBC] **
 
 
-
 ## AWS Cloudtrail
 
 Used to monitor activities within our AWS accounts
@@ -178,17 +123,6 @@ Used to monitor activities within our AWS accounts
 Using AWS Security Hub to ensure our accounts are safe and resources adhere to AWS best security practices
 
 Alerts us when a security configuration rule compliance has changed
-
-
-
-## Infrastructure as code (IaC)
-
-      More on IaC in our API playbook here [Link TBC]]
-
-Each API is responsible for maintaining its own infrastructure.
-
-Our IaC deployment process is automated via our CI/CD pipeline.
-
 
 
 ## Serverless framework

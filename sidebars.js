@@ -40,7 +40,7 @@ module.exports = {
   {
     type: 'category',
     label: "How to build an API",
-    items: [{'Testing': ['tdd', 'unit_test', 'unit_testing', 'integration_tests']},{'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']}]
+    items: [{'Testing': ['tdd', 'unit_testing', 'mock_unit_tests', 'integration_tests']},{'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']}]
   },
   {
     type: 'category',

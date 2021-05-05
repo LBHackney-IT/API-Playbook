@@ -9,10 +9,11 @@ title: Clean Architecture
 
 Clean architecture is a software design philosophy that separates the elements of a design into ring levels.
 An important goal of clean architecture is to provide developers with a way to organize code in such a way that it encapsulates the business logic but keeps it separate from the delivery mechanism.
-Clean architecture was created by Robert C. Martin and promoted on his blog, Uncle Bob.
- Like other software design philosophies, clean architecture attempts to provide a cost-effective methodology that makes it easier to develop quality code that will perform better, is easier to change and has fewer dependencies.
 
- ![alt text](./doc-images/clean_architecture.png)
+Clean architecture was created by Robert C. Martin and promoted on his blog, Uncle Bob.
+Like other software design philosophies, clean architecture attempts to provide a cost-effective methodology that makes it easier to develop quality code that will perform better, is easier to change and has fewer dependencies.
+
+ ![Clean Architecture](./doc-images/clean_architecture.png)
 
 ## Video
 
@@ -24,75 +25,93 @@ Clean architecture was created by Robert C. Martin and promoted on his blog, Unc
 
 ## Base API Folder Structure
 
-At Hackney, normally we have 2 project folders:
-1. The actual Implementation Project
-2. The Test Folder - which will mirror the Implementation
+We have 2 project folders:
+1. The actual project implementation
+2. The Test Folder - which will mirror the implementation
 
-If we look at our Implementation Folder, we will notice that our code is structured into various Code Files and these files are all categorised, containing different subfolders.
+If we look at our implementation Folder, we will notice that our code is structured into various code files and these files are all categorised, containing different subfolders.
 
-
-## Type of Folders
+### Type of Folders
 
  ** Behavioural Folders: **        
 
  - Controller
  - Gateway
- - Use Case
+ - UseCase
 
-**  Data Structure Folders: **
-- Boundaries
-- Infrastructure
+** Data Structure Folders: **
+- Boundary
 - Domain
 - Factories
+- Infrastructure
 
-![alt text](./doc-images/folders.png)
 
+```shell title="Folder Structure" {6,12,16}
+.
+├── BaseApi
+│   ├── V1
+│   │   ├── Boundary
+│   │   │   └── ..
+│   │   ├── Controllers
+│   │   │   └── ..
+│   │   ├── Domain
+│   │   │   └── ..
+│   │   ├── Factories
+│   │   │   └── ..
+│   │   ├── Gateways
+│   │   │   └── ..
+│   │   ├── Infrastructure
+│   │   │   └── ..
+│   │   └── UseCase
+│   │       └── ..
+│   └── ..
+├── BaseApi.Tests
+│   └── ..
+└── ..
+```
+* _The three highlighted lines above are the **behavioural** folders_
 
-## Explore Our Folders
+### Explore Our Folders
 
-** 1.Boundary **
+1. **Boundary**
+  * This folder will hold all of the structures of data that we will expect to get in return to the calling client
+  * We use this folder to GET a Request or SEND a Response Make sure the way you structure the object response is clear and easy to understand
 
-This folder wil hold all of the structures of data that we will expect to get in return to the calling client
-We use this folder to GET a Request or SEND a Response Make sure the way you structure the object
-response is clear and easy to understand
+2. ** Controller **
+  * In this folder we set up the End Points for our APIs
 
-** 2. Controller **
+3. ** Domain **
+  * This folder is used to manipulate data
+  * In here we do any calculations within our app
 
-In this folder we set up the End Points for our APIs
+4. ** Factories **
+  * In here we do our conversion from one type of data structure to the next one (e.g: convert a domain object to a response one)
 
-** 3. Domain **
+5. ** Gateway **
+  * The responsability of the Gateway is to handle the interaction between your API and any external dependancies (such as another API or a Database)
+  * Gateway also has to be able to manipulate data in some way
 
-This folder is used to manipulate data
-In here we do any calculations within our app
+6. ** Infrastructure **
+  * In this folder, we set up the data structures that our Gateway will use
 
-** 4. Factories **
-In here we do our conversion from one type of data structure to the next one (e.g: convert a domain object to a response one)
+7. ** The UseCase **
+  * This is where we handle all of the behaviour/logic in our application.
 
-** 5. Gateway **
+## Request Workflow
 
-The responsability of the Gateway is to handle the interaction between your API and any external dependancies (such as another API or a Database) Gateway also has to be able to manipulate data in some way
+![Request Workflow](./doc-images/request_workflow.png)
+_A simplified diagram of how we process requests in our APIs_
 
-** 6.Infrastructure **
-
-In this folder, we set up the data structures that our Gateway will use
-
-** 7. The UseCase **
-
-This is where we handle all of the behaviour from our application
-
-##Good to Know
+## Good to Know
 
 ** Generally, in Gateway and Use Cases, we tend to have Interface Folders. **
 
 ** Reasons: **
 - When your API interacting with Boundaries, we don't interact with classes directly, but with the Interfaces
-- It makes the app more TESTABLE
-- It allows us to do DEPENDANCY INJECTION (we can set up an interface and this gets injected in the app whenever it's needed)
+- It makes the app more **testable**
+- It allows us to do **dependancy injection** (we can set up an interface and this gets injected in the app whenever it's needed)
 
 ** MUST HAVE: **
 
 - The Interface Folder defines the contract for your implementation
 - Any class that implements an Interface MUST have the 'Execute' method, otherwise your program won't compile properly
-
- ![alt text](./doc-images/request_workflow.png)
-
