@@ -1,6 +1,6 @@
 ---
 id: performance_monitoring
-title: AWS Lambda insights for performance monitoring
+title: AWS Lambda insights for Performance Monitoring
 ---
 
 ## What are Lambda insights?
