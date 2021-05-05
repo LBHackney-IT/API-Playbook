@@ -16,4 +16,6 @@ At Hackney, we have created a video that gives developers a good understanding o
 ##  Video Tutorial
 ** For a better understanding, you can watch our tutorial about how to create your first endpoint, from start to end. **
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ue2OGXFmoYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/ue2OGXFmoYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
