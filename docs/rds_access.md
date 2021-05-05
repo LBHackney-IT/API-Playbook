@@ -9,18 +9,13 @@ The instructions will help you connect to an AWS RDS instance without the need f
 
 ## Pre-requisites
 
-1. The aws cli installed - guide:
+1. The AWS CLI installed - [guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+)
 
-https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
-
-2. The aws session manager plugin installed - guide:
-
-https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
+2. The AWS session manager plugin installed - [guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
 
 
- 3.An ssh client installed (don’t think it comes as standard in Windows) - guide:
-
-https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse
+3. A SSH client installed - [guide for Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
 4. Your Google account be given the relevant permissions to the AWS account and the EC2 instance (jumpbox)
 5. The instance ID of the jumpbox
@@ -28,33 +23,29 @@ https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_i
 
 ** You will also need : **
 
-a. The DNS of the RDS instance you want to connect to
+- The DNS of the RDS instance you want to connect to
 
-b. The port that is open on that RDS instance
+- The port that is open on that RDS instance
 
-c. The database within the RDS instance you want to connect to
+- The database within the RDS instance you want to connect to
 
-d. The database credentials for the RDS instance you want to connect to
+- The database credentials for the RDS instance you want to connect to
 
 
 ## Steps
 
-** 1 - AWS credentials **
+### 1 - AWS credentials 
 
 Ensure that you have up to date AWS credentials for the account you want to access.
-There are multiple ways to do this:
 
-https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+There are multiple ways to do this, you can read the guidance [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 
 ** Here we will describe one of them: **
 
-1. Go to :
-
-https://hackney.awsapps.com/start#/
-
-and log in using your Google account credentials
+1. Go to https://hackney.awsapps.com/start#/ and log in using your Google account credentials
 
 2. Expand the account that you will need access to and click on “Command line or programmatic access” next to the role that you want to use.
+
 The role you will be using will have been explained to you beforehand.
 
 
@@ -64,9 +55,9 @@ The role you will be using will have been explained to you beforehand.
 
 ![alt text](./doc-images/rds2.png)
 
-2 - Connecting to RDS
+### 2 - Connecting to RDS
 
-** 2. In a shell - run the below command replacing the values in the table below with the ones for your connection. **
+** In a shell - run the below command replacing the values in the table below with the ones for your connection. **
 
 ![alt text](./doc-images/rds3.png)
 
