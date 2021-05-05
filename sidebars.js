@@ -50,7 +50,7 @@ module.exports = {
   {
     type: 'category',
     label: 'Securing your API',
-    items: ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
+    items: ['api_keys', 'lambda_authoriser']
   },
   {
     type: 'category',
