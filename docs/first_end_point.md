@@ -2,8 +2,11 @@
 id: first_end_point
 title: End to End Training
 ---
-## End-to-End Pipeline
-We have created a video that gives developers a good understanding of how we build API Endpoints from beginning to end, following best practices. The video below will go through the following steps:
+## Introduction
+
+We have created a video that gives developers a good understanding of how we build API Endpoints from beginning to end, following best practices. 
+
+The video below will go through the following steps:
 
 - Creating a repository using Hackney’s Base API template
 - Using our Renamer Script to rename the repository

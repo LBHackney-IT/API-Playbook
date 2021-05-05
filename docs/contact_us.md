@@ -2,8 +2,6 @@
 id: contact_us
 title: Contact The Hackney API Team
 ---
-## Contact Our Technical Team
-
 ** <u> For any enquiries please speak to: </u> **
 
 - ** Rashmi Shetty ** [rashmi.shetty@hackney.gov.uk] - Product Owner of Platform APIs
@@ -14,7 +12,7 @@ title: Contact The Hackney API Team
 
 - ** Matthew Keyworth ** [matthew.keyworth@hackney.gov.uk] - Lead Developer
 
-- ** Tuomo Karki ** [tuomo.karki@hackney.gov.uk] -Lead Developer
+- ** Tuomo Karki ** [tuomo.karki@hackney.gov.uk] - Lead Developer
 
 - ** Livia Basiu ** [livia.basiu@hackney.gov.uk] - Maintainer and Collaborator
 
