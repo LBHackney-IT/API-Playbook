@@ -1,10 +1,6 @@
 module.exports = {
   docs: [
-    {
-      type: 'category',
-      label: 'Release Notes',
-      items: ['notes'],
-    },
+    'notes',
     {
       type: 'category',
       label: 'Home',
@@ -20,11 +16,15 @@ module.exports = {
       label: 'Development Process',
       items: [
       {
-        'Designing your API': ['api_design_principles', 'api_implementation_guidelines', 'error_codes','naming_conventions']
+        'Designing your API': ['api_implementation_guidelines',
+        {
+          'Implementation Guidelines': ['api_design_principles', 'general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
+        },  
+          'error_codes']
       },
 
       {
-        'API Practices and Tools': ['linting','static_code_analysis',]
+        'API Practices and Tools': ['linting','static_code_analysis']
       },
       {
         'DevOps Practices': ['branching_strategy','deployment_pipeline', 'infrastructure']
@@ -45,7 +45,7 @@ module.exports = {
   {
     type: 'category',
     label: 'Monitoring',
-    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', {'Request Tracing': ['x_ray']}]
+    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', 'x_ray']
   },
   {
     type: 'category',
@@ -57,20 +57,8 @@ module.exports = {
     label: 'Other Useful Information',
     items: ['rds_access', 'ec2_access','postgresql', {'Data Migration': ['data_migration','pipeline_implementation']}]
   },
-  {
-    type: 'category',
-    label: 'End to End Training',
-    items: ['first_end_point'],
-  },
-  {
-    type: 'category',
-    label: 'Developer API Hub',
-    items: ['developer_hub'],
-  },
-  {
-    type: 'category',
-    label: 'Contact Us',
-    items: ['contact_us'],
-  },
+  'first_end_point',
+  'developer_hub',
+  'contact_us'
 ]
 };
