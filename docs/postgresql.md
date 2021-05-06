@@ -3,7 +3,7 @@ id: postgresql
 title: Creating users in PostgreSQL
 ---
 
-## How to add read only user to PostgreSQL database
+## How to add a Read-Only User to a PostgreSQL Database
 
 
 ** 1. Create a new user: **
