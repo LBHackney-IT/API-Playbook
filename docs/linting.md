@@ -3,7 +3,7 @@ id: linting
 title: Linting
 ---
 
-## Rules we enforce:
+## Rules we enforce
 
 - Indentation is **4 spaces** for tab
 
