@@ -1,62 +1,56 @@
 ---
 id: data_migration
-title: Setting Up DMS
+title: Setting Up AWS DMS
 ---
 
-## Data migration using AWS DMS
-
-## What is AWS DMS? ##
+# What is AWS DMS?
 
 AWS Data Migration Service (DMS) is a service that allows us to migrate data between a source (in our case, on-premises database) and a target (in our case, Postgres database hosted in AWS).
 
-** DMS supported replication types: **
+## DMS supported replication types
 
-<u> 1. Continuous replication (CDC) </u>
+- **Continuous replication (CDC)**
+  * When we want to do a one-off migration of all data and then continuously capture new inserts, updates and deletes and reflect them in our target database
 
-  a. When we want to do a one-off migration of all data and then continuously capture new inserts, updates and deletes and reflect them in our target database
-
-<u> 2. One-off data migration </u>
-
-  b. When the goal is to migrate all data from a source, and is expected that changes will not be captured and reflected
+- **One-off data migration**
+  * When the goal is to migrate all data from a source, and is expected that changes will not be captured and reflected
 
 
-## Which AWS DMS set up to use?
+# Which AWS DMS set up to use?
 
-**  <u> For continuous migration: </u> **
+## For continuous migration
 
-**  CDC **
+### CDC
 
-  a. CDC is a SQL server feature, available only on Enterprise and Developer editions
+CDC is a SQL server feature, available only on Enterprise and Developer editions.
 
-  b. It allows for changes to be captured (inserts/updates/deletes)
+It allows for changes to be captured (inserts/updates/deletes).
 
-**  Use case **
+#### Use case
 
-  1. When the source database does not have primary keys and you want to migrate data continuously.
+When the source database does not have primary keys and you want to migrate data continuously.
 
-**   MS Replication **
+### MS Replication
 
-  c. MS Replication is a SQL server feature available on all editions
+MS Replication is a SQL server feature available on all editions.
 
-  d. It creates a “distribution” database and every time there is a change, it is captured and stored in the “distribution” database
+It creates a “distribution” database and every time there is a change, it is captured and stored in the “distribution” database.
 
-  e. DMS will then read from that database to reflect the changes in the target database
+.MS will then read from that database to reflect the changes in the target database.
 
-**  f.NB! ** The sql user created must have ** sysadmin ** permissions to set up replication
+**Note:** The sql user created must have **sysadmin** permissions to set up replication
 
-  g. <u> Additional notes: </u> Configuration on the source database is required (please see below section). Additionally, SQL servers DO NOT come with MS replication
-   features pre-installed, so the server might require a set up.
+**Additional notes:** Configuration on the source database is required (please see below section). Additionally, SQL servers DO NOT come with MS replication features pre-installed, so the server might require a set up.
 
+#### Use cases
 
-**  Use cases **
+- When you want to migrate data continuously
 
-  1. When you want to migrate data continuously
+- When the SQL server is not Enterprise/Developer edition
 
-  2. When the SQL server is not Enterprise/Developer edition
+- When the source database has tables, which make use of primary keys
 
-  3. When the source database has tables, which make use of primary keys
-
-**  For one-off set up **
+## For one-off set up
 
   -  No database configuration is required
 
@@ -66,59 +60,52 @@ AWS Data Migration Service (DMS) is a service that allows us to migrate data bet
 
   - There are no subsequent runs of the migration task, unless triggered with other means
 
-**  Use cases **
+###  Use cases
 
   1. When only a one-off migration is required
 
   2. When the underlying source database is a reporting server and there are no possible ways to capture updates. In this scenario, we need to daily run a one-off migration, after the reporting server was updated with the latest data
 
 
-## How to set up DMS
+# How to set up DMS
 
-** Database set up  **
+## Database set up
 
- DMS with SQL CDC
+- [DMS with SQL CDC](https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit)
 
-https://docs.google.com/document/d/1EaZ-a8ejQwWQ40OGDGobxhTqtxXvtX9Ydk5mTFASUMo/edit
+- [DMS with MS Replication](https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing)
 
-DMS with MS Replication
-
-https://docs.google.com/document/d/14kNirloRWXCnla08brXiTihCMIm24chygc1lGUjNVbE/edit?usp=sharing
-
-AWS DMS set up via Terraform
+## AWS DMS set up via Terraform
 
 Both DMS and Postgres can be created via Terraform.
 
-** DMS **
+### DMS
 
-Template repository and example usage:
-
-https://github.com/LBHackney-IT/aws-dms-terraform
+[Template repository and example usage](https://github.com/LBHackney-IT/aws-dms-terraform)
 
 
 ![alt text](./doc-images/data_migration.png)
 
 
-**  NB: **
+**Notes:**
 
-  a. Follow the example usage, which also demonstrates how to add table mappings (specifying which tables are to be replicated)
+- Follow the example usage, which also demonstrates how to add table mappings (specifying which tables are to be replicated)
 
-  b. The source DB server should be specified with IP and not the server name
+- The source DB server should be specified with IP and not the server name
 
-  c. DMS instance should be in the VPC, where the VPN is set up to ensure communication to on-prem is possible
+- DMS instance should be in the VPC, where the VPN is set up to ensure communication to on-prem is possible
 
-  d. <u>  Make sure your DMS instance’s subnet group has only private subnets in it! </u>
-
-
-**  Postgres **
+- <u>  Make sure your DMS instance’s subnet group has only private subnets in it! </u>
 
 
-  Template repository and example usage:
-            https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/modules/database/postgres
+### Postgres
+
+[Template repository and example usage](https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/modules/database/postgres)
 
 ![alt text](./doc-images/data2.png)
 
-** NB: **
+**Notes:**
+
  - DMS does not support Postgres version 12, so use version 11 or older.
  - Always store passwords in parameter store and do not hardcode them
  - “Multi_az” should be true for production databases
@@ -128,13 +115,13 @@ https://github.com/LBHackney-IT/aws-dms-terraform
 ![alt text](./doc-images/data3.png)
 
 
-##  Data migration using a data pipeline
+## Data migration using a data pipeline
 
-  **    What is a data pipeline? **
+  ** What is a data pipeline? **
 
   A data pipeline is an automated flow that gets data stored in one location (source) and uploads it to a target destination.
 
-  **      Data pipeline - csv to Postgres **
+### Data pipeline - CSV to Postgres
 
   As of 26/06/2020, we have implemented one data pipeline.
 
