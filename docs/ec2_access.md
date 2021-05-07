@@ -4,17 +4,17 @@ title: Access to EC2 in a private subnet from local machine
 ---
 ## Steps to connect to EC2 instances in a private subnet
 
-
 ** Prerequisites **
 
 1. Ensure you have installed AWS CLI v2
 
 2. Ensure you have installed AWS Session manager plugin
 
-** If using AWS IAM user credentials: **
+## If using AWS IAM user credentials
+
 Run the following command to configure your AWS credentials:
 
-## AWS configure
+### AWS configure
 
 ** When prompted, provide the credentials required: **
 
@@ -26,7 +26,7 @@ Run the following command to configure your AWS credentials:
 
 4. Output format: json
 
-<u>  If using credentials from AWS SSO: </u>
+## If using credentials from AWS SSO
 
  If you already have an AWS account and you use AWS SSO:
 
