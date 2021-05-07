@@ -30,6 +30,7 @@ module.exports = {
     algolia: {
       apiKey: '4a83a5c4eb60fa0e4dae66ff84553e02',
       indexName: 'hackney',
+      placeholder: 'Search playbook'
     },
     footer: {
       style: "dark",
