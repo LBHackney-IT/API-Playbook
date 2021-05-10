@@ -27,7 +27,7 @@ module.exports = {
         'API Practices and Tools': ['linting','static_code_analysis']
       },
       {
-        'DevOps Practices': ['branching_strategy','deployment_pipeline', 'infrastructure']
+        'DevOps Practices': ['branching_strategies','deployment_pipeline', 'infrastructure']
       },
 
       {

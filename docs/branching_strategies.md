@@ -1,6 +1,6 @@
 ---
-id: branching_strategy
-title: Branching Strategy
+id: branching_strategies
+title: Branching Strategies
 ---
 
 ** GitHub is used for version control and source code management. **
@@ -14,6 +14,11 @@ title: Branching Strategy
 
   3. By default, repositories should be kept public, unless there is a specific need and justification not to do so.
 
+## Video Version
+
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/0btxBJJ5Dxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## Branch Definitions
 
