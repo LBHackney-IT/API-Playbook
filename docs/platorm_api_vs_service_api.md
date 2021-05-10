@@ -64,3 +64,6 @@ All platform APIs will be listed in our [API Hub](https://developer.api.hackney.
 ** To determine if you require a Service API or a Platform API **
 
 ![Decision flowchart](./doc-images/decision_flowchart.png)
+
+[**View the Miro board for higher resolution**](https://miro.com/app/board/o9J_lFTB0GI=/)
+
