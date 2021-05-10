@@ -4,9 +4,13 @@ title: API Design Principles
 ---
 ## Introduction
 
-Comparing SOA (Service-Oriented Architecture) web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialised. In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardised CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
+Comparing SOA (Service-Oriented Architecture) web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialised. 
 
- We prefer REST-based APIs with JSON payloads.
+In contrast, REST is centered around business (data) entities exposed as resources that are identified via URIs and can be manipulated via standardised CRUD-like methods using different representations, and hypermedia. RESTful APIs tend to be less use-case specific and comes with less rigid client / server coupling and are more suitable for an ecosystem of (core) services providing a platform of APIs to build diverse new business services. 
+
+We apply the RESTful web service principles to all kind of application (micro-) service components, independently from whether they provide functionality via the internet or intranet.
+
+We prefer REST-based APIs with JSON payloads.
 
 An important principle for API design and usage is Postel’s Law, aka [The Robustness Principle](http://en.wikipedia.org/wiki/Robustness_principle) (see also [RFC 1122](https://tools.ietf.org/html/rfc1122)):
 > Be liberal in what you accept, be conservative in what you send.
