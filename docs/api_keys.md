@@ -14,7 +14,7 @@ Some of our APIs still use API keys to manage access to the APIs. This was our i
 An API key in this context is a solution provided by AWS for managing access when using AWS API Gateway. Each resource (endpoint) within an API can be set to require an API key to be supplied, when making a request.
 
 
-![alt text](./doc-images/proxy_methods.png)
+![Proxy methods](./doc-images/proxy_methods.png)
 
 When this option is enabled, the API will return a status code of 401 Unauthorized if the consumer has not supplied the API key value within an ‘x-api-key’ HTTP header.
 

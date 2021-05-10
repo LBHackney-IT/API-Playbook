@@ -37,16 +37,16 @@ Additionally, we share the API blueprint with other relevant parties, such as th
 The process of documenting API endpoints involves working with a YAML file, where we would specify information such as the path to the API endpoint, the search parameters, API response object, the data types used and whether input fields are mandatory or not.
 
 
-![alt text](./doc-images/screenshot1.png)
+![YAML file](./doc-images/screenshot1.png)
 _The YAML file_
-![alt text](./doc-images/screenshot2.png)
+![Open API generated documentation](./doc-images/screenshot2.png)
 _The generated documentation_
 
 SwaggerHub’s online editor automatically validates the YAML file produced and allows developers to instantly see any changes they make by reflecting them onto the visual representation of the API endpoint. For easy visualisation, SwaggerHub interprets the OpenAPI document as easy to read documentation. This UI clearly lays out the endpoints for the API, which the development team can use for reference when writing code.
 
-![alt text](./doc-images/screenshot3.png)
+![Example payload](./doc-images/screenshot3.png)
 
-![alt text](./doc-images/screenshot4.png)
+![Models used in the response](./doc-images/screenshot4.png)
 _The documentation outlines an example payload and the models which will be used_
 
 Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API.
@@ -62,7 +62,7 @@ Providing a mock API and API blueprints will remove this blocker as it will give
 
 ## Where to find SwaggerHub
 
-Hackney SwaggerHub is located at https://app.swaggerhub.com/organizations/Hackney
+Hackney SwaggerHub is located at https://app.swaggerhub.com/organizations/Hackney.
 
 All the Platform APIs in development have been documented and are viewable on the SwaggerHub.
 

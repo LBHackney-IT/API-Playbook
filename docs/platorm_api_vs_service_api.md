@@ -4,7 +4,7 @@ title: Platform API vs Service API
 ---
 
 
-![alt text](./doc-images/platformapi.png)
+![Platform API vs Service API comparison](./doc-images/platformapi.png)
 
 
 ## A. Service APIs  
@@ -63,4 +63,4 @@ All platform APIs will be listed in our [API Hub](https://developer.api.hackney.
 
 ** To determine if you require a Service API or a Platform API **
 
-![alt text](./doc-images/decision_flowchart.png)
+![Decision flowchart](./doc-images/decision_flowchart.png)

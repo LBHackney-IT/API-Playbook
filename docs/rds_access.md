@@ -49,16 +49,16 @@ There are multiple ways to do this, you can read the guidance [here](https://doc
 The role you will be using will have been explained to you beforehand.
 
 
-![alt text](./doc-images/rds1.png)
+![Select role - AWS Console](./doc-images/rds1.png)
 
 3. You are then provided with instructions on how to add the credentials you will be authenticating with (note macOs and Windows options).
 
-![alt text](./doc-images/rds2.png)
+![AWS credentials](./doc-images/rds2.png)
 
 ### 2 - Connecting to RDS
 
 ** In a shell - run the below command replacing the values in the table below with the ones for your connection. **
 
-![alt text](./doc-images/rds3.png)
+![Commands to connect to RDS](./doc-images/rds3.png)
 
-You can then connect using your client on 127.0.0.1:9999
+You can then connect using your client on `127.0.0.1:9999`
