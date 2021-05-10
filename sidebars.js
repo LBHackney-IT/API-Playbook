@@ -19,7 +19,7 @@ module.exports = {
         'Designing your API': ['api_implementation_guidelines','api_design_principles',
         {
           'Implementation Guidelines': ['general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
-        },  
+        },
           'error_codes']
       },
 
@@ -51,6 +51,11 @@ module.exports = {
     type: 'category',
     label: 'Securing your API',
     items: ['api_keys', 'lambda_authoriser']
+  },
+  {
+    type: 'category',
+    label: 'Production Checklist',
+    items: ['debugging_apis', 'production_testing']
   },
   {
     type: 'category',
