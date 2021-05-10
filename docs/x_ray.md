@@ -17,6 +17,14 @@ AWS X-Ray collects logs and makes use of a Service Map to visualize the dependen
 
 X-Ray can be used to identify API requests that are currently not monitored by Canaries by comparing the user requests and those made by Canaries. This is useful to identify if any of the implemented API endpoints are currently not monitored for availability.
 
+### Video Tutorial
+
+**Watch our overview on XRay below:**
+
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/wdPm9hho9iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 ### Types of XRay Maps
 
 - ** Service Maps ** - End-to-end visual representation for all dependencies of an application that serves requests
