@@ -32,12 +32,12 @@ Run the following command to configure your AWS credentials:
 
 1. Go to the SSO portal and navigate to the account in which the EC2 instance is hosted.
 
-![alt text](./doc-images/ec2.png)
+![AWS SSO portal](./doc-images/ec2.png)
 
 
 2. Click on ‘Command line or programmatic access’
 
-![alt text](./doc-images/ec21.png)
+![Credentials](./doc-images/ec21.png)
 
 3. Copy your credentials (AWS Option 2 in screenshot above) and paste them in your aws credentials file (Usually located at the following path: Users -> your username -> .aws -> credentials)
 
@@ -46,8 +46,17 @@ Run the following command to configure your AWS credentials:
 
 Once the above is completed, please run the following command, where INSTANCE-ID is the EC2 instance ID as it appears in AWS console:
 
-![alt text](./doc-images/ec22.png)
+```powershell
+aws ssm start-session --target INSTANCE-ID --document-name
+AWS-StartPortForwarding Session --[REDACTED]
+"localPortNumber=[REDACTED],portNumber=[REDACTED]"
+```
+```powershell
+Starting session with SessionId: xpress-db-server-remote-user-[REDACTED]
+Port opened for sessionId xpress-db-server-remote-user-[REDACTED]
+Connection accepted for session xpress-db-server-remote-user-[REDACTED]
+```
 
-The above command will start a port forwarding session. To connect to your EC2 instance, go to your Remote Desktop software that you usually use and use ** ‘localhost:55678’ ** as computer name.
+The above command will start a port forwarding session. To connect to your EC2 instance, go to your Remote Desktop software that you usually use and use `localhost:55678` as the computer name.
 
 You will then be prompted to enter your Windows machine credentials.
