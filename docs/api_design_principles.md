@@ -19,11 +19,11 @@ An important principle for API design and usage is Postel’s Law, aka [The Robu
 
 Some interesting reads on the ** RESTful API ** design style and service architecture:
 
-  * [_Irresistable APIs: Designing web APIs that developers will love_](https://www.amazon.de/Irresistible-APIs-Designing-that-developers/dp/1617292559) - Kirsten Hunter (book)
+  * _Irresistable APIs: Designing web APIs that developers will love_ - Kirsten Hunter (Book)
 
-  * [_REST in Practice: Hypermedia and Systems Architecture_](http://www.amazon.de/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829) - Ian Robinson, Jim Webber, Savas Parastatidis (book)
+  *[_REST in Practice: Hypermedia and Systems Architecture_ - Ian Robinson, Jim Webber, Savas Parastatidis (Book)
 
-  * [_Build APIs You Won’t Hate: Everyone and their dog wants an API, so you should probably learn how to build them_](https://leanpub.com/build-apis-you-wont-hate)- Laura Bohill, Phil Sturgeon (Book)
+  * _Build APIs You Won’t Hate: Everyone and their dog wants an API, so you should probably learn how to build them_- Laura Bohill, Phil Sturgeon (Book)
 
   * [_Web APIs: From Start to Finish_](https://www.infoq.com/minibooks/emag-web-api/) - InfoQ (eMag)
 
