@@ -3,10 +3,9 @@ id: production_testing_checklist
 title: Production Testing Checklist
 ---
 
-## Production Testing Checklist
+**The following tasks should be completed before every API deployment into production unless there is a valid reason to not complete a given task.**
 
-The following tasks should be completed before every API deployment into production unless there is a valid reason to not complete a given task. This reason should be documented. 
-
+This reason should be documented. 
 
 ### Naming conventions
 - Endpoint URL follows the format of `api/v#/controllerName`
@@ -21,11 +20,12 @@ The following tasks should be completed before every API deployment into product
 - Data returned makes sense i.e. not loads of duplicates
 - Responses match the Swagger doc, if they don't for good reason, update Swagger
 - Values within responses are returned in the proper format
-    e.g. enums return the desired constant’s name/description and not its integer value in the enumeration; date/time is in a readable format
+    * e.g. enums return the desired constant’s name/description and not its integer value in the enumeration; date/time is in a readable format
 
 ### Configuration and security
 - All entities are created in AWS in each environment (incl. correct subnets and any other required config)
-- Check all env vars For example, make sure staging environment variables haven't been copied over to production without changing their values to the correct production values.
+- Check all environment variables 
+    * For example, make sure staging environment variables haven't been copied over to production without changing their values to the correct production values.
 - API keys are in place
 - API authentication is in place – no anonymous access
 

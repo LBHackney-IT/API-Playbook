@@ -11,7 +11,8 @@ title: API Standards
 
 2. Publish your code in the open and use open source code to improve transparency, flexibility and accountability.  When re-using code ensure that we benefit from the community that support it.
 
-3. The service meets security guidelines, minimises data collection and reuses existing data to avoid duplication of datasets.  You have permission to use the data for this purpose and the approach to access management is consistent with that permission.
+3. The service meets security guidelines, minimises data collection and reuses existing data to avoid duplication of datasets.
+    * You have permission to use the data for this purpose and the approach to access management is consistent with that permission.
 
 4. You have identified the capacity, resources and technical flexibility to iterate and improve the service frequently.
 
