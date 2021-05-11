@@ -7,11 +7,11 @@ title: Pipeline Implementation
 
 The source S3 bucket has been configured to invoke a Lambda function when a file has been uploaded with extension `.csv`.
 
-![alt text](./doc-images/data5.png)
+![S3 Bucket](./doc-images/data5.png)
 
 The configuration for the source S3 bucket is done using the pipeline’s serverless implementation - <u> no manual set up is required for events </u>.
 
-![alt text](./doc-images/data6.png)
+![S3 configuration](./doc-images/data6.png)
 
 ## Lambda 
 

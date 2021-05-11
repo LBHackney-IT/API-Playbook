@@ -47,7 +47,8 @@ dotnet_diagnostic.<category or ruleId>.severity = error
 
 - Depending on the volume of errors and the specificity of the errors we want to surface, this may require adding a lot of lines of code to the .editorConfig file.
 
-- Doesn’t seem to be an auto-correct function but this wasn’t explored much for this spike.
+- Doesn’t seem to be an auto-correct function
+  * (This wasn’t explored much)
 
 - No explicit documentation on how to set it up in a CI pipeline.
 

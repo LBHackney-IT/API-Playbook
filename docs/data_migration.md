@@ -84,7 +84,7 @@ Both DMS and Postgres can be created via Terraform.
 [Template repository and example usage](https://github.com/LBHackney-IT/aws-dms-terraform)
 
 
-![alt text](./doc-images/data_migration.png)
+![DMS example usage](./doc-images/data_migration.png)
 
 
 **Notes:**
@@ -102,7 +102,7 @@ Both DMS and Postgres can be created via Terraform.
 
 [Template repository and example usage](https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/modules/database/postgres)
 
-![alt text](./doc-images/data2.png)
+![PostgreSQL example usage](./doc-images/data2.png)
 
 **Notes:**
 
@@ -112,7 +112,7 @@ Both DMS and Postgres can be created via Terraform.
  - “subnet_ids” requires subnets in 2 different AZs. Make sure those are private subnets to ensure that the database is secure.
 - Currently not terraformed: To enable traffic from DMS to your Postgres instance, ensure you add to the ingress rules of the database’s security group all traffic   from DMS security group.
 
-![alt text](./doc-images/data3.png)
+![AWS console](./doc-images/data3.png)
 
 
 ## Data migration using a data pipeline
@@ -127,4 +127,4 @@ Both DMS and Postgres can be created via Terraform.
 
   The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
 
-  ![alt text](./doc-images/data4.png)
+  ![Data pipelines](./doc-images/data4.png)
