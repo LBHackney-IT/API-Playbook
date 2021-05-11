@@ -1,6 +1,6 @@
 ---
-id: branching_strategy
-title: Branching Strategy
+id: branching_strategies
+title: Branching Strategies
 ---
 
 ** GitHub is used for version control and source code management. **
@@ -14,6 +14,11 @@ title: Branching Strategy
 
   3. By default, repositories should be kept public, unless there is a specific need and justification not to do so.
 
+## Video Version
+
+<figure class="video-container">
+  <iframe width="100%" src="https://www.youtube.com/embed/0btxBJJ5Dxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 ## Branch Definitions
 
@@ -23,7 +28,7 @@ title: Branching Strategy
 
 _Note: GitFlow is not strictly followed throughout projects, projects can evaluate and choose a branching strategy suitable for their needs._
 
-![Gitflow Diagram](https://lh3.googleusercontent.com/proxy/GUPTglsVdpF4qXX1MB59hFVIwC34Osc5_-e1JcineRgJu52Ln_LskSYIAt6OVmIS_7KUqQQDgtovK-ZPtPoZv0Em0sB42sMyZCDg8YcyTYqMy1gP)
+![Gitflow Diagram](./doc-images/gitflow.png)
 
 _A simple gitflow diagram_
 
@@ -90,58 +95,3 @@ Trunk-based development becomes more natural to adopt when you use feature flags
 Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it,
 even if you haven't finished the feature yet. You'll be able to deploy at any time,
 but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
-
-## APIs
-
-For APIs, we use docker-compose to build image(s) and run the test suite.
-
-For the purpose of end-to-end tests, we create a docker image of a database to run tests against
-
-
-## Continuous monitoring
-
-AWS CloudWatch
-
-Used for Application monitoring
-
-Using alarms for when errors occur
-
-Using Canaries for up-time monitoring
-
-Integrated with slack channel to get notifications when an alarm is triggered
-
-
-  **  More on monitoring can be found in our API Playbook [Link TBC] **
-
-
-## AWS Cloudtrail
-
-Used to monitor activities within our AWS accounts
-
-## AWS Security Hub
-
-Using AWS Security Hub to ensure our accounts are safe and resources adhere to AWS best security practices
-
-Alerts us when a security configuration rule compliance has changed
-
-
-## Serverless framework
-
-We use the serverless framework to help us deploy Lambda functions and related resources.
-
-The serverless framework configuration is stored within a serverless.yml file and should be responsible for provisioning resources related directly to the Lambda function that is to be deployed.
-
-API Gateway for exposing the APIs
-
-Lambda IAM role;
-
-
-Although serverless allows for other AWS resources to be provisioned using IaC approach, we use Terraform for provisioning other resources, such as DMS (Data migration service) tasks, S3 buckets, etc.
-
-
-## Terraform
-
-Used for provisioning all other AWS resources, apart from the Lambda related resources listed above.
-
-Terraform Hackney Guide - Note: This will be evolving from its current state as currently the Cloud Deployment team are producing more Terraform templates.
-

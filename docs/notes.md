@@ -4,16 +4,16 @@ title: Release Notes
 ---
 ## Target Audience
 
-All HackIT internal developers and external agencies developer collaborating on Hackney projects
+All HackIT internal developers and external agencies developer collaborating on Hackney projects.
 
 ## Enhancements
 
-- Inline the API playbook with the new design system to maintain consistency across the board.
+- Align the API playbook with the new design system to maintain consistency across the board.
 - Self training modules
 - Serverless Lambda framework
 - Linting
 - Static Code Analysis
-- DevOps Practices including videos
+- DevOps Practices (including videos)
 - Updated API boilerplate
 - Monitoring and alerts via Cloudwatch canaries.
 - Uptime Monitoring using X-Ray

@@ -16,10 +16,10 @@ module.exports = {
       label: 'Development Process',
       items: [
       {
-        'Designing your API': ['api_implementation_guidelines',
+        'Designing your API': ['api_implementation_guidelines','api_design_principles',
         {
-          'Implementation Guidelines': ['api_design_principles', 'general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
-        },  
+          'Implementation Guidelines': ['general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
+        },
           'error_codes']
       },
 
@@ -27,7 +27,7 @@ module.exports = {
         'API Practices and Tools': ['linting','static_code_analysis']
       },
       {
-        'DevOps Practices': ['branching_strategy','deployment_pipeline', 'infrastructure']
+        'DevOps Practices': ['branching_strategies','deployment_pipeline', 'infrastructure']
       },
 
       {
@@ -50,7 +50,12 @@ module.exports = {
   {
     type: 'category',
     label: 'Securing your API',
-    items: ['api_keys', {'Lambda authoriser': ['generating_tokens']}]
+    items: ['api_keys', 'lambda_authoriser']
+  },
+  {
+    type: 'category',
+    label: 'Production Checklist',
+    items: ['debugging_apis', 'production_testing']
   },
   {
     type: 'category',
