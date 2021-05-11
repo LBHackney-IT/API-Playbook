@@ -60,7 +60,7 @@ A branch containing fixes to code already in production state.
 
 A hot-fix branch should be created from the master branch.
 
-Any changes in the hot-fix branch should be merged into the master branch following a pull request review.
+Any changes in the hot-fix branch should be merged into **both** the master & development branches following a pull request review.
 
 Hot-fixes applied should be merged directly to master as this triggers separate CircleCI workflow that will ensure that any changes currently in development are not overwritten.
 
@@ -92,6 +92,4 @@ Trunk-based development is a mindset more than a practice.  It forces the develo
 
 Trunk-based development becomes more natural to adopt when you use feature flags in your continuous integration pipeline.  
 
-Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it,
-even if you haven't finished the feature yet. You'll be able to deploy at any time,
-but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
+Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it, even if you haven't finished the feature yet. You'll be able to deploy at any time, but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
