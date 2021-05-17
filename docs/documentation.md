@@ -38,8 +38,11 @@ The process of documenting API endpoints involves working with a YAML file, wher
 
 
 ![YAML file](./doc-images/swagger_yaml.png)
+
 _The YAML file_
+
 ![Open API generated documentation](./doc-images/swagger_generated_spec.png)
+
 _The generated documentation_
 
 SwaggerHub’s online editor automatically validates the YAML file produced and allows developers to instantly see any changes they make by reflecting them onto the visual representation of the API endpoint. For easy visualisation, SwaggerHub interprets the OpenAPI document as easy to read documentation. This UI clearly lays out the endpoints for the API, which the development team can use for reference when writing code.
