@@ -21,10 +21,10 @@ function Home() {
       <main className="container">
         <section className={styles.features}>
           <div>
-            <h3>For Service Users</h3>
+            <h3>Made For Developers</h3>
             <p>
-            APIs have become an essential part of Hackney’s digital Transformation.
-            Our Playbook provides a consistent standard of implementation.
+              APIs have become an essential part of Hackney’s digital Transformation.
+              Our Playbook provides a consistent standard of implementation.
             </p>
             <Link
               className={clsx("button button--primary", styles.getStarted)}
@@ -35,7 +35,7 @@ function Home() {
           </div>
 
           <div>
-            <h3>For Developers</h3>
+            <h3>Made For Developers</h3>
             <p>
               It is primarily used to onboard new developers, but also for external members willing to understand of the way that we implement APIs within the Organisation.
             </p>
@@ -43,20 +43,20 @@ function Home() {
               className={clsx("button button--primary", styles.getStarted)}
               to={useBaseUrl("introduction")}
             >
-              See docs
+              Get Started
             </Link>
           </div>
 
           <div>
-            <h3>Contact Us</h3>
+            <h3>Give Feedback</h3>
             <p>
-              For further information or to provide feedback please contact our API team
+              We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook <a href='https://github.com/LBHackney-IT/API-Playbook/issues'>GitHub Repo</a>.
             </p>
             <Link
               className={clsx("button button--secondary", styles.getStarted)}
               to={useBaseUrl("contact_us")}
             >
-              See guidelines
+              Contact Us
             </Link>
           </div>
         </section>
