@@ -12,6 +12,7 @@ $lbh-font-family: "Open Sans";
   --ifm-color-primary-light: #007057;
   --ifm-color-primary-lighter: #00755b;
   --ifm-color-primary-lightest: #008567;
+  --ifm-font-weight-bold: 600; 
   --ifm-z-index-fixed: 5;
   --ifm-z-index-overlay: 5;
   --ifm-code-font-size: 95%;
@@ -30,6 +31,10 @@ html[data-theme="dark"] {
 
 html[data-theme="dark"] .navbar__logo {
   filter: grayscale(1) brightness(20);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0b0c0c;
 }
 
 .docusaurus-highlight-code-line {
