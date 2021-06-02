@@ -10,7 +10,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+    <Layout title={siteConfig.link} description={siteConfig.tagline}>
       <header className={clsx("hero hero--primary", styles.hero)}>
         <div className={clsx("container", styles.narrowContainer)}>
           <img alt="API Playbook Logo" src={useBaseUrl("/img/api_playbook_logo.png")} />
