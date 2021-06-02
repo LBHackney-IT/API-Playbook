@@ -1,0 +1,68 @@
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
+
+function Home() {
+  const context = useDocusaurusContext();
+  const { siteConfig = {} } = context;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.tagline}>
+      <header className={clsx("hero hero--primary", styles.hero)}>
+        <div className={clsx("container", styles.narrowContainer)}>
+          <img alt="API Playbook Logo" src={useBaseUrl("/img/api_playbook_logo.png")} />
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+        </div>
+      </header>
+      <main className="container">
+        <section className={styles.features}>
+          <div>
+            <h3>For Service Users</h3>
+            <p>
+            APIs have become an essential part of Hackney’s digital Transformation.
+            Our Playbook provides a consistent standard of implementation.
+            </p>
+            <Link
+              className={clsx("button button--primary", styles.getStarted)}
+              to={useBaseUrl("introduction")}
+            >
+              Get started
+            </Link>
+          </div>
+
+          <div>
+            <h3>For Developers</h3>
+            <p>
+              It is primarily used to onboard new developers, but also for external members willing to understand of the way that we implement APIs within the Organisation.
+            </p>
+            <Link
+              className={clsx("button button--primary", styles.getStarted)}
+              to={useBaseUrl("introduction")}
+            >
+              See docs
+            </Link>
+          </div>
+
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              For further information or to provide feedback please contact our API team
+            </p>
+            <Link
+              className={clsx("button button--secondary", styles.getStarted)}
+              to={useBaseUrl("contact_us")}
+            >
+              See guidelines
+            </Link>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
+}
+
+export default Home;

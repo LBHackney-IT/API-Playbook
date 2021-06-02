@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation'],
+      items: ['introduction','api_standards', 'platform_api_vs_service_api', 'documentation'],
     },
     {
       type: 'category',

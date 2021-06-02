@@ -1,0 +1,39 @@
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero img {
+  max-height: 250px;
+}
+
+.hero p {
+  margin-bottom: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.features {
+  padding: 4rem 0 0 0;
+}
+
+.features div {
+  margin-bottom: 4rem;
+}
+
+.narrowContainer {
+  max-width: calc(var(--ifm-container-width) * 0.75);
+}
+
+@media screen and (min-width: 966px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .features {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

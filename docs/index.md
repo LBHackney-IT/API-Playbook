@@ -1,7 +1,6 @@
 ---
-id: index
+id: introduction
 title: Introduction
-slug: /
 ---
 
 APIs have become an essential part of Hackney’s digital transformation. They are the building blocks of the majority of our new internal systems and are part of the foundation of our cloud based architecture. They provide the opportunity for reuse and the flexibility to combine data and services in new and previously unimaginable ways.

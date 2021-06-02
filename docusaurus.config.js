@@ -1,7 +1,7 @@
 module.exports = {
   title: "Hackney API Playbook",
   tagline:
-    "A guide on Hackney's development practices, and how to follow them",
+    "Everything you need to start building APIs for Hackney services along with best practices.",
   url: "https://lbhackney-it.github.io/API-Playbook",
   baseUrl: "/API-Playbook/",
   onBrokenLinks: "warn",
