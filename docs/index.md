@@ -25,4 +25,4 @@ Today we have come to the point where our playbook has taken a more governance r
 This playbook is primarily used to onboard new developers, whether they are new members of staff or new agency partners we work with. However, we would be thrilled if this playbook is also read by a wider audience. We are also always happy to receive contributions or feedback to make this even better.
 
 ## Help us improve
-We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook [GitHub Repo](https://github.com/LBHackney-IT/API-Playbook).
+We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook [GitHub Repo](https://github.com/LBHackney-IT/API-Playbook/issues).

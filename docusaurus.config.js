@@ -45,7 +45,7 @@ module.exports = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/LBHackney-IT/API-Playbook/edit/master/",
+          editUrl: "https://github.com/LBHackney-IT/API-Playbook/edit/documentation/",
         },
         theme: {
           customCss: [require.resolve("./src/docs.scss")],
