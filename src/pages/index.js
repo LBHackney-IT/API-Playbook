@@ -14,7 +14,7 @@ function Home() {
       <header className={clsx("hero hero--primary", styles.hero)}>
         <div className={clsx("container", styles.narrowContainer)}>
           <img alt="API Playbook Logo" src={useBaseUrl("/img/api_playbook_logo.png")} />
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">API Playbook</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
         </div>
       </header>

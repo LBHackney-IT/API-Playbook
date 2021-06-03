@@ -21,7 +21,7 @@ Some interesting reads on the ** RESTful API ** design style and service archite
 
   * _Irresistable APIs: Designing web APIs that developers will love_ - Kirsten Hunter (Book)
 
-  *[_REST in Practice: Hypermedia and Systems Architecture_ - Ian Robinson, Jim Webber, Savas Parastatidis (Book)
+  * _REST in Practice: Hypermedia and Systems Architecture_ - Ian Robinson, Jim Webber, Savas Parastatidis (Book)
 
   * _Build APIs You Won’t Hate: Everyone and their dog wants an API, so you should probably learn how to build them_- Laura Bohill, Phil Sturgeon (Book)
 
