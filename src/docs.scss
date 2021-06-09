@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-$govuk-font-family: "Open Sans";
-$govuk-include-default-font-face: false;
-$lbh-font-family: "Open Sans";
-
 :root {
   --ifm-color-primary: #00664f;
   --ifm-color-primary-dark: #005c47;
@@ -17,6 +13,7 @@ $lbh-font-family: "Open Sans";
   --ifm-z-index-overlay: 5;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Open Sans", sans-serif;
+  --ifm-heading-font-weight: 700;
 }
 
 html[data-theme="dark"] {

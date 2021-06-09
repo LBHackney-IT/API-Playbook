@@ -14,14 +14,14 @@ function Home() {
       <header className={clsx("hero hero--primary", styles.hero)}>
         <div className={clsx("container", styles.narrowContainer)}>
           <img alt="API Playbook Logo" src={useBaseUrl("/img/api_playbook_logo.png")} />
-          <h1 className="hero__title">API Playbook</h1>
+          <h1 className="hero__title">Hackney API Playbook</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
         </div>
       </header>
       <main className="container">
         <section className={styles.features}>
           <div>
-            <h3>Made For Developers</h3>
+            <h3>A Standard Approach</h3>
             <p>
               APIs have become an essential part of Hackney’s digital Transformation.
               Our Playbook provides a consistent standard of implementation.
@@ -30,18 +30,18 @@ function Home() {
               className={clsx("button button--primary", styles.getStarted)}
               to={useBaseUrl("introduction")}
             >
-              Get started
+              Read docs
             </Link>
           </div>
 
           <div>
             <h3>Made For Developers</h3>
             <p>
-              It is primarily used to onboard new developers, but also for external members willing to understand of the way that we implement APIs within the Organisation.
+            This is an in-depth guide on how we create APIs. We mainly use our playbook to onboard new developers, but anyone interested can learn how we implement APIs at Hackney.
             </p>
             <Link
               className={clsx("button button--primary", styles.getStarted)}
-              to={useBaseUrl("introduction")}
+              to={useBaseUrl("api_boilerplate")}
             >
               Get Started
             </Link>
