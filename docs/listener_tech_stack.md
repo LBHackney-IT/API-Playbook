@@ -38,7 +38,7 @@ title: Listener Tech Stack
 - GitHub for version control
   * [HackIT Github](https://github.com/LBHackney-IT)
 - AWS for cloud hosting
-- AWS Cloudwatch for monitoring
-- Terraform for IaC (e.g. setting up AWS DMS)
+- AWS CloudWatch for monitoring
+- Terraform for Infrastructure as Code (IaC) (e.g. setting up AWS DMS)
   * [See more](/infrastructure)
-- AWS Parameter store for secrets (conn string and similar)
+- AWS Parameter Store for secrets (connection string and similar)

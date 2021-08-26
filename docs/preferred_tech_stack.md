@@ -20,11 +20,11 @@ title: Preferred Tech Stack
 
 ## Testing
 
-- nUnit
-- FluentAssertions
-- Moq
+- [nUnit](https://nunit.org/)
+- [FluentAssertions](https://fluentassertions.com/introduction)
+- [Moq](https://github.com/Moq/moq4/wiki/Quickstart)
 - Bogus (Faker) for faking test data
-- AutoFixture
+- [AutoFixture](https://github.com/AutoFixture/AutoFixture)
 - WebApplicationFactory (Microsoft.AspNetCore.Mvc.Testing)
   * For bootstrapping the application (API) in memory and run end-to-end tests
 - Docker & docker-compose
@@ -44,7 +44,7 @@ title: Preferred Tech Stack
 - GitHub for version control
   * [HackIT Github](https://github.com/LBHackney-IT)
 - AWS for cloud hosting
-- AWS Cloudwatch for monitoring
-- Terraform for IaC (e.g. setting up AWS DMS)
+- AWS CloudWatch for monitoring
+- Terraform for Infrastructure as Code (IaC) (e.g. setting up AWS DMS)
   * [See more](/infrastructure)
-- AWS Parameter store for secrets (conn string and similar)
+- AWS Parameter Store for secrets (connection string and similar)
