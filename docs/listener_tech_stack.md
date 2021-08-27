@@ -1,32 +1,30 @@
 ---
-id: preferred_tech_stack
-title: Preferred Tech Stack
+id:    listener_tech_stack
+title: Listener Tech Stack
 ---
-## APIs
+## Listener application
 
 - .NET Core 3.1 (C#)
 - AWS Lambda
 - Serverless framework
   * [See more](/serverless_lambda)
-- AWS API Gateway
-- Hackney Lambda authorizer (for authentication)
-  * [See more](/generating_tokens)
 - FxCop for static code analysis
   * [See more](/static_code_analysis)
+- [Hackney.Core.xxx](https://github.com/LBHackney-IT/lbh-core)
+  * Common Hackney NuGet packages providing common functionality
 - dotnet-format for linting
   * [See more](/linting)
-- AWS Canaries for availability monitoring
-  * [See more](/uptime_monitoring)
 
 ## Testing
 
-- [nUnit](https://nunit.org/)
+- [xUnit](https://xunit.net/)
 - [FluentAssertions](https://fluentassertions.com/introduction)
 - [Moq](https://github.com/Moq/moq4/wiki/Quickstart)
-- Bogus (Faker) for faking test data
 - [AutoFixture](https://github.com/AutoFixture/AutoFixture)
-- WebApplicationFactory (Microsoft.AspNetCore.Mvc.Testing)
-  * For bootstrapping the application (API) in memory and run end-to-end tests
+- [BDDfy](https://github.com/TestStack/TestStack.BDDfy)
+  * For end-to-end tests
+- Host (Microsoft.Extensions.Hosting)
+  * For bootstrapping the application in memory to run end-to-end tests
 - Docker & docker-compose
     * For spinning up DB image containers and running tests against that database 
     * _During local development and during test run as part of CI/CD_
@@ -35,10 +33,6 @@ title: Preferred Tech Stack
 
 ## Common
 
-- Swagger documentation
-  * For API design prior to implementation
-  * Automated Swagger docs for each API endpoint deployed
-  * [See more](/documentation)
 - CircleCI for CI/CD
   * [See more](/deployment_pipeline)
 - GitHub for version control

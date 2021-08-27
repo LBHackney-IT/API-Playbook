@@ -34,6 +34,11 @@ module.exports = {
         type: 'category',
         label: 'API Setup',
         items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entity_framework']
+      },
+      {
+        type: 'category',
+        label: 'Listeners',
+        items: ['listener_tech_stack', 'listener_boilerplate']
       }
   ]
   },
