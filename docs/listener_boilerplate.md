@@ -4,7 +4,7 @@ title: Listener Boilerplate - Base Listener
 ---
 ## Introduction
 
-[Events](http://localhost:3000/API-Playbook/serverless_lambda#events) occur all the time throughout any application, they may for example be a database or file being updated, a timer firing or a message being sent, 
+[Events](/serverless_lambda#events) occur all the time throughout any application, they may for example be a database or file being updated, a timer firing or a message being sent, 
 and sometimes additional processing is required elsewhere in the system as a result of them happening.
 
 These events can be used to trigger AWS Lambda functions to perform the necessary processing.
