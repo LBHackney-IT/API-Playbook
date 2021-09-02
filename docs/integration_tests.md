@@ -7,6 +7,14 @@ title: How to write integration tests
 
 When creating a new endpoint or adding new functionality to an API it's good practice to start by writing an integration test outlining the functionality you are hoping to achieve. You can then write unit tests when you touch the individual classes you will be working on. Integration tests give you confidence that all your classes work together and that the full feature you have made is working correctly. These tests are slightly different depending on which database type is being employed: Postgres of DynamoDb.
 
+### Video Tutorial
+
+** Start by having a look at our E2E Tests overview: **
+
+<figure class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6QHeDl3KC7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 ## Postgres
 
 PostgreSQL is an object-relational database system that uses SQL language along with many other features to securely store and scale all data workloads including the most complicated ones.
