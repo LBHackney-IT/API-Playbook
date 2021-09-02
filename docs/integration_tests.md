@@ -12,7 +12,7 @@ When creating a new endpoint or adding new functionality to an API it's good pra
 ** Start by having a look at our E2E Tests overview: **
 
 <figure class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6QHeDl3KC7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="100%" src="https://www.youtube.com/embed/6QHeDl3KC7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
 ## Postgres
