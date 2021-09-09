@@ -20,5 +20,5 @@ The video below will go through the following steps:
 ##  Video Tutorial
 Note: To go back a forth between the videos please use the playlist button available
 <figure class="video-container">
-  <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PL1mVZlA7eC8SviOMxwqErxi9sF8FXwFSj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PL1mVZlA7eC8RlnSifeo-qR1PLZ9K9xFq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
