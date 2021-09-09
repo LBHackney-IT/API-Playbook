@@ -67,7 +67,11 @@ module.exports = {
     label: 'Other Useful Information',
     items: ['rds_access', 'ec2_access','postgresql', {'Data Migration': ['data_migration','pipeline_implementation']}]
   },
-  'first_end_point',
+  {
+    type: 'category',
+    label: "End to End Training",
+    items: ['first_end_point_postgres', 'first_end_point_dynamo']
+  },
   'developer_hub',
   'contact_us'
 ]
