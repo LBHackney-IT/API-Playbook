@@ -51,4 +51,4 @@ In the example events listed above, the API needs to care about one action at a 
 
 The event-driven architecture approach is a paradigm shift from more traditional architectures that closely couple data and services within one data store and monolithic application.
 
-
+If you want to reduce the number of tightly coupled dependencies within your application, you can move towards and event driven approach.
