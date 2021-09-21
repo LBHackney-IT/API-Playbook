@@ -19,11 +19,11 @@ Given the decoupled nature of individual listeners consuming events, it is relat
 Listeners subscribe to queues, and read events from those queues. As events get consumed, they get removed from the queue. In the case of a failure, the event gets sent to a separate “dead letter” queue and stored for future re-processing.
 This has a number of benefits, for example:
 - If the listener is down, messages will sit on the queue until such times as the listener is up again
-- If there is a failure when processing a message, it is not lost, and can be re-processed once the root cause is identified and resolved
+- If there is a failure when processing a message, it does not get not lost, and can be re-processed once the root cause is identified and resolved
 
 ### Performance
 
-Whilst it is not necessarily always the case, it is oftentimes possible to achieve significant performance improvements by following an event driven approach. Given that data can be modeled for retrieval rather than for storage, and with the use of a NoSQL document database, queries are relatively straightforward with no complex joins. Events keep the data up to date in an “eventually consistent” manner, trading off the fact that the data might be out of date for a short period of time.
+Whilst it is not necessarily always the case, it is oftentimes possible to achieve significant performance improvements by following an event driven approach. Given that data can be modeled for retrieval rather than for storage, and with the use of a NoSQL document database, queries can be kept relatively straightforward with no complex joins. Events keep subsets of data up to date in an “eventually consistent” manner, trading off the fact that the subset of data might be out of date for a short period of time.
 
 ## Examples from _Manage My Home_
 
@@ -45,10 +45,10 @@ This gets raised from the Tenure API, and consumed by:
     - To update a tenure in the tenure search index with the new person’s details
     - To update the person search index with the new tenure linked to the person
 
-In the example events listed above, the API needs to care about one action at a time. Creating a tenure (1) and adding a person to a tenure (2). 
+In the example events listed above, the API needs to care about one action at a time. Creating a tenure (1) and adding a person to a tenure (2).
 
 ## When to use an event-driven approach
 
-The event-driven architecture approach is a paradigm shift from more traditional architectures that closely couple data and services within one data store and monolithic application. 
+The event-driven architecture approach is a paradigm shift from more traditional architectures that closely couple data and services within one data store and monolithic application.
 
 
