@@ -59,6 +59,11 @@ module.exports = {
   },
   {
     type: 'category',
+    label: 'Event Driven Architecture',
+    items: ['eda']
+  },
+  {
+    type: 'category',
     label: 'Production Checklist',
     items: ['debugging_apis', 'production_testing']
   },
