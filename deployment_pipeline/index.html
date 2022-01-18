@@ -9,15 +9,15 @@
 <link rel="search" type="application/opensearchdescription+xml" title="Hackney API Playbook" href="/API-Playbook/opensearch.xml"><title data-react-helmet="true">Deployment Pipeline | Hackney API Playbook</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docsearch:language" content="en"><meta data-react-helmet="true" name="docsearch:version" content="current"><meta data-react-helmet="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Deployment Pipeline | Hackney API Playbook"><meta data-react-helmet="true" name="description" content="Introduction"><meta data-react-helmet="true" property="og:description" content="Introduction"><meta data-react-helmet="true" property="og:url" content="https://lbhackney-it.github.io/API-Playbook/API-Playbook/deployment_pipeline"><link data-react-helmet="true" rel="shortcut icon" href="/API-Playbook/img/favicon.png"><link data-react-helmet="true" rel="preconnect" href="https://BH4D9OD16A-dsn.algolia.net" crossorigin="anonymous"><link data-react-helmet="true" rel="canonical" href="https://lbhackney-it.github.io/API-Playbook/API-Playbook/deployment_pipeline"><link rel="stylesheet" href="/API-Playbook/styles.2116970b.css">
 <link rel="stylesheet" href="/API-Playbook/main.4a16e2e4.css">
 <link rel="preload" href="/API-Playbook/styles.01b89e98.js" as="script">
-<link rel="preload" href="/API-Playbook/runtime~main.cfca19db.js" as="script">
+<link rel="preload" href="/API-Playbook/runtime~main.cf470081.js" as="script">
 <link rel="preload" href="/API-Playbook/main.6f7cd9ac.js" as="script">
 <link rel="preload" href="/API-Playbook/1.49797303.js" as="script">
-<link rel="preload" href="/API-Playbook/2.dbb530b5.js" as="script">
+<link rel="preload" href="/API-Playbook/2.85255eb1.js" as="script">
 <link rel="preload" href="/API-Playbook/70.f3103812.js" as="script">
 <link rel="preload" href="/API-Playbook/73.15ba470c.js" as="script">
 <link rel="preload" href="/API-Playbook/935f2afb.bd8c0568.js" as="script">
 <link rel="preload" href="/API-Playbook/17896441.14cf786f.js" as="script">
-<link rel="preload" href="/API-Playbook/d0b28ad8.43451a48.js" as="script">
+<link rel="preload" href="/API-Playbook/d0b28ad8.ff1b5f00.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -28,14 +28,14 @@ CI/CD is short for <strong> Continuous Integration and Continuous Delivery/Deplo
 <em>Merging into the ‘master’ branch automatically deploys to the staging environment</em></p><p>In order to deploy to staging and production environments, manual approval in Circle CI is required as the final step.</p><p><img alt="CircleCI Workflow" src="/API-Playbook/assets/images/pull_request2-972976954fed4ea3f702df1a3846d8ae.png">
 <em>The CircleCI workflow</em></p><p>The automation of the deployment to different environments gives flexibility in making small changes to the code and testing of features before deployment to a production environment.</p><p>Deployment automation means we decrease the possibility of human error when releasing new versions of code to deployment environments.</p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/LBHackney-IT/API-Playbook/edit/master/docs/deployment_pipeline.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 40 40" class="iconEdit_2LL7"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/API-Playbook/branching_strategies"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Branching Strategies</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/API-Playbook/infrastructure"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Infrastucture as Code »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_2xL- thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link">Introduction</a></li><li><a href="#video-tutorial" class="table-of-contents__link">Video Tutorial</a></li><li><a href="#cicd" class="table-of-contents__link">CI/CD</a><ul><li><a href="#continuous-testing" class="table-of-contents__link">Continuous testing</a></li></ul></li><li><a href="#environments" class="table-of-contents__link">Environments</a><ul><li><a href="#development" class="table-of-contents__link">Development</a></li><li><a href="#staging-and-production" class="table-of-contents__link">Staging and Production</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Made by HackIT.</div></div></div></footer></div>
 <script src="/API-Playbook/styles.01b89e98.js"></script>
-<script src="/API-Playbook/runtime~main.cfca19db.js"></script>
+<script src="/API-Playbook/runtime~main.cf470081.js"></script>
 <script src="/API-Playbook/main.6f7cd9ac.js"></script>
 <script src="/API-Playbook/1.49797303.js"></script>
-<script src="/API-Playbook/2.dbb530b5.js"></script>
+<script src="/API-Playbook/2.85255eb1.js"></script>
 <script src="/API-Playbook/70.f3103812.js"></script>
 <script src="/API-Playbook/73.15ba470c.js"></script>
 <script src="/API-Playbook/935f2afb.bd8c0568.js"></script>
 <script src="/API-Playbook/17896441.14cf786f.js"></script>
-<script src="/API-Playbook/d0b28ad8.43451a48.js"></script>
+<script src="/API-Playbook/d0b28ad8.ff1b5f00.js"></script>
 </body>
 </html>
