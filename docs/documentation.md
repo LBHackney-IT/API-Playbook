@@ -18,7 +18,7 @@ The documentation aids our collaboration process, as it is shared with the whole
 
 We have chosen SwaggerHub as a tool to document our APIs as it contributes to the efficiency of our development process, by giving us a central point of reference, built collaboratively, with a defined objective for the eventual shape of the API.
 
-## SwaggerHub
+## What is SwaggerHub?
 
 ** You can start by watching our overview video: **
 
@@ -38,8 +38,11 @@ The process of documenting API endpoints involves working with a YAML file, wher
 
 
 ![YAML file](./doc-images/swagger_yaml.png)
+
 _The YAML file_
+
 ![Open API generated documentation](./doc-images/swagger_generated_spec.png)
+
 _The generated documentation_
 
 SwaggerHub’s online editor automatically validates the YAML file produced and allows developers to instantly see any changes they make by reflecting them onto the visual representation of the API endpoint. For easy visualisation, SwaggerHub interprets the OpenAPI document as easy to read documentation. This UI clearly lays out the endpoints for the API, which the development team can use for reference when writing code.
@@ -47,10 +50,10 @@ SwaggerHub’s online editor automatically validates the YAML file produced and 
 ![Example payload](./doc-images/swagger_example_payload.png)
 
 ![Models used in the response](./doc-images/swagger_models.png)
+
 _The documentation outlines an example payload and the models which will be used_
 
-Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API.
-This is beneficial for the team as we can refer to the swagger docs to confirm that the API is functioning as specified and that the completed API matches the swagger doc specification.
+Documenting the API with SwaggerHub means that we have a consistent specification to follow throughout the development of the API. This is beneficial for the team as we can refer to the swagger docs to confirm that the API is functioning as specified and that the completed API matches the swagger doc specification.
 
 At the end of the project, we can continue to use SwaggerHub as documentation, giving an easy summary of the functions of the API.
 
@@ -59,6 +62,27 @@ Providing a mock API and API blueprints will remove this blocker as it will give
 
 **This is highly important as it avoids the situation where back-end developers would be rushed to deliver thier work in a quicker manner so that it doesn't block other project work, which may result in lower quality APIs. **
 
+## SwaggerHub Standards
+
+We utilise two of SwaggerHub's functions to document the status of our APIs: **tagging API environments** and **publishing API specifications**. These allow us to track whether an API is active and what environments it is available in. These also automatically sync with our [Developer Hub](https://developer-api.hackney.gov.uk/). To see more about the Developer Hub, please refer to the [relevant page](/developer_hub).
+
+### Tagging API Environments
+
+As part of of the process of documenting APIs at HackIT, you should use tags to track the environments an API is deployed in.
+
+The four available tags are: **Development / Staging / Production / Deprecated**.
+
+The screenshow below provides an example of how the relevant tags can be added to an API specification:
+
+![Example payload](./doc-images/swaggerhub_tags.png)
+
+Utilise the **Deprecated** tag to show when an API or specific version is deprecated. These tags are version-specific, so you can choose to deprecate a specific API version when it is no longer supported, or add `Deprecated` to each version to signify that the entire API is deprecated.
+
+### Publishing APIs
+
+Once the API specification has been created and approved and the API is in a stable state, the next step is to publish the specification on SwaggerHub. This signifies that this API is ready to be used and the API will be marked as 'Active' on the Developer Hub.
+
+*Note: Doing publishing an API version locks it to read-only mode. Take this into consideration and only publish an API version once it is finalised.*
 
 ## Where to find SwaggerHub
 
