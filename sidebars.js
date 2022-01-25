@@ -78,6 +78,7 @@ module.exports = {
     items: ['first_end_point_postgres', 'first_end_point_dynamo']
   },
   'developer_hub',
+  'FAQs',
   'contact_us'
 ]
 };
