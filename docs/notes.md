@@ -2,6 +2,8 @@
 id: notes
 title: Release Notes
 ---
+## Version 3
+
 ## Target Audience
 
 All HackIT internal developers and external agencies developer collaborating on Hackney projects.
@@ -20,14 +22,14 @@ All HackIT internal developers and external agencies developer collaborating on 
 - Performance monitoring using Lambda Insight
 - Standardised Error Messages
 - Preferred Tech Stack
-- API Boilerplate - Base API 
+- API Boilerplate - Base API
 - Clean Architecture
 - Entity Framework
-- AWS/ECS with Fargate 
-- Lambda Functions 
+- AWS/ECS with Fargate
+- Lambda Functions
 - Docker Containers
 - Application Logging Guidelines
-- Lambda Authoriser 
+- Lambda Authoriser
 - Setting Up DMS
 - Pipeline Implementation
 - End to End Training - Create your First endpoint video

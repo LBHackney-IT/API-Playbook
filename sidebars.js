@@ -4,7 +4,17 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation'],
+      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation',
+      {'Development Lifecycle':[
+      {
+        'Designing your API': ['api_implementation_guidelines','api_design_principles',
+          'error_codes']
+      },
+      {
+        'Implementation Guidelines': ['general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
+      },
+      ]},
+    ],
     },
     {
       type: 'category',
@@ -15,14 +25,6 @@ module.exports = {
       type: 'category',
       label: 'Development Process',
       items: [
-      {
-        'Designing your API': ['api_implementation_guidelines','api_design_principles',
-        {
-          'Implementation Guidelines': ['general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
-        },
-          'error_codes']
-      },
-
       {
         'API Practices and Tools': ['linting','static_code_analysis']
       },
@@ -69,8 +71,13 @@ module.exports = {
   },
   {
     type: 'category',
+    label: 'Data Migration',
+    items: ['data_migration','pipeline_implementation']
+  },
+  {
+    type: 'category',
     label: 'Other Useful Information',
-    items: ['rds_access', 'ec2_access','postgresql', {'Data Migration': ['data_migration','pipeline_implementation']}]
+    items: ['rds_access', 'ec2_access','postgresql']
   },
   {
     type: 'category',

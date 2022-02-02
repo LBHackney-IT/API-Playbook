@@ -1,0 +1,44 @@
+.box{
+  background-color: #02694F;
+  width: 180px;
+  height: 160px;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 30px;
+  padding: 40px;
+
+}
+.box :hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+ a:hover{
+   color: white;
+
+   margin: 10px;
+ }
+
+
+DOCUMENT FOR NEW page
+---
+id: title
+title: Title
+---
+## Version 3
+
+## Target Audience
+
+<a class="box" href="http://localhost:3000/API-Playbook/api_implementation_guidelines">Designing your APIs</a>
+
+<a class="box" href="http://localhost:3000/API-Playbook/tdd">Testing</a>
+
+<a class="box" href="http://localhost:3000/API-Playbook/aws_ecs">Deploying your APIs</a>
+
+<a class="box" href="http://localhost:3000/API-Playbook/api_implementation_guidelines">Designing your APIs</a>
+
+<a class="box" href="http://localhost:3000/API-Playbook/api_implementation_guidelines">Designing your APIs</a>
+
+<a class="box" href="http://localhost:3000/API-Playbook/api_implementation_guidelines">Designing your APIs</a>
