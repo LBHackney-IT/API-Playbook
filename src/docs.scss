@@ -83,3 +83,26 @@ html[data-theme="dark"] .navbar__logo {
   position: sticky;
   left: var(--ifm-pre-padding);
 }
+
+.box{
+  width: 180px;
+  height: 160px;
+  background-color: #02694F;;
+  margin: 20px;
+  padding: 20px;
+  padding-top: 44px !important;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block !important;
+  word-wrap: break-word;
+
+}
+p {
+  color: #000000 !important;
+}
+h4{
+  color: white;
+}
+a :hover {
+    text-decoration: underline !important;
+}
