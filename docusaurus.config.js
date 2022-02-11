@@ -28,6 +28,7 @@ module.exports = {
       ],
     },
     algolia: {
+      appId: "KNMFHOJ4X2",
       apiKey: '4dc9b48c851c09d44e9cf356d5425867',
       indexName: 'hackney',
       placeholder: 'Search playbook'
@@ -49,6 +50,10 @@ module.exports = {
         },
         theme: {
           customCss: [require.resolve("./src/docs.scss")],
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
         },
       },
     ],
