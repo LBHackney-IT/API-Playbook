@@ -4,7 +4,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation', 'topics',
+      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation', 'bookmarks',
       {'Development Lifecycle':[
         {
           'Designing your API': ['api_implementation_guidelines','api_design_principles',
@@ -31,11 +31,6 @@ module.exports = {
       {
         'DevOps Practices': ['branching_strategies','deployment_pipeline', 'infrastructure']
       },
-      {
-        type: 'category',
-        label: 'Listeners',
-        items: ['listener_tech_stack', 'listener_boilerplate']
-      }
     ]
   },
   {
@@ -69,7 +64,11 @@ module.exports = {
 {
   type: 'category',
   label: 'Event Driven Architecture',
-  items: ['eda']
+  items: ['eda',
+  {
+   'Listeners': ['listener_tech_stack', 'listener_boilerplate']
+  }
+]
 },
 {
   type: 'category',
