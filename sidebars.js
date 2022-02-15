@@ -43,7 +43,7 @@ module.exports = {
 },
 {
   type: 'category',
-  label: "Testing",
+  label: "Testing your API",
   items: ['tdd', 'unit_testing', 'mock_unit_tests', 'integration_tests']
 },
 {
@@ -82,16 +82,16 @@ module.exports = {
 },
 {
   type: 'category',
-  label: 'Other Useful Information',
-  items: ['rds_access', 'ec2_access','postgresql']
-},
-{
-  type: 'category',
   label: "End to End Training",
   items: ['first_end_point_postgres', 'first_end_point_dynamo']
 },
 'developer_hub',
 'api_specification',
+{
+  type: 'category',
+  label: 'Other Useful Information',
+  items: ['rds_access', 'ec2_access','postgresql']
+},
 'FAQs',
 'contact_us'
 ]
