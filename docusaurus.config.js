@@ -9,7 +9,7 @@ module.exports = {
   favicon: "img/favicon.png",
   organizationName: "lbhackney-it",
   projectName: "API-Playbook",
-  themeConfig: {
+  themeConfig: { zoomSelector: '.markdown img',
     prism: {
       additionalLanguages: ["csharp"],
     },
@@ -54,5 +54,7 @@ module.exports = {
     ],
   ],
   clientModules: [require.resolve("./src/docs.js")],
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: ["docusaurus-plugin-sass",
+             "plugin-image-zoom"
+ ],
 };

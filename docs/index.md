@@ -27,7 +27,7 @@ This playbook is primarily used to onboard new developers, whether they are new 
 
 ## Our API Architecture
 
-![API Architecture Diagram](./doc-images/api_architecture.png)
+![Diagram](./doc-images/api_architecture1.jpeg)
 
 ## Help us improve
 We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook [GitHub Repo](https://github.com/LBHackney-IT/API-Playbook).
