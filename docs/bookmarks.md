@@ -27,5 +27,5 @@ title: Bookmarks
 </div>
 
 <div className="box">
-    <a href="h"><h4>Toping Name</h4></a>
+    <a href="h"><h4>Topic Name</h4></a>
 </div>

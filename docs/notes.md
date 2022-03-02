@@ -1,6 +1,6 @@
 ---
 id: notes
-title: Release Notes
+title: Release Notes V3
 ---
 ## Version 3
 

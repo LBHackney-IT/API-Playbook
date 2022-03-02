@@ -1,6 +1,8 @@
 module.exports = {
   docs: [
-    'notes',
+    {
+      'Release Notes': ['notes_v4','notes']
+    },
     {
       type: 'category',
       label: 'Home',
