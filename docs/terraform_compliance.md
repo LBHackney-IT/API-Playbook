@@ -19,7 +19,6 @@ In MMH, individual services (both FE and APIs) are responsible for provisioning 
 - Lightweight, security and compliance focused test framework for terraform infrastructure-as-code
 - Ensures the code implemented meets security requirements
 - Standards can be customised.
-
 ![Terraform](./doc-images/terraform1.png)
 
 ## Benefits
@@ -49,7 +48,9 @@ To write the Terraform-compliance tests, feature files are used and written usin
 These three components are all described with examples here:
 
 https://terraform-compliance.com/pages/bdd-references/
+
 ![Terraform](./doc-images/terraform2.png)
+
 
 ## How to implement it?
 
@@ -58,9 +59,7 @@ https://terraform-compliance.com/pages/bdd-references/
 3. Run Terraform Compliance
 
 This method used is different from the other circleCI pipeline we have as normally we would run terraform init and then apply straight away. However in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests passes we can run terraform apply.
-
 ![Terraform](./doc-images/terraform3.png)
-
 ![Terraform](./doc-images/terraform4.png)
 
 ## CircleCI Pipeline Flow
