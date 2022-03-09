@@ -3,7 +3,7 @@ id: terraform_compliance
 title: Terraform Compliance Rules
 ---
 
-## What is terraform?
+## What is Terraform?
 
 - Tool for building and managing infrastructure as code
 - Developers define resources that they want to provision in the cloud provider of their choice
@@ -58,6 +58,7 @@ https://terraform-compliance.com/pages/bdd-references/
 3. Run Terraform Compliance
 
 This method used is different from the other circleCI pipeline we have as normally we would run terraform init and then apply straight away. However in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests passes we can run terraform apply.
+
 ![Terraform](./doc-images/terraform3.png)
 
 ![Terraform](./doc-images/terraform4.png)
