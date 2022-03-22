@@ -10,8 +10,8 @@ title: Terraform Compliance Rules
 - Resources are defined using code in Terraform configuration files
 - Terraform generates an execution plan and is responsible for applying it (actually creating the resources) in AWS
 
-In MMH, individual services (both FE and APIs) are responsible for provisioning any infrastructure required for that specific service - for example:
-- Each API repository also holds the terraform responsible for provisioning the DynamoDB table used solely by this API to serve data.
+ Within some of our Hackney services, the individual services (both FE and APIs) that we provide are responsible for provisioning any infrastructure required for that specific service - for example:
+- Each API repository also holds the terraform responsible for provisioning the DynamoDB table used solely by this API to serve data.ﬁ
 - The infrastructure gets provisioned during the deployment of the API.
 
 ## What is Terraform Compliance?
@@ -19,7 +19,6 @@ In MMH, individual services (both FE and APIs) are responsible for provisioning 
 - Lightweight, security and compliance focused test framework for terraform infrastructure-as-code
 - Ensures the code implemented meets security requirements
 - Standards can be customised.
-![Terraform](./doc-images/terraform1.png)
 
 ## Benefits
 
@@ -58,7 +57,7 @@ https://terraform-compliance.com/pages/bdd-references/
 2. Run Terraform Plan
 3. Run Terraform Compliance
 
-This method used is different from the other circleCI pipeline we have as normally we would run terraform init and then apply straight away. However in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests passes we can run terraform apply.
+Previously within HackIT we would first use Terraform init and then apply straight away. However, in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests pass we can run terraform apply. However in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests passes we can run terraform apply.
 ![Terraform](./doc-images/terraform3.png)
 ![Terraform](./doc-images/terraform4.png)
 
