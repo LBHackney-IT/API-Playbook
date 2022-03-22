@@ -10,8 +10,8 @@ title: Terraform Compliance Rules
 - Resources are defined using code in Terraform configuration files
 - Terraform generates an execution plan and is responsible for applying it (actually creating the resources) in AWS
 
- Within some of our Hackney services, the individual services (both FE and APIs) that we provide are responsible for provisioning any infrastructure required for that specific service - for example:
-- Each API repository also holds the terraform responsible for provisioning the DynamoDB table used solely by this API to serve data.ﬁ
+ Within majority of our Hackney services, the individual services (both FE and APIs) that we provide are responsible for provisioning any infrastructure required for that specific service - for example:
+- Each API repository also holds the terraform responsible for provisioning the DynamoDB table used solely by this API to serve data
 - The infrastructure gets provisioned during the deployment of the API.
 
 ## What is Terraform Compliance?
@@ -57,7 +57,7 @@ https://terraform-compliance.com/pages/bdd-references/
 2. Run Terraform Plan
 3. Run Terraform Compliance
 
-Previously within HackIT we would first use Terraform init and then apply straight away. However, in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests pass we can run terraform apply. However in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is setup correctly. Once those tests passes we can run terraform apply.
+Previously within HackIT, we would first use Terraform init and then apply straight away. However, in order to complete the terraform compliance we need to first do terraform init and plan and then run the tests to ensure the infrastructure as code is set up correctly. Once those tests pass we can run terraform apply. 
 ![Terraform](./doc-images/terraform3.png)
 ![Terraform](./doc-images/terraform4.png)
 
