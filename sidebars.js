@@ -63,7 +63,11 @@ module.exports = {
   label: 'Monitoring',
   items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', 'x_ray']
 },
-'terraform_compliance',
+{
+  type: 'category',
+  label: 'Compliance Checklist',
+  items: ['terraform_compliance', 'serverless_safeguards']
+},
 {
   type: 'category',
   label: 'Event Driven Architecture',
