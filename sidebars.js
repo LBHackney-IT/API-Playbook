@@ -99,6 +99,7 @@ module.exports = {
   label: 'Other Useful Information',
   items: ['rds_access', 'ec2_access','postgresql']
 },
+'ways_of_working',
 'FAQs',
 'contact_us'
 ]
