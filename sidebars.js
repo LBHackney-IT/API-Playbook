@@ -101,6 +101,8 @@ module.exports = {
 },
 'ways_of_working',
 'nuget_packages',
+'sonarcloud',
+'target_type',
 'FAQs',
 'contact_us'
 ]
