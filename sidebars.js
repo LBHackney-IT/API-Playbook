@@ -100,6 +100,7 @@ module.exports = {
   items: ['rds_access', 'ec2_access','postgresql']
 },
 'ways_of_working',
+'nuget_packages',
 'FAQs',
 'contact_us'
 ]
