@@ -22,4 +22,4 @@ At Hackney we use Serverless Safeguards to ensure that our APIs meets our Securi
 - Enforceable - You can run the safeguards validate command while specifying additional policy files in addition to policies specified in serverless.yaml
 
 ## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gi26DVH_wUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pZQIY0jjD5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
