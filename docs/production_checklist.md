@@ -5,7 +5,7 @@ title: Production Testing Checklist
 
 **The following tasks should be completed before every API deployment into production unless there is a valid reason to not complete a given task.**
 
-This reason should be documented. 
+This reason should be documented.
 
 ### Naming conventions
 - Endpoint URL follows the format of `api/v#/controllerName`
@@ -24,15 +24,16 @@ This reason should be documented.
 
 ### Configuration and security
 - All entities are created in AWS in each environment (incl. correct subnets and any other required config)
-- Check all environment variables 
+- Check all environment variables
     * For example, make sure staging environment variables haven't been copied over to production without changing their values to the correct production values.
 - API keys are in place
 - API authentication is in place – no anonymous access
 
 ### Errors
 - Failures are logged in CloudWatch
-- Notifications are available when API is failing 
+- Notifications are available when API is failing
 - Correct error responses are returned
 - The canaries for all endpoints that should have them
 - Check that canaries are passing
 - The canaries have someone subscribed to it
+- The project canaries should send alerts to the relevant SNS topic
