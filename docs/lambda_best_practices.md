@@ -16,7 +16,7 @@ For the majority of cases that will be more than enough time.
 
 ### When is it not best to use a Lambda function?
 
-Lambda functions should not be used for the following operations:
+Lambda functions should **not** be used for the following operations:
 
 1. **Data migration - Continuous and long-running processes**
 2. **Large Memory footprints**
