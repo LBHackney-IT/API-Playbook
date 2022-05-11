@@ -13,29 +13,6 @@ module.exports = {
     prism: {
       additionalLanguages: ["csharp"],
     },
-    algolia: {
-     // The application ID provided by Algolia
-     appId: 'YOUR_APP_ID',
-
-     // Public API key: it is safe to commit it
-     apiKey: 'YOUR_SEARCH_API_KEY',
-
-     indexName: 'YOUR_INDEX_NAME',
-
-     // Optional: see doc section below
-     contextualSearch: true,
-
-     // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-     externalUrlRegex: 'external\\.com|domain\\.com',
-
-     // Optional: Algolia search parameters
-     searchParameters: {},
-
-     // Optional: path for search page that enabled by default (`false` to disable it)
-     searchPagePath: 'search',
-
-     //... other Algolia params
-   },
     navbar: {
       title: "API Playbook",
       logo: {
@@ -49,11 +26,6 @@ module.exports = {
           position: "right",
         },
       ],
-    },
-    algolia: {
-      apiKey: '4dc9b48c851c09d44e9cf356d5425867',
-      indexName: 'hackney',
-      placeholder: 'Search playbook'
     },
     footer: {
       style: "dark",
@@ -78,6 +50,6 @@ module.exports = {
   ],
   clientModules: [require.resolve("./src/docs.js")],
   plugins: ["docusaurus-plugin-sass",
-             "plugin-image-zoom"
+             "plugin-image-zoom",
  ],
 };
