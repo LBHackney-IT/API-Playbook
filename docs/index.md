@@ -18,16 +18,12 @@ Some people may wonder why we have decided to establish a playbook. During our j
 ## Our Playbook journey
 Over the past few years we have created several iterations of our playbook. These iterations were necessary as we gained clarity on what the best set of tools and practices would be for us as a development team.
 
-We had the opportunity to learn and grow - discovering that we may have got some things wrong or could do with improvements was all part of the journey. For example, during the course of our journey we have transitioned from container based services running on EC2 machines to serverless functions. We also reviewed our API authorisation methods and implemented a custom authorisation solution. We have continued to work with our agency partners to continuously improve our development practices and standards, and the playbook has evolved as a result.
+We had the opportunity to learn and grow - discovering that we may have got some things wrong or could do with improvements was all part of the journey. For example, during the course of our journey we have transitioned from container based services running on EC2 machines to serverless functions. We also reviewed our API authorisation methods and implemented a custom authorisation solution. We have continued to work with our agency partners to continuously improve our development practices and standards, and the playbook has evolved as a result. 
 
 Today we have come to the point where our playbook has taken a more governance role and now leads more than it is led; onboarding has never been so easy. This also allowed us to justify the ROI (Return on Investment) on API strategy by bringing consistency and standardisation across all APIs developed by internal/external developers for relevant services. However, as technology changes and we learn new things, undoubtedly our playbook will continue to evolve.
 
 ## Who this Playbook is for
 This playbook is primarily used to onboard new developers, whether they are new members of staff or new agency partners we work with. However, we would be thrilled if this playbook is also read by a wider audience. We are also always happy to receive contributions or feedback to make this even better.
-
-## Our API Architecture
-
-![Diagram](./doc-images/api_architecture1.jpeg)
 
 ## Help us improve
 We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook [GitHub Repo](https://github.com/LBHackney-IT/API-Playbook).
