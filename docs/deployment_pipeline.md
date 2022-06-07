@@ -55,7 +55,7 @@ _Diagram of the process that happens when pushing code to GitHub_
 
 #### Pull requests
 
-Before a feature branch can be merged into development, after a successful build and test, it is marked for code review via a PR (Pull Request) in Github. You can use the [Base API PR template](https://github.com/LBHackney-IT/lbh-base-api/blob/master/pull_request_template.md), which needs to be completed with as much detail as possible, including a link to the JIRA ticket of the work done. There needs to be a minimum of 1 approver per PR prior to merging. An approved and merged PR will then trigger a CircleCI workflow to automatically deploy to the Development enviroment.
+Before a feature branch can be merged into development, after a successful build and test, it is marked for code review via a PR (Pull Request) in Github. You can use the [Base API PR template](https://github.com/LBHackney-IT/lbh-example-api/blob/master/pull_request_template.md), which needs to be completed with as much detail as possible, including a link to the JIRA ticket of the work done. There needs to be a minimum of 1 approver per PR prior to merging. An approved and merged PR will then trigger a CircleCI workflow to automatically deploy to the Development enviroment.
 
 #### Workflow
 

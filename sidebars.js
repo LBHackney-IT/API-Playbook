@@ -103,6 +103,7 @@ module.exports = {
 'nuget_packages',
 'sonarcloud',
 'target_type',
+'canaries_automation',
 'FAQs',
 'contact_us'
 ]
