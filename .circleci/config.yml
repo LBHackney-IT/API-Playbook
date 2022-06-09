@@ -1,0 +1,235 @@
+version: 2.1
+
+orbs:
+    aws-s3: circleci/aws-s3@2.0.0
+    aws-cli: circleci/aws-cli@2.0.0
+    aws_assume_role: lbh-hackit/aws_assume_role@0.1.0
+    cypress: cypress-io/cypress@1
+
+references:
+    workspace_root: &workspace_root '~'
+    attach_workspace: &attach_workspace
+        attach_workspace:
+            at: *workspace_root
+
+executors:
+    node-executor:
+        docker:
+            - image: circleci/node:14.15.4-browsers
+    docker-terraform:
+        docker:
+            - image: "hashicorp/terraform:light"
+    docker-python:
+        docker:
+            - image: circleci/python:3.7
+
+commands:
+    assume-role-and-persist-workspace:
+        description: "Assume deployment role and persist credentials across jobs"
+        parameters:
+            aws-account:
+                type: string
+        steps:
+            - checkout
+            - aws_assume_role/assume_role:
+                  account: <<parameters.aws-account>>
+                  profile_name: default
+                  role: "LBH_Circle_CI_Deployment_Role"
+            - persist_to_workspace:
+                  root: *workspace_root
+                  paths:
+                      - .aws
+
+    terraform-init-then-apply:
+        description: "Initialize and apply the terraform configuration"
+        parameters:
+            environment:
+                type: string
+        steps:
+            - *attach_workspace
+            - checkout
+            - run:
+                  name: get and init
+                  command: |
+                      cd ./terraform/<<parameters.environment>>/
+                      terraform get -update=true
+                      terraform init
+
+            - run:
+                  name: apply
+                  command: |
+                      cd ./terraform/<<parameters.environment>>/
+                      terraform apply -auto-approve
+
+jobs:
+    install-dependencies:
+        executor: node-executor
+        steps:
+            - *attach_workspace
+            - checkout
+            - restore_cache:
+                  key: dependency-cache-{{ checksum "yarn.lock" }}
+            - run:
+                  name: Install dependencies
+                  command: yarn
+            - save_cache:
+                  key: dependency-cache-{{ checksum "yarn.lock" }}
+                  paths:
+                      - ./node_modules
+            - persist_to_workspace:
+                  root: *workspace_root
+                  paths: .
+
+    build-deploy-development:
+        executor: node-executor
+        environment:
+            aws-region: eu-west-2
+        parameters:
+            stage:
+                type: string
+        steps:
+            - *attach_workspace
+            - aws-cli/install
+            - run:
+                  name: Build
+                  command: |
+                    yarn build
+            - run:
+                  name: Deploy to S3
+                  command: aws s3 sync build s3://api-playbook-frontend-development/
+
+    build-deploy-staging:
+        executor: node-executor
+        environment:
+            aws-region: eu-west-2
+        parameters:
+            stage:
+                type: string
+        steps:
+            - *attach_workspace
+            - aws-cli/install
+            - run:
+                  name: Build
+                  command: |
+                    yarn build
+            - run:
+                  name: Deploy to S3
+                  command: aws s3 sync build s3://api-playbook-frontend-staging/
+    
+    build-deploy-production:
+        executor: node-executor
+        environment:
+            aws-region: eu-west-2
+        parameters:
+            stage:
+                type: string
+        steps:
+            - *attach_workspace
+            - aws-cli/install
+            - run:
+                  name: Build
+                  command: |
+                    yarn build
+            - run:
+                  name: Deploy to S3
+                  command: aws s3 sync build s3://api-playbook-frontend-production/
+
+    assume-role-development:
+        executor: docker-python
+        steps:
+            - assume-role-and-persist-workspace:
+                  aws-account: $AWS_ACCOUNT_DEVELOPMENT
+
+    assume-role-staging:
+        executor: docker-python
+        steps:
+            - assume-role-and-persist-workspace:
+                  aws-account: $AWS_ACCOUNT_STAGING
+
+    assume-role-production:
+        executor: docker-python
+        steps:
+            - assume-role-and-persist-workspace:
+                  aws-account: $AWS_ACCOUNT_PRODUCTION
+
+    terraform-init-and-apply-to-development:
+        executor: docker-terraform
+        steps:
+            - terraform-init-then-apply:
+                  environment: "development"
+
+    terraform-init-and-apply-to-staging:
+        executor: docker-terraform
+        steps:
+            - terraform-init-then-apply:
+                  environment: "staging"
+
+    terraform-init-and-apply-to-production:
+        executor: docker-terraform
+        steps:
+            - terraform-init-then-apply:
+                  environment: "production"
+workflows:
+    version: 2
+    continuous-delivery-development:
+        jobs:
+            - install-dependencies
+            - assume-role-development:
+                  context: api-assume-role-development-context
+                  requires:
+                      - install-dependencies
+            - terraform-init-and-apply-to-development:
+                  requires:
+                      - assume-role-development
+            - build-deploy-development:
+                  stage: "development"
+                  requires:
+                      - terraform-init-and-apply-to-development
+            - assume-role-staging:
+                  context: api-assume-role-staging-context
+                  requires:
+                      - build-deploy-development
+                  filters:
+                      branches:
+                          only: main
+            - terraform-init-and-apply-to-staging:
+                  requires:
+                      - assume-role-staging
+                  filters:
+                      branches:
+                          only: main
+            - build-deploy-staging:
+                  stage: "staging"
+                  requires:
+                      - terraform-init-and-apply-to-staging
+                  filters:
+                      branches:
+                          only: main
+            - permit-production-terraform-release:
+                  type: approval
+                  requires:
+                      - build-deploy-staging
+            - assume-role-production:
+                  context: api-assume-role-production-context
+                  requires:
+                      - permit-production-terraform-release
+                  filters:
+                      branches:
+                          only: main
+            - terraform-init-and-apply-to-production:
+                  requires:
+                      - assume-role-production
+                  filters:
+                      branches:
+                          only: main
+            - permit-deploy-production:
+                  type: approval
+                  requires:
+                      - terraform-init-and-apply-to-production
+            - build-deploy-production:
+                  stage: "production"
+                  requires:
+                      - permit-deploy-production
+                  filters:
+                      branches:
+                          only: main
