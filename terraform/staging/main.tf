@@ -1,11 +1,14 @@
-provider "aws" {
-  region  = "eu-west-2"
-  version = "~> 2.0"
-}
-
 terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      region  = "eu-west-2"
+      version = "~> 2.0"
+    }
+  }
+
   backend "s3" {
-    bucket  = "terraform-state-development-apis"
+    bucket  = "terraform-state-staging-apis"
     encrypt = true
     region  = "eu-west-2"
     key     = "common/state"
