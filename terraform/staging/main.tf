@@ -2,7 +2,6 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      region  = "eu-west-2"
       version = "~> 2.0"
     }
   }
@@ -13,6 +12,10 @@ terraform {
     region  = "eu-west-2"
     key     = "common/state"
   }
+}
+
+provider "aws" {
+  region = "eu-west-2"
 }
 
 module "playbook_distribution" {
