@@ -14,6 +14,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
+
 module "playbook_distribution" {
   source = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting?ref=playbook-distro"
   cname_aliases = []
