@@ -77,7 +77,7 @@ commands:
                     mv build/* ci-build/API-Playbook
             - run:
                   name: Deploy to S3
-                  command: aws s3 sync build s3://api-playbook-frontend-<<parameters.environment>>>/
+                  command: aws s3 sync build s3://api-playbook-frontend-<<parameters.environment>>/
 
 jobs:
     install-dependencies:
