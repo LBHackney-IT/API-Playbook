@@ -1,10 +1,10 @@
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 2.0"
-    }
-  }
+  # required_providers {
+  #   aws = {
+  #     source  = "hashicorp/aws"
+  #     version = "~> 2.0"
+  #   }
+  # }
 
   backend "s3" {
     bucket  = "terraform-state-development-apis"
@@ -14,8 +14,13 @@ terraform {
   }
 }
 
+# provider "aws" {
+#   region = "us-east-1"
+# }
+
 provider "aws" {
-  region = "us-east-1"
+  version = "~> 2.0"
+  region  = "us-east-1"
 }
 
 module "playbook_distribution" {
