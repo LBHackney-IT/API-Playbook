@@ -61,6 +61,26 @@ commands:
                       cd ./terraform/<<parameters.environment>>/
                       terraform apply -auto-approve
 
+    build-and-deploy:
+        description: "Build and deploy app to S3"
+        environment:
+            aws-region: eu-west-2
+        parameters:
+            environment:
+                type: string
+        steps:
+            - *attach_workspace
+            - aws-cli/install
+            - run:
+                  name: Build
+                  command: |
+                    yarn build
+                    mkdir -p ci-build/API-Playbook
+                    mv build/* ci-build/API-Playbook
+            - run:
+                  name: Deploy to S3
+                  command: aws s3 sync build s3://api-playbook-frontend-<<parameters.environment>>>/
+
 jobs:
     install-dependencies:
         executor: node-executor
@@ -79,60 +99,6 @@ jobs:
             - persist_to_workspace:
                   root: *workspace_root
                   paths: .
-
-    build-deploy-development:
-        executor: node-executor
-        environment:
-            aws-region: eu-west-2
-        parameters:
-            stage:
-                type: string
-        steps:
-            - *attach_workspace
-            - aws-cli/install
-            - run:
-                  name: Build
-                  command: |
-                    yarn build
-            - run:
-                  name: Deploy to S3
-                  command: aws s3 sync build s3://api-playbook-frontend-development/
-
-    build-deploy-staging:
-        executor: node-executor
-        environment:
-            aws-region: eu-west-2
-        parameters:
-            stage:
-                type: string
-        steps:
-            - *attach_workspace
-            - aws-cli/install
-            - run:
-                  name: Build
-                  command: |
-                    yarn build
-            - run:
-                  name: Deploy to S3
-                  command: aws s3 sync build s3://api-playbook-frontend-staging/
-    
-    build-deploy-production:
-        executor: node-executor
-        environment:
-            aws-region: eu-west-2
-        parameters:
-            stage:
-                type: string
-        steps:
-            - *attach_workspace
-            - aws-cli/install
-            - run:
-                  name: Build
-                  command: |
-                    yarn build
-            - run:
-                  name: Deploy to S3
-                  command: aws s3 sync build s3://api-playbook-frontend-production/
 
     assume-role-development:
         executor: docker-python
@@ -168,6 +134,24 @@ jobs:
         executor: docker-terraform
         steps:
             - terraform-init-then-apply:
+                  environment: "production"
+        
+    build-deploy-development:
+        executor: node-executor
+        steps:
+            -build-and-deploy:
+                  environment: "development"
+
+    build-deploy-staging:
+        executor: node-executor
+        steps:
+            -build-and-deploy:
+                  environment: "staging"
+
+    build-deploy-production:
+        executor: node-executor
+        steps:
+            -build-and-deploy:
                   environment: "production"
 workflows:
     version: 2

@@ -3,6 +3,7 @@
 
 # Production
 /build
+/ci-build
 
 # Generated files
 .docusaurus
