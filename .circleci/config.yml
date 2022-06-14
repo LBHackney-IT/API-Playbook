@@ -63,8 +63,6 @@ commands:
 
     build-and-deploy:
         description: "Build and deploy app to S3"
-        environment:
-            aws-region: eu-west-2
         parameters:
             environment:
                 type: string
@@ -138,20 +136,26 @@ jobs:
         
     build-deploy-development:
         executor: node-executor
+        environment:
+            aws-region: eu-west-2
         steps:
-            -build-and-deploy:
+            - build-and-deploy:
                   environment: "development"
 
     build-deploy-staging:
         executor: node-executor
+        environment:
+            aws-region: eu-west-2
         steps:
-            -build-and-deploy:
+            - build-and-deploy:
                   environment: "staging"
 
     build-deploy-production:
         executor: node-executor
+        environment:
+            aws-region: eu-west-2
         steps:
-            -build-and-deploy:
+            - build-and-deploy:
                   environment: "production"
 workflows:
     version: 2
@@ -166,7 +170,6 @@ workflows:
                   requires:
                       - assume-role-development
             - build-deploy-development:
-                  stage: "development"
                   requires:
                       - terraform-init-and-apply-to-development
             - assume-role-staging:
@@ -183,7 +186,6 @@ workflows:
                       branches:
                           only: main
             - build-deploy-staging:
-                  stage: "staging"
                   requires:
                       - terraform-init-and-apply-to-staging
                   filters:
@@ -217,7 +219,6 @@ workflows:
                     branches:
                         only: /release\/.*/
             - build-deploy-production:
-                  stage: "production"
                   requires:
                       - permit-deploy-production
                   filters:
