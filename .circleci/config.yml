@@ -211,7 +211,7 @@ workflows:
                           only: /release\/.*/
             - permit-production-terraform-release:
                   type: approval
-                    requires:
+                  requires:
                       - install-dependencies
                   filters:
                       branches:
