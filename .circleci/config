@@ -1,0 +1,7 @@
+[default]
+region = eu-west-2
+output = json
+
+[profile circlecitest]
+region = eu-west-2
+output = json

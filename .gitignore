@@ -3,10 +3,12 @@
 
 # Production
 /build
+/ci-build
 
 # Generated files
 .docusaurus
 .cache-loader
+.jekyll-cache
 
 # Misc
 .DS_Store
