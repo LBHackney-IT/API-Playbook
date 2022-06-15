@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "playbook_distribution" {
-  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hostin/without-waf?ref=playbook-distro"
+  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting/without-waf?ref=playbook-distro"
   cname_aliases       = []
   environment_name    = "development"
   cost_code           = "B0811"

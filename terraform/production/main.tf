@@ -15,7 +15,7 @@ provider "aws" {
 data "aws_caller_identity" "current" {}
 
 module "playbook_distribution" {
-  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hostin/with-waf?ref=playbook-distro"
+  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting/with-waf?ref=playbook-distro"
   cname_aliases       = []
   environment_name    = "production"
   cost_code           = "B0811"
