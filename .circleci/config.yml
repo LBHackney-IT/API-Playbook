@@ -166,12 +166,21 @@ workflows:
                   context: api-assume-role-development-context
                   requires:
                       - install-dependencies
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - terraform-init-and-apply-to-development:
                   requires:
                       - assume-role-development
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - build-deploy-development:
                   requires:
                       - terraform-init-and-apply-to-development
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - assume-role-staging:
                   context: api-assume-role-staging-context
                   requires:
