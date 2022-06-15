@@ -161,17 +161,29 @@ workflows:
     version: 2
     continuous-delivery-development-and-staging:
         jobs:
-            - install-dependencies
+            - install-dependencies:
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - assume-role-development:
                   context: api-assume-role-development-context
                   requires:
                       - install-dependencies
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - terraform-init-and-apply-to-development:
                   requires:
                       - assume-role-development
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - build-deploy-development:
                   requires:
                       - terraform-init-and-apply-to-development
+                  filters:
+                      branches:
+                          ignore: /release\/.*/
             - assume-role-staging:
                   context: api-assume-role-staging-context
                   requires:
@@ -193,8 +205,14 @@ workflows:
                           only: main
     continuous-delivery-production:
         jobs:
+            - install-dependencies:
+                  filters:
+                      branches:
+                          only: /release\/.*/
             - permit-production-terraform-release:
                   type: approval
+                  requires:
+                      - install-dependencies
                   filters:
                       branches:
                           only: /release\/.*/
