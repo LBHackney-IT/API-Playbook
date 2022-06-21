@@ -1,9 +1,10 @@
 // Init SpeechSynth API
 const synth = window.speechSynthesis;
 
+
 // DOM Elements
 const textForm = document.querySelector("form");
-const textInput = document.querySelector(".markdown");
+const textInput = document.querySelector("#text-input");
 const voiceSelect = document.querySelector("#voice-select");
 const rate = document.querySelector("#rate");
 const rateValue = document.querySelector("#rate-value");
@@ -16,6 +17,7 @@ let voices = [];
 
 const getVoices = () => {
   voices = synth.getVoices();
+  console.log('voices');
 
   // Loop through voices and create an option for each one
   voices.forEach(voice => {
