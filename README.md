@@ -1,7 +1,7 @@
 # API Playbook
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
-You can view the API Playbook here: [https://www.playbook.hackney.gov.uk/API-Playbook](https://www.playbook.hackney.gov.uk/API-Playbook)
+You can view the API Playbook here: [https://playbook.hackney.gov.uk/API-Playbook](https://playbook.hackney.gov.uk/API-Playbook)
 
 ## Installation
 
