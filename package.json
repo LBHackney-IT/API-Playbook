@@ -18,10 +18,12 @@
     "bootstrap": "^4.6.0",
     "clsx": "^1.1.1",
     "docusaurus-plugin-sass": "^0.1.11",
+    "lbh-frontend": "^3.6.1",
     "node-sass": "^4.14.1",
     "react": "^16.8.4",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^16.8.4",
+    "react-speech-kit": "^3.0.1",
     "sirv": "^1.0.11",
     "with": "^7.0.2"
   },
