@@ -4,8 +4,8 @@ import { useSpeechSynthesis } from 'react-speech-kit';
 export default function TextToSpeech({ children }) {
     const [textToRead, setTextToRead] = useState('');
     const [isHovering, setHovering] = useState(false);
+    const [isPaused, setPaused] = useState(false);
     const { speak, cancel, speaking, supported } = useSpeechSynthesis();
-    let paused = false;
 
     useEffect(() => {
         const getNodeText = node => {
@@ -17,7 +17,7 @@ export default function TextToSpeech({ children }) {
         setTextToRead(getNodeText(children));
     }, []);
 
-    const testText = new SpeechSynthesisUtterance('testing this nonsense stuff')
+    const testText = new SpeechSynthesisUtterance(textToRead)
 
     // function play() {
     //     if ( paused ) {
@@ -33,15 +33,25 @@ export default function TextToSpeech({ children }) {
     //   }
 
     const playTest = () => {
-        
+        console.log(typeof(textToRead))
+        console.log(typeof(testText))
         testText.volume = 1
         testText.rate = 1
         testText.pitch = 1
         console.log(testText)
-        if (paused) {
-            paused = false
+        console.log(isPaused)
+        if (isPaused) {
+            setPaused(false);
             return window.speechSynthesis.resume()
-        } else { return window.speechSynthesis.speak(testText) }
+        } 
+        else { return window.speechSynthesis.speak(testText) }
+    }
+
+    const pauseTest = () => {
+        console.log(isPaused)
+        setPaused(true)
+        console.log(isPaused)
+        return window.speechSynthesis.pause()
     }
 
     if (supported && textToRead) {
@@ -55,18 +65,18 @@ export default function TextToSpeech({ children }) {
                 >
                     Listen to this section
                 </button>
-                {/* <button 
+                <button 
                     className="text-to-speech-buttons"
-                    onClick={window.speechSynthesis.pause()}
+                    onClick={() => pauseTest()}
                 >
                     Pause
-                </button> */}
-                <button 
+                </button>
+                {/* <button 
                     className="text-to-speech-buttons"
                     onClick={cancel}
                 >
                     Cancel
-                </button>
+                </button> */}
                 {children}
             </div>
         );
