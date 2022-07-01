@@ -5,6 +5,7 @@ export default function TextToSpeech({ children }) {
     const [textToRead, setTextToRead] = useState('');
     const [isHovering, setHovering] = useState(false);
     const { speak, cancel, speaking, supported } = useSpeechSynthesis();
+    let paused = false;
 
     useEffect(() => {
         const getNodeText = node => {
@@ -16,19 +17,52 @@ export default function TextToSpeech({ children }) {
         setTextToRead(getNodeText(children));
     }, []);
 
+    const testText = new SpeechSynthesisUtterance('testing this nonsense stuff')
+
+    // function play() {
+    //     if ( paused ) {
+    //       paused = false;
+    //       window.speechSynthesis.resume();
+    //     } else {
+    //       window.speechSynthesis.speak( to_speak );
+    //     }
+    //   }
+    //   function pause() {
+    //     paused = true;
+    //     window.speechSynthesis.pause();
+    //   }
+
+    const playTest = () => {
+        
+        testText.volume = 1
+        testText.rate = 1
+        testText.pitch = 1
+        console.log(testText)
+        if (paused) {
+            paused = false
+            return window.speechSynthesis.resume()
+        } else { return window.speechSynthesis.speak(testText) }
+    }
+
     if (supported && textToRead) {
         return (
-            <div class={(isHovering || speaking) && "focussed-section"}>
+            <div className={(isHovering || speaking) ? "focussed-section" : undefined}>
                 <button 
-                    class="text-to-speech-buttons"
-                    onClick={() => speak({ text: textToRead })} 
+                    className="text-to-speech-buttons"
+                    onClick={() => playTest()} 
                     onMouseOver={() => setHovering(true)}
                     onMouseOut={() => setHovering(false)}
                 >
                     Listen to this section
                 </button>
+                {/* <button 
+                    className="text-to-speech-buttons"
+                    onClick={window.speechSynthesis.pause()}
+                >
+                    Pause
+                </button> */}
                 <button 
-                    class="text-to-speech-buttons"
+                    className="text-to-speech-buttons"
                     onClick={cancel}
                 >
                     Cancel
