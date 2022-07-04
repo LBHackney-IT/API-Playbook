@@ -239,6 +239,7 @@ workflows:
             - build-deploy-production:
                   requires:
                       - permit-deploy-production
+                      - terraform-init-and-apply-to-production
                   filters:
                       branches:
                           only: /release\/.*/
