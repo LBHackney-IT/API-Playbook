@@ -21,5 +21,5 @@ module "playbook_distribution" {
   cost_code           = "B0811"
   project_name        = "hackney-playbooks"
   use_cloudfront_cert = false
-  hackney_cert_arn    = "arn:aws:acm:us-east-1:${data.aws_caller_identity.current.account_id}:certificate/dbb3198e-b779-41b6-80b3-4ffd5dd19bf4"
+  hackney_cert_arn    = "arn:aws:acm:eu-west-2:${data.aws_caller_identity.current.account_id}:certificate/20e17f4b-2a75-462c-ba1c-2b9429f19b93"
 }
