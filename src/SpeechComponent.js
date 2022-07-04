@@ -5,7 +5,7 @@ export default function TextToSpeech({ children }) {
     const [textToRead, setTextToRead] = useState('');
     const [isHovering, setHovering] = useState(false);
     const [isPaused, setPaused] = useState(false);
-    const { speak, cancel, speaking, supported } = useSpeechSynthesis();
+    const { speaking, supported } = useSpeechSynthesis();
 
     useEffect(() => {
         const getNodeText = node => {
@@ -19,27 +19,10 @@ export default function TextToSpeech({ children }) {
 
     const testText = new SpeechSynthesisUtterance(textToRead)
 
-    // function play() {
-    //     if ( paused ) {
-    //       paused = false;
-    //       window.speechSynthesis.resume();
-    //     } else {
-    //       window.speechSynthesis.speak( to_speak );
-    //     }
-    //   }
-    //   function pause() {
-    //     paused = true;
-    //     window.speechSynthesis.pause();
-    //   }
-
-    const playTest = () => {
-        console.log(typeof(textToRead))
-        console.log(typeof(testText))
+    const playText = () => {
         testText.volume = 1
         testText.rate = 1
         testText.pitch = 1
-        console.log(testText)
-        console.log(isPaused)
         if (isPaused) {
             setPaused(false);
             return window.speechSynthesis.resume()
@@ -47,11 +30,14 @@ export default function TextToSpeech({ children }) {
         else { return window.speechSynthesis.speak(testText) }
     }
 
-    const pauseTest = () => {
-        console.log(isPaused)
+    const pauseText = () => {
         setPaused(true)
-        console.log(isPaused)
         return window.speechSynthesis.pause()
+    }
+
+    const stopText = () => {
+        setPaused(false)
+        return window.speechSynthesis.cancel()
     }
 
     if (supported && textToRead) {
@@ -59,24 +45,24 @@ export default function TextToSpeech({ children }) {
             <div className={(isHovering || speaking) ? "focussed-section" : undefined}>
                 <button 
                     className="text-to-speech-buttons"
-                    onClick={() => playTest()} 
+                    onClick={() => playText()} 
                     onMouseOver={() => setHovering(true)}
                     onMouseOut={() => setHovering(false)}
                 >
-                    Listen to this section
+                    Listen to this page
                 </button>
                 <button 
                     className="text-to-speech-buttons"
-                    onClick={() => pauseTest()}
+                    onClick={() => pauseText()}
                 >
                     Pause
                 </button>
-                {/* <button 
+                <button 
                     className="text-to-speech-buttons"
-                    onClick={cancel}
+                    onClick={() => stopText()}
                 >
-                    Cancel
-                </button> */}
+                    Stop
+                </button>
                 {children}
             </div>
         );

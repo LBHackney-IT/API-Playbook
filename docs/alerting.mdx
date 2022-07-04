@@ -13,10 +13,6 @@ In Hackney, we use AWS CloudWatch to implement monitoring and alerting.
 
 Any logs created in our APIs are recorded and accessible in AWS CloudWatch. Creation of log groups is automated via the current serverless setup.
 
-</TextToSpeech>
-
-<TextToSpeech>
-
 ## Metric filters
 
 ### Filter and Pattern Syntax
@@ -28,19 +24,11 @@ Using the filters, developers can easily narrow down the logs they see to only t
 
 CloudWatch also provides a way to create alarms based on metric filters, so we can get notified if a log with matching a certain pattern/term has occurred.
 
-</TextToSpeech>
-
-<TextToSpeech>
-
 ### Metric filters that should be created per API
 
 TBC
 
 _Needs to be filters we want commonly available for each API_
-
-</TextToSpeech>
-
-<TextToSpeech>
 
 ### Alarms should be created for the following metric filters
 
@@ -48,17 +36,9 @@ TBC
 
 _Need to decide which logs should have an alarm associated with them_
 
-</TextToSpeech>
-
-<TextToSpeech>
-
 ## Availability monitoring and alerting
 
 We use AWS CloudWatch Canaries to monitor the availability of our APIs and front-end applications.
-
-</TextToSpeech>
-
-<TextToSpeech>
 
 ## AWS CloudWatch Canaries
 
@@ -74,10 +54,6 @@ We use AWS CloudWatch Canaries to monitor the availability of our APIs and front
 
 [See the guidance for Canaries here](/uptime_monitoring)
 
-</TextToSpeech>
-
-<TextToSpeech>
-
 ### AWS Canaries for front end applications
 
 - Can monitor the availability of a web page
@@ -91,10 +67,6 @@ We use AWS CloudWatch Canaries to monitor the availability of our APIs and front
 - A max number of links to follow is set up
 
 - The canary crawls through the links and returns the first broken link identified
-
-</TextToSpeech>
-
-<TextToSpeech>
 
 ## AWS CloudWatch Alarms
 
