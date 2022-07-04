@@ -2,6 +2,10 @@
 id: resources
 title: Resources
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Avoid Actions — Think About Resources
 
 REST is all about your resources, so consider the domain entities that take part in web service interaction, and aim to model your API around these using the standard HTTP methods as operation indicators. For instance, if an application has to lock articles explicitly so that only one user may edit them, create an article lock with PUT or POST instead of using a lock action.
@@ -104,3 +108,5 @@ Nevertheless one API should hold all necessary resources to model complete busin
 ## SHOULD Limit number of Sub-Resource Levels
 
 There are main resources (with root url paths) and sub-resources (or "nested" resources with non-root urls paths). Use sub-resources if their life cycle is (loosely) coupled to the main resource, i.e. the main resource works as collection resource of the subresource entities. You should use <= 3 sub-resource (nesting) levels — more levels increase API complexity and url path length. (Remember, some popular web browsers do not support URLs of more than 2000 characters)
+
+</TextToSpeech>

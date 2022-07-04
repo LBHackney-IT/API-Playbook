@@ -3,6 +3,10 @@ id: x_ray
 title: Request Tracing with AWS XRay
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 AWS X-Ray is an AWS managed service that provides the functionality to debug and analyze distributed applications.
@@ -117,3 +121,4 @@ https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-configuration.h
 Service Lens can be used for a consolidated view of insights
 
 We want to be able to be proactive in responding to alerts/issues.
+</TextToSpeech>

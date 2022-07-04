@@ -2,6 +2,10 @@
 id: serverless_lambda
 title: Serverless Lambda Framework
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 **What is Serverless Lambda?**
@@ -120,3 +124,4 @@ provider:
     lambda: true
     apiGateway: true
 ```
+</TextToSpeech>

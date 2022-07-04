@@ -3,6 +3,10 @@ id: infrastructure
 title: Infrastucture as Code
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## What is Infrastucture as Code (IaC)?
 
 Infrastructure as code is the approach used within HackIT to manage and provision cloud resources with the use of scripted configuration files. It allows for easy maintenance and creation of the different cloud resources for large scale systems in a collaborative manner.
@@ -142,3 +146,4 @@ For example, our individual AWS account network set up is currently applied manu
 The networking set up and other shared resources have been created via our [‘common Terraform’ template repository](https://github.com/LBHackney-IT/aws-hackney-common-terraform/tree/master/applied_terraform). Every time someone makes a change a new PR needs to be created against this repository.
 
 This ensures that although there is a state file, developers will be able to see the configuration files of what has been applied and make changes to it, while being aware of what has previously been provisioned.
+</TextToSpeech>

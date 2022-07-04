@@ -3,6 +3,10 @@ id: pipeline_implementation
 title: Pipeline Implementation
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## S3
 
 The source S3 bucket has been configured to invoke a Lambda function when a file has been uploaded with extension `.csv`.
@@ -38,3 +42,5 @@ The lambda function implements the following:
 
  - You need to create the S3 bucket separately and provide the name in the serverless.yml file of the pipeline repository.
  - You need to create the Postgres separately and create the table that will be the “target” with the same columns as the ones expected to be present in the .csv that will be uploaded to S3
+
+</TextToSpeech>

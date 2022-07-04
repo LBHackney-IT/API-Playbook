@@ -2,6 +2,10 @@
 id: notes
 title: Release Notes
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Version 3
 
 ## Target Audience
@@ -38,3 +42,4 @@ All HackIT internal developers and external agencies developer collaborating on 
 ## Feedback
 
 We would be pleased to hear from you about our new iteration of the API Playbook. Please feel free to give us your feedback.
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: FAQs
 title: Frequently Asked Questions
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## How can I find Base URLs for APIs?
 
 You can do this by looking up the API in AWS API Gateway.
@@ -52,3 +56,5 @@ This can be found through API Gateway.
 2. Choose "API Gateway" under "Services" in AWS.
 3. Choose “API Keys” from the sidebar.
 4. This will bring up a list of API Keys. Choose the relevant API Key, select the blue ‘Show’ link, and you will see the API Key value.
+
+</TextToSpeech>

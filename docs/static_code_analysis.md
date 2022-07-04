@@ -3,6 +3,10 @@ id: static_code_analysis
 title: Static Code Analysis
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 We have chosen to use [ReSharper Command Line Tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html).
 
 ##  Running locally
@@ -79,3 +83,5 @@ dotnet_diagnostic.<category or ruleId>.severity = error
 - **CA1062**: Validate arguments of public methods
 
 - **CA1303**: Do not pass literals as localized parameters
+
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: aws_ecs
 title: AWS / ECS with Fargate and when to use
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## ECS/Fargate
 
 All new Hackney APIs developed using AWS Lambda as a serverless way of hosting APIs.
@@ -78,3 +82,4 @@ In this playbook, please refer to the [Terraform section](/infrastructure) to fi
 
 ** [Step-by-step 'how to use' guide for the terraform template](https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy
 ) **
+</TextToSpeech>

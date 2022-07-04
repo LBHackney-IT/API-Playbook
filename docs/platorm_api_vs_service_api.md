@@ -4,6 +4,10 @@ title: Platform API vs Service API
 ---
 
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ![Platform API vs Service API comparison](./doc-images/platformapi.png)
 
 
@@ -78,3 +82,4 @@ All platform APIs will be listed in our [API Hub](https://developer.api.hackney.
 
 [**View the Miro board for higher resolution**](https://miro.com/app/board/o9J_lFTB0GI=/)
 
+</TextToSpeech>

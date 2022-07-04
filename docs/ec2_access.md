@@ -2,6 +2,10 @@
 id: ec2_access
 title: Access to EC2 in a private subnet from local machine
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Steps to connect to EC2 instances in a private subnet
 
 ** Prerequisites **
@@ -60,3 +64,4 @@ Connection accepted for session xpress-db-server-remote-user-[REDACTED]
 The above command will start a port forwarding session. To connect to your EC2 instance, go to your Remote Desktop software that you usually use and use `localhost:55678` as the computer name.
 
 You will then be prompted to enter your Windows machine credentials.
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: api_keys
 title: API Keys
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction 
 Some of our APIs still use API keys to manage access to the APIs. This was our initial approach, but it has proven to be insufficient as it does not allow for granular access control and reporting, and it is associated with a big maintenance overhead.
 
@@ -64,3 +68,4 @@ usagePlan:
 [**Ref**](https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8)
 
 For APIs that use EC2/Fargate, we create and add API keys via Terraform.
+</TextToSpeech>

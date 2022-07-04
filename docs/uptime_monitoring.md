@@ -3,6 +3,10 @@ id: uptime_monitoring
 title: Centralised Uptime Monitoring
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 Hackney now has multiple Platform APIs deployed to the AWS cloud. Each API is a self-contained application exposing a specific set of data.
 As we are creating and deploying multiple APIs in AWS It’s necessary to be able to monitor the health and performance of these applications. AWS provides a centralised monitoring and logging solution of the applications.
 
@@ -70,3 +74,4 @@ TBC
 ## More Information
 
 For more information, check out the [AWS documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html).
+</TextToSpeech>

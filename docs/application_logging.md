@@ -3,6 +3,10 @@ id: application_logging
 title: Application Logging Guidelines
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 This document defines a set of guidelines used to produce rich application logging for applications belonging to a microservice architecture.
@@ -89,3 +93,4 @@ Each class or logger will have it’s own set of attributes used within it’s c
 ### Masking
 
 Prevent log entries containing Personal Identifiable Information (PII) by removing the attributes, or, masking part of the value.
+</TextToSpeech>

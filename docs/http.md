@@ -2,6 +2,10 @@
 id: http
 title: HTTP
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Use REST Maturity Level 2
 
 We strive for a good implementation of [REST Maturity Level 2](http://martinfowler.com/articles/richardsonMaturityModelhtml#level2) as it enables us to build resource-oriented APIs that make full use of HTTP verbs and status codes. You can see this expressed by many rules throughout these guidelines, e.g.:
@@ -267,3 +271,4 @@ The 'X-RateLimit' headers are:
   - `X-RateLimit-Reset`: The relative time in seconds when the rate limit window will be reset. **Beware** that this is different to Github and Twitter’s usage of a header with the same name which is using UTC epoch seconds instead.
 
 The reason to allow both approaches is that APIs can have different needs. Retry-After is often sufficient for general load handling and request throttling scenarios and notably, does not strictly require the concept of a calling entity such as a tenant or named account. In turn this allows resource owners to minimise the amount of state they have to carry with respect to client requests. The 'X-RateLimit' headers are suitable for scenarios where clients are associated with pre-existing account or tenancy structures. 'X-RateLimit' headers are generally returned on every request and not just on a 429, which implies the service implementing the API is carrying sufficient state to track the number of requests made within a given window for each named entity.
+</TextToSpeech>

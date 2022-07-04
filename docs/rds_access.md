@@ -3,6 +3,10 @@ id: rds_access
 title: Access to RDS in a private subnet from local machine
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Securely connecting to an AWS RDS instance
 
 The instructions will help you connect to an AWS RDS instance without the need for that RDS resource to have a publicly available DNS. This connection can be made using a database client such as pgadmin.  You will utilise AWS session manager to connect to a Bastion host (or jumpbox) within the same AWS account as your desired RDS database.
@@ -62,3 +66,4 @@ The role you will be using will have been explained to you beforehand.
 ![Commands to connect to RDS](./doc-images/rds3.png)
 
 You can then connect using your client on `127.0.0.1:9999`
+</TextToSpeech>

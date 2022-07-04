@@ -3,7 +3,11 @@ id: api_standards
 title: API Standards
 ---
 
-## Standards  Criteria
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
+## Standards Criteria
 
 ** Your API will need to meet the following standards for it to be accepted into service: **
 
@@ -27,3 +31,5 @@ title: API Standards
 9. You have a clear and secure method of managing access, keys, authentication, users and versioning.
 
 10. The API is developed to the principles in the Playbook and any exceptions have been agreed in advance.
+
+</TextToSpeech>

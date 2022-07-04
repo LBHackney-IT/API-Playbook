@@ -3,6 +3,9 @@ id: lambda_best_practices
 title: Lambda Functions Use and Good Practice
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
 
 ## Introduction
 We currently use AWS Lambda services for most of our APIs.  Lambda functions are cloud based compute services that allow you to execute code without having to provision servers.  It is also a very cost effective means of implementing API services since compute costs are only incurred when the service is called and the function runs.
@@ -78,3 +81,4 @@ In some cases it’s useful to have a bit more insight on how the Lambda is perf
 
 For more details on logging and alerts in general, please see our [alerting guide](/alerting).
 
+</TextToSpeech>
