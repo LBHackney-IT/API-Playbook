@@ -42,28 +42,34 @@ export default function TextToSpeech({ children }) {
 
     if (supported && textToRead) {
         return (
-            <div className={(isHovering || speaking) ? "focussed-section" : undefined}>
-                <button 
-                    className="text-to-speech-buttons"
-                    onClick={() => playText()} 
-                    onMouseOver={() => setHovering(true)}
-                    onMouseOut={() => setHovering(false)}
-                >
-                    Listen to this page
-                </button>
-                <button 
-                    className="text-to-speech-buttons"
-                    onClick={() => pauseText()}
-                >
-                    Pause
-                </button>
-                <button 
-                    className="text-to-speech-buttons"
-                    onClick={() => stopText()}
-                >
-                    Stop
-                </button>
-                {children}
+            <div>
+                <p className="text-to-speech-intro">We have added a new Text-to-Speech feature that allows you to listen to 
+                    the content of this page read aloud. Click on 'Listen to this page' to try it out.
+                </p>
+                <div className={(isHovering || speaking) ? "focussed-section" : undefined}>
+                    
+                    <button 
+                        className="text-to-speech-buttons"
+                        onClick={() => playText()} 
+                        onMouseOver={() => setHovering(true)}
+                        onMouseOut={() => setHovering(false)}
+                    >
+                        Listen to this page
+                    </button>
+                    <button 
+                        className="text-to-speech-buttons"
+                        onClick={() => pauseText()}
+                    >
+                        Pause
+                    </button>
+                    <button 
+                        className="text-to-speech-buttons"
+                        onClick={() => stopText()}
+                    >
+                        Stop
+                    </button>
+                    {children}
+                </div>
             </div>
         );
     }
