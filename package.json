@@ -39,7 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "cypress": "^10.3.0"
-  }
+  "devDependencies": {}
 }

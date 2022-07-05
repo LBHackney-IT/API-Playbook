@@ -18,6 +18,17 @@ export default function TextToSpeech({ children }) {
     }, []);
 
     const testText = new SpeechSynthesisUtterance(textToRead)
+    // if (supported) {
+    //     const testText = new SpeechSynthesisUtterance(textToRead)
+    //     return testText
+    // } else {
+    //     return null
+    // }
+
+    // const utterance = () => {
+    //     const testText = new SpeechSynthesisUtterance(textToRead)
+    //     return testText
+    // }
 
     const playText = () => {
         testText.volume = 1
