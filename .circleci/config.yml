@@ -72,6 +72,7 @@ commands:
             - run:
                   name: Build
                   command: |
+                    export ENVIRONMENT="<<parameters.environment>>""
                     yarn build
                     mkdir -p ci-build/API-Playbook
                     mv build/* ci-build/API-Playbook

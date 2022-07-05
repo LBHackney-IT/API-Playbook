@@ -1,3 +1,23 @@
+const generateAnnouncementBar = () => {
+  const environment = process.env.ENVIRONMENT;
+  if(environment === "production") return {};
+  return {
+      id: 'environment_banner',
+      content:
+        `You are currently viewing the <b style="color: ${environment == "development"? "#e03c31" : "#00b341"}">${environment}</b> environment.`,
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: false
+  }
+}
+
+const generateTitle = () => {
+  const environment = process.env.ENVIRONMENT;
+  if(environment === "production") return "API Playbook";
+
+  return `API Playbook ${environment.charAt(0).toUpperCase()+environment.slice(1)}`
+}
+
 module.exports = {
   title: "Hackney API Playbook",
   tagline:
@@ -14,7 +34,7 @@ module.exports = {
       additionalLanguages: ["csharp"],
     },
     navbar: {
-      title: "API Playbook",
+      title: generateTitle(),
       logo: {
         alt: "API Playbook",
         src: "img/logo-long.svg",
@@ -27,6 +47,7 @@ module.exports = {
         },
       ],
     },
+    announcementBar: generateAnnouncementBar(),
     algolia: {
       appId: "KNMFHOJ4X2",
       apiKey: '4dc9b48c851c09d44e9cf356d5425867',
