@@ -18,6 +18,6 @@ module "playbook_distribution" {
   environment_name    = "staging"
   cost_code           = "B0811"
   project_name        = "hackney-playbooks"
-  use_cloudfront_cert = false
-  hackney_cert_arn    = "arn:aws:acm:us-east-1:${data.aws_caller_identity.current.account_id}:certificate/8f7fa30c-a4e5-4775-b827-ade824a33c9a"
+  use_cloudfront_cert = true
+  hackney_cert_arn    = "arn:aws:acm:us-east-1:${data.aws_caller_identity.current.account_id}:certificate/" // Update once certificate is made
 }
