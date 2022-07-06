@@ -17,36 +17,25 @@ export default function TextToSpeech({ children }) {
         setTextToRead(getNodeText(children));
     }, []);
 
-    const testText = new SpeechSynthesisUtterance(textToRead)
-    // if (supported) {
-    //     const testText = new SpeechSynthesisUtterance(textToRead)
-    //     return testText
-    // } else {
-    //     return null
-    // }
+    const textUtterance = new SpeechSynthesisUtterance(textToRead)
 
-    // const utterance = () => {
-    //     const testText = new SpeechSynthesisUtterance(textToRead)
-    //     return testText
-    // }
-
-    const playText = () => {
-        testText.volume = 1
-        testText.rate = 1
-        testText.pitch = 1
+    const playTextUtterance = () => {
+        textUtterance.volume = 1
+        textUtterance.rate = 1
+        textUtterance.pitch = 1
         if (isPaused) {
             setPaused(false);
             return window.speechSynthesis.resume()
         } 
-        else { return window.speechSynthesis.speak(testText) }
+        else { return window.speechSynthesis.speak(textUtterance) }
     }
 
-    const pauseText = () => {
+    const pauseTextUtterance = () => {
         setPaused(true)
         return window.speechSynthesis.pause()
     }
 
-    const stopText = () => {
+    const stopTextUtterance = () => {
         setPaused(false)
         return window.speechSynthesis.cancel()
     }
@@ -61,7 +50,7 @@ export default function TextToSpeech({ children }) {
                     
                     <button 
                         className="text-to-speech-buttons"
-                        onClick={() => playText()} 
+                        onClick={() => playTextUtterance()} 
                         onMouseOver={() => setHovering(true)}
                         onMouseOut={() => setHovering(false)}
                     >
@@ -69,13 +58,13 @@ export default function TextToSpeech({ children }) {
                     </button>
                     <button 
                         className="text-to-speech-buttons"
-                        onClick={() => pauseText()}
+                        onClick={() => pauseTextUtterance()}
                     >
                         Pause
                     </button>
                     <button 
                         className="text-to-speech-buttons"
-                        onClick={() => stopText()}
+                        onClick={() => stopTextUtterance()}
                     >
                         Stop
                     </button>
