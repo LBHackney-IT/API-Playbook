@@ -9,8 +9,8 @@ title: Preferred Tech Stack
 - Serverless framework
   * [See more](/serverless_lambda)
 - AWS API Gateway
-- Hackney Lambda authorizer (for authentication)
-  * [See more](/generating_tokens)
+- Hackney Lambda authoriser (for authentication)
+  * [See more](/lambda_authoriser)
 - FxCop for static code analysis
   * [See more](/static_code_analysis)
 - dotnet-format for linting
