@@ -120,7 +120,6 @@ module.exports = {
       items: ['rds_access', 'ec2_access', 'postgresql'],
     },
     'developer_hub',
-    'api_specification',
     {
       type: 'category',
       label: 'Other Useful Information',
@@ -145,9 +144,6 @@ module.exports = {
     },
     'eda',
     'developer_hub',
-    'ways_of_working',
-    'nuget_packages',
-    'sonarcloud',
     'target_type',
     'canaries_automation',
     'FAQs',

@@ -17,7 +17,7 @@ const generateTitle = () => {
   if (environment === 'production') return 'API Playbook'
 
   return `API Playbook ${
-    environment?.charAt(0).toUpperCase() + environment.slice(1)
+    environment?.charAt(0).toUpperCase() + environment?.slice(1)
   }`
 }
 
