@@ -15,16 +15,17 @@ provider "aws" {
 data "aws_caller_identity" "current" {}
 
 locals {
+  environment_name = "development"
   origins = {
-    "tech-radar-frontend-${var.environment_name}"   = "tech-radar"
-    "api-playbook-frontend-${var.environment_name}" = "API-Playbook"
+    "tech-radar-frontend-${local.environment_name}"   = "tech-radar"
+    "api-playbook-frontend-${local.environment_name}" = "API-Playbook"
   }
 }
 
 module "playbook_distribution" {
   source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting/without-waf?ref=update-playbook"
   cname_aliases       = ["playbook-development.hackney.gov.uk"]
-  environment_name    = "development"
+  environment_name    = local.environment_name
   cost_code           = "B0811"
   project_name        = "hackney-playbooks"
   use_cloudfront_cert = false
