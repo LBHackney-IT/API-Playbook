@@ -8,7 +8,7 @@ Unit tests are used to test the functionality of an individual function or a
 collection of functions. This will be a simple introduction to unit testing,
 where we use TDD to implement a basic greeter method.
 
-**This article assumes you are working in a repository forked from [LBHackney-IT/lbh-base-api](https://github.com/LBHackney-IT/lbh-base-api).**
+**This article assumes you are working in a repository forked from [LBHackney-IT/lbh-example-api](https://github.com/LBHackney-IT/lbh-example-api).**
 
 ### Video Tutorial
 

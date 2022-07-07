@@ -8,7 +8,7 @@ Start a new API by using our Base API template!
 There are comments throughout the code that start with TODO where specific things need to be changed or renamed when copying this template.
 Be sure to remove these comments when they aren't needed anymore.
 
-[Begin here](https://github.com/LBHackney-IT/lbh-base-api)
+[Begin here](https://github.com/LBHackney-IT/lbh-example-api)
 
 ## Base API Video Tutorial
 

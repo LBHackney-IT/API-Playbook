@@ -48,7 +48,7 @@ If we look at our implementation Folder, we will notice that our code is structu
 
 ```shell title="Folder Structure" {6,12,16}
 .
-├── BaseApi
+├── example-api
 │   ├── V1
 │   │   ├── Boundary
 │   │   │   └── ..
@@ -65,7 +65,7 @@ If we look at our implementation Folder, we will notice that our code is structu
 │   │   └── UseCase
 │   │       └── ..
 │   └── ..
-├── BaseApi.Tests
+├── example-api.Tests
 │   └── ..
 └── ..
 ```

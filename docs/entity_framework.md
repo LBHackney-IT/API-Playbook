@@ -21,16 +21,16 @@ This means that instead of writing code to directly interact with our databases,
 
 ## How is it implemented in the Base API?
 
-```dotnet title="./BaseApi/V1/Infrastructure/DatabaseContext.cs"
+```dotnet title="./example-api/V1/Infrastructure/DatabaseContext.cs"
 using Microsoft.EntityFrameworkCore;
 
-namespace BaseApi.V1.Infrastructure
+namespace example-api.V1.Infrastructure
 {
 
     public class DatabaseContext : DbContext
     {
         //TODO: rename DatabaseContext to reflect the data source it is representing. eg. MosaicContext.
-        //Guidance on the context class can be found here https://github.com/LBHackney-IT/lbh-base-api/wiki/DatabaseContext
+        //Guidance on the context class can be found here https://github.com/LBHackney-IT/lbh-example-api/wiki/DatabaseContext
         public DatabaseContext(DbContextOptions options) : base(options)
         {
         }
@@ -51,15 +51,15 @@ namespace BaseApi.V1.Infrastructure
 
 EntityFrameworkCore uses the DatabaseEntity model when accessing the database. In the API team, we typically create an individual file within the Infrastructure namespace for each individual table in the database. 
 
-```dotnet title="./BaseApi/V1/Infrastructure/DatabaseEntity.cs" {18,22,26}
+```dotnet title="./example-api/V1/Infrastructure/DatabaseEntity.cs" {18,22,26}
 using Amazon.DynamoDBv2.DataModel;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BaseApi.V1.Infrastructure
+namespace example-api.V1.Infrastructure
 {
     //TODO: rename table and add needed fields relating to the table columns.
-    // There's an example of this in the wiki https://github.com/LBHackney-IT/lbh-base-api/wiki/DatabaseContext
+    // There's an example of this in the wiki https://github.com/LBHackney-IT/lbh-example-api/wiki/DatabaseContext
 
     //TODO: Pick the attributes for the required data source, delete the others as appropriate
     // Postgres will use the "Table" and "Column" attributes
@@ -96,13 +96,13 @@ The class for each DatabaseEntity has a Table attribute, which directly referenc
 
 There are also Column attributes for each property, which also directly reference the names of the columns, as well as the data types.
 
-```dotnet title="./BaseApi/V1/Gateways/ExampleGateway.cs" {20}
+```dotnet title="./example-api/V1/Gateways/ExampleGateway.cs" {20}
 using System.Collections.Generic;
-using BaseApi.V1.Domain;
-using BaseApi.V1.Factories;
-using BaseApi.V1.Infrastructure;
+using example-api.V1.Domain;
+using example-api.V1.Factories;
+using example-api.V1.Infrastructure;
 
-namespace BaseApi.V1.Gateways
+namespace example-api.V1.Gateways
 {
     //TODO: Rename to match the data source that is being accessed in the gateway eg. MosaicGateway
     public class ExampleGateway : IExampleGateway
@@ -135,19 +135,19 @@ For example, in the `GetEntityById` method, we call the Database Context, access
 
 The `find` method is one of many methods within EntityFrameworkCore.
 
-```dotnet title="./BaseApi.Tests/V1/Gateways/ExampleGatewayTests.cs" {37,38,39,40,41}
+```dotnet title="./example-api.Tests/V1/Gateways/ExampleGatewayTests.cs" {37,38,39,40,41}
 using AutoFixture;
-using BaseApi.Tests.V1.Helper;
-using BaseApi.V1.Domain;
-using BaseApi.V1.Gateways;
+using example-api.Tests.V1.Helper;
+using example-api.V1.Domain;
+using example-api.V1.Gateways;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace BaseApi.Tests.V1.Gateways
+namespace example-api.Tests.V1.Gateways
 {
     //TODO: Remove this file if Postgres gateway is not being used
     //TODO: Rename Tests to match gateway name
-    //For instruction on how to run tests please see the wiki: https://github.com/LBHackney-IT/lbh-base-api/wiki/Running-the-test-suite.
+    //For instruction on how to run tests please see the wiki: https://github.com/LBHackney-IT/lbh-example-api/wiki/Running-the-test-suite.
     [TestFixture]
     public class ExampleGatewayTests : DatabaseTests
     {
