@@ -23,7 +23,7 @@ locals {
 }
 
 module "playbook_distribution" {
-  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting/without-waf?ref=update-playbook"
+  source              = "github.com/LBHackney-IT/aws-hackney-common-terraform.git//modules/playbook-hosting/without-waf?ref=playbook-distro"
   cname_aliases       = [] // "playbook-staging.hackney.gov.uk"
   environment_name    = local.environment_name
   cost_code           = "B0811"
