@@ -55,6 +55,7 @@ module.exports = {
       apiKey: '4dc9b48c851c09d44e9cf356d5425867',
       indexName: 'hackney',
       placeholder: 'Search playbook',
+      externalUrlRegex: '/^((?!API-Playbook).)*$/gm'
     },
     footer: {
       style: 'dark',
@@ -69,7 +70,7 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/LBHackney-IT/API-Playbook/edit/master/',
+          editUrl: 'https://github.com/LBHackney-IT/API-Playbook/edit/main/',
         },
         theme: {
           customCss: [require.resolve('./src/docs.scss')],
