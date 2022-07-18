@@ -12,7 +12,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 ** When a new repository is created: **
 
-  1. Use the lbh-base-api template if creating a new API
+  1. Use the lbh-example-api template if creating a new API
 
   2. Ensure you set the project up on CircleCI for CI/CD
 

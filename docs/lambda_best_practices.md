@@ -19,7 +19,7 @@ For the majority of cases that will be more than enough time.
 
 ### How do we go about building a Lambda function?
 
-Building a Lambda function is no different from building any other application.  In fact our BaseAPI is designed in such a way that it can be run either as a standalone application or as a series of serverless functions.
+Building a Lambda function is no different from building any other application.  In fact our example API is designed in such a way that it can be run either as a standalone application or as a series of serverless functions.
 
 The main difference is that a second entry point needs to be added.
 
@@ -55,11 +55,11 @@ We use the Serverless service to deploy our Lambda functions to AWS.  Serverless
 - Ensure that your API Gateway is set up to use the relevant authorizers and relevant measurement and rate limiting is set.
 - Ensure that logging is implemented for your functions
 - Ensure that Serverless is able to find any required secrets stored in Systems Manager.
-- A good example of a Serverless configuration file can be found in our [Base API](https://github.com/LBHackney-IT/lbh-base-api/blob/master/BaseApi/serverless.yml).
+- A good example of a Serverless configuration file can be found in our [Base API](https://github.com/LBHackney-IT/lbh-example-api/blob/master/example-api/serverless.yml).
 
 ### Running your Lambda locally vs Running in the cloud (AWS)
 
-Due to the way the default BaseApi is set up with two application entry points, it is normally not necessary to add any additional tools or frameworks locally for development and debugging. The application can be run and debugged locally as any other .NET Core API.
+Due to the way the default example-api is set up with two application entry points, it is normally not necessary to add any additional tools or frameworks locally for development and debugging. The application can be run and debugged locally as any other .NET Core API.
 
 ## Lambda naming good practices
 
@@ -67,11 +67,11 @@ Our standard naming convention for Lambdas in our serverless configuration is: `
 
 Using the above format it is very easy to identify what service and stage the Lambda belongs to when we can have have a lot of different Lambdas on a single account.
 
-For example the BaseApi sample configuration above would result in a Lambda function called `your-api-name-production` when deployed to production
+For example the example-api sample configuration above would result in a Lambda function called `your-api-name-production` when deployed to production
 
 ## Logging your Lambda activity
 
-BaseApi’s serverless configuration includes the basic setup for policies required to enable Cloudwatch monitoring for Lambda. CloudWatch is often sufficient for basic monitoring and doesn't require any changes to the application code.
+example-api’s serverless configuration includes the basic setup for policies required to enable Cloudwatch monitoring for Lambda. CloudWatch is often sufficient for basic monitoring and doesn't require any changes to the application code.
 
 In some cases it’s useful to have a bit more insight on how the Lambda is performing. In that case services like X-Ray can be implemented. They require some additional configuration to the application, but are generally relatively easy to implement at any point. 
 

@@ -65,7 +65,7 @@ usagePlan:
       rateLimit: 100
 ```
 
-[**Ref**](https://github.com/LBHackney-IT/lbh-base-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/BaseApi/serverless.yml#L8)
+[**Ref**](https://github.com/LBHackney-IT/lbh-example-api/blob/59df843bf70d1ec20bbf7420f2e80c881e789dfc/example-api/serverless.yml#L8)
 
 For APIs that use EC2/Fargate, we create and add API keys via Terraform.
 </TextToSpeech>

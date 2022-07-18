@@ -32,16 +32,16 @@ However, by default this container won’t be all you need to test an applicatio
 
 In your container project you will need the `Dockerfile` for each container in your project. You will also need to have a `docker-compose.yml` file in your project where you will define all of the services that are required for your application.
 
-An example docker-compose file taken from our BaseAPI looks like the following:
+An example docker-compose file taken from our example-api looks like the following:
 
 ```yaml
 version: "3.2"
 
 services:
-  base-api:
-    image: base-api
+  example-api:
+    image: example-api
     build:
-      context: BaseApi/
+      context: example-api/
       dockerfile: ./Dockerfile
     ports:
       - 3000:3000
@@ -56,11 +56,11 @@ services:
     volumes:
       - ./database:/docker-entrypoint-initdb.d
 
-  base-api-test:
-    image: base-api-test
+  example-api-test:
+    image: example-api-test
     build:
       context: .
-      dockerfile: BaseApi.Tests/Dockerfile
+      dockerfile: example-api.Tests/Dockerfile
     environment:
       - DB_HOST=[database url]
       - DB_PORT=[database port]
@@ -86,7 +86,7 @@ The following is a breakdown of the various aspects of the base api docker-compo
 - ** Version: **  The version of the docker-compose format being used.
 
 - ** Services: ** These are the various containerised components of the application.
-  * For example `base-api` is the section that describes the container that is created for the application itself while `dev-database` is the section that describes the container where the database will run.  
+  * For example `example-api` is the section that describes the container that is created for the application itself while `dev-database` is the section that describes the container where the database will run.  
 
 - ** Image: **  The name that Docker will give to the image when it is built (this could alternatively be the tag of the image if a build step is configured).
 
@@ -114,11 +114,11 @@ You can spin up any individual service directly by calling `docker-compose up [n
 
 If the service is linked to another service via the `links:` section the linked service will also be spun up.
 
-For example when calling `docker-compose up base-api`, as this service has a link to the dev-database, the dev-database will also be spun up in a container along with the base api application. 
+For example when calling `docker-compose up example-api`, as this service has a link to the dev-database, the dev-database will also be spun up in a container along with the base api application. 
 
 If you need to manually supply environment variables when running a composition and do not want to add them to your system environment they can be prepended to the docker-compose command, for example:
 
-```CONNECTION_STRING=[a connection string] docker-compose up base-api```
+```CONNECTION_STRING=[a connection string] docker-compose up example-api```
 
 ## Cleaning Up
 

@@ -45,7 +45,7 @@ _Are data-driven, domain modeled APIs that expose generic data for re-use for se
 
 _It is the foundation layer for the <u> API ecosystem </u> allowing higher-level APIs access to the data sources below._
 
-All platform APIs will be listed in our [API Hub](https://developer.api.hackney.gov.uk/).
+All platform APIs will be listed in our [API Hub](https://developer-api.hackney.gov.uk/).
 
 ### Criteria
 

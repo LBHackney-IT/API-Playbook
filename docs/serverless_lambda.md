@@ -28,14 +28,14 @@ A function is an AWS Lambda function that is similar to a microservice. It’s s
 
 ```yaml title="serverless.yml" {9}
 functions:
-  baseApi:
+  example-api:
     name: ${self:service}-${self:provider.stage}
-    handler: BaseApi::BaseApi.LambdaEntryPoint::FunctionHandlerAsync
+    handler: example-api::example-api.LambdaEntryPoint::FunctionHandlerAsync
     role: lambdaExecutionRole
     environment:
-# TODO: Create ssm variables for this API's postgres mirror then rename base-api below to match api name
+# TODO: Create ssm variables for this API's postgres mirror then rename example-api below to match api name
 # TODO: Remove this line if DynamoDb is being used
-      CONNECTION_STRING: Host=${ssm:/base-api/${self:provider.stage}/postgres-hostname};Port=${ssm:/base-api/${self:provider.stage}/postgres-port};Database=base-api-mirror;Username=${ssm:/base-api/${self:provider.stage}/postgres-username};Password=${ssm:/base-api/${self:provider.stage}/postgres-password}
+      CONNECTION_STRING: Host=${ssm:/example-api/${self:provider.stage}/postgres-hostname};Port=${ssm:/example-api/${self:provider.stage}/postgres-port};Database=example-api-mirror;Username=${ssm:/example-api/${self:provider.stage}/postgres-username};Password=${ssm:/example-api/${self:provider.stage}/postgres-password}
     events:
       - http:
           path: /{proxy+}
@@ -79,7 +79,7 @@ resources:
           - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
           - arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess
 # TODO: Enable this line and set the correct policy name if DynamoDb is in use
-#          - arn:aws:iam::${self:provider.account}:policy/base-api/lambda-dynamodb-base-api
+#          - arn:aws:iam::${self:provider.account}:policy/example-api/lambda-dynamodb-example-api
         Policies:
           - PolicyName: manageLogs
             PolicyDocument:
