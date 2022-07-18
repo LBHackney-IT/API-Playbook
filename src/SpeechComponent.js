@@ -17,7 +17,7 @@ export default function TextToSpeech({ children }) {
         setTextToRead(getNodeText(children));
     }, []);
 
-    const textUtterance = new SpeechSynthesisUtterance(textToRead)
+    const textUtterance = typeof window !== 'undefined' && new SpeechSynthesisUtterance(textToRead)
 
     const playTextUtterance = () => {
         textUtterance.volume = 1
