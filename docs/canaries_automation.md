@@ -2,6 +2,9 @@
 id: canaries_automation
 title: Automation of Canaries
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
 
 ## Introduction
 
@@ -51,3 +54,5 @@ Canary testing fits into the continuous delivery and continuous integration meth
 - Hackney Council integrates deep monitoring and automated testing into canary testing.
 - If a feature fails a monitoring check once it’s been deployed as a canary to a percentage of users, it will automatically roll back.
 - With continuous deployment and canary tests, our development team can release new functionality and code changes at scale more safely.
+
+</TextToSpeech>
