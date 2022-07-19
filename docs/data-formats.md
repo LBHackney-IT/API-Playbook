@@ -98,14 +98,14 @@ Use the following standard formats for country, language and currency codes:
   - [ISO 3166-1-alpha2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
     
       - (It is "GB", not "UK", even though "UK" has seen some use at
-        Zalando)
+        Zalando).
 
   - [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
     
       - [BCP-47](https://tools.ietf.org/html/bcp47) (based on ISO 639-1)
-        for language variants
+        for language variants.
 
-  - [ISO 4217 currency codes](https://en.wikipedia.org/wiki/ISO_4217)
+  - [ISO 4217 currency codes](https://en.wikipedia.org/wiki/ISO_4217).
 
 ## MUST Define Format for Type Number and Integer
 
@@ -149,9 +149,9 @@ components:
 
 Use the date and time formats defined by [RFC 3339](http://tools.ietf.org/html/rfc3339#section-5.6):
 
-  - for "date" use strings matching `date-fullyear "-" date-month "-" date-mday`, for example: `2015-05-28`
+  - for "date" use strings matching `date-fullyear "-" date-month "-" date-mday`, for example: `2015-05-28`.
 
-  - for "date-time" use strings matching `full-date "T" full-time`, for example `2015-05-28T14:07:17Z`
+  - for "date-time" use strings matching `full-date "T" full-time`, for example `2015-05-28T14:07:17Z`.
 
 Note that the [OpenAPI format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types)
 "date-time" corresponds to "date-time" in the RFC) and `2015-05-28` for a date (note that the OpenAPI format "date" corresponds to "full-date" in the RFC). Both are specific profiles, a subset of the international standard [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601).
@@ -160,7 +160,8 @@ A zone offset may be used (both, in request and responses) — this is simpl
 
 When it comes to storage, all dates should be consistently stored in UTC without a zone offset. Localization should be done locally by the services that provide user interfaces, if required.
 
-Sometimes it can seem data is naturally represented using numerical timestamps, but this can introduce interpretation issues with precision
+Sometimes it can seem data is naturally represented using numerical timestamps, but this can introduce interpretation issues with precision.
+
 - for example whether to represent a timestamp as 1460062925, 1460062925000 or 1460062925.000. Date strings, though more verbose and requiring more effort to parse, avoid this ambiguity.
 
 ## SHOULD Time durations and intervals could conform to ISO 8601
@@ -169,12 +170,12 @@ Schema based JSON properties that are by design durations and intervals could be
 
 ## SHOULD Use standards for Language, Country and Currency
 
-  - [ISO 3166-1-alpha2 country](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+  - [ISO 3166-1-alpha2 country](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 
-  - [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+  - [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
-  - [BCP-47](https://tools.ietf.org/html/bcp47) (based on ISO 639-1) for language variants
+  - [BCP-47](https://tools.ietf.org/html/bcp47) (based on ISO 639-1) for language variants.
 
-  - [ISO 4217 currency codes](http://en.wikipedia.org/wiki/ISO_4217)
+  - [ISO 4217 currency codes](http://en.wikipedia.org/wiki/ISO_4217).
   
 </TextToSpeech>

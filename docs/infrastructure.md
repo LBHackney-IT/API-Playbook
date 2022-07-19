@@ -87,13 +87,13 @@ DMS task and instance provisioning (full set up)
 
 For any APIs that we have chosen Lambda as a serverless deployment option, we use Serverless as a way to provision the necessary resources:
 
-- Lambda functions
+- Lambda functions.
 
-- CloudWatch logs
+- CloudWatch logs.
 
-- IAM roles
+- IAM roles.
 
-- API Gateway, including usage plan and keys
+- API Gateway, including usage plan and keys.
 
 
 ## Deployment per environment for APIs/apps

@@ -31,9 +31,9 @@ X-Ray can be used to identify API requests that are currently not monitored by C
 
 ### Types of XRay Maps
 
-- ** Service Maps ** - End-to-end visual representation for all dependencies of an application that serves requests
+- ** Service Maps ** - End-to-end visual representation for all dependencies of an application that serves requests.
 
-- ** Trace Maps ** - Individual end-to-end visual representation for a single request
+- ** Trace Maps ** - Individual end-to-end visual representation for a single request.
 
 
 ## Benefits of AWS X-Ray
@@ -42,17 +42,17 @@ X-Ray can be used to identify API requests that are currently not monitored by C
 
 - Visualizes the collected data for easy analysis of the data to help identify bottlenecks, error root causes and performance issues.
 
-- Aids the debugging process when an issue occurs, as it gives a developer a way to quickly pinpoint underlying services causing the issue
+- Aids the debugging process when an issue occurs, as it gives a developer a way to quickly pinpoint underlying services causing the issue.
 
   * For example, if an API ‘A’ makes a call to another API ‘B’, X-Ray service map will help quickly identify which API is causing the issue so the developer can focus their efforts there.
 
-  * If API ‘B’ is the cause, X-Ray also provides trace maps, to show the end-to-end request for API ‘B’, providing insights into its dependencies to further narrow down the cause
+  * If API ‘B’ is the cause, X-Ray also provides trace maps, to show the end-to-end request for API ‘B’, providing insights into its dependencies to further narrow down the cause.
 
   * In comparison, if a developer did not have access to X-Ray, they will have to:
-    - Look through application logs
-    - Identify the line of code causing the error
-    - See which dependency this error is related to
-    - Identify logs related to the dependency and go through the process of identifying root cause or possible further dependencies that need to be considered
+    - Look through application logs.
+    - Identify the line of code causing the error.
+    - See which dependency this error is related to.
+    - Identify logs related to the dependency and go through the process of identifying root cause or possible further dependencies that need to be considered.
 
   * In summary, the process will take longer as developers will have to go through multiple steps and logs in order to narrow down the cause, which results in more development time spent on debugging, instead of resolving the issue.
 
@@ -64,7 +64,7 @@ Serverless can be used to automatically enable X-Ray on our APIs.
 **[How to enable X-Ray tracing](https://www.serverless.com/framework/docs/providers/aws/guide/functions/#aws-x-ray-tracing/)**
 
 
-This will enable it within Lambda and grant it the necessary IAM permissions
+This will enable it within Lambda and grant it the necessary IAM permissions.
 
 X-Ray needs additional C# configuration to capture metadata and trace downstream calls
 Enable C# tracing when using AWS Lambda
@@ -118,7 +118,8 @@ https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-nodejs-configuration.h
 
  ** Dashboard: **
 
-Service Lens can be used for a consolidated view of insights
+Service Lens can be used for a consolidated view of insights.
 
 We want to be able to be proactive in responding to alerts/issues.
+
 </TextToSpeech>

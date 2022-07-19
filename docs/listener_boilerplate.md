@@ -15,7 +15,7 @@ These events can be used to trigger AWS Lambda functions to perform the necessar
 
 In order to facilitate the creation of these functions there is a base template project that can be used to scaffold a "listener" Lambda function application.
 The template uses an extensible internal architecture designed to make implementing processing logic as simple as possible and comes with the following pre-built:
-* CircleCI pipline that just needs amending for your own specific project demands
+* CircleCI pipline that just needs amending for your own specific project demands.
 * Basic terraform configuration for development, staging and production environments.
 * Pre-configured setup of AWS Lambda logging and XRay.
 * Fully working example of a Simple Query Service (SQS) message event triggering processing to update DynamoDb.

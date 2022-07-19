@@ -35,7 +35,7 @@ If you want to reduce the number of tightly coupled dependencies within your app
 
 Event-driven architecture  is to be used when an action needs to be taken when a record has been created, updated or deleted, for example if a user needs to be alerted or another record needs to be updated.
 
-A more specific example where event driven architecture is to be used is in the scenario, where you have a data record, that needs to maintain a subset of information from another data entity
+A more specific example where event driven architecture is to be used is in the scenario, where you have a data record, that needs to maintain a subset of information from another data entity.
 
 - For example, each Tenure record in the Tenure data entity maintains a subset of Person data from the Person data entity that includes names, date of birth and ids.
 - The subset is maintained to avoid making multiple additional API calls to retrieve the names of people under a specific tenure.

@@ -21,19 +21,19 @@ It allows for granular access control per API endpoint per environment. To gain 
 
 ** In the first iteration of this solution, the following applies: **
 
-- Tokens are issued per service
-- Tokens do not expire
+- Tokens are issued per service.
+- Tokens do not expire.
 
 Each time a consumer makes an API request and supplies the JWT auth token, our custom Lambda function takes the token, validates and decrypts it, retrieves data about the token from the database and compares the data from the database to the API request information.
 
 ## When is a token valid
 
-- If the `Enabled` flag is set to true
-  * This means that the token has not been revoked
-- If a token has an expiry date, it should not be a past date
-- The environment recorded in the database should match the one from the request
-- The API name should match the one from the request
-- The HTTP method (GET, POST, etc.) should match the one from the request
+- If the `Enabled` flag is set to true.
+  * This means that the token has not been revoked.
+- If a token has an expiry date, it should not be a past date.
+- The environment recorded in the database should match the one from the request.
+- The API name should match the one from the request.
+- The HTTP method (GET, POST, etc.) should match the one from the request.
 
 ** NB: The Lambda authorizer approach described above is a new solution and not all APIs have been updated to use it. **
 
@@ -50,6 +50,7 @@ The above is to be automated as part of our API Hub upcoming work.
 ## Google Groups based authorization:
 
 In addition to the custom build lambda authorizer mentioned above, we have also implemented Google groups based authorization in some of our projects.
+
 When developing APIs for internal use, the most convenient way to authenticate users is to use Google SSO. Once the user/client has been authenticated, authorization can be handled at the API level to ensure the user/client has access to the requested resource.
 
 Sample implementation with serverless and .NET Core can be found [here](https://github.com/LBHackney-IT/comino-printing).

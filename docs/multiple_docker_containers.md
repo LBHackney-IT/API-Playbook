@@ -8,7 +8,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 ## Purpose
 
-The purpose of this document is to outline how and when best to orchestrate the creation and linking of multiple containers using docker-compose
+The purpose of this document is to outline how and when best to orchestrate the creation and linking of multiple containers using docker-compose.
 
 ## Introduction
 
@@ -125,4 +125,5 @@ If you need to manually supply environment variables when running a composition 
 It is important to periodically clean up your docker image cache using `docker system prune` or by clearing down unused images from the Docker dashboard.
 
 This will ensure that your computer doesn’t grind to a halt from lack of resources.
+
 </TextToSpeech>

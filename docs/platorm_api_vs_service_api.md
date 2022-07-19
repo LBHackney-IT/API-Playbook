@@ -31,6 +31,7 @@ _Service APIs have additional data processing to satisfy a specific service need
 3. **Requires data to be returned in a custom format, different from the one exposed by platform APIs.**
 
 4. **Exposes data specific to the service** 
+
    * e.g. Interactions data for Manage a tenancy - data not read or produced by any other service.
 
 5. **We should only connect to a data source directly if reading or writing data that is not part of our data domain.**

@@ -42,7 +42,7 @@ _A simple gitflow diagram_
 
 The branch that holds the code currently in production.
 
-This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet)
+This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet).
 
 
 #### Development branch
@@ -99,4 +99,5 @@ Trunk-based development is a mindset more than a practice.  It forces the develo
 Trunk-based development becomes more natural to adopt when you use feature flags in your continuous integration pipeline.  
 
 Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it, even if you haven't finished the feature yet. You'll be able to deploy at any time, but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
+
 </TextToSpeech>

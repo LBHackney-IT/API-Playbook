@@ -26,11 +26,11 @@ Be compliant with the standardized HTTP method semantics summarized as follows:
 
 GET requests are used to **read** either a single or a collection resource.
 
-  - GET requests for individual resources will usually generate a 404 if the resource does not exist
+  - GET requests for individual resources will usually generate a 404 if the resource does not exist.
 
-  - GET requests for collection resources may return either 200 (if the collection is empty) or 404 (if the collection is missing)
+  - GET requests for collection resources may return either 200 (if the collection is empty) or 404 (if the collection is missing).
 
-  - GET requests must NOT have a request body payload
+  - GET requests must NOT have a request body payload.
 
 **Note:** GET requests on collection resources should provide sufficient filter and [pagination](pagination.md) mechanisms.
 
@@ -38,13 +38,13 @@ GET requests are used to **read** either a single or a collection resource.
 
 PUT requests are used to **update entire** resources. The semantic is best described as *"please put the enclosed representation at the resource mentioned by the URL, replacing any existing resource."*.
 
-  - PUT requests are usually applied to single resources, and not to collection resources, as this would imply replacing the entire collection
+  - PUT requests are usually applied to single resources, and not to collection resources, as this would imply replacing the entire collection.
 
-  - PUT requests are usually robust against non-existence of resources by implicitly creating before updating
+  - PUT requests are usually robust against non-existence of resources by implicitly creating before updating.
 
-  - on successful PUT requests, the server will **replace the entire resource** addressed by the URL with the representation passed in the payload (subsequent reads will deliver the same payload)
+  - on successful PUT requests, the server will **replace the entire resource** addressed by the URL with the representation passed in the payload (subsequent reads will deliver the same payload).
 
-  - successful PUT requests will usually generate 200 or 204 (if the resource was updated - with or without actual content returned), and 201 (if the resource was created)
+  - successful PUT requests will usually generate 200 or 204 (if the resource was updated - with or without actual content returned), and 201 (if the resource was created).
 
 ### POST
 

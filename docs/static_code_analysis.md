@@ -39,11 +39,11 @@ dotnet_diagnostic.<category or ruleId>.severity = error
 
 ## Pros
 
-- Simple to set up
+- Simple to set up.
 
-- Installation of NuGet package
+- Installation of NuGet package.
 
-- Setup analyser settings in the .editorConfig and in the project file
+- Setup analyser settings in the .editorConfig and in the project file.
 
 - No changes to current CI config needed.
 
@@ -61,27 +61,27 @@ dotnet_diagnostic.<category or ruleId>.severity = error
 
 ### FxCop Error categories we have decided to NOT suppress
 
-- **CA1707**: Identifiers should not contain underscores
+- **CA1707**: Identifiers should not contain underscores.
 
-- **CA1052**: Static holder types should be Static or NotInheritable
+- **CA1052**: Static holder types should be Static or NotInheritable.
 
-- **CA1307**: Specify StringComparison
+- **CA1307**: Specify StringComparison.
 
-- **CA1822**: Mark members as static
+- **CA1822**: Mark members as static.
 
-- **CA1001**: Types that own disposable fields should be disposable
+- **CA1001**: Types that own disposable fields should be disposable.
 
-- **CA1823**: Avoid unused private fields
+- **CA1823**: Avoid unused private fields.
 
-- **CA1051**: Do not declare visible instance fields
+- **CA1051**: Do not declare visible instance fields.
 
 
 ### FxCop Error Categories we have decided to suppress
 
-- **CA1032**: Implement standard exception constructors
+- **CA1032**: Implement standard exception constructors.
 
-- **CA1062**: Validate arguments of public methods
+- **CA1062**: Validate arguments of public methods.
 
-- **CA1303**: Do not pass literals as localized parameters
+- **CA1303**: Do not pass literals as localized parameters.
 
 </TextToSpeech>

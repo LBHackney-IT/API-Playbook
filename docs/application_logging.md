@@ -83,14 +83,15 @@ Each class or logger will have it’s own set of attributes used within it’s c
 ### Filters
 
 - To reduce the high volume of log entries, the applications should add the following log filters:
-- Filter out healthcheck logs (keep errors)
-- Limit the log level to
-- Non production environments = Information
-- Production environments = Warning
-- Don't let ASP.NET Core Console Logging Slow your App down
-- Logging in .NET Core and ASP.NET Core
+- Filter out healthcheck logs (keep errors).
+- Limit the log level to.
+- Non production environments = Information.
+- Production environments = Warning.
+- Don't let ASP.NET Core Console Logging Slow your App down.
+- Logging in .NET Core and ASP.NET Core.
 
 ### Masking
 
 Prevent log entries containing Personal Identifiable Information (PII) by removing the attributes, or, masking part of the value.
+
 </TextToSpeech>

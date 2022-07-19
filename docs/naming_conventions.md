@@ -57,9 +57,9 @@ The trailing slash must not have specific semantics. Resource paths must deliver
 
 If you provide query support for searching, sorting, filtering, and paginating, you must stick to the following naming conventions:
 
-  - `q` — default query parameter (e.g. used by browser tab completion); should have an entity specific alias, like sku
+  - `q` — default query parameter (e.g. used by browser tab completion); should have an entity specific alias, like sku.
 
-  - `sort` — comma-separated list of fields to define the sort order. To indicate sorting direction, fields may be prefixed with `+` (ascending) or `-` (descending), e.g. /sales-orders?sort=+id
+  - `sort` — comma-separated list of fields to define the sort order. To indicate sorting direction, fields may be prefixed with `+` (ascending) or `-` (descending), e.g. /sales-orders?sort=+id.
 
   - `fields` — to retrieve only a subset of fields of a resource.
 

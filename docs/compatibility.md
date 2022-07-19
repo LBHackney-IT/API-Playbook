@@ -13,9 +13,9 @@ Change APIs, but keep all consumers running. Consumers usually have independent 
 
 There are two techniques to change APIs without breaking them:
 
-  - follow rules for compatible extensions
+  - follow rules for compatible extensions.
 
-  - introduce new API versions and still support older versions
+  - introduce new API versions and still support older versions.
 
 We strongly encourage using compatible API changes and discourage versioning. The following guidelines for service providers and consumers enable us to make compatible changes without versioning.
 
@@ -29,7 +29,7 @@ API designers should apply the following rules to evolve RESTful APIs for servic
 
   - Add only optional, never mandatory fields.
 
-  - Never change the semantics of fields (e.g. changing the semantics from customer-number to customer-id, as both are     different unique customer keys)
+  - Never change the semantics of fields (e.g. changing the semantics from customer-number to customer-id, as both are     different unique customer keys).
 
   - Input fields may have (complex) constraints being validated via server-side business logic. Never change the validation logic to be more restrictive and make sure that all constraints are clearly defined in description.
 
@@ -41,7 +41,7 @@ Service clients should apply the robustness principle:
 
   - Be conservative with API requests and data passed as input, e.g. avoid to exploit definition deficits like passing megabytes for strings with unspecified maximum length.
 
-  - Be tolerant in processing and reading data of API responses
+  - Be tolerant in processing and reading data of API responses.
 
 Service clients must be prepared for compatible API extensions of service providers:
 
@@ -78,15 +78,16 @@ When changing your RESTful APIs, do so in a compatible way and avoid generating 
 
 If changing an API can’t be done in a compatible way, then proceed in one of these three ways:
 
-  - create a new resource (variant) in addition to the old resource variant
+  - create a new resource (variant) in addition to the old resource variant.
 
-  - create a new service endpoint — i.e. a new application with a new API (with a new domain name)
+  - create a new service endpoint — i.e. a new application with a new API (with a new domain name).
 
-  - create a new API version supported in parallel with the old API by the same microservice
+  - create a new API version supported in parallel with the old API by the same microservice.
 
 As we discourage versioning by all means because of the manifold disadvantages, we strongly recommend to only use the first two approaches. Versioning should be a last resort.
 
 ## MUST Use URI Versioning
 
-With URI versioning a (major) version number is included in the path, e.g. /v1/customers. If you don't put it in at the beginning then it's almost impossible to retro-fit
+With URI versioning a (major) version number is included in the path, e.g. /v1/customers. If you don't put it in at the beginning then it's almost impossible to retro-fit.
+
 </TextToSpeech>

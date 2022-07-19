@@ -26,10 +26,10 @@ CI/CD is short for ** Continuous Integration and Continuous Delivery/Deployment 
 
 ** CI/CD works in conjunction with the following processes: **
 
-- Version control (branches, commits, merges)
-- Build automation/continuous integration
-- Test automation
-- Deploy automation
+- Version control (branches, commits, merges).
+- Build automation/continuous integration.
+- Test automation.
+- Deploy automation.
 
 We use a combination of software functions in Github and Circle CI, configured via a YAML file to fully automate environment deployments. Our deployments will usually support a **development**, **staging**, and **production** environment.
 
@@ -39,8 +39,8 @@ The CI/CD YAML configuration is stored in a file in the `.circleci` folder. The 
 
 Unit and integration tests must be run as part of the CI/CD pipeline at the point of:
 
-1. Code committed to remote branch
-2. Deployment to different environments
+1. Code committed to remote branch.
+2. Deployment to different environments.
 
 We use the Test-Driven Development (TDD) approach when writing code.
 
@@ -83,4 +83,5 @@ _The CircleCI workflow_
 The automation of the deployment to different environments gives flexibility in making small changes to the code and testing of features before deployment to a production environment.
 
 Deployment automation means we decrease the possibility of human error when releasing new versions of code to deployment environments.
+
 </TextToSpeech>

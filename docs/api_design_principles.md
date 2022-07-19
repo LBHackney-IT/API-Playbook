@@ -24,17 +24,17 @@ An important principle for API design and usage is Postel’s Law, aka [The Robu
 
 Some interesting reads on the ** RESTful API ** design style and service architecture:
 
-  * _Irresistable APIs: Designing web APIs that developers will love_ - Kirsten Hunter (Book)
+  * _Irresistable APIs: Designing web APIs that developers will love_ - Kirsten Hunter (Book).
 
-  *[_REST in Practice: Hypermedia and Systems Architecture_ - Ian Robinson, Jim Webber, Savas Parastatidis (Book)
+  * [_REST in Practice: Hypermedia and Systems Architecture_ - Ian Robinson, Jim Webber, Savas Parastatidis (Book).
 
-  * _Build APIs You Won’t Hate: Everyone and their dog wants an API, so you should probably learn how to build them_- Laura Bohill, Phil Sturgeon (Book)
+  * _Build APIs You Won’t Hate: Everyone and their dog wants an API, so you should probably learn how to build them_- Laura Bohill, Phil Sturgeon (Book).
 
-  * [_Web APIs: From Start to Finish_](https://www.infoq.com/minibooks/emag-web-api/) - InfoQ (eMag)
+  * [_Web APIs: From Start to Finish_](https://www.infoq.com/minibooks/emag-web-api/) - InfoQ (eMag).
 
-  * [_Thoughts on RESTful API Design_](http://restful-api-design.readthedocs.org/en/latest/) - Lessons-learned blog
+  * [_Thoughts on RESTful API Design_](http://restful-api-design.readthedocs.org/en/latest/) - Lessons-learned blog.
 
-  * [*Architectural Styles and the Design of Network-Based Software Architectures*](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) - Roy Fielding (Dissertation)
+  * [*Architectural Styles and the Design of Network-Based Software Architectures*](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) - Roy Fielding (Dissertation).
 
 
 ##  Designing APIs
@@ -66,17 +66,17 @@ API First is one of our principles. In a nutshell API First requires the followi
 
 - Profound understanding of the domain and required functionality
 
-- Generalized business entities / resources, i.e. avoidance of use case specific APIs
+- Generalized business entities / resources, i.e. avoidance of use case specific APIs.
 
-- Clear separation of WHAT vs. HOW concerns, i.e. abstraction from implementation aspects — APIs should be stable even if we replace complete service implementation including its underlying technology stack
+- Clear separation of WHAT vs. HOW concerns, i.e. abstraction from implementation aspects — APIs should be stable even if we replace complete service implementation including its underlying technology stack.
 
 **Moreover, API definitions with standardized specification format also facilitate:**
 
 - Single source of truth for the API specification; it is a crucial
-  part of a contract between service provider and client users
+  part of a contract between service provider and client users.
 
 - infrastructure tooling for API discovery, API GUIs, API documents,
-  automated quality checks
+  automated quality checks.
 
 Elements of API First are also these standards and a standardized API review process as to get early review feedback from peers and client developers. Peer review is important for us to get high quality APIs, to enable architectural and design alignment and to supported development of client applications decoupled from service provider engineering life cycle.
 

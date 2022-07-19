@@ -16,10 +16,10 @@ According to Amazon,  “Canaries are scripts written in Node.js or Python. They
 
 ## The benefits
 
-- Canaries check the availability and latency of your endpoints  
-- It can store load time data and screenshots of the UI
-- They monitor your REST APIs, URLs, and website content
-- They can check for unauthorised changes from phishing, code injection and cross-site scripting
+- Canaries check the availability and latency of your endpoints.  
+- It can store load time data and screenshots of the UI.
+- They monitor your REST APIs, URLs, and website content.
+- They can check for unauthorised changes from phishing, code injection and cross-site scripting.
 
 ## Why Canaries if useful for Hackney?
 
@@ -49,8 +49,8 @@ We can then add some customisation for the region.
 
 Canary testing fits into the continuous delivery and continuous integration methodologies.  At Hackney Council we have been doing progressive delivery deployment for a while, and recently we observed an influx in queries from our developers and stakeholders wanting to learn how the automation of canaries can:
 - Keep oversight in releases: which version(s) are deployed where and are any of them having problems?
-- Compare releases and look out for architectural regressions by having transactional level version awareness
-- Detect problematic Canary deployments quickly and trigger automated remediation
+- Compare releases and look out for architectural regressions by having transactional level version awareness.
+- Detect problematic Canary deployments quickly and trigger automated remediation.
 - Hackney Council integrates deep monitoring and automated testing into canary testing.
 - If a feature fails a monitoring check once it’s been deployed as a canary to a percentage of users, it will automatically roll back.
 - With continuous deployment and canary tests, our development team can release new functionality and code changes at scale more safely.

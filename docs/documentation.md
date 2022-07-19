@@ -93,4 +93,5 @@ Once the API specification has been created and approved and the API is in a sta
 Hackney SwaggerHub is located at https://app.swaggerhub.com/organizations/Hackney.
 
 All the Platform APIs in development have been documented and are viewable on the SwaggerHub.
+
 </TextToSpeech>

@@ -45,17 +45,17 @@ functions:
 ### Events
 
 Anything that triggers an AWS Lambda Function to execute is regarded by the Framework as an Event. Events are infrastructure events on AWS such as:
-- An AWS API Gateway HTTP endpoint request
-- An AWS S3 bucket upload
+- An AWS API Gateway HTTP endpoint request.
+- An AWS S3 bucket upload.
 
 When you define an event for your AWS Lambda functions in the Serverless Framework, the Framework will automatically create any infrastructure necessary for that event (e.g. an API Gateway endpoint) and configure your AWS Lambda Functions to listen to it.
 
 ### Resources
 
 Resources are AWS infrastructure components that your Functions use such as:
-- An AWS DynamoDB Table
-- An AWS S3 Bucket (e.g. for saving images or files)
-- An AWS SNS Topic (e.g. for sending messages asynchronously)
+- An AWS DynamoDB Table.
+- An AWS S3 Bucket (e.g. for saving images or files).
+- An AWS SNS Topic (e.g. for sending messages asynchronously).
 
 The Serverless Framework not only deploys your Functions and the Events that trigger them, but it also deploys the AWS infrastructure components your Functions depend upon.
 

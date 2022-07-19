@@ -59,27 +59,28 @@ In this playbook, please refer to the [Terraform section](/infrastructure) to fi
 
 **  <u> Common layer Fargate  </u> **
 
-  - ECR repository
+  - ECR repository.
 
-  - Fargate service
+  - Fargate service.
 
-  - Security group
+  - Security group.
 
 ** <u> Back end layer </u> **
 
-  - API Gateway
+  - API Gateway.
 
-  - Target group
+  - Target group.
 
-  - Network load-balancer listener
+  - Network load-balancer listener.
 
 ** <u> Front end layer </u> **
 
-  - Application load balancer rule
+  - Application load balancer rule.
 
-  - Target group
+  - Target group.
 
 
 ** [Step-by-step 'how to use' guide for the terraform template](https://docs.google.com/document/d/1Wwj0HTBuSPjQ0ym9dtnGc7pM4x4cfA7OsAbr4YVnsWI/edit#heading=h.bbczall7icfy
 ) **
+
 </TextToSpeech>

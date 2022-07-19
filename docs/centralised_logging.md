@@ -24,16 +24,16 @@ Application level logging is an integral part of the application development pro
 
 There are a number of tools that exist that provide robust, battle tested logging mechanisms.  Some of these that we have used in the past include:
 
-- NLog
-- Log4net
-- Asp.net core logging framework
-- AWS Lambda Logger
+- NLog.
+- Log4net.
+- Asp.net core logging framework.
+- AWS Lambda Logger.
 
 While there is not a set standard for which tool to utilise, it is important that applications do emit logs so that any issues can be easily traced to its source.
 
 ### Developing a Custom Solution
 
-It is also reasonable to define our own custom logging solution which could be shared across all projects, possibly by building a Nuget package module which can be added to our base API as well as referenced in any existing projects
+It is also reasonable to define our own custom logging solution which could be shared across all projects, possibly by building a Nuget package module which can be added to our base API as well as referenced in any existing projects.
 
 ## Log message structure
 
@@ -53,12 +53,12 @@ With a consistent standard of logging.  Logs can be scrutinised by a person or b
 ### Log Properties
 Possible properties for a log entry could include:
 
-- Date
-- Type of entry 
-  * E.G. Information, Debug, Warning, Error, Critical
-- Message details
-- Debug information
-- Component that created the entry
-- Correlation Id
+- Date.
+- Type of entry .
+  * E.G. Information, Debug, Warning, Error, Critical.
+- Message details.
+- Debug information.
+- Component that created the entry.
+- Correlation Id.
 
 </TextToSpeech>

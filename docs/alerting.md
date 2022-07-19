@@ -44,11 +44,11 @@ We use AWS CloudWatch Canaries to monitor the availability of our APIs and front
 
 ### AWS Canaries for APIs
 
-- Set to run every 5 mins
+- Set to run every 5 mins.
 
-- A canary invokes an API endpoint to check it’s availability
+- A canary invokes an API endpoint to check it’s availability.
 
-- Needs to be set up per API endpoint to ensure all endpoints provided by an API are functioning as expected
+- Needs to be set up per API endpoint to ensure all endpoints provided by an API are functioning as expected.
 
 - The current creation process for a canary is **manual**
 
@@ -56,17 +56,17 @@ We use AWS CloudWatch Canaries to monitor the availability of our APIs and front
 
 ### AWS Canaries for front end applications
 
-- Can monitor the availability of a web page
+- Can monitor the availability of a web page.
 
-- Alarms can be set to alert if availability of a given web page falls down
+- Alarms can be set to alert if availability of a given web page falls down.
 
-- Logs recorded can be used to identify performance issues associated with loading a specific item
+- Logs recorded can be used to identify performance issues associated with loading a specific item.
 
-- Can check for broken links
+- Can check for broken links.
 
-- A max number of links to follow is set up
+- A max number of links to follow is set up.
 
-- The canary crawls through the links and returns the first broken link identified
+- The canary crawls through the links and returns the first broken link identified.
 
 ## AWS CloudWatch Alarms
 

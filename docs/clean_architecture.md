@@ -30,8 +30,8 @@ Like other software design philosophies, clean architecture attempts to provide 
 ## Base API Folder Structure
 
 We have 2 project folders:
-1. The actual project implementation
-2. The Test Folder - which will mirror the implementation
+1. The actual project implementation.
+2. The Test Folder - which will mirror the implementation.
 
 If we look at our implementation Folder, we will notice that our code is structured into various code files and these files are all categorised, containing different subfolders.
 
@@ -78,25 +78,25 @@ If we look at our implementation Folder, we will notice that our code is structu
 ### Explore Our Folders
 
 1. **Boundary**
-  * This folder will hold all of the structures of data that we will expect to get in return to the calling client
-  * We use this folder to GET a Request or SEND a Response Make sure the way you structure the object response is clear and easy to understand
+  * This folder will hold all of the structures of data that we will expect to get in return to the calling client.
+  * We use this folder to GET a Request or SEND a Response Make sure the way you structure the object response is clear and easy to understand.
 
 2. ** Controller **
-  * In this folder we set up the End Points for our APIs
+  * In this folder we set up the End Points for our APIs.
 
 3. ** Domain **
-  * This folder is used to manipulate data
-  * In here we do any calculations within our app
+  * This folder is used to manipulate data.
+  * In here we do any calculations within our app.
 
 4. ** Factories **
-  * In here we do our conversion from one type of data structure to the next one (e.g: convert a domain object to a response one)
+  * In here we do our conversion from one type of data structure to the next one (e.g: convert a domain object to a response one).
 
 5. ** Gateway **
-  * The responsability of the Gateway is to handle the interaction between your API and any external dependancies (such as another API or a Database)
-  * Gateway also has to be able to manipulate data in some way
+  * The responsability of the Gateway is to handle the interaction between your API and any external dependancies (such as another API or a Database).
+  * Gateway also has to be able to manipulate data in some way.
 
 6. ** Infrastructure **
-  * In this folder, we set up the data structures that our Gateway will use
+  * In this folder, we set up the data structures that our Gateway will use.
 
 7. ** The UseCase **
   * This is where we handle all of the behaviour/logic in our application.
@@ -111,13 +111,13 @@ _A simplified diagram of how we process requests in our APIs_
 ** Generally, in Gateway and Use Cases, we tend to have Interface Folders. **
 
 ** Reasons: **
-- When your API interacting with Boundaries, we don't interact with classes directly, but with the Interfaces
+- When your API interacting with Boundaries, we don't interact with classes directly, but with the Interfaces.
 - It makes the app more **testable**
-- It allows us to do **dependancy injection** (we can set up an interface and this gets injected in the app whenever it's needed)
+- It allows us to do **dependancy injection** (we can set up an interface and this gets injected in the app whenever it's needed).
 
 ** MUST HAVE: **
 
-- The Interface Folder defines the contract for your implementation
-- Any class that implements an Interface MUST have the 'Execute' method, otherwise your program won't compile properly
+- The Interface Folder defines the contract for your implementation.
+- Any class that implements an Interface MUST have the 'Execute' method, otherwise your program won't compile properly.
 
 </TextToSpeech>

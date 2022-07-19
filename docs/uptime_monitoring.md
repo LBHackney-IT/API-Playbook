@@ -60,18 +60,19 @@ Accessing the dashboard for a Canary in CloudWatch lets you view the status of t
 
 - Click on ** "Create Canary" ** , choose ** "Use a blueprint" ** and  ** "Heartbeat monitoring"** .
 
-- Give a name which makes it easily recognisable as whats it is (try and get the name of the API and the endpoint it's testing)
+- Give a name which makes it easily recognisable as whats it is (try and get the name of the API and the endpoint it's testing).
 
 
 ### Checking a 200 response
 
-TBC
+TBC.
 
 ### Altering the code to check a 404 is returned
 
-TBC
+TBC.
 
 ## More Information
 
 For more information, check out the [AWS documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html).
+
 </TextToSpeech>

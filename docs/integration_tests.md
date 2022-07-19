@@ -57,7 +57,7 @@ response.Result.Content.Should().Be(expectedJsonResponse);
 
 ## DynamoDb
 
-DynamoDB is a NoSQL database service that provides fast and foreseeable performance with minimal scalability. Amazon DynamoDB removes the burden of operating and scaling distributed database
+DynamoDB is a NoSQL database service that provides fast and foreseeable performance with minimal scalability. Amazon DynamoDB removes the burden of operating and scaling distributed database.
 
 ### Database connection
 

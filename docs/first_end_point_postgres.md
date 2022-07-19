@@ -12,14 +12,14 @@ We have created a video that gives developers a good understanding of how we bui
 
 The video below will go through the following steps:
 
-- Creating a repository using Hackney’s Base API template
-- Using our Renamer Script to rename the repository
-- Setting up your object
-- Get by ID endpoint with TDD
-- POST endpoint with TDD
-- PATCH endpoint with TDD
-- Authentication & Security
-- How to deploy your endpoint to AWS
+- Creating a repository using Hackney’s Base API template.
+- Using our Renamer Script to rename the repository.
+- Setting up your object.
+- Get by ID endpoint with TDD.
+- POST endpoint with TDD.
+- PATCH endpoint with TDD.
+- Authentication & Security.
+- How to deploy your endpoint to AWS.
 
 ##  Video Tutorial
 Note: To go back a forth between the videos please use the playlist button available

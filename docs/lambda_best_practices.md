@@ -53,7 +53,7 @@ We use the Serverless service to deploy our Lambda functions to AWS.  Serverless
 
 - Ensure that your lambda function is suitably named so it can be easily identified when added to the HackIt API ecosystem.
 - Ensure that your API Gateway is set up to use the relevant authorizers and relevant measurement and rate limiting is set.
-- Ensure that logging is implemented for your functions
+- Ensure that logging is implemented for your functions.
 - Ensure that Serverless is able to find any required secrets stored in Systems Manager.
 - A good example of a Serverless configuration file can be found in our [Base API](https://github.com/LBHackney-IT/lbh-example-api/blob/master/example-api/serverless.yml).
 
@@ -67,7 +67,7 @@ Our standard naming convention for Lambdas in our serverless configuration is: `
 
 Using the above format it is very easy to identify what service and stage the Lambda belongs to when we can have have a lot of different Lambdas on a single account.
 
-For example the example-api sample configuration above would result in a Lambda function called `your-api-name-production` when deployed to production
+For example the example-api sample configuration above would result in a Lambda function called `your-api-name-production` when deployed to production.
 
 ## Logging your Lambda activity
 
