@@ -2,6 +2,10 @@
 id: references
 title: References
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 This section collects links to documents to which we refer, and base our guidelines on.
 
 ## OpenAPI Specification
@@ -47,3 +51,5 @@ This section collects links to documents to which we refer, and base our guideli
 ## Blogs
 
   - [Lessons-learned blog: Thoughts on RESTful API Design](http://restful-api-design.readthedocs.org/en/latest/)
+
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: clean_architecture
 title: Clean Architecture
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Basic Principles
 
 ** What is Clean Architecture?**
@@ -115,3 +119,5 @@ _A simplified diagram of how we process requests in our APIs_
 
 - The Interface Folder defines the contract for your implementation
 - Any class that implements an Interface MUST have the 'Execute' method, otherwise your program won't compile properly
+
+</TextToSpeech>

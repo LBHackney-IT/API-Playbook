@@ -2,6 +2,10 @@
 id: general_guidelines
 title: General Guidelines
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Follow API First Principle
 
 You must follow the [API First Principle](api_design_principles.md#api-first), more specifically:
@@ -31,3 +35,5 @@ In addition to the API Specification, if the API is expected to be widely used, 
   - edge cases, error situation details, and repair hints
 
   - architecture context and major dependencies - including figures and sequence flows
+
+</TextToSpeech>

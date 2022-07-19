@@ -3,6 +3,10 @@ id: naming_conventions
 title: Naming Conventions
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ### Name of the data source to represent the data
 
 ## MUST Use lowercase separate words with hyphens for Path Segments
@@ -65,3 +69,4 @@ If you provide query support for searching, sorting, filtering, and paginating, 
 
   - `limit` — client suggested limit to restrict the number of entries on a page. See [pagination](pagination.md) section.
 
+</TextToSpeech>

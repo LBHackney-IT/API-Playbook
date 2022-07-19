@@ -3,6 +3,10 @@ id: production_testing
 title: Production Testing Checklist
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Production Testing Checklist
 
 The following tasks should be completed before every API deployment into production unless there is a valid reason to not complete a given task. This reason should be documented.
@@ -38,3 +42,5 @@ The following tasks should be completed before every API deployment into product
 - Check that canaries are passing
 - The canaries have someone subscribed to it
 - Tenants and Leaseholders canaries should send alerts to the Tenants-Leaseholders-alert SNS topic 
+
+</TextToSpeech>

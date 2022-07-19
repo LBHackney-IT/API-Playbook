@@ -2,6 +2,11 @@
 id: api_boilerplate
 title: API Boilerplate - Base API
 ---
+
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 Start a new API by using our Base API template!
@@ -17,3 +22,5 @@ Be sure to remove these comments when they aren't needed anymore.
 <figure class="video-container">
   <iframe width="100%" src="https://www.youtube.com/embed/WggC6Rtz1CE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
+
+</TextToSpeech>

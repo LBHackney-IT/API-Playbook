@@ -2,6 +2,10 @@
 id: deprecation
 title: Deprecation
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 Sometimes it is necessary to phase out an API endpoint (or version), for instance, if a field is no longer supported in the result or a whole business functionality behind an endpoint has to be shut down. There are many other reasons as well. As long as these endpoints are still used by consumers these are breaking changes and not allowed. Deprecation rules have to be applied to make sure that necessary consumer changes are aligned and deprecated endpoints are not used before API changes are deployed.
 
 ## MUST Obtain Approval of Clients
@@ -33,3 +37,4 @@ Clients should monitor the `Warning` header in HTTP responses to see if an API w
 ## MUST Not Start Using Deprecated APIs
 
 Clients must not start using deprecated parts of an API.
+</TextToSpeech>

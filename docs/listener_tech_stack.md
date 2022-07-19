@@ -2,6 +2,10 @@
 id:    listener_tech_stack
 title: Listener Tech Stack
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Listener application
 
 - .NET Core 3.1 (C#)
@@ -42,3 +46,5 @@ title: Listener Tech Stack
 - Terraform for Infrastructure as Code (IaC) (e.g. setting up AWS DMS)
   * [See more](/infrastructure)
 - AWS Parameter Store for secrets (connection string and similar)
+
+</TextToSpeech>

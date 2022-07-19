@@ -3,16 +3,20 @@ id: alerting
 title: Alerting
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Application monitoring and alerting
 
 In Hackney, we use AWS CloudWatch to implement monitoring and alerting.
 
 Any logs created in our APIs are recorded and accessible in AWS CloudWatch. Creation of log groups is automated via the current serverless setup.
 
-
 ## Metric filters
 
 ### Filter and Pattern Syntax
+
 
 Metric filters are a useful feature that allows you to find patterns and terms in your logs. Following the logging standards identified earlier in this document, metric filters can be created to easily identify logs related to a certain phrase or term like `ERROR`.
 
@@ -35,7 +39,6 @@ _Need to decide which logs should have an alarm associated with them_
 ## Availability monitoring and alerting
 
 We use AWS CloudWatch Canaries to monitor the availability of our APIs and front-end applications.
-
 
 ## AWS CloudWatch Canaries
 
@@ -72,3 +75,5 @@ We also use CloudWatch alarms to monitor for specific events in the log streams.
 Specific metrics can be established as triggers on application logs which can fire off alerts in the form of emails or other messaging mediums.  We can create up to 5000 alarms per region per account which should give us sufficient capacity.
 
 It may also be possible to consolidate these alarms if we have a standard format for logs (this may also be achievable by creating composite alarms but uses up available alarms.
+
+</TextToSpeech>

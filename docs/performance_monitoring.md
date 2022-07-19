@@ -3,6 +3,10 @@ id: performance_monitoring
 title: AWS Lambda insights for Performance Monitoring
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## What are Lambda insights?
 
 As per AWS’s documentation:
@@ -22,3 +26,5 @@ Follow the guidance from AWS' [documentation](https://docs.aws.amazon.com/lambda
     * AWS provides an example where a Lambda function, which has all 8 metrics monitored, and is invoked 1M times in a month, will cost $2.92 per month for Lambda insights
     * We don’t expect each individual Lambda to be invoked as many times each month
     * We need to evaluate if we are interested in monitoring all 8 metrics
+
+</TextToSpeech>

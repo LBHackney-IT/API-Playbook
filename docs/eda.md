@@ -3,6 +3,10 @@ id: eda
 title: Event Driven Architecture
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## What is Event Driven Architecture
 Event driven Architecture describes an approach for handling POST/PUT requests from an API. Rather than each dependent application needing to be updated on explicit calls, the requests are sent asynchronously. 
 
@@ -48,3 +52,4 @@ A more specific example where event driven architecture is to be used is in the 
 </figure>
 
 
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: mock_unit_tests
 title: Isolating Unit Tests
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 Unit tests are used to test the functionality of a class in isolation.
@@ -98,3 +102,4 @@ public class SaveSomeDataTests
 ```
 
 These examples are just a couple of common use cases for using Moq. Check out the [moq documentation](https://github.com/Moq/moq4/wiki/Quickstart) for more examples and use cases!
+</TextToSpeech>

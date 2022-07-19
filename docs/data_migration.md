@@ -3,6 +3,10 @@ id: data_migration
 title: Setting Up AWS DMS
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 # What is AWS DMS?
 
 AWS Data Migration Service (DMS) is a service that allows us to migrate data between a source (in our case, on-premises database) and a target (in our case, Postgres database hosted in AWS).
@@ -128,3 +132,4 @@ Both DMS and Postgres can be created via Terraform.
   The pipeline takes data uploaded in an S3 bucket in .csv format and uploads the data into a Postgres database.
 
   ![Data pipelines](./doc-images/data4.png)
+</TextToSpeech>

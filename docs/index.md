@@ -4,6 +4,10 @@ title: Introduction
 slug: /
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 APIs have become an essential part of Hackney’s digital transformation. They are the building blocks of the majority of our new internal systems and are part of the foundation of our cloud based architecture. They provide the opportunity for reuse and the flexibility to combine data and services in new and previously unimaginable ways.
 
 This API playbook will help readers to understand:
@@ -27,3 +31,4 @@ This playbook is primarily used to onboard new developers, whether they are new 
 
 ## Help us improve
 We are always looking at ways we can improve. If you have any ideas or suggestions please share your feedback on our playbook [GitHub Repo](https://github.com/LBHackney-IT/API-Playbook).
+</TextToSpeech>

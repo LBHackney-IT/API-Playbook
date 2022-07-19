@@ -2,6 +2,10 @@
 id: listener_boilerplate
 title: Listener Boilerplate - Base Listener
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 [Events](/serverless_lambda#events) occur all the time throughout any application, they may for example be a database or file being updated, a timer firing or a message being sent, 
@@ -30,3 +34,4 @@ but the type of trigger and logic implemented can of course be altered to suit a
 
 *** [Begin here](https://github.com/LBHackney-IT/lbh-base-listener) ***
 
+</TextToSpeech>

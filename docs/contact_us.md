@@ -2,6 +2,10 @@
 id: contact_us
 title: Contact The Hackney API Team
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ** <u> For any enquiries please speak to: </u> **
 
 - ** Rashmi Shetty **: rashmi.shetty@hackney.gov.uk - Development and Integration Manager, Enterprise Architect, Product Owner for Platform APIs
@@ -30,3 +34,4 @@ title: Contact The Hackney API Team
 
 
 
+</TextToSpeech>

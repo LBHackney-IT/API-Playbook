@@ -3,6 +3,10 @@ id: deployment_pipeline
 title: Deployment Pipeline
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 A Deployment pipeline is the process of taking code from a version control repo, such as Github, and releasing a version or the master branch to our deployment environments in an automated fashion.
@@ -79,3 +83,4 @@ _The CircleCI workflow_
 The automation of the deployment to different environments gives flexibility in making small changes to the code and testing of features before deployment to a production environment.
 
 Deployment automation means we decrease the possibility of human error when releasing new versions of code to deployment environments.
+</TextToSpeech>

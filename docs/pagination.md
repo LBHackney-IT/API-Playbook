@@ -2,6 +2,10 @@
 id: pagination
 title: Pagination
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Support Pagination
 
 Access to lists of data items must support pagination to protect the service against overload as well as for best client side iteration and batch processing experience. This holds true for all lists that are (potentially) larger than just a few hundred entries.
@@ -52,3 +56,5 @@ Further reading:
   - [Use the Index, Luke](http://use-the-index-luke.com/no-offset)
 
   - [Paging in PostgreSQL](https://www.citusdata.com/blog/1872-joe-nelson/409-five-ways-paginate-postgres-basic-exotic)
+
+</TextToSpeech>

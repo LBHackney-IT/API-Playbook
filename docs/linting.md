@@ -3,6 +3,10 @@ id: linting
 title: Linting
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Rules we enforce
 
 - Indentation is **4 spaces** for tab
@@ -61,3 +65,4 @@ We have chosen to use `.editorconfig` with `dotnet format`
 
 - As an alternative to the paid version, there is a free command line tool but I’m assuming it wont integrate with peoples editors who aren’t using rider https://www.jetbrains.com/help/resharper/CleanupCode.html
 
+</TextToSpeech>

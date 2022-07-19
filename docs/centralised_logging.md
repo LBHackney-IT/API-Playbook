@@ -3,6 +3,10 @@ id: centralised_logging
 title: Centralised Logging
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Purpose
 The purpose of this document is to outline some best practices around logging in applications.  It highlights what tools might be used for logging, a general structure of logs and what types of logs should be emitted.
 
@@ -56,3 +60,5 @@ Possible properties for a log entry could include:
 - Debug information
 - Component that created the entry
 - Correlation Id
+
+</TextToSpeech>

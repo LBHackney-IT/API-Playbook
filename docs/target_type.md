@@ -2,6 +2,11 @@
 id: target_type
 title: Target Type and Target ID
 ---
+
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Linking data via Target ID and Target Type
 
 # Background
@@ -36,3 +41,5 @@ The same approach is followed for Contact details, Accounts, Activity History, e
 - Generic data structure to allow reuse of approach for any data entity, both current and future.
 - For example, as Target ID could be the id of any record, a note would be able to be linked to any type of data entity.
 - Target type will be used to distinguish the data entity type. Teams can use that information to know which Platform API to query if they want to retrieve further information about the target record.
+
+</TextToSpeech>

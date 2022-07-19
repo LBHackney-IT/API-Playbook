@@ -2,6 +2,11 @@
 id: api_design_principles
 title: API Design Principles
 ---
+
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 Comparing SOA (Service-Oriented Architecture) web service interfacing style of SOAP vs. REST, the former tend to be centered around operations that are usually use-case specific and specialised. 
@@ -82,3 +87,5 @@ API may change and profit from implementation concerns and automated testing fee
 Hence, API First does *not* mean that you must have 100% domain and requirement understanding and can never produce code before you have defined the complete API and get it confirmed by peer review. 
 
 On the other hand, API First obviously is in conflict with the bad practice of publishing API definition and asking for peer review after the service integration or even the service productive operation has started. It is crucial to request and get early feedback — as early as possible, but not before the API changes are comprehensive with focus to the next evolution step and have a certain quality (including API Guideline compliance), already confirmed via team internal reviews.
+
+</TextToSpeech>

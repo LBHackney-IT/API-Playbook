@@ -3,6 +3,10 @@ id: error_codes
 title: Error Codes
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ##  Standardised Error Messages
 
 ##  HTTP Status Codes
@@ -47,3 +51,4 @@ _Basic Errors_
 
 
 
+</TextToSpeech>

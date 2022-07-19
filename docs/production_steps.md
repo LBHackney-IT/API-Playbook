@@ -3,6 +3,10 @@ id: production_steps
 title: Details to complete production checklist
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Deployment
 Once your PR has been merged into master branch, head to the correct view in CircleCI - this is often easiest via clicking the check (or cross) symbol next to your merged PR in the GitHub repo’s list of master branch commits - use the “Details” links to go to the relevant CircleCI view
 
@@ -45,3 +49,4 @@ Make sure slow query logging is enabled on any relevant RDS database instances b
 
 Errors
 [see related Production testing checklist to complete this section]
+</TextToSpeech>

@@ -3,6 +3,10 @@ id: documentation
 title: API Documentation
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 At Hackney, we believe in working in a collaborative way and this is embedded into our API development process. Before commencing the implementation stage, each API endpoint will first need to be documented using SwaggerHub. 
@@ -89,3 +93,4 @@ Once the API specification has been created and approved and the API is in a sta
 Hackney SwaggerHub is located at https://app.swaggerhub.com/organizations/Hackney.
 
 All the Platform APIs in development have been documented and are viewable on the SwaggerHub.
+</TextToSpeech>

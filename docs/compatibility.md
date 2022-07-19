@@ -3,6 +3,10 @@ id: compatibility
 title: Compatibility
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Maintain Backward Compatibility
 
 Change APIs, but keep all consumers running. Consumers usually have independent release lifecycles, focus on stability, and avoid changes that do not provide additional value. APIs are contracts between service providers and service consumers that cannot be broken via unilateral decisions.
@@ -85,3 +89,4 @@ As we discourage versioning by all means because of the manifold disadvantages, 
 ## MUST Use URI Versioning
 
 With URI versioning a (major) version number is included in the path, e.g. /v1/customers. If you don't put it in at the beginning then it's almost impossible to retro-fit
+</TextToSpeech>

@@ -2,6 +2,10 @@
 id: data-formats
 title: Data Formats
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## MUST Use JSON to Encode Structured Data
 
 We use a minimal JSON representation to output objects from the API. This may in the future be extended to use  [JSON:API](https://jsonapi.org/) if the functionality it offers is beneficial, however we are taking the approach of starting simple and extending if necessary. This could be done in a backwards compatible way by representing the same objects in a JSON:API structure as well as the simple JSON structure.
@@ -172,3 +176,5 @@ Schema based JSON properties that are by design durations and intervals could be
   - [BCP-47](https://tools.ietf.org/html/bcp47) (based on ISO 639-1) for language variants
 
   - [ISO 4217 currency codes](http://en.wikipedia.org/wiki/ISO_4217)
+  
+</TextToSpeech>

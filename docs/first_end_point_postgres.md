@@ -2,6 +2,10 @@
 id: first_end_point_postgres
 title: Postgres End to End Training
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 We have created a video that gives developers a good understanding of how we build API Endpoints using Postgres from beginning to end, following best practices. 
@@ -22,3 +26,4 @@ Note: To go back a forth between the videos please use the playlist button avail
 <figure class="video-container">
   <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PL1mVZlA7eC8RlnSifeo-qR1PLZ9K9xFq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
+</TextToSpeech>

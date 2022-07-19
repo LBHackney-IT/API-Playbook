@@ -3,6 +3,10 @@ id: postgresql
 title: Creating users in PostgreSQL
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## How to add a Read-Only User to a PostgreSQL Database
 
 
@@ -49,3 +53,4 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA schema_name
 
 GRANT SELECT ON TABLES TO username;
 ```
+</TextToSpeech>

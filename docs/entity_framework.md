@@ -3,6 +3,10 @@ id: entity_framework
 title: Entity Framework Core
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 Entity Framework Core is an object-relational mapper that lets .NET developers work with a database using .NET objects. 
@@ -198,3 +202,4 @@ Within our GatewayTests, during the `arrange` step shown we create a databaseEnt
 ## More Information
 
 For more information, please visit the [online documentation](https://docs.microsoft.com/en-us/ef/core/) for Entity Framework.
+</TextToSpeech>

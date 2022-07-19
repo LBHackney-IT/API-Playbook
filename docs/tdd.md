@@ -3,6 +3,10 @@ id: tdd
 title: Good TDD Principles
 ---
 
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Purpose
 
 The purpose of this section is to provide some general guidelines on how we conduct testing in our applications.  This will give our developers some baseline standards on how to go about testing.  These guidelines are not intended to be prescriptive on what developers should test but to ensure that with a consistent understanding of our tests, it will be easy to grasp by other developers.
@@ -70,3 +74,4 @@ When a unit being tested has a dependency on another unit whose output is not di
 **When not to fake it:**
 
 If you are testing a piece of code’s output you will not fake the output you expect from the unit as you will not be able to get a useful test outcome.  For example, if your unit accepts two numbers (2 and 2) and you are testing that it returns 4.  You will create a fake output of ‘4’ in your implementation and test that your unit returns ‘4’
+</TextToSpeech>

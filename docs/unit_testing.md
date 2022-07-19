@@ -2,6 +2,10 @@
 id: unit_testing
 title: Writing Unit Tests
 ---
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Introduction
 
 Unit tests are used to test the functionality of an individual function or a
@@ -351,3 +355,4 @@ Passed!  - Failed:  0, Passed:  23, Skipped:  0, Total:  23, Duration: 939 ms - 
 
 Everything is still passing! The feature is complete and we have a robust test
 for it.
+</TextToSpeech>
