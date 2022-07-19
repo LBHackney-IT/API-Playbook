@@ -11,3 +11,7 @@ At HackIT, we believe that everyone should be able to benefit from the resources
 
 ## Resources
 
+Please follow the link below to access the following resources
+
+[Accessibility Resources Google Drive](https://drive.google.com/drive/folders/1zDekem62oXqBjAzP5EKC-Yl_xMDjg8mE?usp=sharing "Accessibility Resources Google Drive")
+
