@@ -7,6 +7,12 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
+## Linking data via Target ID and Target Type
+
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
 ## Linking data via Target ID and Target Type:
 
 # Background:
