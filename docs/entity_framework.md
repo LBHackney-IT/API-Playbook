@@ -7,7 +7,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Introduction
+## Introduction:
 
 Entity Framework Core is an object-relational mapper that lets .NET developers work with a database using .NET objects. 
 
@@ -15,7 +15,7 @@ This reduces the amount of data-access code that needs to be written.
 
 This means that instead of writing code to directly interact with our databases, we can instead create a **domain** class which identifies the database from which we’re retrieving our data and maps column titles to the properties of that class.
 
-##  Video Tutorial
+##  Video Tutorial:
 
 ** Watch a video version of this page if you prefer! **
 
@@ -23,7 +23,7 @@ This means that instead of writing code to directly interact with our databases,
   <iframe width="100" src="https://www.youtube.com/embed/qNsqZCKefcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-## How is it implemented in the Base API?
+## How is it implemented in the Base API?:
 
 ```dotnet title="./example-api/V1/Infrastructure/DatabaseContext.cs"
 using Microsoft.EntityFrameworkCore;
@@ -50,8 +50,7 @@ namespace example-api.V1.Infrastructure
 
 - The most important part of this class are the `properties`, which are formed with a `DbSet` attached to a specific object. 
   * We define this object using a `DatabaseEntity` model.
-
-## Examples of Use
+## Examples of Use:
 
 EntityFrameworkCore uses the DatabaseEntity model when accessing the database. In the API team, we typically create an individual file within the Infrastructure namespace for each individual table in the database. 
 
@@ -199,7 +198,7 @@ We can see more methods in use when creating tests which require pre-existing da
 
 Within our GatewayTests, during the `arrange` step shown we create a databaseEntity, then add that entity using the `Add` method to track the change to our table, then use the `SaveChanges` method to commit that change, as well as any other changes to the database.
 
-## More Information
+## More Information:
 
 For more information, please visit the [online documentation](https://docs.microsoft.com/en-us/ef/core/) for Entity Framework.
 </TextToSpeech>

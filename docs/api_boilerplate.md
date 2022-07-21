@@ -7,15 +7,13 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Introduction
+## Introduction:
 
-Start a new API by using our Base API template!
-There are comments throughout the code that start with TODO where specific things need to be changed or renamed when copying this template.
-Be sure to remove these comments when they aren't needed anymore.
+Start a new API by using our Base API template! There are comments throughout the code that start with TODO where specific things need to be changed or renamed when copying this template. Be sure to remove these comments when they aren't needed anymore.
 
-[Begin here](https://github.com/LBHackney-IT/lbh-example-api)
+[Begin here](https://github.com/LBHackney-IT/lbh-example-api);
 
-## Base API Video Tutorial
+## Base API Video Tutorial:
 
 ** Follow our tutorial below to understand how to use the Base API: **
 

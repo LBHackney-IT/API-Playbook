@@ -6,20 +6,20 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Deployment
+## Deployment:
 
 1. Once your PR has been merged into master branch, head to the correct view in CircleCI - this is often easiest via clicking the check (or cross) symbol next to your merged PR in the GitHub repo’s list of master branch commits - use the “Details” links to go to the relevant CircleCI view:
 
-![GitHub CircleCI view](./doc-images/debugging_apis.png)
+![GitHub CircleCI view](./doc-images/debugging_apis.png);
 
 2. Once in CircleCI, make sure you’re viewing the entire workflow for the build by checking the submenu on the left, and making sure the view URL includes workflows in its path.
-   * i.e. https://app.circleci.com/pipelines/github/LBHackney-IT/person-api
+   * i.e. https://app.circleci.com/pipelines/github/LBHackney-IT/person-api;
 
 3. By navigating to the correct workflow, you can monitor the deployment of the application and manually permit the “Deploy to Staging” and “Deploy to Production” jobs if the prerequisite jobs (e.g. automated test runs, Terraform apply commands) succeed - or, if any jobs fail, you can click through to the job to debug the issue(s).
 
-![Manually permit Circle CI deployments](./doc-images/debugging_apis2.png)
+![Manually permit Circle CI deployments](./doc-images/debugging_apis2.png);
 
-## Naming Conventions
+## Naming Conventions:
 
 1. To review the endpoint URLs, check the controller(s) within your API project’s codebase for route statements like:
 
@@ -27,10 +27,10 @@ import TextToSpeech from '../src/SpeechComponent.js';
 [Route("api/v1/persons")]
 ```
 
-2. You’ll also want to check any expected query parameters, which you should find in one or more files with Param in the filename (e.g. `ResidentQueryParam.cs`).
-3. If any of these route statements or query parameters seem incorrect in their names, including the casing, refer to the relevant Swagger documentation for the API and update the codebase (or the Swagger doc) as required.
-4. If any route statements have been updated, be sure to double-check that they work and provide the expected responses, once the changes have been deployed to production, using the steps detailed in the ‘Responses’ section of this document.
-5. There are also naming conventions to follow API Playbook link for responses.
+2. You’ll also want to check any expected query parameters, which you should find in one or more files with Param in the filename (e.g. `ResidentQueryParam.cs`);
+3. If any of these route statements or query parameters seem incorrect in their names, including the casing, refer to the relevant Swagger documentation for the API and update the codebase (or the Swagger doc) as required;
+4. If any route statements have been updated, be sure to double-check that they work and provide the expected responses, once the changes have been deployed to production, using the steps detailed in the ‘Responses’ section of this document;
+5. There are also naming conventions to follow API Playbook link for responses;
 
 ## Responses
 
@@ -56,12 +56,12 @@ import TextToSpeech from '../src/SpeechComponent.js';
       * Are there requests that might take longer than the default lambda timeout of 6s to complete, e.g. searching all records with a high limit parameter?
       * Try to identify what kind of requests might trigger one or more long-running database queries - and see below for instructions for enabling slow query logging on any RDS database instances.
 
-## Configuration and security
+## Configuration and security:
 
 1. Make sure slow query logging is enabled on any relevant RDS database instances by [steps to check or add to Terraform config?]
 2. See the [Production Testing Checklist](/production_testing) to complete this section!
 
-## Errors
+## Errors:
 1. See the [Production Testing Checklist](/production_testing) to complete this section!
 
 </TextToSpeech>

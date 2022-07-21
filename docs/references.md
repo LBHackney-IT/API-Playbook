@@ -8,11 +8,11 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 This section collects links to documents to which we refer, and base our guidelines on.
 
-## OpenAPI Specification
+## OpenAPI Specification:
 
   - [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/);
 
-## Publications, specifications and standards
+## Publications, specifications and standards:
 
   - [RFC 3339: Date and Time on the Internet: Timestamps](https://tools.ietf.org/html/rfc3339);
 
@@ -35,20 +35,17 @@ This section collects links to documents to which we refer, and base our guideli
   - [ISO 4217: Currency codes](https://en.wikipedia.org/wiki/ISO_4217);
 
   - [BCP 47: Tags for Identifying Languages](https://tools.ietf.org/html/bcp47);
+## Dissertations:
 
-## Dissertations
-
-  - [Roy Thomas Fielding - Architectural Styles and the Design of Network-Based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm). This is the text which defines what REST is.
-
-## Books
+  - [Roy Thomas Fielding - Architectural Styles and the Design of Network-Based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm). This is the text which defines what REST is;
+## Books:
 
   - [REST in Practice: Hypermedia and Systems Architecture](http://www.amazon.de/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829);
 
   - [Build APIs You Won’t Hate](https://leanpub.com/build-apis-you-wont-hate);
 
   - [InfoQ eBook - Web APIs: From Start to Finish](http://www.infoq.com/minibooks/emag-web-api);
-
-## Blogs
+## Blogs:
 
   - [Lessons-learned blog: Thoughts on RESTful API Design](http://restful-api-design.readthedocs.org/en/latest/);
 

@@ -6,15 +6,14 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Introduction
+## Introduction:
 
 Unit tests are used to test the functionality of an individual function or a
 collection of functions. This will be a simple introduction to unit testing,
 where we use TDD to implement a basic greeter method.
 
 **This article assumes you are working in a repository forked from [LBHackney-IT/lbh-example-api](https://github.com/LBHackney-IT/lbh-example-api).**
-
-### Video Tutorial
+### Video Tutorial:
 
 Watch the video version of this page if you prefer:
 
@@ -22,7 +21,7 @@ Watch the video version of this page if you prefer:
   <iframe width="100%" src="https://www.youtube.com/embed/M-_F_Tr6paQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-### Create the Test File
+### Create the Test File:
 
 Create a new file somewhere, named `GreetingGatewayTests.cs`.
 
@@ -101,8 +100,7 @@ provide.
 * Your IDE or Text Editor might complain when you write these lines, because
   neither the `GreetingGateway` nor its `GetGreetingForName` method exists yet.
   This is normal, and is actually part of the TDD process!
-
-#### Running the Test
+#### Running the Test:
 
 Now that we have some test code, we can try to run it.
 
@@ -125,7 +123,7 @@ error CS0103: The name 'GreetingGateway' does not exist in the current context [
 The output tells us that `GreetingGateway` doesn't exist. That's true - we
 haven't made it yet!
 
-### Create the Implementation
+### Create the Implementation:
 
 We will write the most minimal piece of code that will pass the test.
 ```dotnet title="GreetingGateway.cs"
@@ -143,8 +141,7 @@ namespace TestApi.V1.Gateways
 
  * *We are using the same names for the class and method that we wrote into the
    test method.*
-
-#### Running the test
+#### Running the test:
 
 We have addressed the error in the previous test run's output by creating the
 class that didn't exist, `GreetingGateway` (and added the method pre-emptively,
@@ -174,8 +171,7 @@ break anything that already existed in the codebase. Good news?
 At this point, it probably seems like the method is wrong. It only works for
 James, and it should greet anyone. In reality, though, the method is fine -
 **it's the test that is wrong!**
-
-### Refactor the Test
+### Refactor the Test:
 
 We need to make sure that this greeting method works regardless of the name of
 the person it is greeting. Since this is a requirement of the feature, the test
@@ -209,7 +205,6 @@ namespace TestApi.Tests.V1.Gateways
    interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)*
    in the *Assert*, so that whatever we set *`name`* to, will be what we test
    the *`result`* for.*
-
 #### *Running the tests*
 
 ```bash title="Terminal" {7}
@@ -295,8 +290,7 @@ Passed!  - Failed:  0, Passed:  23, Skipped:  0, Total:  23, Duration: 908 ms - 
 ```
 
 This passes! 🎉
-
-### Refactoring the Test (Again)
+### Refactoring the Test (Again):
 
 To be pedantic, the test we currently have only ensures that the method will
 work for people named Lisa. This is a simple example, so we can see quite
