@@ -9,16 +9,15 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 ** GitHub is used for version control and source code management. **
 
-
 ** When a new repository is created: **
 
-  1. Use the lbh-example-api template if creating a new API
+  1. Use the lbh-example-api template if creating a new API;
 
-  2. Ensure you set the project up on CircleCI for CI/CD
+  2. Ensure you set the project up on CircleCI for CI/CD;
 
-  3. By default, repositories should be kept public, unless there is a specific need and justification not to do so.
+  3. By default, repositories should be kept public, unless there is a specific need and justification not to do so;
 
-## Video Version
+## Video Version:
 
 **Watch our intro to branching strategies here!**
 
@@ -26,9 +25,9 @@ import TextToSpeech from '../src/SpeechComponent.js';
   <iframe width="100%" src="https://www.youtube.com/embed/0btxBJJ5Dxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-## Branch Definitions
+## Branch Definitions:
 
-### GitFlow
+### GitFlow:
 
 [Inrtoduction to Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
@@ -38,29 +37,24 @@ _Note: GitFlow is not strictly followed throughout projects, projects can evalua
 
 _A simple gitflow diagram_
 
-#### Master branch
+#### Master branch:
 
 The branch that holds the code currently in production.
 
-This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet)
-
-
-#### Development branch
+This branch should be a representation of what is running in production (although that might not be a case if a deployment to staging has happened but has not been released to production yet).
+#### Development branch:
 
 The branch that holds any changes currently in development stage that are not yet pushed to a staging or production environment.
 
 If using development and master branches, a release to Staging/Production environments happens by a Pull Request from development to master.
-
-#### Feature branch
+#### Feature branch:
 
 A branch containing any new changes as per requirements for the given project.
 
 A feature branch should be created from the ‘development’ branch.
 
 Once happy with the changes in the feature branch, a pull request to merge the changes into the ‘development’ branch should be made.
-
-
-#### Hot-fix branch
+#### Hot-fix branch:
 
 A branch containing fixes to code already in production state.
 
@@ -69,9 +63,7 @@ A hot-fix branch should be created from the master branch.
 Any changes in the hot-fix branch should be merged into **both** the master & development branches following a pull request review.
 
 Hot-fixes applied should be merged directly to master as this triggers separate CircleCI workflow that will ensure that any changes currently in development are not overwritten.
-
-
-### Trunk Based Development  
+### Trunk Based Development:
 
 [Introduction to Trunk Based Development](https://trunkbaseddevelopment.com/)
 
@@ -99,4 +91,5 @@ Trunk-based development is a mindset more than a practice.  It forces the develo
 Trunk-based development becomes more natural to adopt when you use feature flags in your continuous integration pipeline.  
 
 Feature flags is a technique that will help you integrate code into a shared repository at least once a day and ship it, even if you haven't finished the feature yet. You'll be able to deploy at any time, but defer the decision to release for another day.  Turn off the feature flag and let the team continue working with a stable version and a healthy build.
+
 </TextToSpeech>

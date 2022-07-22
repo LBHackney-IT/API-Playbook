@@ -7,11 +7,10 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Introduction
+## Introduction:
 
 When creating a new endpoint or adding new functionality to an API it's good practice to start by writing an integration test outlining the functionality you are hoping to achieve. You can then write unit tests when you touch the individual classes you will be working on. Integration tests give you confidence that all your classes work together and that the full feature you have made is working correctly. These tests are slightly different depending on which database type is being employed: Postgres of DynamoDb.
-
-### Video Tutorial
+### Video Tutorial:
 
 ** Start by having a look at our E2E Tests overview: **
 
@@ -19,7 +18,7 @@ When creating a new endpoint or adding new functionality to an API it's good pra
   <iframe width="100%" src="https://www.youtube.com/embed/6QHeDl3KC7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-## Postgres
+## Postgres:
 
 PostgreSQL is an object-relational database system that uses SQL language along with many other features to securely store and scale all data workloads including the most complicated ones.
 
@@ -54,12 +53,10 @@ var expectedJsonResponse = "{ "residents": [{ "id": 1, "name": "Henry" }] }";
 
 response.Result.Content.Should().Be(expectedJsonResponse);
 ```
+## DynamoDb:
 
-## DynamoDb
-
-DynamoDB is a NoSQL database service that provides fast and foreseeable performance with minimal scalability. Amazon DynamoDB removes the burden of operating and scaling distributed database
-
-### Database connection
+DynamoDB is a NoSQL database service that provides fast and foreseeable performance with minimal scalability. Amazon DynamoDB removes the burden of operating and scaling distributed database.
+### Database connection:
 
 The DynamoDbIntegrationTests.OneTimeSetUp() method is what controls which database instance is used. It ensures that some environment variables that are later used in connecting to the DynamoDb instance are set.
 
@@ -67,12 +64,10 @@ The DynamoDbIntegrationTests.OneTimeSetUp() method is what controls which databa
 | ------------ | ----------- | ------------- |
 | **DynamoDb_LocalMode** | Indicates whether or not to use a local DynamoDb instance.<br/>If false it is assumed that the current context and credentials of the running code have been given access to a DynamoDb instance through an IAM policy. | true |
 | **DynamoDb_LocalServiceUrl** | The Uri to the local DynamoDb instance.<br/>Only used if the LocalMode is set to true. | http://localhost:8000 |
-
-### Database setup
+### Database setup:
 
 ** IMPORTANT: ** In order to ensure that the database instance used for the tests has all of the necessary tables created, update the DynamoDbIntegrationTests._tables collection with the necessary details. ** The details specifed here must match those that are set up by terraform, and those specified on any database entities.**
-
-### Writing tests
+### Writing tests:
 
 To write Integration tests, inherit the DynamoDbIntegrationTests class for some useful test setup.
 

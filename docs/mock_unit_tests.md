@@ -7,15 +7,14 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-## Introduction
+## Introduction:
 
 Unit tests are used to test the functionality of a class in isolation.
 So if a class depends on another we will need to mock any interactions with that class. We are using <u> dependency injection </u>  so any class which needs to interact with another will be passed an interface, which the depended on class subscribes to, in the constructor.
 In the tests, we can then just pass in a mock implementation of this interface into the constructor instead.
 
 Read some advice for mocking and writing unit tests in the [.NET documentation](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices).
-
-## Setting up and using mocks
+## Setting up and using mocks:
 
 You can use mocks to return a specific value for a given input. For example a test for the following code:
 
@@ -102,4 +101,5 @@ public class SaveSomeDataTests
 ```
 
 These examples are just a couple of common use cases for using Moq. Check out the [moq documentation](https://github.com/Moq/moq4/wiki/Quickstart) for more examples and use cases!
+
 </TextToSpeech>
