@@ -24,7 +24,7 @@ const generateTitle = () => {
 module.exports = {
   title: 'Hackney API Playbook',
   tagline: "A guide on Hackney's development practices, and how to follow them",
-  url: 'https:/playbook.hackney.gov.uk/API-Playbook',
+  url: 'https:/playbook.hackney.gov.uk',
   baseUrl: '/API-Playbook/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
