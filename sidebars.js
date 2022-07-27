@@ -143,5 +143,10 @@ module.exports = {
     'canaries_automation',
     'FAQs',
     'contact_us',
+    {
+      type: 'category',
+      label: 'Updates for API v4',
+      items: ['open_search']
+    },
   ],
 }

@@ -1,6 +1,6 @@
 ---
-id: elastic_search
-title: Elastic Search
+id: open_search
+title: Open Search
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';
@@ -24,10 +24,11 @@ The Housing Search Api is an responsible for searching for persons, tenures and 
 
 ** Benefits **
     * ** Quick **, ** Easy ** and ** Direct ** access: Documents are stored in close proximity to the corresponding metadata in the index. This reduces the number of data reads and as a result increases the search result response.
-    * *yarn  big quantity of data: ** elastic search is designed to quickly fetch required search query data from the database
+    * ** yarn  big quantity of data: ** elastic search is designed to quickly fetch required search query data from the database
     * ** Easy Filtering **
     * ** Advanced searches **
     * ** Better performance for read queries **
     * ** Drives distributed architecture **
     * ** Schema Free **
     * ** High Scalable **
+</TextToSpeech>
