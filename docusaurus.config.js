@@ -55,7 +55,9 @@ module.exports = {
       apiKey: '4dc9b48c851c09d44e9cf356d5425867',
       indexName: 'hackney',
       placeholder: 'Search playbook',
-      externalUrlRegex: '/^((?!API-Playbook).)*$/gm'
+      searchParameters: {
+        filters: "playbook_site:API-Playbook"
+      }
     },
     footer: {
       style: 'dark',
