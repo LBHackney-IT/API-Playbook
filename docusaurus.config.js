@@ -24,7 +24,7 @@ const generateTitle = () => {
 module.exports = {
   title: 'Hackney API Playbook',
   tagline: "A guide on Hackney's development practices, and how to follow them",
-  url: 'https:/playbook.hackney.gov.uk/API-Playbook',
+  url: 'https:/playbook.hackney.gov.uk',
   baseUrl: '/API-Playbook/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -55,6 +55,10 @@ module.exports = {
       apiKey: '4dc9b48c851c09d44e9cf356d5425867',
       indexName: 'hackney',
       placeholder: 'Search playbook',
+      searchPagePath: 'false',
+      searchParameters: {
+        filters: "playbook_site:API-Playbook"
+      }
     },
     footer: {
       style: 'dark',
@@ -69,7 +73,7 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/LBHackney-IT/API-Playbook/edit/master/',
+          editUrl: 'https://github.com/LBHackney-IT/API-Playbook/edit/main/',
         },
         theme: {
           customCss: [require.resolve('./src/docs.scss')],

@@ -119,7 +119,6 @@ module.exports = {
       label: 'Other Useful Information',
       items: ['rds_access', 'ec2_access', 'postgresql'],
     },
-    'developer_hub',
     {
       type: 'category',
       label: 'Monitoring',
