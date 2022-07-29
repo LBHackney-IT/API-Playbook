@@ -3,61 +3,66 @@ id: linting
 title: Linting
 ---
 
-## Rules we enforce
+import TextToSpeech from '../src/SpeechComponent.js';
 
-- Indentation is **4 spaces** for tab
+<TextToSpeech>
 
-- No whitespace
+## Rules we enforce:
 
-- Public objects should be **Pascal Case** (e.g. _PascalCase_)
+- Indentation is **4 spaces** for tab;
 
-- Local objects should be **Camel Case** (e.g. _camelCase_)
+- No whitespace;
 
-- Class objects should be prefixed with an underscore
+- Public objects should be **Pascal Case** (e.g. _PascalCase_);
 
-- `Using` directives should be outside the namespace
+- Local objects should be **Camel Case** (e.g. _camelCase_);
 
-- No unused `using` directives
+- Class objects should be prefixed with an underscore;
 
-- One new line at the end of every file
+- `Using` directives should be outside the namespace;
 
-- One class for a file
+- No unused `using` directives;
 
-- Prefer the `language` keyword for local objects and member access
+- One new line at the end of every file;
 
-- Require accessibility modifiers for fields
+- One class for a file;
 
-- No unused parameters for non-public methods
+- Prefer the `language` keyword for local objects and member access;
 
-- Use `var` where possible
+- Require accessibility modifiers for fields;
 
-- Brackets on a new line
+- No unused parameters for non-public methods;
 
-- Comments on their own line
+- Use `var` where possible;
 
-- No writing to console
+- Brackets on a new line;
 
-## Tools
+- Comments on their own line;
 
-We have chosen to use `.editorconfig` with `dotnet format`
+- No writing to console;
 
-### Dotnet Format
+## Tools:
 
-- [How to edit `.editorconfig` files](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019)
+We have chosen to use `.editorconfig` with `dotnet format`.
 
-- [`dotnet format` project site](https://github.com/dotnet/format)
+### Dotnet Format:
 
-- [How to include dotnet code styles in CI](https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.html  )
+- [How to edit `.editorconfig` files](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-language-conventions?view=vs-2019);
 
-### Stylecop.analysers
+- [`dotnet format` project site](https://github.com/dotnet/format);
 
-- [Project site](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
+- [How to include dotnet code styles in CI](https://www.meziantou.net/enforce-dotnet-code-style-in-ci-with-dotnet-format.html  );
 
-- ** Need to make a .ruleset file + stylecop.json to implement rules **
+### Stylecop.analysers:
 
-- Integrates with build
+- [Project site](https://github.com/DotNetAnalyzers/StyleCopAnalyzers);
 
-### Resharper
+- ** Need to make a .ruleset file + stylecop.json to implement rules **;
 
-- As an alternative to the paid version, there is a free command line tool but I’m assuming it wont integrate with peoples editors who aren’t using rider https://www.jetbrains.com/help/resharper/CleanupCode.html
+- Integrates with build;
 
+### Resharper:
+
+- As an alternative to the paid version, there is a free command line tool but I’m assuming it wont integrate with peoples editors who aren’t using rider https://www.jetbrains.com/help/resharper/CleanupCode.html ;
+
+</TextToSpeech>
