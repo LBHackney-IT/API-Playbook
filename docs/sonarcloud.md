@@ -6,6 +6,7 @@ title: SonarCloud
 import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
+
 # What is SonarCloud
 
 SonarCloud is a tool used to scan code to identify vulnerabilities, bugs and code smells. It supports all languages used within HackIT such as C# which requires additional setup 
@@ -28,10 +29,6 @@ SonarCloud is enabled in our projects because it provides insight into the healt
 * Receive static analysis results directly from GitHub.
 * When the SonarCloud checks fail, the deployment is stopped until the checks have been resolved. 
 * Check code Maintainability, Reliability, and Security in your development branches AND pull requests. This makes code reviewing more efficient
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image1.png "image_tooltip")
@@ -67,4 +64,5 @@ Code coverage
 SonarCloud supports the reporting of test coverage information as part of the analysis of your .NET project. 
 
 https://www.codewrecks.com/post/github/github-sonarcloud-codecoverage/
+
 </TextToSpeech>
