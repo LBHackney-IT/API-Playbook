@@ -20,11 +20,6 @@ According to AWS,
 
 CloudWatch enables real-time monitoring of many AWS services such as DynamoDB, S3, API Gateway and many more. See [here](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-services-cloudwatch-metrics.html) for a list of services that publish metrics to CloudWatch.  These _metrics_ can be viewed on the CloudWatch console, viewed as statistics and in useful graphs. See below for a diagram of how Cloudwatch Integrates with the AWS ecosystem:
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](doc-images/cloudwatch-img1.png "image_tooltip")
 
 
