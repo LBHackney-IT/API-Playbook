@@ -31,7 +31,7 @@ SonarCloud is enabled in our projects because it provides insight into the healt
 * Check code Maintainability, Reliability, and Security in your development branches AND pull requests. This makes code reviewing more efficient
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](docs-images/sonarcloud-img1.png "image_tooltip")
 
 
 SonarCloud provides an interface which highlights bugs and vulnerabilities, which is useful for us as it allows us to maintain programmes throughout its lifetime and respond to any errors which may arise especially after a new version release of an API or body of work.
@@ -39,18 +39,11 @@ SonarCloud provides an interface which highlights bugs and vulnerabilities, whic
 
 ## 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](docs-images/sonarcloud-img2.png "image_tooltip")
 
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](docs-images/sonarcloud-img3.png  "image_tooltip")
 
 
 SonarCloud suggests possible fixes for an issue and shows the issue with context. Which enables us to form a deeper understanding of the problem and aids in the process of finding a working solution.
