@@ -146,7 +146,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Updates for API v4',
-      items: ['open_search','nuget_packages','cloudwatch-alarms','dev-environment','our_ways_of_working','serverless_safegaurd']
+      items: ['open_search','nuget_packages','cloudwatch-alarms','dev-environment','our_ways_of_working','serverless_safegaurd','gitgaurdian']
     },
   ],
 }
