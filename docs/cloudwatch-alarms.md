@@ -78,7 +78,7 @@ We have created terraform template in the aws-common-terraform repository, which
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](doc-images/cloudwatch-img1.png "image_tooltip")
+![alt_text](doc-images/cloudwatch-img2.png "image_tooltip")
 
 
 You will need to provide the following values:
