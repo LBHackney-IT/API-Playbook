@@ -22,4 +22,5 @@ At Hackney we use Serverless Safeguards to ensure that our APIs meets our Securi
 * Stand-alone - it has no external dependencies on any services.
 * Proactive - Safeguards are evaluated _before_ any infrastructure is provisioned by evaluating the generated cloud formation template and serverless.yml.
 * Enforceable - You can run the safeguards validate command while specifying additional policy files in addition to policies specified in serverless.yaml
+
 </TextToSpeech>
