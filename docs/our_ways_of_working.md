@@ -79,10 +79,7 @@ Always follow the **least privilege** principle - only pipeline machine users ha
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](docs-images/our_ways_of_working_img1.png "image_tooltip")
+![alt_text](doc-images/our_ways_of_working_img1.png "image_tooltip")
 
 
 **Hackney Development Standards - 12 Factors APP **
@@ -98,10 +95,7 @@ As part of our Organisation's ways of working and managing APIs, we encourage de
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](docs-images/our_ways_of_workingimg2.png "image_tooltip")
+![alt_text](doc-images/our_ways_of_working_img2.png "image_tooltip")
 
 
 **Continuous Monitoring **
