@@ -83,3 +83,29 @@ html[data-theme="dark"] .navbar__logo {
   position: sticky;
   left: var(--ifm-pre-padding);
 }
+
+.focussed-section {
+  background-color: rgba(164, 214, 94, 0.5);
+}
+
+.text-to-speech-intro {
+  font-style: italic;
+}
+
+.text-to-speech-buttons{
+  border: 1px solid #bfc1c3;
+  box-shadow: none;
+  border-radius: 5px;
+
+  background: #00664f;
+  color: white;
+  padding: .75rem .75rem .625rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 5px 5px 22px;
+
+  &:hover { 
+    background: #fff;
+    color: black;
+  }
+}
