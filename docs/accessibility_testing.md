@@ -11,7 +11,11 @@ At HackIT, we believe that everyone should be able to benefit from the resources
 
 ## Resources
 
-Please follow the link below to access the following resources
+ - A video tutorial detailing how to conduct an accessibility test;
+ - An spreadsheet where you can note the findings of your test (it is also mentioned in the video);
+ - A template document of an accessibility report;
+
+Please follow the link below to access the resources:
 
 [Accessibility Resources Google Drive](https://drive.google.com/drive/folders/1zDekem62oXqBjAzP5EKC-Yl_xMDjg8mE?usp=sharing "Accessibility Resources Google Drive")
 
