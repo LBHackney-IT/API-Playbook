@@ -21,15 +21,14 @@ CloudWatch enables real-time monitoring of many AWS services such as DynamoDB, S
 
 Some example metrics could be:
 
-* The number of requests made to an API
-* An API’s latency (The time between when API Gateway receives a request from a client and when it returns a response to the client.)
-* SystemErrors from DynamoDB
-* Error rate from CloudFront
-* The number of blocked requests from AWS WAF (Web Access Firewall)
+* The number of requests made to an API.
+* An API’s latency (The time between when API Gateway receives a request from a client and when it returns a response to the client.).
+* SystemErrors from DynamoDB.
+* Error rate from CloudFront.
+* The number of blocked requests from AWS WAF (Web Access Firewall).
 
 See more about CloudWatch and how we use them at Hackney here. \
 Or see the AWS documentation [here](https://aws.amazon.com/cloudwatch/).
-
 
 ## What are CloudWatch Alarms?
 
@@ -61,9 +60,9 @@ We have created terraform template in the aws-common-terraform repository, which
 
 You will need to provide the following values:
 
-* Environment name (development, staging or production)
-* API name (the name of your API in API Gateway)
-* Alarm period - This is the period (in seconds) in which CloudWatch will check the API for 5XX responses
+* Environment name (development, staging or production).
+* API name (the name of your API in API Gateway).
+* Alarm period - This is the period (in seconds) in which CloudWatch will check the API for 5XX responses.
 * Error threshold - The number of 5XX responses to occur in a given period before the alarm is triggered.
 * SNS topic ARN - The ARN value of an SNS topic created for this alarm.
 
