@@ -69,7 +69,7 @@ module.exports = {
             'serverless_lambda',
             'entity_framework',
             'open_search',
-            'nuget_packages'
+            'nuget_packages',
           ],
         },
         {
@@ -122,7 +122,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Other Useful Information',
-      items: ['rds_access', 'ec2_access', 'postgresql','cloudwatch-alarms','serverless-safegaurd','gitgaurdian','feature-toggle'],
+      items: ['rds_access', 'ec2_access', 'postgresql','serverless-safegaurd','gitgaurdian','feature-toggle'],
     },
     'developer_hub',
     {
@@ -135,6 +135,7 @@ module.exports = {
         'performance_monitoring',
         'uptime_monitoring',
         'x_ray',
+        'cloudwatch-alarms',
       ],
     },
     {
