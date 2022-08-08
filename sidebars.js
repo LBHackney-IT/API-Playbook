@@ -17,7 +17,6 @@ module.exports = {
                 'api_implementation_guidelines',
                 'api_design_principles',
                 'error_codes',
-                'mandatory_standards_api'
               ],
             },
             {
@@ -68,8 +67,6 @@ module.exports = {
             'clean_architecture',
             'serverless_lambda',
             'entity_framework',
-            'open_search',
-            'nuget_packages',
           ],
         },
         {
@@ -96,7 +93,6 @@ module.exports = {
             'aws_ecs',
             'lambda_best_practices',
             'multiple_docker_containers',
-            'dev-environment',
           ],
         },
       ],
@@ -122,7 +118,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Other Useful Information',
-      items: ['rds_access', 'ec2_access', 'postgresql','serverless-safegaurd','gitgaurdian','feature-toggle'],
+      items: ['rds_access', 'ec2_access', 'postgresql'],
     },
     'developer_hub',
     {
@@ -135,7 +131,6 @@ module.exports = {
         'performance_monitoring',
         'uptime_monitoring',
         'x_ray',
-        'cloudwatch-alarms',
       ],
     },
     {
@@ -149,5 +144,10 @@ module.exports = {
     'canaries_automation',
     'FAQs',
     'contact_us',
+    {
+      type: 'category',
+      label: 'Updates for API v4',
+      items: ['open_search','nuget_packages','cloudwatch-alarms','dev-environment','serverless_safegaurd','gitgaurdian','feature-toggle']
+    },
   ],
 }
