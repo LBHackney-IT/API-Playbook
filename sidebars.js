@@ -39,13 +39,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Principles',
-      items: [],
+      label: 'Compliance',
+      items: ['accessibility_testing'],
     },
     {
-      type: 'category',
-      label: 'Development Process',
-      items: [
+          type: 'category',
+          label: 'Development Process',
+          items: [
         {
           'API Practices and Tools': ['linting', 'static_code_analysis'],
         },
