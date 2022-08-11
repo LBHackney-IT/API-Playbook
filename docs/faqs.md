@@ -53,4 +53,16 @@ This can be found through API Gateway.
 3. Choose “API Keys” from the sidebar;
 4. This will bring up a list of API Keys. Choose the relevant API Key, select the blue ‘Show’ link, and you will see the API Key value;
 
+## How can I access our CircleCI Pipelines?:
+
+Visit [https://app.circleci.com/pipelines/github/LBHackney-IT](https://app.circleci.com/pipelines/github/LBHackney-IT) to view workflows from projects you follow at Hackney.
+
+If you aren't subscribed to any projects, simply navigate to the'projects' tab on the sidebar to view and search for all Hackney projects.
+
+![Circle CI Sidebar - Click on the second icon (projects) to view all projects in a workspace](./doc-images/CircleCI_sidebar.png)
+
+## Where can I find different APIs that we use at Hackney?:
+
+You can use our Developer Hub to view our APIs! See [this page](/developer_hub) for more information.
+
 </TextToSpeech>
