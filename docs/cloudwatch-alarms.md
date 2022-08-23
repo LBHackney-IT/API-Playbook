@@ -18,7 +18,6 @@ CloudWatch enables real-time monitoring of many AWS services such as DynamoDB, S
 
 ![alt_text](doc-images/cloudwatch-img1.png "image_tooltip")
 
-
 Some example metrics could be:
 
 * The number of requests made to an API.
@@ -27,8 +26,7 @@ Some example metrics could be:
 * Error rate from CloudFront.
 * The number of blocked requests from AWS WAF (Web Access Firewall).
 
-See more about CloudWatch and how we use them at Hackney here. \
-Or see the AWS documentation [here](https://aws.amazon.com/cloudwatch/).
+See the AWS documentation [here](https://aws.amazon.com/cloudwatch/).
 
 ## What are CloudWatch Alarms?
 
@@ -47,14 +45,12 @@ CloudWatch alarms can monitor these metrics, and then alert relevant stakeholder
 ### How we use CloudWatch Alarms at Hackney
 
 At Hackney, we use CloudWatch Alarms which trigger every time a 5XX error is returned from an API. A 5XX error indicates an internal error from an API. Perhaps an error that isn’t handled in the code has occurred, or a service the API is dependent on has an outage. These errors may be a cause for concern as they might signify an outage that could affect Hackney systems. By having an alarm for this error, developers can be immediately notified if a failure occurs, so it can be investigated and rectified as quickly as possible.
-
 Our alarms then publish events to SNS topics, which can notify relevant maintainers through email, text messages and more. This allows developers to be notified if any of their APIs fail without needing to periodically check AWS Console.
-
 This is only one example of alarms we could use; many services provide metrics we could set up alarms for, for example, alerting if the read/write capacity is met for a DynamoDB table.
 
 # How to Set Up CloudWatch Alarms
 
-We have created terraform template in the aws-common-terraform repository, which can then be referenced from your API repository. (see example below)
+We have created terraform template in the aws-common-terraform repository, which can then be referenced from your API repository. (see example below).
 
 ![alt_text](doc-images/cloudwatch-img2.png "image_tooltip")
 
@@ -74,13 +70,11 @@ To see more about SNS topics and how we use them at Hackney, you can refer to th
 
 You will need to set up correct permissions for your SNS topic so that CloudWatch Alarms can publish messages to them. The permissions outlined below allow multiple alarms to publish events to a single SNS topic, which can then be used for all alerts for a project. This means we don’t need to create a new SNS topic for each project.
 
-AWS Documentation: [https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-receive-sns-for-alarm-trigger/](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-receive-sns-for-alarm-trigger/)
+AWS Documentation: [https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-receive-sns-for-alarm-trigger/](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-receive-sns-for-alarm-trigger/).
 
 ### Setting the SNS Topic Policy
 
 By default, when an SNS Topic is created, only the topic owner has permission to publish messages. To allow the alarm to publish alerts, add the following to the Access Policy:
-
-
 ```
 {
     "Sid": "Allow_Publish_Alarms",
@@ -95,13 +89,8 @@ By default, when an SNS Topic is created, only the topic owner has permission to
     "Resource": "arn:aws:sns:<region>:<account-id>:<topic-name>"
 }
 ```
-
-
 This gives the CloudWatch service permission to run the `SNS:Publish` API call (i.e. publish messages to the SNS topic).
-
 This can also be done through Terraform:
-
-
 ```
 data "aws_iam_policy_document" "sns_topic_policy" {
     policy_id = "__default_policy_ID"
@@ -145,7 +134,6 @@ data "aws_iam_policy_document" "sns_topic_policy" {
     }
 }
 ```
-
 ### Working with Encryption on your SNS Topic
 
 To enable encryption on your SNS topic, you need to use an AWS KMS key with a key policy that allows the CloudWatch alarms to perform the `kms:Decrypt` and `kms:GenerateDataKey` API calls.  \

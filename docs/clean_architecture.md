@@ -2,7 +2,6 @@
 id: clean_architecture
 title: Clean Architecture
 ---
-
 import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>

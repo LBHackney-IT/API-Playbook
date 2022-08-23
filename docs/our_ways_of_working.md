@@ -97,18 +97,15 @@ As part of our Organisation's ways of working and managing APIs, we encourage de
 
 ![alt_text](doc-images/our_ways_of_working_img2.png "image_tooltip")
 
-
-**Continuous Monitoring **
-
-
+**Continuous Monitoring**
 
 * Alarms (notify by email) _using AWS CloudWatch alarms based on various metrics_
 * Canaries for availability monitoring _using AWS CloudWatch Synthetics_
 * Collecting Feedback _via feedback forms accessible to our users_
 * Dashboards _using AWS CloudWatch for easy visualisation of issues_
 * Notifications by email if secrets are exposed, pipelines cancel deployment if errors occur.
-    * AWS scans our repositories
-    * GitGuardian scanning
+    * AWS scans our repositories.
+    * GitGuardian scanning.
 
 **Continuous Feedback**
 
