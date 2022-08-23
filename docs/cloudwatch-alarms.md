@@ -22,7 +22,7 @@ CloudWatch enables real-time monitoring of many AWS services such as DynamoDB, S
 Some example metrics could be:
 
 * The number of requests made to an API.
-* An API’s latency (The time between when API Gateway receives a request from a client and when it returns a response to the client.).
+* An API’s latency (The time between when API Gateway receives a request from a client and when it returns a response to the client).
 * SystemErrors from DynamoDB.
 * Error rate from CloudFront.
 * The number of blocked requests from AWS WAF (Web Access Firewall).
