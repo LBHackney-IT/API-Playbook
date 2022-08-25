@@ -9,7 +9,6 @@ module.exports = {
         'api_standards',
         'platform_api_vs_service_api',
         'documentation',
-        'mandatory_standards_api',
         'our_ways_of_working',
         {
           'Development Lifecycle': [
@@ -102,12 +101,9 @@ module.exports = {
       ],
     },
     {
-      Listeners: ['listener_tech_stack', 'listener_boilerplate'],
-    },
-    {
       type: 'category',
       label: 'Production Checklist',
-      items: ['debugging_apis', 'production_testing', 'production_testing_checklist', 'production_steps'],
+      items: ['debugging_apis', 'production_testing', 'production_steps'],
     },
     {
       type: 'category',
@@ -124,7 +120,6 @@ module.exports = {
       label: 'Other Useful Information',
       items: ['rds_access', 'ec2_access', 'postgresql','gitgaurdian', 'sonarcloud','serverless_safegaurd','feature-toggle','open_search'],
     },
-    'developer_hub',
     {
       type: 'category',
       label: 'Monitoring',
@@ -144,9 +139,9 @@ module.exports = {
       items: ['api_keys', 'lambda_authoriser'],
     },
     'eda',
-    'developer_hub',
     'target_type',
     'canaries_automation',
+    'developer_hub',
     'FAQs',
     'contact_us',
   ],

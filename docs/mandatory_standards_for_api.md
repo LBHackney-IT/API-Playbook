@@ -14,7 +14,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 3. **Terraform Compliance**
 4. **GitGuardian**
 
-**<span style="text-decoration:underline;">SonarCloud</span>**
+**SonarCloud**
 
 SonarCloud is a tool used to scan code to identify vulnerabilities, bugs and code smells. 
 
@@ -24,7 +24,7 @@ For a detailed explanation of its benefits, how to set up and update SonarCloud 
 
 [https://docs.google.com/document/d/1bU9nYLn37VlY6-7pgy3yE2DkOVvYGYByxUpNc5jmlPk/edit#](https://docs.google.com/document/d/1bU9nYLn37VlY6-7pgy3yE2DkOVvYGYByxUpNc5jmlPk/edit#)
 
-**<span style="text-decoration:underline;">Cloudwatch alarms</span>**
+**Cloudwatch alarms**
 
 Amazon CloudWatch is a monitoring and observability service, able to provide our developers with data and actionable insights to monitor all our applications, respond to system-wide performance changes, and optimise resource utilisation. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events. CloudWatch alarms are mandatory to set up for all Hackney APIs.
 
@@ -33,7 +33,7 @@ For more information about the benefits of Cloudwatch alarms and how to set it u
 * [Cloudwatch Alarms Documentation ](https://docs.google.com/document/d/1MC3E3Cku1ZY2Oz9dreCuyETHC8mDq9MlH9xZObCkgKE/edit#heading=h.n6ky6abxpd1q)
 * 
 
-**<span style="text-decoration:underline;">Terraform Compliance </span>**
+**Terraform Compliance**
 
 Terraform is a tool for building and managing infrastructure as code. Within the majority of our Hackney services, the individual services (both FE and APIs) that we provide are responsible for provisioning any infrastructure required for that specific service. 
 
@@ -45,7 +45,7 @@ For a better understanding of Terraform, please refer to the following documenta
 * [Terraform Compliance Presentation ](https://docs.google.com/presentation/d/1i673J4Rcie802bXw5dzotCs2KlzVVclDTmYrOUTnnNU/edit#slide=id.p)
 * [API Playbook](https://playbook.hackney.gov.uk/API-Playbook/) (dedicated section for Terraform coming up soon)
 
-**<span style="text-decoration:underline;">GitGuardian</span>**
+**GitGuardian**
 
 GitGuardian brings security and development teams together with automated remediation playbooks and collaboration features to resolve incidents fast and in full. By pulling developers closer to the remediation process, our Organisation can achieve higher incident closing rates and shorter fix times. 
 

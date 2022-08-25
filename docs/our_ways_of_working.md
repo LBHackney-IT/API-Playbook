@@ -6,9 +6,10 @@ title: Our Ways of Working
 import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
-**Tech Ways of Working **
 
-** Deploying to Production **
+**Tech Ways of Working**
+
+**Deploying to Production**
 
 **Deployment Pipeline**
 
@@ -53,10 +54,10 @@ _One of the best practices encouraged at Hackney Council is Continuous Integrati
 
 The steps for a deployment are usually the following: 
 
-*  Code formatting check
-*  Code build and test
-* Deployment software tools installation
-* Assignment of necessary security roles for deployments to AWS Lambda
+- Code formatting check
+- Code build and test
+- Deployment software tools installation
+- Assignment of necessary security roles for deployments to AWS Lambda
 
 The successful completion of all of these steps will allow automated code deployment to the development environments. 
 
@@ -74,7 +75,7 @@ Always follow the **least privilege** principle - only pipeline machine users ha
 ![alt_text](doc-images/our_ways_of_working_img1.png "image_tooltip")
 
 
-**Hackney Development Standards - 12 Factors APP **
+**Hackney Development Standards - 12 Factors APP**
 
 The Twelve-Factor App Methodology is suggested by developers for smoothly working and delivering Software as a Service (SaaS) Applications or Web Apps with a focus on Microservices.
 
