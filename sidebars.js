@@ -9,6 +9,7 @@ module.exports = {
         'api_standards',
         'platform_api_vs_service_api',
         'documentation',
+        'our_ways_of_working',
         {
           'Development Lifecycle': [
             {
@@ -20,6 +21,7 @@ module.exports = {
             },
             {
               'Implementation Guidelines': [
+                'mandatory_standards_api',
                 'general_guidelines',
                 'security',
                 'compatibility',
@@ -54,6 +56,7 @@ module.exports = {
             'branching_strategies',
             'deployment_pipeline',
             'infrastructure',
+            'terraform_compliance'
           ],
         },
 
@@ -66,6 +69,7 @@ module.exports = {
             'clean_architecture',
             'serverless_lambda',
             'entity_framework',
+            'nuget_packages',
           ],
         },
         {
@@ -92,17 +96,15 @@ module.exports = {
             'aws_ecs',
             'lambda_best_practices',
             'multiple_docker_containers',
+            'dev-environment',
           ],
         },
       ],
     },
     {
-      Listeners: ['listener_tech_stack', 'listener_boilerplate'],
-    },
-    {
       type: 'category',
       label: 'Production Checklist',
-      items: ['debugging_apis', 'production_testing'],
+      items: ['debugging_apis', 'production_testing', 'production_steps'],
     },
     {
       type: 'category',
@@ -117,7 +119,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Other Useful Information',
-      items: ['rds_access', 'ec2_access', 'postgresql'],
+      items: ['rds_access', 'ec2_access', 'postgresql','gitgaurdian', 'sonarcloud','serverless_safegaurd','feature-toggle','open_search'],
     },
     {
       type: 'category',
@@ -129,6 +131,7 @@ module.exports = {
         'performance_monitoring',
         'uptime_monitoring',
         'x_ray',
+        'cloudwatch-alarms',
       ],
     },
     {
@@ -137,9 +140,10 @@ module.exports = {
       items: ['api_keys', 'lambda_authoriser'],
     },
     'eda',
-    'developer_hub',
     'target_type',
     'canaries_automation',
+    'developer_hub',
+    'api_specification',
     'FAQs',
     'contact_us',
   ],

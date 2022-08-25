@@ -11,6 +11,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 ## Target Audience:
 
 All HackIT internal developers and external agencies developer collaborating on Hackney projects.
+
 ## Enhancements:
 
 - Align the API playbook with the new design system to maintain consistency across the board;
@@ -37,6 +38,7 @@ All HackIT internal developers and external agencies developer collaborating on 
 - Pipeline Implementation;
 - End to End Training - Create your First endpoint video;
 - Contact Us;
+
 ## Feedback:
 
 We would be pleased to hear from you about our new iteration of the API Playbook. Please feel free to give us your feedback.

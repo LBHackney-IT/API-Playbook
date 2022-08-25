@@ -19,6 +19,7 @@ This is now an established common approach for linking data that we follow for n
 The approach provides a set of common data fields that allow us to link entities together. The corresponding APIs are then designed and developed in a way to utilise those common fields to provide a way to retrieve multiple records related to a single entity record.
 
 As the set of fields is generic, it allows a link between one entity to any other entity - for example, a Notes record can be created against a Person, Property, Process, Account and any other entity we develop.
+
 ## Example:
 
 ![Target](./doc-images/target1.png)
@@ -29,6 +30,7 @@ A note record can be created against any record of any data entity by recording 
 - TargetType - the type of record we are creating the note against (e.g. person);
 
 The same approach is followed for Contact details, Accounts, Activity History, etc.
+
 ## Benefits:
 
 - Common way for linking data entities;

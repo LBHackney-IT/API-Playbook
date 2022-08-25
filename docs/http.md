@@ -84,6 +84,7 @@ PATCH requests are used to **update parts** of single resources, i.e. where only
 4.  Use POST (with a proper description of what is happening) instead of PATCH, if the request does not modify the resource in a way defined by the semantics of the media type;
 
 In practice [JSON Merge Patch](https://tools.ietf.org/html/rfc7396) quickly turns out to be too limited, especially when trying to update single objects in large collections (as part of the resource). In this cases [JSON Patch](http://tools.ietf.org/html/rfc6902) can shown its full power while still showing readable patch requests (see also [JSON patch vs. merge](http://erosb.github.io/post/json-patch-vs-merge-patch)).
+
 ### DELETE:
 
 DELETE requests are used to **delete** resources. The semantic is best described as *"please delete the resource identified by the URL"*.
@@ -95,6 +96,7 @@ DELETE requests are used to **delete** resources. The semantic is best described
   - failed DELETE requests will usually generate 404 (if the resource cannot be found) or 410 (if the resource was already deleted before);
 
 **Important:** After deleting a resource with DELETE, a GET request on the resource is expected to either return 404 (not found) or 410 (gone) depending on how the resource is represented after deletion. Under no circumstances the resource must be accessible after this operation on its endpoint.
+
 ## MUST Use Content Headers Correctly:
 
 Content or entity headers are headers with a `Content-` prefix. They describe the content of the body of the message and they can be used in both, HTTP requests and responses. Commonly used content headers include but are not limited to:
@@ -112,9 +114,11 @@ Content or entity headers are headers with a `Content-` prefix. They describe th
   - [`Content-Range`](https://tools.ietf.org/html/rfc7233#section-4.2) is used in responses to range requests to indicate which part of the requested resource representation is delivered with the body;
 
   - [`Content-Type`](https://tools.ietf.org/html/rfc7231#section-3.1.1.5) indicates the media type of the body content;
+
 ## MAY Use Other Standardized Headers:
 
 Use [this list](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields) and mention its support in your OpenAPI definition.
+
 ## MUST Fulfill Safeness and Idempotency Properties:
 
 An operation can be...
@@ -140,6 +144,7 @@ Sometimes, query parameters and headers may allow users to provide a list of val
 | Description            | OpenAPI 3.0                   | Example                      |
 | ---------------------- | ----------------------------- | ---------------------------- |
 | Comma separated values | `style: form, explode: false` | `?param=value1,value2`       |
+
 ## MUST Document Implicit Filtering:
 
 Sometimes certain collection resources or queries will not list all the possible elements they have, but only those for which the current client is authorized to access.
@@ -207,6 +212,7 @@ Below we list the most commonly used and best understood HTTP status codes, cons
 | 301  | Moved Permanently - This and all future requests should be directed to the given URI.                                                  | All                      |
 | 303  | See Other - The response to the request can be found under another URI using a GET method.                                             | PATCH, POST, PUT, DELETE |
 | 304  | Not Modified - resource has not been modified since the date or version passed via request headers If-Modified-Since or If-None-Match. | GET                      |
+
 ### Client Side Error Codes:
 
 | Code | Meaning                                                                                                                                                       | Methods                  |
@@ -219,15 +225,18 @@ Below we list the most commonly used and best understood HTTP status codes, cons
 | 406  | Not Acceptable - resource can only generate content not acceptable according to the Accept headers sent in the request                                        | All                      |
 | 415  | Unsupported Media Type - e.g. clients sends request body without content type                                                                                 | POST, PUT, DELETE, PATCH |
 | 429  | Too many requests - the client does not consider rate limiting and sent too many requests. See [MUST Use Code 429 with Headers for Rate Limits](#153).      | All                      |
+
 ### Server Side Error Codes:
 
 | Code | Meaning                                                                                                                                                                                                                                                                                                                               | Methods |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 500  | Internal Server Error - a generic error indication for an unexpected server execution problem (here, client retry may be sensible)                                                                                                                                                                                                    | All     |
 | 503  | Service Unavailable - service is (temporarily) not available (e.g. if a required component or downstream service is not available) — client retry may be sensible. If possible, the service should indicate how long the client should wait by setting the ['Retry-After'](https://tools.ietf.org/html/rfc7231#section-7.1.3) header. | All     |
+
 ## MUST Use Most Specific HTTP Status Codes:
 
 You must use the most specific HTTP status code when returning information about your request processing status or error situations.
+
 ## MUST Use Code 207 for Batch or Bulk Requests:
 
 Some APIs are required to provide either *batch* or *bulk* requests using POST for performance reasons, i.e. for communication and processing efficiency. In this case services may be in need to signal multiple response codes for each part of an batch or bulk request. As HTTP does not provide proper guidance for handling batch/bulk requests and responses, we herewith define the following approach:

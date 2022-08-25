@@ -25,7 +25,7 @@ This means that instead of writing code to directly interact with our databases,
 
 ## How is it implemented in the Base API?:
 
-```dotnet title="./example-api/V1/Infrastructure/DatabaseContext.cs"
+```c#
 using Microsoft.EntityFrameworkCore;
 
 namespace example-api.V1.Infrastructure
@@ -54,23 +54,14 @@ namespace example-api.V1.Infrastructure
 
 EntityFrameworkCore uses the DatabaseEntity model when accessing the database. In the API team, we typically create an individual file within the Infrastructure namespace for each individual table in the database. 
 
-```dotnet title="./example-api/V1/Infrastructure/DatabaseEntity.cs" {18,22,26}
+```c#
 using Amazon.DynamoDBv2.DataModel;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace example-api.V1.Infrastructure
 {
-    //TODO: rename table and add needed fields relating to the table columns.
     // There's an example of this in the wiki https://github.com/LBHackney-IT/lbh-example-api/wiki/DatabaseContext
-
-    //TODO: Pick the attributes for the required data source, delete the others as appropriate
-    // Postgres will use the "Table" and "Column" attributes
-    // DynamoDB will use the "DynamoDBTable", "DynamoDBHashKey" and "DynamoDBProperty" attributes
-
-    //TODO: For DynamoDB...
-    // * The table name must match that specified in the terraform step that provisions the DynamoDb resource
-    // * The name of the hash key property must match that specified in the terraform step that provisions the DynamoDb resource
 
     [Table("example_table")]
     [DynamoDBTable("example_table", LowerCamelCaseProperties = true)]
@@ -99,7 +90,7 @@ The class for each DatabaseEntity has a Table attribute, which directly referenc
 
 There are also Column attributes for each property, which also directly reference the names of the columns, as well as the data types.
 
-```dotnet title="./example-api/V1/Gateways/ExampleGateway.cs" {20}
+```c#
 using System.Collections.Generic;
 using example-api.V1.Domain;
 using example-api.V1.Factories;
@@ -107,7 +98,6 @@ using example-api.V1.Infrastructure;
 
 namespace example-api.V1.Gateways
 {
-    //TODO: Rename to match the data source that is being accessed in the gateway eg. MosaicGateway
     public class ExampleGateway : IExampleGateway
     {
         private readonly DatabaseContext _databaseContext;
@@ -138,7 +128,7 @@ For example, in the `GetEntityById` method, we call the Database Context, access
 
 The `find` method is one of many methods within EntityFrameworkCore.
 
-```dotnet title="./example-api.Tests/V1/Gateways/ExampleGatewayTests.cs" {37,38,39,40,41}
+```c#
 using AutoFixture;
 using example-api.Tests.V1.Helper;
 using example-api.V1.Domain;
@@ -148,8 +138,6 @@ using NUnit.Framework;
 
 namespace example-api.Tests.V1.Gateways
 {
-    //TODO: Remove this file if Postgres gateway is not being used
-    //TODO: Rename Tests to match gateway name
     //For instruction on how to run tests please see the wiki: https://github.com/LBHackney-IT/lbh-example-api/wiki/Running-the-test-suite.
     [TestFixture]
     public class ExampleGatewayTests : DatabaseTests
@@ -189,7 +177,6 @@ namespace example-api.Tests.V1.Gateways
             databaseEntity.CreatedAt.Should().BeSameDateAs(response.CreatedAt);
         }
 
-        //TODO: Add tests here for the get all method.
     }
 }
 ```

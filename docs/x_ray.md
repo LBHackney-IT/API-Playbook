@@ -20,6 +20,7 @@ The tool is used for identifying the root cause to an issue, discovering perform
 AWS X-Ray collects logs and makes use of a Service Map to visualize the dependencies and calls to other services made in an API request.
 
 X-Ray can be used to identify API requests that are currently not monitored by Canaries by comparing the user requests and those made by Canaries. This is useful to identify if any of the implemented API endpoints are currently not monitored for availability.
+
 ### Video Tutorial:
 
 **Watch our overview on XRay below:**
@@ -33,6 +34,7 @@ X-Ray can be used to identify API requests that are currently not monitored by C
 - ** Service Maps ** - End-to-end visual representation for all dependencies of an application that serves requests;
 
 - ** Trace Maps ** - Individual end-to-end visual representation for a single request;
+
 ## Benefits of AWS X-Ray:
 
 - Provides a way to collect logs and metrics, for all services an API integrates with, including databases or other APIs;
@@ -52,6 +54,7 @@ X-Ray can be used to identify API requests that are currently not monitored by C
     - Identify logs related to the dependency and go through the process of identifying root cause or possible further dependencies that need to be considered;
 
   * In summary, the process will take longer as developers will have to go through multiple steps and logs in order to narrow down the cause, which results in more development time spent on debugging, instead of resolving the issue;
+
 ##  How to enable and use X-Ray in our APIs:
 
 Serverless can be used to automatically enable X-Ray on our APIs.
@@ -72,6 +75,7 @@ X-Ray can be enabled for Postgres to trace down to the database query level.
 
 
 [** How to enable X-Ray for a postgres database **](https://net-immersionday.workshop.aws/6-using-x-ray-in-dotnet-application/8-entity-framework-tracing.html)
+
 ## X-Ray with API Gateway:
 
 X-Ray can also be enabled for API Gateway to provide tracing for calls starting at API Gateway.
@@ -85,6 +89,7 @@ We use a custom Lambda authorizer, so enabling X-Ray at API Gateway will provide
 The logging and tracing can be customized to only sample requests containing a certain header value and similar.
 
 [**How to enable X-Ray for API Gateway**](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-apigateway.html)
+
 ### X-Ray cost:
 
 The first 100,000 traces recorded each month are free.

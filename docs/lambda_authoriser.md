@@ -10,6 +10,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 ##  What is a Lambda authorizer?:
 
 Read more in the [AWS documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)!
+
 ## Custom implementation of a Lambda authorizer:
 
 For a Lambda authorizer, we use a custom Lambda function that has been developed in-house.
@@ -24,6 +25,7 @@ It allows for granular access control per API endpoint per environment. To gain 
 - Tokens do not expire;
 
 Each time a consumer makes an API request and supplies the JWT auth token, our custom Lambda function takes the token, validates and decrypts it, retrieves data about the token from the database and compares the data from the database to the API request information.
+
 ## When is a token valid:
 
 - If the `Enabled` flag is set to true;
@@ -36,6 +38,7 @@ Each time a consumer makes an API request and supplies the JWT auth token, our c
 ** NB: The Lambda authorizer approach described above is a new solution and not all APIs have been updated to use it. **
 
 [**Lambda Authorizer Documentation**](https://docs.google.com/document/d/1mpTY-sfYwR2brIF_8KjxiYzW6zgkjbv4Pi-9Y5LRlBA/edit#)
+
 ## When to use?:
 
 HackIT’s custom Lambda authorizer should be used for all new APIs that are to be created. It has been created in a generic way, making it possible to be used across multiple APIs.
@@ -43,6 +46,7 @@ HackIT’s custom Lambda authorizer should be used for all new APIs that are to 
 The only configuration required would be to insert the lookup values into the lookup tables (API name, API endpoint).
 
 The above is to be automated as part of our API Hub upcoming work.
+
 ## Google Groups based authorization:
 
 In addition to the custom build lambda authorizer mentioned above, we have also implemented Google groups based authorization in some of our projects.

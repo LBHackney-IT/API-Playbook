@@ -18,8 +18,6 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 - ** Tuomo Karki ** : tuomo.karki@hackney.gov.uk - Lead Developer;
 
-- ** Livia Basiu ** : livia.basiu@hackney.gov.uk - Maintainer and Collaborator;
-
 - ** Atiyyah Rawat ** : atiyyah.rawat@hackney.gov.uk- Maintainer and Collaborator;
 
 - ** Elena Evans ** : Elena.Evans@hackney.gov.uk - Maintainer and Collaborator;

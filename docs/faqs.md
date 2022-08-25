@@ -18,6 +18,7 @@ You can do this by looking up the API in AWS API Gateway.
 6. Now you can see the entire URL inside a blue box on the top with the heading "Invoke URL";
 
 Additionally, you can find API URLs on our Developer Hub website. See more information about it [here](/developer_hub).
+
 ## How do I find out whether an API is healthy?:
 
 You can utilise AWS Canaries, which we use for uptime monitoring.
@@ -27,6 +28,7 @@ You can utilise AWS Canaries, which we use for uptime monitoring.
 4. This will list all of the canaries and their statuses;
 
 To see more information about canaries and how to set them up, visit the relevant page [here](/uptime_monitoring).
+
 ## Where do I find my token to use to authenticate access to APIs?:
 
 1. Visit the [Hackney Authentication Service](https://auth.hackney.gov.uk/auth?redirect_uri=https://auth.hackney.gov.uk/auth/check_token) website to check your Hackney JWT token. You may need to log in during this;
@@ -34,6 +36,7 @@ To see more information about canaries and how to set them up, visit the relevan
 3. Add this token value to the `Authorization` header in all API requests. This will allow you to authenticate access to Hackney APIs;
 
 _Please note that while you may be authenticated, you may not be authorised to use every API. To be allowed access to an API, you need to be added to a google group for that API. Please visit [this page](/lambda_authoriser) to see more information about our custom Lambda Authoriser._
+
 ## How do I find the authentication process used for an API?:
 
 You can do this by looking up the API in AWS API Gateway.
@@ -45,6 +48,7 @@ You can do this by looking up the API in AWS API Gateway.
     ![API Authorization](./doc-images/api_authorisation.png)
     - If it says `Authorization: Custom`, that means this API uses a lambda authoriser; 
     - If it says `API Key: Required`, this means that this API uses an API key;
+    
 ## Where do I find the API Key value from?:
 
 This can be found through API Gateway.

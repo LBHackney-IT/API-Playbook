@@ -32,8 +32,6 @@ functions:
     handler: example-api::example-api.LambdaEntryPoint::FunctionHandlerAsync
     role: lambdaExecutionRole
     environment:
-# TODO: Create ssm variables for this API's postgres mirror then rename example-api below to match api name
-# TODO: Remove this line if DynamoDb is being used
       CONNECTION_STRING: Host=${ssm:/example-api/${self:provider.stage}/postgres-hostname};Port=${ssm:/example-api/${self:provider.stage}/postgres-port};Database=example-api-mirror;Username=${ssm:/example-api/${self:provider.stage}/postgres-username};Password=${ssm:/example-api/${self:provider.stage}/postgres-password}
     events:
       - http:
@@ -57,7 +55,7 @@ Resources are AWS infrastructure components that your Functions use such as:
 
 The Serverless Framework not only deploys your Functions and the Events that trigger them, but it also deploys the AWS infrastructure components your Functions depend upon.
 
-```yaml title="serverless.yml"
+```yaml 
 resources:
   Resources:
     lambdaExecutionRole:
@@ -76,8 +74,6 @@ resources:
         ManagedPolicyArns:
           - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
           - arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess
-# TODO: Enable this line and set the correct policy name if DynamoDb is in use
-#          - arn:aws:iam::${self:provider.account}:policy/example-api/lambda-dynamodb-example-api
         Policies:
           - PolicyName: manageLogs
             PolicyDocument:

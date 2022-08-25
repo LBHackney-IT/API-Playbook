@@ -30,6 +30,7 @@ To have :
 The event-driven architecture approach is a paradigm shift from more traditional architectures that closely couple data and services within one data store and monolithic application.
 
 If you want to reduce the number of tightly coupled dependencies within your application, you can move towards an event driven approach.
+
 ## When to use EDA:
 
 Event-driven architecture  is to be used when an action needs to be taken when a record has been created, updated or deleted, for example if a user needs to be alerted or another record needs to be updated.
@@ -41,6 +42,7 @@ A more specific example where event driven architecture is to be used is in the 
 - In this example, we use EDA to ensure that the subset of person data is kept up-to-date by publishing events when the person data record is updated and ensuring that we listen for those events and update the data accordingly in the Tenure record;
 
 **NB:** EDA should **not** be used to **create a new data source**, but only to maintain subsets within records of other domains. We always strive to have a single data source and source of truth. 
+
 ### Video Tutorial:
 
 **Watch our overview on Event Driven Architecture below:**
