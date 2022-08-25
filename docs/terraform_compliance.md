@@ -44,7 +44,7 @@ To write the Terraform-compliance tests, feature files are used and written usin
 
 These three components are all described with examples here:
 
-https://terraform-compliance.com/pages/bdd-references/
+[Python BDD tool] https://terraform-compliance.com/pages/bdd-references/
 
 ### How to implement it?
 

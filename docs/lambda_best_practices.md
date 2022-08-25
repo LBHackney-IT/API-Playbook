@@ -16,6 +16,12 @@ We currently use AWS Lambda services for most of our APIs.  Lambda functions are
 Lambdas are generally best used for services that do not run for more than 5 minutes. When using Lambdas as API functions fronted by the API gateway, this time limit is further restricted to under 30 seconds (AWS imposes a hard limit on the time an API gateway endpoint can run).  In the vast majority of cases this is sufficient for our API needs. There are some limitations however when we link multiple Lambdas together. Typical setup could be a front end Lambda calling a service API Lambda which in turns calls a platform API. When planning architecture around chaining different Lambdas together, it is worth analysing whether the whole process can be run well under the allocated 30 seconds.
 For the majority of cases that will be more than enough time.
 
+### When is is *not* best to use a Lambda function?
+Lambda functions should *not* be used for the following operations:
+1. *Data migration - Continuous and long-running processes*
+2. *Large Memory footprints*
+3. *High-frequency needs*
+
 ### How do we go about building a Lambda function?:
 
 Building a Lambda function is no different from building any other application.  In fact our example API is designed in such a way that it can be run either as a standalone application or as a series of serverless functions.

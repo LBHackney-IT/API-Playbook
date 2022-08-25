@@ -143,6 +143,7 @@ module.exports = {
     'target_type',
     'canaries_automation',
     'developer_hub',
+    'api_specification',
     'FAQs',
     'contact_us',
   ],
