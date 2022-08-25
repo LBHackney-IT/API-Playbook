@@ -15,7 +15,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 A Deployment pipeline is the process of taking code from a version control repo, such as Github, and releasing a version or the master branch to our deployment environments in an automated fashion. 
 
-We use CI/CD in Hackney as an efficient way to build, test and deploy new code.  \
+We use CI/CD in Hackney as an efficient way to build, test and deploy new code.
 CI/CD is short for Continuous Integration and Continuous Delivery/Deployment.
 
 CI/CD works in conjunction with the following processes:
@@ -27,9 +27,9 @@ CI/CD works in conjunction with the following processes:
 We use a combination of software functions in Github and Circle CI, configured via a Yaml file to fully automate environment deployments. 
 
 Our deployments usually support the following environments: 
-*  Development
-*  Staging
-* Production 
+- Development
+- Staging
+- Production 
 
 _At Hackney, we use multiple environments to improve our development workflow.Using multiple environments ensures that our software is rigorously tested before it is deployed and made available to users. Having a well-tuned workflow not only keeps our team productive, but it also helps our developers to deliver software that is reliable and in a timely manner._
 
@@ -63,7 +63,7 @@ The successful completion of all of these steps will allow automated code deploy
 
 **Deploying to Staging and Production**
 
-In order to deploy to Staging and Production environments, <span style="text-decoration:underline;">manual approval in CircleCI is required as the final step.</span>
+In order to deploy to Staging and Production environments,manual approval in CircleCI is required as the final step.</span>
 
 The automation of the deployment to different environments gives flexibility in making small changes to the code and testing of features before deployment to a production environment.
 
@@ -80,23 +80,21 @@ Always follow the **least privilege** principle - only pipeline machine users ha
 The Twelve-Factor App Methodology is suggested by developers for smoothly working and delivering Software as a Service (SaaS) Applications or Web Apps with a focus on Microservices.
 
 More information about Hackney Council’s Development standards can be found on the link below: 
-
-
     [https://playbook.hackney.gov.uk/ways-of-working/](https://playbook.hackney.gov.uk/ways-of-working/)
 
 As part of our Organisation's ways of working and managing APIs, we encourage developers that every time an API is deployed to production to publish the Swagger definition accordingly. 
 
 ![alt_text](doc-images/our_ways_of_working_img2.png "image_tooltip")
 
-**Continuous Monitoring **
+**Continuous Monitoring**
 
-* Alarms (notify by email) _using AWS CloudWatch alarms based on various metrics_
-* Canaries for availability monitoring _using AWS CloudWatch Synthetics_
-* Collecting Feedback _via feedback forms accessible to our users_
-* Dashboards _using AWS CloudWatch for easy visualisation of issues_
-* Notifications by email if secrets are exposed, pipelines cancel deployment if errors occur.
-    * AWS scans our repositories
-    * GitGuardian scanning
+- Alarms (notify by email) _using AWS CloudWatch alarms based on various metrics_
+- Canaries for availability monitoring _using AWS CloudWatch Synthetics_
+- Collecting Feedback _via feedback forms accessible to our users_
+- Dashboards _using AWS CloudWatch for easy visualisation of issues_
+- Notifications by email if secrets are exposed, pipelines cancel deployment if errors occur.
+- AWS scans our repositories
+- GitGuardian scanning
 
 **Continuous Feedback**
 
