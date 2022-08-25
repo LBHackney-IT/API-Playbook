@@ -22,7 +22,7 @@ Sonar cloud is mandatory to be set up for every public and private Hackney Repos
 
 For a detailed explanation of its benefits, how to set up and update SonarCloud as per our HackIT Development Standards, please click on the link below:
 
-[https://docs.google.com/document/d/1bU9nYLn37VlY6-7pgy3yE2DkOVvYGYByxUpNc5jmlPk/edit#](https://docs.google.com/document/d/1bU9nYLn37VlY6-7pgy3yE2DkOVvYGYByxUpNc5jmlPk/edit#)
+[Sonar Cloud](/sonarcloud)
 
 **Cloudwatch alarms**
 
@@ -30,7 +30,7 @@ Amazon CloudWatch is a monitoring and observability service, able to provide our
 
 For more information about the benefits of Cloudwatch alarms and how to set it up as per  “the Hackney Way”, please have a look at the following documentation:
 
-* [Cloudwatch Alarms Documentation ](https://docs.google.com/document/d/1MC3E3Cku1ZY2Oz9dreCuyETHC8mDq9MlH9xZObCkgKE/edit#heading=h.n6ky6abxpd1q)
+* [Cloudwatch Alarms Documentation ](/cloudwatch-alarms)
 * 
 
 **Terraform Compliance**
@@ -41,9 +41,7 @@ Terraform ensures  the code implemented by our developers meets security require
 
 For a better understanding of Terraform, please refer to the following documentation: 
 
-* [Terraform Compliance Rules](https://docs.google.com/document/d/1Ggewoqlzjio78IUxX0RVQS_UzT6RyXDxwCKhgNQC_68/edit)
-* [Terraform Compliance Presentation ](https://docs.google.com/presentation/d/1i673J4Rcie802bXw5dzotCs2KlzVVclDTmYrOUTnnNU/edit#slide=id.p)
-* [API Playbook](https://playbook.hackney.gov.uk/API-Playbook/) (dedicated section for Terraform coming up soon)
+* [Terraform Compliance](/terraform_compliance)
 
 **GitGuardian**
 
@@ -53,6 +51,6 @@ At Hackney, we are using GitGuardian to prevent secrets from leaking into reposi
 
 For more information on how we use GitGuardian at Hackney, please refer to the following documentation: 
 
-* [GitGuardian ](https://docs.google.com/document/d/1RBA0EvMyxG3NjXf_R4GGYz-wxo_MCwRt8TClnAvOW9M/edit)
+* [GitGuardian ](/gitgaurdian)
 
 </TextToSpeech>

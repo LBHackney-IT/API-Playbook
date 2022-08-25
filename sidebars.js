@@ -56,6 +56,7 @@ module.exports = {
             'branching_strategies',
             'deployment_pipeline',
             'infrastructure',
+            'terraform_compliance'
           ],
         },
 
