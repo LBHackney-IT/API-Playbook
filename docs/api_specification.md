@@ -10,4 +10,4 @@ An API specification provides a broad understanding of how an API behaves and ho
 The goal of our API specifications is to standardise data exchange between web services in “The HackIT way”.  In this case, standardisation means the ability of diverse systems, written in different programming languages and by using different technologies, to seamlessly communicate with each other.
 
 For more information about our API Specification, please visit the below link: 
-[https://lbhackney-it.github.io/api-specifications/] https://lbhackney-it.github.io/api-specifications/
+[API Specification] (https://lbhackney-it.github.io/api-specifications/)
