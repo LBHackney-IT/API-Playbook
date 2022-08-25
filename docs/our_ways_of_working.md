@@ -63,7 +63,7 @@ The successful completion of all of these steps will allow automated code deploy
 
 **Deploying to Staging and Production**
 
-In order to deploy to Staging and Production environments,manual approval in CircleCI is required as the final step.</span>
+In order to deploy to Staging and Production environments,manual approval in CircleCI is required as the final step.
 
 The automation of the deployment to different environments gives flexibility in making small changes to the code and testing of features before deployment to a production environment.
 
