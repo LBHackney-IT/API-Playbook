@@ -36,6 +36,5 @@ The following tasks should be completed before every API deployment into product
 - The canaries for all endpoints that should have them;
 - Check that canaries are passing;
 - The canaries have someone subscribed to it;
-- Tenants and Leaseholders canaries should send alerts to the Tenants-Leaseholders-alert SNS topic;
 
 </TextToSpeech>

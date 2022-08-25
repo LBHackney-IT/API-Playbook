@@ -20,6 +20,7 @@ The video below will go through the following steps:
 - PATCH endpoint with TDD;
 - Authentication & Security;
 - How to deploy your endpoint to AWS;
+
 ##  Video Tutorial:
  
 <figure class="video-container">

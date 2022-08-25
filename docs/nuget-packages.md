@@ -18,17 +18,12 @@ The token used to access Hackneys’ NuGet Package is a GitHub PAT created by a 
 It is conventional to name the branches in an arranged structure so that the automated tests work and to allow the developers to create preview versions of packages 
 
 We use semantic versioning for our nuget packages. The format is:
-
-
-
 * Major: Breaking changes
 * Minor: New features, but backward compatible
 * Patch: Backwards compatible bug fixes only
 * Suffix (optional): a hyphen followed by a string denoting a pre-release version
 
 In our repos we use Gitversion & a GitHub Actions pipeline to automatically version our packages. The way it is set up on most of our package repos is:
-
-
 
 * Any push to any branch other than main/master increments the preview version number. Packages are published on every push. E.g. a version number could be 0.3.2-preview-0001. (Note: these branches must follow the pattern feature/(something) to be picked up by the pipeline.
 * Any push to the main/master branch updates the minor number

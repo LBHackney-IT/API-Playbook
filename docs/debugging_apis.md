@@ -23,7 +23,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 1. To review the endpoint URLs, check the controller(s) within your API project’s codebase for route statements like:
 
-```dotnet
+```c#
 [Route("api/v1/persons")]
 ```
 

@@ -9,6 +9,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 ## Purpose:
 
 The purpose of this document is to outline how and when best to orchestrate the creation and linking of multiple containers using docker-compose.
+
 ## Introduction:
 
 You may already be aware that Docker is used extensively within HackIt when building APIs and services. You may also already know how we would go about spinning up a container for an application.
@@ -16,6 +17,7 @@ You may already be aware that Docker is used extensively within HackIt when buil
 For many of our use cases, spinning up the application in a container by itself is not sufficient. The application may require access to other external resources such as a database or an API.
 
 In order to do this there needs to be a way to spin up multiple containers and make them accessible to each other.
+
 ## Video Tutorial:
 
 <figure class="video-container">
@@ -117,6 +119,7 @@ For example when calling `docker-compose up example-api`, as this service has a 
 If you need to manually supply environment variables when running a composition and do not want to add them to your system environment they can be prepended to the docker-compose command, for example:
 
 ```CONNECTION_STRING=[a connection string] docker-compose up example-api```
+
 ## Cleaning Up:
 
 It is important to periodically clean up your docker image cache using `docker system prune` or by clearing down unused images from the Docker dashboard.

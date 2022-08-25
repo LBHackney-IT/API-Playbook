@@ -37,6 +37,7 @@ Production applications are public facing and any downtime should be immediately
 When downtime is signalled we can investigate the cause via the CloudWatch logs. 
 
 Each Platform API canary calls a production environment API endpoint at a regular interval.
+
 ## Canary Configuration:
 
 Canaries can be configured to run once or on a user defined schedule. A scheduled canary can run for 24 hours a day as often as once per minute. 
@@ -48,6 +49,7 @@ Alarm parameters can be very specific and granular.
 A canary will require any authorization headers and values needed to access the API in the configuration.
 
 Accessing the dashboard for a Canary in CloudWatch lets you view the status of the Canary over a period of time.
+
 ## Setting up Canaries:
 
 ### Creating a canary which will ping an endpoint and check the response:

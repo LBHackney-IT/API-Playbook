@@ -18,8 +18,6 @@ We use CI/CD in Hackney as an efficient way to build, test and deploy new code. 
 CI/CD is short for Continuous Integration and Continuous Delivery/Deployment.
 
 CI/CD works in conjunction with the following processes:
-
-
 * Version control (branches, commits, merges)
 * Build automation/continuous integration
 * Test automation
@@ -28,14 +26,11 @@ CI/CD works in conjunction with the following processes:
 We use a combination of software functions in Github and Circle CI, configured via a Yaml file to fully automate environment deployments. 
 
 Our deployments usually support the following environments: 
-
-
 *  Development
 *  Staging
 * Production 
 
 _At Hackney, we use multiple environments to improve our development workflow.Using multiple environments ensures that our software is rigorously tested before it is deployed and made available to users. Having a well-tuned workflow not only keeps our team productive, but it also helps our developers to deliver software that is reliable and in a timely manner._
-
 
 
 * **_Development: The development environment would be the first line of defense against bugs. Here, developers deploy their code and test any newly implemented features_**
@@ -58,8 +53,6 @@ _One of the best practices encouraged at Hackney Council is Continuous Integrati
 
 The steps for a deployment are usually the following: 
 
-
-
 *  Code formatting check
 *  Code build and test
 * Deployment software tools installation
@@ -78,7 +71,6 @@ Deployment Automation means we decrease the possibility of human error when rele
 Always follow the **least privilege** principle - only pipeline machine users have elevated permissions to deploy code and create cloud resources in our AWS accounts. 
 
 
-
 ![alt_text](doc-images/our_ways_of_working_img1.png "image_tooltip")
 
 
@@ -93,14 +85,9 @@ More information about Hackney Council’s Development standards can be found on
 
 As part of our Organisation's ways of working and managing APIs, we encourage developers that every time an API is deployed to production to publish the Swagger definition accordingly. 
 
-
-
 ![alt_text](doc-images/our_ways_of_working_img2.png "image_tooltip")
 
-
 **Continuous Monitoring **
-
-
 
 * Alarms (notify by email) _using AWS CloudWatch alarms based on various metrics_
 * Canaries for availability monitoring _using AWS CloudWatch Synthetics_

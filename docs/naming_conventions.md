@@ -23,6 +23,7 @@ This applies to concrete path segments and not the names of path parameters. For
 Examples:
 
     customer_number, order_id, billing_address
+
 ## MUST Pluralize Resource Names:
 
 Usually, a collection of resource instances is provided (at least API should be ready here). The special case of a resource singleton is a collection with cardinality 1.
@@ -38,15 +39,18 @@ Examples:
     use `dateOfBirth` rather than `DOB`
 
 The shortenings like `id` and `ref` are considered acceptable as they are universally understood.
+
 ## MUST use camelCase Property Names:
 
 Data formats - [camel casing](data-formats.md#must-use-camelcase-property-names-a-za-z0-9).
+
 ## MUST Pluralise Array Names:
 
 Data formats - [array names](data-formats.md#must-pluralise-array-names).
 ## MUST Avoid Trailing Slashes:
 
 The trailing slash must not have specific semantics. Resource paths must deliver the same results whether they have the trailing slash or not.
+
 ## MUST Stick to Conventional Query Parameters:
 
 If you provide query support for searching, sorting, filtering, and paginating, you must stick to the following naming conventions:

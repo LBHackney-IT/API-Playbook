@@ -14,11 +14,12 @@ So if a class depends on another we will need to mock any interactions with that
 In the tests, we can then just pass in a mock implementation of this interface into the constructor instead.
 
 Read some advice for mocking and writing unit tests in the [.NET documentation](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices).
+
 ## Setting up and using mocks:
 
 You can use mocks to return a specific value for a given input. For example a test for the following code:
 
-```dotnet
+```c#
 public class GetSomeData
 {
   public IAccessDataStore _datastore;
@@ -35,9 +36,9 @@ public class GetSomeData
 }
 ```
 
-might look like..
+can look like..
 
-```dotnet
+```c#
 public class GetSomeDataTests
 {
   [Test]
@@ -61,7 +62,7 @@ public class GetSomeDataTests
 
 Or you can assert that they were called with the correct inputs. For example a test for the following code..
 
-```dotnet
+```c#
 public class SaveSomeData
 {
   public IAccessDataStore _datastore;
@@ -78,9 +79,9 @@ public class SaveSomeData
 }
 ```
 
-might look like..
+can look like..
 
-```dotnet
+```c#
 public class SaveSomeDataTests
 {
   [Test]

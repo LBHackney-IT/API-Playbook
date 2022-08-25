@@ -21,8 +21,6 @@ SonarCloud is enabled in our projects because it provides insight into the healt
 
 ## Benefits of SonarCloud
 
-
-
 * Fast, continuous feedback on your code due to the static analysis feature that detects bugs and code smells in your repository.
 * Quickly assess code health which means that developers are constantly updated on the status of their code.  
 * Metrics are logged and available every moment of the development workflow. 
@@ -36,7 +34,6 @@ SonarCloud is enabled in our projects because it provides insight into the healt
 
 SonarCloud provides an interface which highlights bugs and vulnerabilities, which is useful for us as it allows us to maintain programmes throughout its lifetime and respond to any errors which may arise especially after a new version release of an API or body of work.
 
-
 ## 
 
 ![alt_text](doc-images/sonarcloud-img2.png "image_tooltip")
@@ -48,11 +45,11 @@ SonarCloud provides an interface which highlights bugs and vulnerabilities, whic
 
 SonarCloud suggests possible fixes for an issue and shows the issue with context. Which enables us to form a deeper understanding of the problem and aids in the process of finding a working solution.
 
-Context 
+### Context 
 
 Sonarcloud is already implemented in circleCI. We have created sonarcloud orbs. An orb is a reusable package of YAML configuration that condenses repeated pieces of config into a single line of code. These orbs are input into the config.yml file so that sonarcloud can be used.
 
-Code coverage  
+### Code coverage  
 
 SonarCloud supports the reporting of test coverage information as part of the analysis of your .NET project. 
 

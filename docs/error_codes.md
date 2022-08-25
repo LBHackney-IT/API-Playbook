@@ -20,6 +20,7 @@ When a client makes a request to an HTTP server — and the server successfully 
 - **401-level (unauthorized)**: The request sent by the client could not be authenticated.
 - **500-level (Server error)**: Server failed to fulfill a valid request due to an error with server.
 - **503-level (Service unavailable)**: The server is currently unable to handle the request due to a temporary overloading or maintenance of the server.
+
 ##  Handling Errors:
 
 At Hackney, we use the following Standardised Error messages for our APIs:

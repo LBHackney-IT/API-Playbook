@@ -25,7 +25,7 @@ Watch the video version of this page if you prefer:
 
 Create a new file somewhere, named `GreetingGatewayTests.cs`.
 
-```dotnet title="GreetingGatewayTests.cs"
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -42,7 +42,7 @@ This doesn't test anything yet! We need to add some more code.
 
 Create the test class, and the initial signature of the test method.
 
-```dotnet title="GreetingGatewayTests.cs" {7,9}
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -71,7 +71,7 @@ of the desired effect of calling the method.
 
 Now, add the actual test code!
 
-```dotnet title="GreetingGatewayTests.cs" {11,12}
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -126,7 +126,7 @@ haven't made it yet!
 ### Create the Implementation:
 
 We will write the most minimal piece of code that will pass the test.
-```dotnet title="GreetingGateway.cs"
+```c#
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -180,7 +180,7 @@ should enforce it.
 What we want to do, is pass a name into `GetGreetingForName`, and have it return
 an appropriate greeting for that name.
 
-```dotnet title="GreetingGatewayTests.cs" {11-15}
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -225,7 +225,7 @@ written for the implementation doesn't take any arguments, but we are trying to
 use one in the test! Let's fix that.
 
 
-```dotnet title="GreetingGateway.cs" {5}
+```c#
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -256,7 +256,7 @@ use the parameter we added to the method.
 
 This can be done using exactly the same interpolation used in the test itself.
 
-```dotnet title="GreetingGateway.cs" {7}
+```c#
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -303,7 +303,7 @@ uncover strange edge cases.
 
 We can use a library called Bogus to help with this.
 
-```dotnet title="GreetingGatewayTests.cs" {4,12}
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;

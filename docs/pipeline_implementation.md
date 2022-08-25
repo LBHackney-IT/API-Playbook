@@ -16,6 +16,7 @@ The source S3 bucket has been configured to invoke a Lambda function when a file
 The configuration for the source S3 bucket is done using the pipeline’s serverless implementation - <u> no manual set up is required for events </u>.
 
 ![S3 configuration](./doc-images/data6.png)
+
 ## Lambda:
 
 The lambda function implements the following:
@@ -27,6 +28,7 @@ The lambda function implements the following:
 - Logs any exceptions and errors to Cloudwatch;
 
  ** Note: The Postgres database and table to match the CSV format needs to be created separately. **
+ 
 ## How to set up the data pipeline for a project:
 
 [Template repository for the data pipeline code implementation](https://github.com/LBHackney-IT/s3-to-postgres-data-pipeline)

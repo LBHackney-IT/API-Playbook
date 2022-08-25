@@ -18,9 +18,6 @@ GitGuardian monitors both organisation repositories and developers' personal rep
 GitGuardian Public Monitoring is particularly interesting for companies with large development teams and modern development practices. It uses sophisticated pattern matching techniques to detect credentials that cannot be strictly defined with a distinctive pattern like unprefixed credentials. The built-in algorithm has high precision with real-time notifications. The alerting is done in real-time, which allows developers, security teams and operations managers to handle remediation operations.
 
 **Main Benefits**
-
-
-
 * Largest breadth of detection on the market (nearly 300 detectors)
 * Optimised accuracy and recall to limit alert fatigue
 * Natively integrated with the Software Life Cycle (Native VCS, SIEM, CI integrations)
@@ -30,7 +27,6 @@ GitGuardian Public Monitoring is particularly interesting for companies with lar
 GitGuardian Internal Monitoring helps our Organisation detect and fix vulnerabilities in source code at every step of the software development lifecycle with automated secrets detection & remediation for private or public source code.
 
 GitGuardian brings security and development teams together with automated remediation playbooks and collaboration features to resolve incidents fast and in full. By pulling developers closer to the remediation process, our Organisation can achieve higher incident closing rates and shorter fix times. 
-
 
 
 ![alt_text](doc-images/gitguardian-img.png "image_tooltip")
@@ -65,8 +61,6 @@ Hence, it will scan the repo and show the results in the pipeline’s log as per
 There is plenty of documentation available online and it is a very reliable tool to use. 
 
 Some of the main sources of information are as follows :
-
-
 
 * [GitGuardian main website - Learning Center ](https://www.gitguardian.com/secrets-detection)
 * [GitGuardian Github Repository ](https://github.com/GitGuardian)
