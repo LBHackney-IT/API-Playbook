@@ -1,6 +1,6 @@
 ---
 id: tdd
-title: Good TDD Principles
+title: TDD 
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';

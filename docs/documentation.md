@@ -1,6 +1,6 @@
 ---
-id: documentation
-title: API Documentation
+id: swagger_documentation
+title: Swagger Documentation
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';

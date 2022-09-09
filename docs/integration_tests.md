@@ -1,6 +1,6 @@
 ---
 id: integration_tests
-title: How to write integration tests
+title: How to write End to end tests
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';
@@ -9,7 +9,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 ## Introduction:
 
-When creating a new endpoint or adding new functionality to an API it's good practice to start by writing an integration test outlining the functionality you are hoping to achieve. You can then write unit tests when you touch the individual classes you will be working on. Integration tests give you confidence that all your classes work together and that the full feature you have made is working correctly. These tests are slightly different depending on which database type is being employed: Postgres of DynamoDb.
+When creating a new endpoint or adding new functionality to an API it's good practice to start by writing an end to end test outlining the functionality you are hoping to achieve. You can then write unit tests when you touch the individual classes you will be working on. End to end tests give you confidence that all your classes work together and that the full feature you have made is working correctly. These tests are slightly different depending on which database type is being employed: Postgres of DynamoDb.
 
 ### Video Tutorial:
 

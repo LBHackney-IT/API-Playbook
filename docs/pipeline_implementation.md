@@ -1,6 +1,6 @@
 ---
 id: pipeline_implementation
-title: Pipeline Implementation
+title: Data Pipeline Implementation
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';
