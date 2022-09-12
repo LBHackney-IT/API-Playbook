@@ -22,7 +22,7 @@
     "clsx": "^1.1.1",
     "docusaurus-plugin-sass": "^0.1.11",
     "lbh-frontend": "^3.6.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "plugin-image-zoom": "^1.1.0",
     "react": "^16.8.4",
     "react-bootstrap": "^1.5.2",
