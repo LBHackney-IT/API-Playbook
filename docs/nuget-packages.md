@@ -1,6 +1,6 @@
 ---
 id: nuget_packages
-title: NuGet Packages
+title: What are NuGet Packages?
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';

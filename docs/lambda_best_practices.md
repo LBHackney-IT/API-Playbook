@@ -1,6 +1,6 @@
 ---
 id: lambda_best_practices
-title: Lambda Functions Use and Good Practice
+title: AWS Lambda and when to use
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';

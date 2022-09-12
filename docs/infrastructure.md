@@ -1,6 +1,6 @@
 ---
 id: infrastructure
-title: Infrastucture as Code
+title: Infrastucture as Code Introduction
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';
