@@ -1,5 +1,5 @@
 ---
-id: c4_model
+id: m
 title: C4 Model
 ---
 
