@@ -31,10 +31,7 @@ GitGuardian Internal Monitoring helps our Organisation detect and fix vulnerabil
 
 GitGuardian brings security and development teams together with automated remediation playbooks and collaboration features to resolve incidents fast and in full. By pulling developers closer to the remediation process, our Organisation can achieve higher incident closing rates and shorter fix times. 
 
-
-
 ![alt_text](doc-images/gitguardian-img.png "image_tooltip")
-
 
 **How we use it at Hackney **
 
@@ -54,25 +51,18 @@ The ggshield Github repository is open-source and it can be found by visiting th
 
 The main way in which we're using GitGuardian at the moment is that it is connected through the GitHub integration. It is deployed through our code review process. When pull requests are created they connect with GitGuardian, which runs the scan before there is a review by one of our senior devs. In order to scan the full repo and old commits, you can use the following command: 
 
-
 ```
 ggshield scan repo. 
 ```
-
-
 Hence, it will scan the repo and show the results in the pipeline’s log as per the screenshot below: 
 
 There is plenty of documentation available online and it is a very reliable tool to use. 
 
 Some of the main sources of information are as follows :
-
-
-
 * [GitGuardian main website - Learning Center ](https://www.gitguardian.com/secrets-detection)
 * [GitGuardian Github Repository ](https://github.com/GitGuardian)
 * [GitGuardian ggshield Github Repository](https://github.com/GitGuardian/ggshield)
 * [Faun blog - How to scan Github repositories for secrets & credentials ?](https://faun.pub/how-to-scan-git-repository-for-secrets-credentials-4b397e720cab)
 
 The scan for secrets in our codebase is one of the best features of GitGuardian.The instant alert of an open secret in the codebase is also a fantastic feature.
-
 </TextToSpeech>

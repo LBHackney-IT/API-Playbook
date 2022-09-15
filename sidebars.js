@@ -5,6 +5,7 @@ module.exports = {
       type: 'category',
       label: 'Home',
       items: [
+        'release-notes-v4',
         'index',
         'api_standards',
         'platform_api_vs_service_api',
@@ -56,6 +57,7 @@ module.exports = {
             'branching_strategies',
             'deployment_pipeline',
             'infrastructure',
+            'c4_model'
           ],
         },
 
