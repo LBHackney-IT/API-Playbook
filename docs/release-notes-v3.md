@@ -1,10 +1,14 @@
 ---
-id: notes
-title: Release Notes
+id: release-notes-v3
+title: V3
 ---
 import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
+
+*Product Name: API Playbook*
+*Version: V3*
+*Release Date: January 2021*
 
 ## Version 3:
 

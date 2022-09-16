@@ -13,20 +13,15 @@ At Hackney we have created NuGet Packages to prevent the duplication of common c
 
 A Nuget Package is a single ZIP file with the .nupkg extension that contains compiled code and other content which is demanded for the project. NuGet enables developers to host packages privately in the cloud, on a private network or on their local system. This means that packages are available only to those developers that have access to the host, effectively securing the packages for a specific group of users. To use the package in your project you must add or update the NuGet.config file and include the authorisation token.
 
-The token used to access Hackneys’ NuGet Package is a GitHub PAT created by a machine user account, and then encoded to make it usable independent of the user that created it. (See [here](https://github.community/t/download-from-github-package-registry-without-authentication/14407/111) for an explanation of how this is done.) The value of this token can be found in the AWS parameter store within the DevelopmentAPIs AWS Account :/nuget/PUBLIC_TOKEN.
+We use NuGet packages to share code that is exclusive to an organisation or a project. This becomes more useful when having a microservice architecture where multiple services share common code, things like middleware, validation, logging, etc in order to have a strong ecosystem in place. 
 
-It is conventional to name the branches in an arranged structure so that the automated tests work and to allow the developers to create preview versions of packages 
-
-We use semantic versioning for our nuget packages. The format is:
-* Major: Breaking changes
-* Minor: New features, but backward compatible
-* Patch: Backwards compatible bug fixes only
-* Suffix (optional): a hyphen followed by a string denoting a pre-release version
+Although Hackney has got the Base API template that is used when building APIs all the time and allows us to onboard new developers quickly, there is still a need for NuGet packages, here few examples:
+- Base API is a boilerplate code for being reused for new APIs which might contain a part of shared common code as not all services might need everything. 
+- If we update an existing shared code in the Base API, then we need to manually update all the services which are using the Base API. Instead, if we have a NuGet repository, we should just update the new version of the package inside the Base API and the services.
+- When a change is required we only need to do so in one place which helps to reduce the development time required to update code.
+- We might need to share multi-domains specific code that does not belong to the Base API. This will allow the source of truth to be available between different services and doesn’t require developers to update several APIs at the same time. 
 
 In our repos we use Gitversion & a GitHub Actions pipeline to automatically version our packages. The way it is set up on most of our package repos is:
-
-* Any push to any branch other than main/master increments the preview version number. Packages are published on every push. E.g. a version number could be 0.3.2-preview-0001. (Note: these branches must follow the pattern feature/(something) to be picked up by the pipeline.
-* Any push to the main/master branch updates the minor number
 
 
 # The Benefits
@@ -37,5 +32,7 @@ To ensure that consuming services are not affected by changes to our common pack
 
 For the purpose of onboarding new developers, we ensure that we have extensive documentation in the READMEs of our repositories that is kept up-to-date.
 
-For more information about the NuGet Packages at Hackney visit our GitHub Repository [here](https://github.com/LBHackney-IT/lbh-core)
+To see the different NuGet packages we have a Hackney please [visit this site](https://github.com/orgs/LBHackney-IT/packages)
+
+
 </TextToSpeech>
