@@ -1,6 +1,13 @@
 module.exports = {
   docs: [
-    'notes',
+    {
+      type: 'category',
+      label: 'Release Notes',
+      items:[
+        'release-notes-v3',
+        'release-notes-v4'
+      ],
+    },
     {
       type: 'category',
       label: 'Introduction',
@@ -20,6 +27,7 @@ module.exports = {
           'API Documentation': [
             'swagger_documentation',
             'api_specification',
+            'adr'
           ],
         },
       ],
@@ -95,7 +103,8 @@ module.exports = {
             {
               'NuGet Packages':[
                 'nuget_packages',
-
+                'shared-packages',
+                'core_packages'
               ],
             },
             'target_type',
