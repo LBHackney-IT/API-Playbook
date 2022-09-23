@@ -22,6 +22,7 @@ module.exports = {
       label: 'Governance',
       items: [
         'our_ways_of_working',
+        'developer_onboarding',
         'developer_hub',
         {
           'API Documentation': [
@@ -30,6 +31,7 @@ module.exports = {
             'adr'
           ],
         },
+        'api_compliance',
       ],
     },  
     'FAQs',
@@ -37,6 +39,7 @@ module.exports = {
       type: 'category',
       label: "Development Lifecycle",
       items: [
+        'development_lifecycle',
         {
           'Designing your API':[
             'naming_conventions',
@@ -189,7 +192,7 @@ module.exports = {
       items: [
         'data_migration',
         'pipeline_implementation',
-
+        'data_migration_playbook'
       ]
     },
     {
@@ -197,16 +200,19 @@ module.exports = {
       label: 'Support',
       items:[
         'loading_reference_data',
-        'reindexing_elasticsearch_data'
+        'reindexing_elasticsearch_data',
+        'cors_issues',
+        'access_to_apis'
       ],
     },
     {
       type: 'category',
-      label: 'Other Useful Infromation',
+      label: 'Other Useful Information',
       items:[
         'rds_access', 
         'ec2_access',
-        'postgresql'
+        'postgresql',
+        'ssm_secrets'
       ],
     },
     'contact_us'
