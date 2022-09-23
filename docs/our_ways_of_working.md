@@ -7,9 +7,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 <TextToSpeech>
 
-**Tech Ways of Working**
-
-**Deploying to Production**
+# Deploying to Production
 
 **Deployment Pipeline**
 

@@ -25,7 +25,7 @@ Watch the video version of this page if you prefer:
 
 Create a new file somewhere, named `GreetingGatewayTests.cs`.
 
-```c#
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -42,7 +42,7 @@ This doesn't test anything yet! We need to add some more code.
 
 Create the test class, and the initial signature of the test method.
 
-```c#
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -71,7 +71,7 @@ of the desired effect of calling the method.
 
 Now, add the actual test code!
 
-```c#
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -104,7 +104,7 @@ provide.
 
 Now that we have some test code, we can try to run it.
 
-```bash title="Terminal" {7}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
@@ -126,7 +126,7 @@ haven't made it yet!
 ### Create the Implementation:
 
 We will write the most minimal piece of code that will pass the test.
-```c#
+```csharp
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -180,7 +180,7 @@ should enforce it.
 What we want to do, is pass a name into `GetGreetingForName`, and have it return
 an appropriate greeting for that name.
 
-```c#
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -240,7 +240,7 @@ namespace TestApi.V1.Gateways
 
 Now the method takes the name to be greeted as an argument.
 
-```bash title="Terminal" {7}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
@@ -329,7 +329,7 @@ In this example, we use Bogus to pick a random first name to assign to the
 `name` variable. Every time the test is run, we assert that the method runs for
 the random name.
 
-```bash title="Terminal" {14}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
