@@ -22,6 +22,7 @@ module.exports = {
       label: 'Governance',
       items: [
         'our_ways_of_working',
+        'developer_onboarding',
         'developer_hub',
         {
           'API Documentation': [
@@ -30,6 +31,7 @@ module.exports = {
             'adr'
           ],
         },
+        'api_compliance',
       ],
     },  
     'FAQs',
