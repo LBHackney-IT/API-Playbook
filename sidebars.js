@@ -205,7 +205,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Other Useful Infromation',
+      label: 'Other Useful Information',
       items:[
         'rds_access', 
         'ec2_access',
