@@ -49,6 +49,8 @@ All HackIT internal developers and external agencies collaborating on Hackney pr
 - Using SSM to retrieve secrets at runtime
 - Development Lifecycle diagram
 - Architecture Decision Records
+- Developer Onboarding
+- API Compliance checklist
 
 
 *New Diagrams added*						
