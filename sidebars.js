@@ -32,9 +32,17 @@ module.exports = {
           ],
         },
         'api_compliance',
+        {
+          'Managing our code base and releases':[
+            {
+              'Code base management': [
+
+              ]
+            }
+          ]
+        }
       ],
     },  
-    'FAQs',
     {
       type: 'category',
       label: "Development Lifecycle",
@@ -58,11 +66,6 @@ module.exports = {
             },
             'api_boilerplate',
             'clean_architecture',
-            {
-              'API Versioning':[
-                'feature-toggle'
-              ],
-            },
           ],
         },
         {
@@ -131,7 +134,12 @@ module.exports = {
               ]
             }
           ]
-        }
+        },
+        {
+          'API Versioning':[
+            'feature-toggle'
+          ],
+        },
       ],
     },
     {
@@ -205,6 +213,7 @@ module.exports = {
         'access_to_apis'
       ],
     },
+    'FAQs',
     {
       type: 'category',
       label: 'Other Useful Information',
