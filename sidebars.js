@@ -109,6 +109,7 @@ module.exports = {
             {
               'NuGet Packages':[
                 'nuget_packages',
+                'create_nuget_packages',
                 'shared-packages',
                 'core_packages'
               ],

@@ -26,7 +26,7 @@ X-Ray can be used to identify API requests that are currently not monitored by C
 **Watch our overview on XRay below:**
 
 <figure class="video-container">
-  <iframe width="100%" src="https://www.youtube.com/embed/wdPm9hho9iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="100" src="https://www.youtube.com/embed/xlppiEGdvpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
 ### Types of XRay Maps:
