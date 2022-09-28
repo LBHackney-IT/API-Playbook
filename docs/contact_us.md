@@ -36,10 +36,10 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 - ** Angelo Di Massimo ** : Angelo.Dimassimo@Hackney.gov.uk - Junior Developer;
 
-- ** Callum Macpherson ** : Callum Macpherson@hackney.gov.uk - Junior Developer; 
+- ** Callum Macpherson ** : Callum.Macpherson@hackney.gov.uk - Junior Developer; 
 
 - ** Ben Reynolds-Carr ** : ben-reynolds-carr@hackney.gov.uk - Junior Developer;
- 
+
 - ** Marta Pederiva ** : Marta.Pederiva@hackney.gov.uk - Junior Developer;
 
 </TextToSpeech>
