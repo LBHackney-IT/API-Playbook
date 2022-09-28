@@ -61,7 +61,7 @@ If there isn’t, create one like the example below:
 
 - Where the source ARN is in the following format: arn:aws:execute-api:eu-west-2:[ACCOUNT ID]:*/authorizers/*
 
-### How to add to amend which Google groups are allowed for a given API?
+### How to amend which Google groups are allowed for a given API?
 There is a DynamoDB table in DevelopmentAPIs, StagingAPIs and ProductionAPIs AWS accounts.
 
 Table name: APIAuthenticatorData

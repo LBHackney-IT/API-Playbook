@@ -12,6 +12,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
 As per AWS’s documentation:
 
 > The solution collects, aggregates, and summarizes system-level metrics including CPU time, memory, disk and network usage. <br/>It also collects, aggregates, and summarizes diagnostic information such as cold starts and Lambda worker shutdowns to help you isolate issues with your Lambda functions and resolve them quickly.
+
 ## How to enable Lambda insights:
 
 Follow the guidance from AWS' [documentation](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-insights.html).
