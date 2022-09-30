@@ -124,6 +124,7 @@ module.exports = {
             'gitguardian',
             'sonarcloud',
             'terraform_compliance',
+            'serverless_safegaurd',
             'accessibility_testing'
           ],
         },
