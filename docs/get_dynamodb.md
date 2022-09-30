@@ -17,6 +17,8 @@ GET requests are used to **read** either a single or a collection resource.
 
 **Note:** GET requests on collection resources should provide sufficient filter and [pagination](pagination.md) mechanisms;
 
+[Here is an example PR to show how to build an GET endpoint using DynamoDB](https://github.com/LBHackney-IT/notes-api/pull/8/files)
+
 We have created a video that gives developers a good understanding of how we build API Endpoints using DynamoDB from beginning to end, following best practices. 
 
 ##  Video Tutorial:

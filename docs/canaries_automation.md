@@ -41,6 +41,8 @@ The process involves updating the serverless.yml file with the creation of canar
 We can then add some customisation for the region.
 
 ![Pic](./doc-images/canaries4.png)
+
+[Here is an example PR on how to automate canaries within our APIs](https://github.com/LBHackney-IT/patches-and-areas-api/pull/14/files)
 ## Why we have automated the process:
 
 Canary testing fits into the continuous delivery and continuous integration methodologies.  At Hackney Council we have been doing progressive delivery deployment for a while, and recently we observed an influx in queries from our developers and stakeholders wanting to learn how the automation of canaries can:

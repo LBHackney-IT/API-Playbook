@@ -15,6 +15,8 @@ Safeguards is a policy-as-code framework for Serverless Framework which enables 
 
 At Hackney we use Serverless Safeguards to ensure that our APIs meets our Security compliance requirements, such as adding a Lambda authentication to the API so that only the google groups defined can access the APIs. 
 
+[Here is an example PR to show how to setup serverless safeguards in your APIs](https://github.com/LBHackney-IT/asset-information-api/pull/51/files)
+
 **Benefits:**
 
 * Reduces risk of APIs being deployed without an Authorizer

@@ -18,6 +18,7 @@ Sonar cloud is mandatory to be setup for every public and private Hackney Reposi
 
 SonarCloud is enabled in our projects because it provides insight into the health of the Code. We use it to find, understand and fix issues since it highlights areas of our code that are vulnerable and presents these issues on a User Interface. It conceptualises the issues in context of the code and gives clear remediation guidance context with the code, for example, if there is a missing ‘alt’ attribute in an image tag then it would prompt you to include one and also give an explanation as to why it is important to include alt attribute in image tags.
 
+[Here is an example PR to show how to setup SonarCoud within your APIs](https://github.com/LBHackney-IT/asset-information-api/pull/42/files)
 
 ## Benefits of SonarCloud
 

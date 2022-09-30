@@ -19,6 +19,8 @@ DELETE requests are used to **delete** resources. The semantic is best described
 
 **Important:** After deleting a resource with DELETE, a GET request on the resource is expected to either return 404 (not found) or 410 (gone) depending on how the resource is represented after deletion. Under no circumstances the resource must be accessible after this operation on its endpoint.
 
+[Here is an example PR to show how to build a DELETE endpoint using DynamoDB](https://github.com/LBHackney-IT/contact-details-api/pull/30)
+
 We have created a video that gives developers a good understanding of how we build API Endpoints using DynaomDB from beginning to end, following best practices. 
 
 ##  Video Tutorial:

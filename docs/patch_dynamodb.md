@@ -31,6 +31,8 @@ PATCH requests are used to **update parts** of single resources, i.e. where only
 
 In practice [JSON Merge Patch](https://tools.ietf.org/html/rfc7396) quickly turns out to be too limited, especially when trying to update single objects in large collections (as part of the resource). In this cases [JSON Patch](http://tools.ietf.org/html/rfc6902) can shown its full power while still showing readable patch requests (see also [JSON patch vs. merge](http://erosb.github.io/post/json-patch-vs-merge-patch)).
 
+[Here is an example PR to show how to build a PATCH endpoint using DynamoDB](https://github.com/LBHackney-IT/tenure-api/pull/45/files)
+
 We have created a video that gives developers a good understanding of how we build API Endpoints using DynaomDB from beginning to end, following best practices. 
 
 ##  Video Tutorial:
