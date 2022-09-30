@@ -22,6 +22,8 @@ The semantic for single resource endpoints is best described as *"please execute
 
 **Tip:** Posting the same resource twice is by itself **not** required to be *idempotent* and may result in multiple resource instances.
 
+[Here is an example PR to show how to build a POST endpoint using DynamoDB](https://github.com/LBHackney-IT/tenure-api/pull/34)
+
 We have created a video that gives developers a good understanding of how we build API Endpoints using DynaomDB from beginning to end, following best practices. 
 
 ##  Video Tutorial:

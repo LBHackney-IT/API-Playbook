@@ -1,6 +1,6 @@
 ---
-id: gitgaurdian
-title: GitGaurdian
+id: gitguardian
+title: GitGuardian
 ---
 
 import TextToSpeech from '../src/SpeechComponent.js';

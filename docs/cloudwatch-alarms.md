@@ -54,6 +54,8 @@ This is only one example of alarms we could use; many services provide metrics w
 
 # How to Set Up CloudWatch Alarms
 
+[Here is an example PR to show how to setup CloudWatch Alarms](https://github.com/LBHackney-IT/notes-api/pull/68)
+
 We have created terraform template in the aws-common-terraform repository, which can then be referenced from your API repository. (see example below)
 
 ![alt_text](doc-images/cloudwatch-img2.png "image_tooltip")
@@ -81,7 +83,7 @@ AWS Documentation: [https://aws.amazon.com/premiumsupport/knowledge-center/cloud
 By default, when an SNS Topic is created, only the topic owner has permission to publish messages. To allow the alarm to publish alerts, add the following to the Access Policy:
 
 
-```
+```json
 {
     "Sid": "Allow_Publish_Alarms",
     "Effect": "Allow",
@@ -154,7 +156,7 @@ To enable encryption on your SNS topic, you need to use an AWS KMS key with a ke
 
 Your KMS key policy must contain the following for your alarm to be able to publish messages to the SNS topic correctly:
 
-```
+```json
 {
     "Sid": "Allow_CloudWatch_for_CMK",
     "Effect": "Allow",

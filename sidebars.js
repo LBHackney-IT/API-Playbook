@@ -74,6 +74,7 @@ module.exports = {
               'GET endpoint': [
                 'get_postgres',
                 'get_dynamodb',
+                'get_opensearch'
               ],
             },
             {
@@ -120,7 +121,7 @@ module.exports = {
         {
           'API Practices and tools':[
             'linting',
-            'gitgaurdian',
+            'gitguardian',
             'sonarcloud',
             'terraform_compliance',
             'accessibility_testing'
