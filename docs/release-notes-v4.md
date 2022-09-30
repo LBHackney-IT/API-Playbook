@@ -51,6 +51,7 @@ All HackIT internal developers and external agencies collaborating on Hackney pr
 - Architecture Decision Records
 - Developer Onboarding
 - API Compliance checklist
+- Example PRs for endpoints and tools setup
 
 
 *New Diagrams added*						
