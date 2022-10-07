@@ -123,6 +123,7 @@ module.exports = {
             'linting',
             'gitguardian',
             'sonarcloud',
+            'serverless_safegaurd',
             'terraform_compliance',
             'accessibility_testing'
           ],
