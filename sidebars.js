@@ -213,7 +213,8 @@ module.exports = {
         'loading_reference_data',
         'reindexing_elasticsearch_data',
         'cors_issues',
-        'access_to_apis'
+        'access_to_apis',
+        'creating_support_doc'
       ],
     },
     'FAQs',
