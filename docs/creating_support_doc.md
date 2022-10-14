@@ -16,7 +16,7 @@ To create support documentation that is easy to find and becomes quickly availab
 - Create a new branch in the API playbook GitHub repository.
 - Create a new file in the ‘docs’ folder of the repository.
 - Copy the template into the new file and fill in the information for each section described.
-    - The template can be found [here](#paper-template).
+    - The template can be found [here](https://github.com/LBHackney-IT/API-Playbook/blob/main/docs/support-issue-template.md).
 - Add the following to the top of the document to make it discoverable by the sidebar module
 ```
     ---
@@ -30,31 +30,3 @@ To create support documentation that is easy to find and becomes quickly availab
 - Create a pull request with your changes. 
 
 Once the changes are approved and merged, the support documentation will be available at https://playbook.hackney.gov.uk/API-Playbook/. 
-
-
-—--------------------
-
-### Paper template
-
-#### [Issue Title]
-
-**NB:** Do not include any screenshots or text that contains sensitive information such as database connection strings, personally identifiable information or access tokens.
-
-#### Description
-Add description of the issue faced, including screenshots, communication received from users and any links to references describing the issue and potential solution.
-
-#### Affected product
-Name of the digital product(s) that have been affected. E.g. Manage my Home or All products that consume the Housing Search API
-
-#### Environment
-In which environment is the issue observed
-*Production / Staging / Development / All*
-
-#### Steps taken to reproduce
-Include any steps that were used to reproduce the issue (if applicable)
-
-#### Solution
-Include a step-by-step guide (including screenshots where appropriate) of how to resolve the issue should it occur again.
-
-Please assume that the reader of this document does not have prior knowledge of the system/services/technology used and be as descriptive as possible.
-
