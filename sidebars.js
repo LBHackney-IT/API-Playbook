@@ -210,11 +210,11 @@ module.exports = {
       type: 'category',
       label: 'Support',
       items:[
+        'creating_support_doc',
         'loading_reference_data',
         'reindexing_elasticsearch_data',
         'cors_issues',
         'access_to_apis',
-        'creating_support_doc'
       ],
     },
     'FAQs',
