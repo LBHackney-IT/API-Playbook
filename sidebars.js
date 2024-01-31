@@ -215,6 +215,7 @@ module.exports = {
         'reindexing_elasticsearch_data',
         'cors_issues',
         'access_to_apis',
+        'data_dictionary'
       ],
     },
     'FAQs',
