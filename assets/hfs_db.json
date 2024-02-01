@@ -1,5 +1,5 @@
 {
-    "name": "Repairs Database", "value": "", 
+    "name": "HFS SQL Server Database", "value": "", 
     "children": [
         { "name": "ActionDiaryAux", "value": 1355, "totalSize": 2552, "children": [
                 { "name": "Balance", "value": "decimal" },
