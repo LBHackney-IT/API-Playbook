@@ -1,7 +1,7 @@
 {
     "name": "Repairs Database", "value": "", 
     "children": [
-        { "name": "ActionDiaryAux", "value": 1355, "totalSize": 2.552, "children": [
+        { "name": "ActionDiaryAux", "value": 1355, "totalSize": 2552, "children": [
                 { "name": "Balance", "value": "decimal" },
                 { "name": "Username", "value": "nvarchar" },
                 { "name": "ActionDate", "value": "smalldatetime" },
@@ -14,7 +14,7 @@
                 { "name": "TenancyAgreementRef", "value": "nvarchar" }
             ] 
         },
-        { "name": "ActionDiaryHistory", "value": 16785, "totalSize": 10.184, "children": [
+        { "name": "ActionDiaryHistory", "value": 16785, "totalSize": 10184, "children": [
                 { "name": "IsRead", "value": "bit" },
                 { "name": "ActionComment", "value": "nvarchar" },
                 { "name": "Balance", "value": "decimal" },
@@ -28,7 +28,7 @@
                 { "name": "ActionDate", "value": "smalldatetime" }            
             ] 
         },
-        { "name": "Adjustment", "value": 490620, "totalSize": 39.32, "children": [
+        { "name": "Adjustment", "value": 490620, "totalSize": 39320, "children": [
                 { "name": "Id", "value": "int" },
                 { "name": "PaymentRef", "value": "nvarchar" },
                 { "name": "TransactionType", "value": "char" },
@@ -38,7 +38,7 @@
                 { "name": "TimeStamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "AdjustmentAux", "value": 175000, "totalSize": 45.576, "children": [
+        { "name": "AdjustmentAux", "value": 175000, "totalSize": 45576, "children": [
                 { "name": "Id", "value": "int" },
                 { "name": "PaymentRef", "value": "nvarchar" },
                 { "name": "TransactionType", "value": "char" },
@@ -47,7 +47,7 @@
                 { "name": "TimeStamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "BatchLog", "value": 14074, "totalSize": 2.224, "children": [
+        { "name": "BatchLog", "value": 14074, "totalSize": 2224, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "Type", "value": "nvarchar" },
                 { "name": "StartTime", "value": "datetimeoffset" },
@@ -55,7 +55,7 @@
                 { "name": "IsSuccess", "value": "bit" }            
             ] 
         },
-        { "name": "BatchLogError", "value": 417771, "totalSize": 54.88, "children": [
+        { "name": "BatchLogError", "value": 417771, "totalSize": 54880, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "Type", "value": "nvarchar" },
                 { "name": "Message", "value": "nvarchar" },
@@ -63,7 +63,7 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "BatchReport", "value": 616, "totalSize": 0.28, "children": [
+        { "name": "BatchReport", "value": 616, "totalSize": 280, "children": [
                 { "name": "IsSuccess", "value": "bit" },
                 { "name": "Link", "value": "varchar" },
                 { "name": "ReportDate", "value": "datetime" },
@@ -79,7 +79,7 @@
                 { "name": "TransactionType", "value": "varchar" }            
             ] 
         },
-        { "name": "CalculatedCurrentBalance", "value": 113575, "totalSize": 20.64, "children": [
+        { "name": "CalculatedCurrentBalance", "value": 113575, "totalSize": 20640, "children": [
                 { "name": "TenancyAgreementRef", "value": "char" },
                 { "name": "RentAccount", "value": "char" },
                 { "name": "RentGroup", "value": "char" },
@@ -96,7 +96,7 @@
                 { "name": "Balance2024Wk1Wk52", "value": "decimal" }            
             ] 
         },
-        { "name": "CashSuspenseTransactionAux", "value": 0, "totalSize": 0.08, "children": [
+        { "name": "CashSuspenseTransactionAux", "value": 0, "totalSize": 80, "children": [
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "NewRentAccount", "value": "nvarchar" },
                 { "name": "Amount", "value": "decimal" },
@@ -105,7 +105,7 @@
                 { "name": "Date", "value": "smalldatetime" }            
             ] 
         },
-        { "name": "Charges", "value": 653079, "totalSize": 84.928, "children": [
+        { "name": "Charges", "value": 653079, "totalSize": 84928, "children": [
                 { "name": "RentGroup", "value": "char" },
                 { "name": "Id", "value": "bigint" },
                 { "name": "PropertyRef", "value": "nvarchar" },
@@ -117,7 +117,7 @@
                 { "name": "Year", "value": "int" }            
             ] 
         },
-        { "name": "ChargesAux", "value": 27, "totalSize": 0.592, "children": [
+        { "name": "ChargesAux", "value": 27, "totalSize": 592, "children": [
                 { "name": "RentGroup", "value": "nvarchar" },
                 { "name": "Id", "value": "bigint" },
                 { "name": "PropertyRef", "value": "nvarchar" },
@@ -174,14 +174,14 @@
                 { "name": "Year", "value": "int" }            
             ] 
         },
-        { "name": "ChargesBatchYears", "value": 1651, "totalSize": 0.288, "children": [
+        { "name": "ChargesBatchYears", "value": 1651, "totalSize": 288, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "ProcessingDate", "value": "date" },
                 { "name": "Year", "value": "int" },
                 { "name": "IsRead", "value": "bit" }            
             ] 
         },
-        { "name": "ChargesHistory", "value": 6271908, "totalSize": 1072.84, "children": [
+        { "name": "ChargesHistory", "value": 6271908, "totalSize": 1072840, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "TenancyAgreementRef", "value": "nvarchar" },
                 { "name": "PropertyRef", "value": "nvarchar" },
@@ -196,7 +196,7 @@
                 { "name": "LastWeekAdjustment", "value": "bit" }            
             ] 
         },
-        { "name": "ChargesHistoryAdjustments", "value": 1, "totalSize": 0.072, "children": [
+        { "name": "ChargesHistoryAdjustments", "value": 1, "totalSize": 72, "children": [
                 { "name": "Id", "value": "int" },
                 { "name": "StartDate", "value": "date" },
                 { "name": "EndDate", "value": "date" },
@@ -206,13 +206,13 @@
                 { "name": "ExclusionSetRef", "value": "int" }            
             ] 
         },
-        { "name": "ChargesHistoryAdjustmentsExclusions", "value": 90, "totalSize": 0.072, "children": [
+        { "name": "ChargesHistoryAdjustmentsExclusions", "value": 90, "totalSize": 72, "children": [
                 { "name": "Id", "value": "int" },
                 { "name": "ExclusionSetRef", "value": "int" },
                 { "name": "PropertyRef", "value": "char" }            
             ] 
         },
-        { "name": "CurrentBalance", "value": 113575, "totalSize": 15, "children": [
+        { "name": "CurrentBalance", "value": 113575, "totalSize": 15000, "children": [
                 { "name": "TenancyAgreementRef", "value": "char" },
                 { "name": "RentAccount", "value": "char" },
                 { "name": "RentGroup", "value": "char" },
@@ -224,7 +224,7 @@
                 { "name": "Balance2023Wk1Onwards", "value": "decimal" }            
             ] 
         },
-        { "name": "DirectDebit", "value": 4570, "totalSize": 0.592, "children": [
+        { "name": "DirectDebit", "value": 4570, "totalSize": 592, "children": [
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "Active", "value": "bit" },
                 { "name": "DueDay", "value": "tinyint" },
@@ -233,7 +233,7 @@
                 { "name": "Id", "value": "bigint" }            
             ] 
         },
-        { "name": "DirectDebitAux", "value": 159930, "totalSize": 56.048, "children": [
+        { "name": "DirectDebitAux", "value": 159930, "totalSize": 56048, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "Date", "value": "smalldatetime" },
@@ -241,7 +241,7 @@
                 { "name": "TimeStamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "DirectDebitHistory", "value": 259004, "totalSize": 29.656, "children": [
+        { "name": "DirectDebitHistory", "value": 259004, "totalSize": 29656, "children": [
                 { "name": "TimeStamp", "value": "datetimeoffset" },
                 { "name": "Date", "value": "datetime" },
                 { "name": "Id", "value": "bigint" },
@@ -250,7 +250,7 @@
                 { "name": "RentAccount", "value": "nvarchar" }            
             ] 
         },
-        { "name": "DirectDebitSuspenseAccounts", "value": 78, "totalSize": 0.144, "children": [
+        { "name": "DirectDebitSuspenseAccounts", "value": 78, "totalSize": 144, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "DirectDebitHistoryId", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
@@ -261,7 +261,7 @@
                 { "name": "TimeStamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "DMTransactionEntity", "value": 144127, "totalSize": 26.248, "children": [
+        { "name": "DMTransactionEntity", "value": 144127, "totalSize": 26248, "children": [
                 { "name": "id", "value": "uniqueidentifier" },
                 { "name": "target_id", "value": "uniqueidentifier" },
                 { "name": "target_type", "value": "varchar" },
@@ -284,7 +284,7 @@
                 { "name": "fund", "value": "varchar" }            
             ] 
         },
-        { "name": "ErrorLog", "value": 267, "totalSize": 0.288, "children": [
+        { "name": "ErrorLog", "value": 267, "totalSize": 288, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "TableName", "value": "nvarchar" },
                 { "name": "RowId", "value": "nvarchar" },
@@ -293,7 +293,7 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "GoogleFileSetting", "value": 22, "totalSize": 0.072, "children": [
+        { "name": "GoogleFileSetting", "value": 22, "totalSize": 72, "children": [
                 { "name": "Id", "value": "int" },
                 { "name": "GoogleIdentifier", "value": "nvarchar" },
                 { "name": "FileType", "value": "nvarchar" },
@@ -303,7 +303,7 @@
                 { "name": "FileYear", "value": "int" }            
             ] 
         },
-        { "name": "MABalanceTransactionDetails", "value": 9729834, "totalSize": 1017.28, "children": [
+        { "name": "MABalanceTransactionDetails", "value": 9729834, "totalSize": 1017280, "children": [
                 { "name": "tag_ref", "value": "varchar" },
                 { "name": "date", "value": "smalldatetime" },
                 { "name": "transaction_details", "value": "varchar" },
@@ -313,7 +313,7 @@
                 { "name": "row_num", "value": "int" }            
             ] 
         },
-        { "name": "MAContacts", "value": 303, "totalSize": 0.144, "children": [
+        { "name": "MAContacts", "value": 303, "totalSize": 144, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "con_name", "value": "varchar" },
                 { "name": "con_address", "value": "char" },
@@ -321,7 +321,7 @@
                 { "name": "con_phone1", "value": "char" }            
             ] 
         },
-        { "name": "MAMember", "value": 125448, "totalSize": 13.84, "children": [
+        { "name": "MAMember", "value": 125448, "totalSize": 13840, "children": [
                 { "name": "house_ref", "value": "char" },
                 { "name": "person_no", "value": "numeric" },
                 { "name": "gender", "value": "char" },
@@ -336,7 +336,7 @@
                 { "name": "dob", "value": "datetime" }            
             ] 
         },
-        { "name": "MAProperty", "value": 66580, "totalSize": 49.288, "children": [
+        { "name": "MAProperty", "value": 66580, "totalSize": 49288, "children": [
                 { "name": "prop_ref", "value": "char" },
                 { "name": "major_ref", "value": "char" },
                 { "name": "man_scheme", "value": "char" },
@@ -359,7 +359,7 @@
                 { "name": "post_desig", "value": "char" }            
             ] 
         },
-        { "name": "MATenancyAgreement", "value": 118133, "totalSize": 82.312, "children": [
+        { "name": "MATenancyAgreement", "value": 118133, "totalSize": 82312, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "house_ref", "value": "char" },
@@ -390,13 +390,13 @@
                 { "name": "agr_type", "value": "char" }            
             ] 
         },
-        { "name": "MonthsByYear", "value": 288, "totalSize": 0.072, "children": [
+        { "name": "MonthsByYear", "value": 288, "totalSize": 72, "children": [
                 { "name": "YearNo", "value": "int" },
                 { "name": "MonthNo", "value": "int" },
                 { "name": "StartDate", "value": "datetime" }            
             ] 
         },
-        { "name": "OperatingBalance", "value": 4606, "totalSize": 10, "children": [
+        { "name": "OperatingBalance", "value": 4606, "totalSize": 10000, "children": [
                 { "name": "rentgrp_desc", "value": "char" },
                 { "name": "post_year", "value": "int" },
                 { "name": "post_prdno", "value": "decimal" },
@@ -497,7 +497,7 @@
                 { "name": "WON", "value": "numeric" }            
             ] 
         },
-        { "name": "RentGroupSumr", "value": 370, "totalSize": 0.072, "children": [
+        { "name": "RentGroupSumr", "value": 370, "totalSize": 72, "children": [
                 { "name": "RentGroup", "value": "varchar" },
                 { "name": "YearNo", "value": "int" },
                 { "name": "PeriodNo", "value": "int" },
@@ -506,7 +506,7 @@
                 { "name": "TotalHB", "value": "decimal" }            
             ] 
         },
-        { "name": "rtrans2011", "value": 10529855, "totalSize": 787.72, "children": [
+        { "name": "rtrans2011", "value": 10529855, "totalSize": 787720, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -520,7 +520,7 @@
                 { "name": "trans_ref", "value": "char" }            
             ] 
         },
-        { "name": "rtrans2012", "value": 10855484, "totalSize": 812.264, "children": [
+        { "name": "rtrans2012", "value": 10855484, "totalSize": 812264, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -534,7 +534,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2013", "value": 12798839, "totalSize": 957.144, "children": [
+        { "name": "rtrans2013", "value": 12798839, "totalSize": 957144, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -548,7 +548,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2014", "value": 12533191, "totalSize": 937.312, "children": [
+        { "name": "rtrans2014", "value": 12533191, "totalSize": 937312, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -562,7 +562,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2015", "value": 12392432, "totalSize": 927.2, "children": [
+        { "name": "rtrans2015", "value": 12392432, "totalSize": 927200, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -576,7 +576,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2016", "value": 12505935, "totalSize": 935.384, "children": [
+        { "name": "rtrans2016", "value": 12505935, "totalSize": 935384, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -590,7 +590,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2017", "value": 12263239, "totalSize": 917.216, "children": [
+        { "name": "rtrans2017", "value": 12263239, "totalSize": 917216, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -604,7 +604,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2018", "value": 269756, "totalSize": 20.76, "children": [
+        { "name": "rtrans2018", "value": 269756, "totalSize": 20760, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -618,7 +618,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2019", "value": 12369185, "totalSize": 925.008, "children": [
+        { "name": "rtrans2019", "value": 12369185, "totalSize": 925008, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -632,7 +632,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2020", "value": 12677366, "totalSize": 948.048, "children": [
+        { "name": "rtrans2020", "value": 12677366, "totalSize": 948048, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -646,7 +646,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },
-        { "name": "rtrans2021", "value": 6116981, "totalSize": 477.96, "children": [
+        { "name": "rtrans2021", "value": 6116981, "totalSize": 477960, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -660,7 +660,7 @@
                 { "name": "trans_ref", "value": "char" }           
             ] 
         },        
-        { "name": "SpreadSheetNewPatches", "value": 21516, "totalSize": 4.936, "children": [
+        { "name": "SpreadSheetNewPatches", "value": 21516, "totalSize": 4936, "children": [
                 { "name": "Lis", "value": "varchar" },
                 { "name": "Area", "value": "varchar" },
                 { "name": "Type", "value": "varchar" },
@@ -682,7 +682,7 @@
                 { "name": "Ward", "value": "varchar" }             
             ] 
         },
-        { "name": "SSCurrentRentPosition", "value": 20577, "totalSize": 13.064, "children": [
+        { "name": "SSCurrentRentPosition", "value": 20577, "totalSize": 13064, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "PropertyRef", "value": "nvarchar" },
                 { "name": "PaymentRef", "value": "nvarchar" },
@@ -737,7 +737,7 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }                 
             ] 
         },
-        { "name": "SSMiniSumr", "value": 737574, "totalSize": 53.704, "children": [
+        { "name": "SSMiniSumr", "value": 737574, "totalSize": 53704, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "post_year", "value": "int" },
                 { "name": "post_prdno", "value": "int" },
@@ -748,7 +748,7 @@
                 { "name": "tot_rec_adj", "value": "decimal" }            
             ] 
         },
-        { "name": "SSMiniTransaction", "value": 29175735, "totalSize": 7757.648, "children": [
+        { "name": "SSMiniTransaction", "value": 29175735, "totalSize": 7757648, "children": [
                     { "name": "tag_ref", "value": "char" },
                     { "name": "prop_ref", "value": "char" },
                     { "name": "rentgroup", "value": "char" },
@@ -764,7 +764,7 @@
                     { "name": "origin_desc", "value": "varchar" }            
                 ] 
             },
-            { "name": "SSMiniTransactionHist", "value": 4768994, "totalSize": 326.152, "children": [
+            { "name": "SSMiniTransactionHist", "value": 4768994, "totalSize": 326152, "children": [
                     { "name": "tag_ref", "value": "char" },
                     { "name": "prop_ref", "value": "char" },
                     { "name": "rentgroup", "value": "char" },
@@ -777,7 +777,7 @@
                     { "name": "Timestamp", "value": "datetimeoffset" }            
                 ] 
             },
-            { "name": "SSRentBreakdown", "value": 21640, "totalSize": 12.744, "children": [
+            { "name": "SSRentBreakdown", "value": 21640, "totalSize": 12744, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "PropertyRef", "value": "nvarchar" },
                 { "name": "TenancyAgreementRef", "value": "nvarchar" },
@@ -827,7 +827,7 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "SSServiceChargePaymentsReceived", "value": 9474, "totalSize": 4.232, "children": [
+        { "name": "SSServiceChargePaymentsReceived", "value": 9474, "totalSize": 4232, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "ArrearPatch", "value": "nvarchar" },
                 { "name": "TenancyAgreementRef", "value": "nvarchar" },
@@ -860,7 +860,7 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "SuspenseTransactionAux", "value": 0, "totalSize": 0.288, "children": [
+        { "name": "SuspenseTransactionAux", "value": 0, "totalSize": 288, "children": [
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "Type", "value": "varchar" },
                 { "name": "NewRentAccount", "value": "nvarchar" },
@@ -870,14 +870,14 @@
                 { "name": "Date", "value": "smalldatetime" }            
             ] 
         },
-        { "name": "tenagree_uh", "value": 107372, "totalSize": 5.704, "children": [
+        { "name": "tenagree_uh", "value": 107372, "totalSize": 5704, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "u_saff_rentacc", "value": "char" },
                 { "name": "cot", "value": "smalldatetime" },
                 { "name": "eot", "value": "smalldatetime" }            
             ] 
         },
-        { "name": "TenancyAgreementAux", "value": 3, "totalSize": 0.52, "children": [
+        { "name": "TenancyAgreementAux", "value": 3, "totalSize": 520, "children": [
                 { "name": "Title", "value": "nvarchar" },
                 { "name": "Address", "value": "nvarchar" },
                 { "name": "DateOfBirth", "value": "smalldatetime" },
@@ -896,7 +896,7 @@
                 { "name": "ShortAddress", "value": "nvarchar" }            
             ] 
         },
-        { "name": "UHAraction", "value": 7829478, "totalSize": 6871.208, "children": [
+        { "name": "UHAraction", "value": 7829478, "totalSize": 6871208, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "action_set", "value": "int" },
                 { "name": "action_no", "value": "int" },
@@ -929,7 +929,7 @@
                 { "name": "u_saff_araction_ref", "value": "char" }            
             ] 
         },
-        { "name": "UHContacts", "value": 139224, "totalSize": 180.816, "children": [
+        { "name": "UHContacts", "value": 139224, "totalSize": 180816, "children": [
                 { "name": "con_key", "value": "int" },
                 { "name": "con_ref", "value": "char" },
                 { "name": "con_name", "value": "varchar" },
@@ -955,7 +955,7 @@
                 { "name": "comp_display", "value": "char" }            
             ] 
         },
-        { "name": "UHDebitItem", "value": 4175180, "totalSize": 796.368, "children": [
+        { "name": "UHDebitItem", "value": 4175180, "totalSize": 796368, "children": [
                 { "name": "prop_ref", "value": "nvarchar" },
                 { "name": "tag_ref", "value": "nvarchar" },
                 { "name": "deb_code", "value": "nvarchar" },
@@ -975,7 +975,7 @@
                 { "name": "debrate", "value": "numeric" }            
             ] 
         },
-        { "name": "UHDebType", "value": 60, "totalSize": 0.072, "children": [
+        { "name": "UHDebType", "value": 60, "totalSize": 720, "children": [
                 { "name": "deb_code", "value": "char" },
                 { "name": "deb_desc", "value": "char" },
                 { "name": "deb_cat", "value": "char" },
@@ -990,7 +990,7 @@
                 { "name": "void_charge", "value": "bit" }            
             ] 
         },
-        { "name": "UHHousehold", "value": 96836, "totalSize": 15.28, "children": [
+        { "name": "UHHousehold", "value": 96836, "totalSize": 15280, "children": [
                 { "name": "house_ref", "value": "char" },
                 { "name": "post_code", "value": "char" },
                 { "name": "telephone", "value": "char" },
@@ -1003,13 +1003,13 @@
                 { "name": "househ_sid", "value": "int" }            
             ] 
         },
-        { "name": "uhlive_dob", "value": 114438, "totalSize": 3.976, "children": [
+        { "name": "uhlive_dob", "value": 114438, "totalSize": 3976, "children": [
                 { "name": "house_ref", "value": "char" },
                 { "name": "person_no", "value": "decimal" },
                 { "name": "dob", "value": "datetime" }            
             ] 
         },
-        { "name": "UHMember", "value": 125447, "totalSize": 13.832, "children": [
+        { "name": "UHMember", "value": 125447, "totalSize": 13832, "children": [
                 { "name": "house_ref", "value": "char" },
                 { "name": "person_no", "value": "numeric" },
                 { "name": "gender", "value": "char" },
@@ -1024,7 +1024,7 @@
                 { "name": "dob", "value": "datetime" }            
             ] 
         },
-        { "name": "UHMiniSumr", "value": 2240336, "totalSize": 176.456, "children": [
+        { "name": "UHMiniSumr", "value": 2240336, "totalSize": 176456, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "post_year", "value": "int" },
                 { "name": "post_prdno", "value": "int" },
@@ -1035,7 +1035,7 @@
                 { "name": "tot_rec_adj", "value": "decimal" }            
             ] 
         },
-        { "name": "UHMiniTransaction", "value": 127349161, "totalSize": 32796, "children": [
+        { "name": "UHMiniTransaction", "value": 127349161, "totalSize": 32796000, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgroup", "value": "char" },
@@ -1049,14 +1049,14 @@
                 { "name": "trans_ref", "value": "char" }            
             ] 
         },
-        { "name": "UHOccupiedStatus", "value": 12, "totalSize": 0.072, "children": [
+        { "name": "UHOccupiedStatus", "value": 12, "totalSize": 720, "children": [
                 { "name": "occ_status", "value": "char" },
                 { "name": "occ_desc", "value": "char" },
                 { "name": "occupied", "value": "bit" },
                 { "name": "occstat_sid", "value": "int" }            
             ] 
         },
-        { "name": "UHParis", "value": 17, "totalSize": 0.072, "children": [
+        { "name": "UHParis", "value": 17, "totalSize": 720, "children": [
                 { "name": "PCRTransactionType", "value": "varchar" },
                 { "name": "UHTReceiptType", "value": "varchar" },
                 { "name": "Description", "value": "varchar" }            
@@ -1072,7 +1072,7 @@
                 { "name": "postcode_sid", "value": "int" }            
             ] 
         },
-        { "name": "UHProperty", "value": 66577, "totalSize": 49.152, "children": [
+        { "name": "UHProperty", "value": 66577, "totalSize": 49152, "children": [
                 { "name": "prop_ref", "value": "char" },
                 { "name": "major_ref", "value": "char" },
                 { "name": "man_scheme", "value": "char" },
@@ -1095,14 +1095,14 @@
                 { "name": "post_desig", "value": "char" }            
             ] 
         },
-        { "name": "UHPropertyType", "value": 13, "totalSize": 0.072, "children": [
+        { "name": "UHPropertyType", "value": 13, "totalSize": 720, "children": [
                 { "name": "pt_prop_code", "value": "char" },
                 { "name": "pt_prop_desc", "value": "char" },
                 { "name": "pt_prop_type", "value": "char" },
                 { "name": "proptype_sid", "value": "int" }            
             ] 
         },
-        { "name": "UHRecType", "value": 32, "totalSize": 0.072, "children": [
+        { "name": "UHRecType", "value": 32, "totalSize": 720, "children": [
                 { "name": "rec_code", "value": "char" },
                 { "name": "rec_desc", "value": "char" },
                 { "name": "rec_group", "value": "numeric" },
@@ -1110,7 +1110,7 @@
                 { "name": "rec_dd", "value": "bit" }                
             ] 
         },
-        { "name": "UHRent", "value": 60411, "totalSize": 11.464, "children": [
+        { "name": "UHRent", "value": 60411, "totalSize": 11464, "children": [
                 { "name": "prop_ref", "value": "char" },
                 { "name": "rentgrp_ref", "value": "char" },
                 { "name": "occ_status", "value": "char" },
@@ -1125,7 +1125,7 @@
                 { "name": "rent_sid", "value": "int" }            
             ] 
         },
-        { "name": "UHRentGroup", "value": 9, "totalSize": 0.072, "children": [
+        { "name": "UHRentGroup", "value": 9, "totalSize": 720, "children": [
                 { "name": "rentgrp_ref", "value": "char" },
                 { "name": "rentgrp_desc", "value": "char" },
                 { "name": "prd_code", "value": "char" },
@@ -1136,12 +1136,12 @@
                 { "name": "spreadsheet_tab_name", "value": "nvarchar" }            
             ] 
         },
-        { "name": "UHRentSource", "value": 6, "totalSize": 0.072, "children": [
+        { "name": "UHRentSource", "value": 6, "totalSize": 720, "children": [
                 { "name": "trans_src", "value": "char" },
                 { "name": "src_desc", "value": "char" }            
             ] 
         },
-        { "name": "UHTenancyAgreement", "value": 118133, "totalSize": 45.376, "children": [
+        { "name": "UHTenancyAgreement", "value": 118133, "totalSize": 45376, "children": [
                 { "name": "tag_ref", "value": "char" },
                 { "name": "prop_ref", "value": "char" },
                 { "name": "house_ref", "value": "char" },
@@ -1174,7 +1174,7 @@
                 { "name": "master_tag_ref", "value": "char" }            
             ] 
         },
-        { "name": "UHTenure", "value": 31, "totalSize": 0.072, "children": [
+        { "name": "UHTenure", "value": 31, "totalSize": 720, "children": [
                 { "name": "ten_type", "value": "char" },
                 { "name": "ten_desc", "value": "char" },
                 { "name": "ten_cat", "value": "char" },
@@ -1182,7 +1182,7 @@
                 { "name": "leasehold", "value": "bit" }            
             ] 
         },
-        { "name": "uhtlive_contacts", "value": 139224, "totalSize": 185.232, "children": [
+        { "name": "uhtlive_contacts", "value": 139224, "totalSize": 185232, "children": [
                 { "name": "con_key", "value": "int" },
                 { "name": "con_ref", "value": "char" },
                 { "name": "con_name", "value": "varchar" },
@@ -1208,7 +1208,7 @@
                 { "name": "comp_display", "value": "char" }            
             ] 
         },
-        { "name": "UPCashDump", "value": 1341675, "totalSize": 373.792, "children": [
+        { "name": "UPCashDump", "value": 1341675, "totalSize": 373792, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "FullText", "value": "nvarchar" },
                 { "name": "IsRead", "value": "bit" },
@@ -1216,14 +1216,14 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "UPCashDumpFileName", "value": 864, "totalSize": 0.144, "children": [
+        { "name": "UPCashDumpFileName", "value": 864, "totalSize": 144, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "FileName", "value": "nvarchar" },
                 { "name": "IsSuccess", "value": "bit" },
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "UPCashLoad", "value": 1341675, "totalSize": 145.88, "children": [
+        { "name": "UPCashLoad", "value": 1341675, "totalSize": 145880, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "PaymentSource", "value": "nvarchar" },
@@ -1236,7 +1236,7 @@
                 { "name": "IsRead", "value": "bit" }            
             ] 
         },
-        { "name": "UPCashLoadSuspenseAccounts", "value": 9016, "totalSize": 1.408, "children": [
+        { "name": "UPCashLoadSuspenseAccounts", "value": 9016, "totalSize": 1408, "children": [
                 { "name": "IsResolved", "value": "bit" },
                 { "name": "Timestamp", "value": "datetimeoffset" },
                 { "name": "CivicaCode", "value": "nvarchar" },
@@ -1250,7 +1250,7 @@
                 { "name": "Id", "value": "int" }            
             ] 
         },
-        { "name": "UPHousingCashDump", "value": 1914172, "totalSize": 442.2, "children": [
+        { "name": "UPHousingCashDump", "value": 1914172, "totalSize": 442200, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "FullText", "value": "nvarchar" },
                 { "name": "IsRead", "value": "bit" },
@@ -1258,14 +1258,14 @@
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "UPHousingCashDumpFileName", "value": 175, "totalSize": 0.072, "children": [
+        { "name": "UPHousingCashDumpFileName", "value": 175, "totalSize": 72, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "FileName", "value": "nvarchar" },
                 { "name": "IsSuccess", "value": "bit" },
                 { "name": "Timestamp", "value": "datetimeoffset" }            
             ] 
         },
-        { "name": "UPHousingCashLoad", "value": 1914172, "totalSize": 268.048, "children": [
+        { "name": "UPHousingCashLoad", "value": 1914172, "totalSize": 268048, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "AcademyClaimRef", "value": "nvarchar" },
                 { "name": "column2", "value": "nvarchar" },
@@ -1281,7 +1281,7 @@
                 { "name": "IsRead", "value": "bit" }            
             ] 
         },
-        { "name": "UPHousingCashLoadSuspenseAccounts", "value": 935, "totalSize": 0.488, "children": [
+        { "name": "UPHousingCashLoadSuspenseAccounts", "value": 935, "totalSize": 488, "children": [
                 { "name": "Id", "value": "bigint" },
                 { "name": "AcademyClaimRef", "value": "nvarchar" },
                 { "name": "column2", "value": "nvarchar" },
@@ -1296,80 +1296,6 @@
                 { "name": "UPHousingCashDumpId", "value": "bigint" },
                 { "name": "Timestamp", "value": "datetimeoffset" },
                 { "name": "IsResolved", "value": "bit" }            
-            ] 
-        },
-        { "name": "WeeklyTransactions", "value": 0, "totalSize": 0, "children": [
-                { "name": "tag_ref", "value": "char" },
-                { "name": "rentgrp_desc", "value": "char" },
-                { "name": "post_prdno", "value": "decimal" },
-                { "name": "total_charged", "value": "numeric" },
-                { "name": "total_paid", "value": "numeric" },
-                { "name": "total_hb_paid", "value": "numeric" },
-                { "name": "DAT", "value": "numeric" },
-                { "name": "DBR", "value": "numeric" },
-                { "name": "DC4", "value": "numeric" },
-                { "name": "DC5", "value": "numeric" },
-                { "name": "DCB", "value": "numeric" },
-                { "name": "DCC", "value": "numeric" },
-                { "name": "DCE", "value": "numeric" },
-                { "name": "DCI", "value": "numeric" },
-                { "name": "DCO", "value": "numeric" },
-                { "name": "DCP", "value": "numeric" },
-                { "name": "DCT", "value": "numeric" },
-                { "name": "DGA", "value": "numeric" },
-                { "name": "DGM", "value": "numeric" },
-                { "name": "DGR", "value": "numeric" },
-                { "name": "DHA", "value": "numeric" },
-                { "name": "DHE", "value": "numeric" },
-                { "name": "DHM", "value": "numeric" },
-                { "name": "DIN", "value": "numeric" },
-                { "name": "DIT", "value": "numeric" },
-                { "name": "DKF", "value": "numeric" },
-                { "name": "DLL", "value": "numeric" },
-                { "name": "DLP", "value": "numeric" },
-                { "name": "DMC", "value": "numeric" },
-                { "name": "DMJ", "value": "numeric" },
-                { "name": "DMR", "value": "numeric" },
-                { "name": "DR5", "value": "numeric" },
-                { "name": "DRP", "value": "numeric" },
-                { "name": "DRR", "value": "numeric" },
-                { "name": "DSA", "value": "numeric" },
-                { "name": "DSB", "value": "numeric" },
-                { "name": "DSC", "value": "numeric" },
-                { "name": "DSJ", "value": "numeric" },
-                { "name": "DSO", "value": "numeric" },
-                { "name": "DSR", "value": "numeric" },
-                { "name": "DST", "value": "numeric" },
-                { "name": "DTA", "value": "numeric" },
-                { "name": "DTC", "value": "numeric" },
-                { "name": "DTL", "value": "numeric" },
-                { "name": "DTV", "value": "numeric" },
-                { "name": "DVA", "value": "numeric" },
-                { "name": "DWR", "value": "numeric" },
-                { "name": "DWS", "value": "numeric" },
-                { "name": "DWW", "value": "numeric" },
-                { "name": "RCI", "value": "numeric" },
-                { "name": "RPD", "value": "numeric" },
-                { "name": "RSJ", "value": "numeric" },
-                { "name": "RTM", "value": "numeric" },
-                { "name": "RWA", "value": "numeric" },
-                { "name": "WON", "value": "numeric" },
-                { "name": "RBA", "value": "numeric" },
-                { "name": "RBP", "value": "numeric" },
-                { "name": "RBR", "value": "numeric" },
-                { "name": "RCO", "value": "numeric" },
-                { "name": "RCP", "value": "numeric" },
-                { "name": "RDD", "value": "numeric" },
-                { "name": "RDN", "value": "numeric" },
-                { "name": "RDR", "value": "numeric" },
-                { "name": "RDS", "value": "numeric" },
-                { "name": "RDT", "value": "numeric" },
-                { "name": "RIT", "value": "numeric" },
-                { "name": "RPY", "value": "numeric" },
-                { "name": "RQP", "value": "numeric" },
-                { "name": "RRC", "value": "numeric" },
-                { "name": "RHA", "value": "numeric" },
-                { "name": "RHB", "value": "numeric" }            
             ] 
         },
         { "name": "WeeksByYear", "value": 1305, "totalSize": 0.072, "children": [

@@ -15,16 +15,11 @@ const D3Hierarchy = ({data}) => {
             const height = (nodes.length + 1) * nodeSize;
             
             const columns = [
-                // {
-                //     label: "Type",
-                //     value: d => d.size ? 1 : 2,
-                //     format,
-                //     x: 200
-                // },
                 {
-                    label: "Size (MB)", 
-                    value: d => d.value/1000, 
+                    label: "Space (KB)", 
+                    value: d => d.totalSize, 
                     format, 
+                    // format: (value, d) => d.totalSize ? format(value) : "-",
                     x: 375
                 },
                 {
