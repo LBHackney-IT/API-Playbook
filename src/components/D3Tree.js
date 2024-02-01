@@ -39,7 +39,7 @@ const D3Tree = ({data}) => {
                     .attr("width", width)
                     .attr("height", height)
                     .attr("viewBox", [-dy / 2, x0 - dx, width, height])
-                    .attr("style", "max-width: 100%; height: auto; font: 11px sans-serif;");
+                    .attr("style", "max-width: 100%; height: auto; font: 13px sans-serif;");
 
                 const link = svg.append("g")
                 .attr("fill", "none")
