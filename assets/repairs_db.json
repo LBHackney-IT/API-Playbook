@@ -1,0 +1,457 @@
+{
+    "name": "Repairs Database", "value": "", 
+    "children": [
+        { "name": "ad_codes", "value": 135, "totalSize": 49, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_description", "value": "text" },
+                { "name": "cost", "value": "float8" },
+                { "name": "smv", "value": "int4" }
+            ] 
+        },
+        { "name": "appointment", "value": 0, "totalSize": 16, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "date", "value": "timestamp" },
+                { "name": "time_of_day_earliest_arrival_time", "value": "timestamp" },
+                { "name": "time_of_day_latest_arrival_time", "value": "timestamp" },
+                { "name": "time_of_day_latest_completion_time", "value": "timestamp" },
+                { "name": "time_of_day_name", "value": "text" }
+            ]
+        },
+        { "name": "appointments", "value": 1254, "totalSize": 417, "children": [
+                { "name": "day_id", "value": "int4" },
+                { "name": "work_order_id", "value": "int4" },
+                { "name": "date", "value": "timestamp" },
+                { "name": "id", "value": "int4" },
+                { "name": "end_time", "value": "timestamp" },
+                { "name": "start_time", "value": "timestamp" },
+                { "name": "appointment_reason", "value": "text" },
+                { "name": "appointment_note", "value": "text" },
+                { "name": "availability_group_id", "value": "int4" },
+                { "name": "sor_code_trade_code", "value": "text" },
+                { "name": "assigned_start_time", "value": "timestamp" },
+                { "name": "assigned_end_time", "value": "timestamp" }            
+            ] 
+        },
+        { "name": "available_appointment_days", "value": 858, "totalSize": 237, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "available_appointment_id", "value": "int4" },
+                { "name": "day", "value": "int4" },
+                { "name": "available_count", "value": "int4" },
+                { "name": "availability_group_id", "value": "int4" },
+                { "name": "availability_group_id1", "value": "int4" },
+                { "name": "availability_group_trade_code", "value": "text" },
+                { "name": "sor_code_trade_code", "value": "text" }
+            ]
+        },
+        { "name": "available_appointments", "value": 86, "totalSize": 49, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "contractor_reference", "value": "text" },
+                { "name": "description", "value": "text" },
+                { "name": "start_time", "value": "timestamp" },
+                { "name": "end_time", "value": "timestamp" }
+            ]
+        },
+        { "name": "avon_uplifts", "value": 107, "totalSize": 16, "children": [
+                { "name": "sor_code", "value": "text" },
+                { "name": "uplifts", "value": "float8" }
+            ]
+        },
+        { "name": "axis_FRA", "value": 87, "totalSize": 16, "children": [
+                { "name": "contract", "value": "text" },
+                { "name": "sor", "value": "text" },
+                { "name": "description", "value": "text" },
+                { "name": "uplift", "value": "float8" }
+            ]
+        },
+        { "name": "bk_void", "value": 95, "totalSize": 49, "children": [
+                { "name": "SOR", "value": "text" },
+                { "name": "Trade", "value": "text" },
+                { "name": "Short Description", "value": "text" },
+                { "name": "Cost", "value": "float8" },
+                { "name": "SMV", "value": "int4" }
+            ]
+        },
+        { "name": "budget_code_contractor", "value": 119, "totalSize": 49, "children": [
+                { "name": "budget_codes_id", "value": "int4" },
+                { "name": "contractors_reference", "value": "text" }
+            ]
+        },
+        { "name": "budget_codes", "value": 165, "totalSize": 73, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "external_cost_code", "value": "text" },
+                { "name": "cost_code", "value": "text" },
+                { "name": "corporate_subjective_code", "value": "text" },
+                { "name": "description_of_works", "value": "text" }
+            ]
+        },
+        { "name": "company", "value": 0, "totalSize": 24, "children": [
+                { "name": "co_code", "value": "varchar(10)" },
+                { "name": "description", "value": "varchar(100)" },
+                { "name": "name", "value": "varchar(50)" },
+                { "name": "comp_avail", "value": "varchar(200)" }
+            ]
+        },
+        { "name": "contractor_availability_group_trades", "value": 0, "totalSize": 49, "children": [
+                { "name": "trade_code", "value": "text" },
+                { "name": "availability_group_id", "value": "int4" }           
+            ]
+        },
+        { "name": "contractor_availability_groups", "value": 0, "totalSize": 49, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "name", "value": "text" },
+                { "name": "contractor_reference", "value": "text" }
+            ]
+        },
+        { "name": "contractors", "value": 211, "totalSize": 98, "children": [
+                { "name": "reference", "value": "text" },
+                { "name": "name", "value": "text" },
+                { "name": "use_external_schedule_manager", "value": "bool" },
+                { "name": "contract_manager_email", "value": "text" },
+                { "name": "can_assign_operative", "value": "bool" },
+                { "name": "per_trade_availability", "value": "bool" }            
+            ]
+        },
+        { "name": "contracts", "value": 1934, "totalSize": 598, "children": [
+                { "name": "contract_reference", "value": "text" },
+                { "name": "termination_date", "value": "timestamp" },
+                { "name": "effective_date", "value": "timestamp" },
+                { "name": "contractor_reference", "value": "text" }
+            ]
+        },
+        { "name": "cp_code", "value": 153, "totalSize": 49, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_description", "value": "text" },
+                { "name": "cost", "value": "float8" },
+                { "name": "smv", "value": "int4" }
+            ]
+        },
+        { "name": "damp_and_mould_reports", "value": 0, "totalSize": 32, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "property_reference", "value": "text" },
+                { "name": "damp_and_mould_presence_confirmed", "value": "bool" },
+                { "name": "previously_reported", "value": "bool" },
+                { "name": "previous_report_resolved", "value": "bool" },
+                { "name": "comments", "value": "text" },
+                { "name": "reported_at", "value": "timestamp" },
+                { "name": "address", "value": "text" }            
+            ]
+        },
+        { "name": "glaze_code", "value": 0, "totalSize": 16, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_descriptiion", "value": "text" },
+                { "name": "cost", "value": "float8" },
+                { "name": "smv", "value": "int4" }            
+            ] 
+        },
+        { "name": "job_status_updates", "value": 4100, "totalSize": 1000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "event_time", "value": "timestamp" },
+                { "name": "type_code", "value": "int4" },
+                { "name": "other_type", "value": "text" },
+                { "name": "refined_appointment_window_id", "value": "int4" },
+                { "name": "customer_communication_channel_attempted_channel_medium", "value": "int4" },
+                { "name": "comments", "value": "text" },
+                { "name": "more_specific_sor_code_id", "value": "uuid" },
+                { "name": "customer_communication_channel_attempted_channel_code", "value": "int4" },
+                { "name": "related_work_order_id", "value": "int4" },
+                { "name": "work_order_complete_id", "value": "int4" },
+                { "name": "additional_work_additional_work_order_id", "value": "int4" },
+                { "name": "additional_work_reason_required", "value": "text" },
+                { "name": "customer_communication_channel_attempted_value", "value": "text" },
+                { "name": "customer_communication_channel_attempted_description", "value": "text" },
+                { "name": "customer_communication_channel_attempted_not_available", "value": "bool" },
+                { "name": "author_name", "value": "text" },
+                { "name": "author_email", "value": "text" },
+                { "name": "is_split", "value": "bool" },
+                { "name": "is_overtime", "value": "bool" },
+                { "name": "payment_type", "value": "int4" }
+            ]
+        },
+        { "name": "operative_sor_code_trade", "value": 0, "totalSize": 24, "children": [
+                { "name": "operatives_id", "value": "int4" },
+                { "name": "trades_code", "value": "text" }
+            ]
+        },
+        { "name": "operatives", "value": 228, "totalSize": 253, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "payroll_number", "value": "text" },
+                { "name": "is_archived", "value": "bool" },
+                { "name": "name", "value": "text" },
+                { "name": "resource_id", "value": "text" },
+                { "name": "email", "value": "text" },
+                { "name": "is_onejobatatime", "value": "bool" }            
+            ] 
+        },
+        { "name": "organization", "value": 60185, "totalSize": 3000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "name", "value": "text" },
+                { "name": "doing_business_as_name", "value": "text" }            
+            ] 
+        },
+        { "name": "party", "value": 113410, "totalSize": 16000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "name", "value": "text" },
+                { "name": "role", "value": "text" },
+                { "name": "organization_id", "value": "int4" },
+                { "name": "person_id", "value": "int4" },
+                { "name": "contractor_reference", "value": "text" }            
+            ] 
+        },
+        { "name": "person", "value": 56719, "totalSize": 5000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "job_status_update_id", "value": "int4" },
+                { "name": "identification_number", "value": "text" },
+                { "name": "identification_type", "value": "text" },
+                { "name": "name_full", "value": "text" },
+                { "name": "name_family", "value": "text" },
+                { "name": "name_family_prefix", "value": "text" },
+                { "name": "name_given", "value": "text" },
+                { "name": "name_initials", "value": "text" },
+                { "name": "name_middle", "value": "text" },
+                { "name": "name_title", "value": "text" },
+                { "name": "calculated_bonus", "value": "float8" }            
+            ] 
+        },
+        { "name": "person_alias_names", "value": 0, "totalSize": 16, "children": [
+                { "name": "Column Name", "value": "Data Type" },
+                { "name": "person_id", "value": "int4" },
+                { "name": "id", "value": "int4" },
+                { "name": "full", "value": "text" },
+                { "name": "given", "value": "text" },
+                { "name": "family", "value": "text" },
+                { "name": "family_prefix", "value": "text" },
+                { "name": "initials", "value": "text" },
+                { "name": "title", "value": "text" },
+                { "name": "middle", "value": "text" }            
+            ] 
+        },
+        { "name": "person_communication", "value": 2482, "totalSize": 278, "children": [
+                { "name": "person_id", "value": "int4" },
+                { "name": "id", "value": "int4" },
+                { "name": "channel_medium", "value": "int4" },
+                { "name": "channel_code", "value": "int4" },
+                { "name": "value", "value": "text" },
+                { "name": "description", "value": "text" },
+                { "name": "not_available", "value": "bool" }            
+            ] 
+        },
+        { "name": "property_address", "value": 56741, "totalSize": 5000, "children": [
+            { "name": "id", "value": "int4" },
+                { "name": "country", "value": "int4" },
+                { "name": "address_line", "value": "text" },
+                { "name": "building_name", "value": "text" },
+                { "name": "building_number", "value": "text" },
+                { "name": "city_name", "value": "text" },
+                { "name": "complex_name", "value": "text" },
+                { "name": "department", "value": "text" },
+                { "name": "floor", "value": "text" },
+                { "name": "plot", "value": "text" },
+                { "name": "postal_code", "value": "text" },
+                { "name": "postbox", "value": "text" },
+                { "name": "room", "value": "text" },
+                { "name": "street_name", "value": "text" },
+                { "name": "type", "value": "text" }            
+            ] 
+        },
+        { "name": "property_class", "value": 56741, "totalSize": 7000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "site_id", "value": "int4" },
+                { "name": "address_id", "value": "int4" },
+                { "name": "master_key_system", "value": "text" },
+                { "name": "property_reference", "value": "text" }            
+            ] 
+        },
+        { "name": "property_contracts", "value": 17024364, "totalSize": 1000000, "children": [
+                { "name": "prop_ref", "value": "text" },
+                { "name": "contract_reference", "value": "text" }            
+            ] 
+        },
+        { "name": "rate_schedule_item", "value": 100251, "totalSize": 53000, "children": [
+                { "name": "id", "value": "uuid" },
+                { "name": "custom_code", "value": "text" },
+                { "name": "custom_name", "value": "text" },
+                { "name": "quantity_amount", "value": "float8" },
+                { "name": "work_element_id", "value": "uuid" },
+                { "name": "quantity_unit_of_measurement_code", "value": "int4" },
+                { "name": "m3nhfsor_code", "value": "text" },
+                { "name": "work_order_complete_id", "value": "int4" },
+                { "name": "code_cost", "value": "float8" },
+                { "name": "date_created", "value": "timestamp" },
+                { "name": "original", "value": "bool" },
+                { "name": "original_quantity", "value": "float8" },
+                { "name": "original_id", "value": "uuid" },
+                { "name": "date_updated", "value": "timestamp" }            
+            ] 
+        },
+        { "name": "reactive_purdy", "value": 1599, "totalSize": 425, "children": [
+                { "name": "sor", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_desc", "value": "text" },
+                { "name": "long_desc", "value": "text" },
+                { "name": "uplift", "value": "float8" }            
+            ] 
+        },
+        { "name": "related_trades", "value": 0, "totalSize": 49, "children": [
+                { "name": "primary_trade_id", "value": "text" },
+                { "name": "secondary_trade_id", "value": "text" }            
+            ] 
+        },
+        { "name": "rf_codes", "value": 132, "totalSize": 16, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_description", "value": "text" },
+                { "name": "cost", "value": "float8" },
+                { "name": "smv", "value": "float8" },
+                { "name": "long_description", "value": "text" }            
+            ] 
+        },
+        { "name": "roofing_csv", "value": 133, "totalSize": 49, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade", "value": "text" },
+                { "name": "short_description", "value": "text" },
+                { "name": "cost", "value": "float8" },
+                { "name": "smv", "value": "int4" }            
+            ] 
+        },
+        { "name": "security_groups", "value": 38, "totalSize": 49, "children": [
+                { "name": "group_name", "value": "text" },
+                { "name": "user_type", "value": "text" },
+                { "name": "contractor_reference", "value": "text" },
+                { "name": "raise_limit", "value": "float8" },
+                { "name": "vary_limit", "value": "float8" },
+                { "name": "id", "value": "int4" }            
+            ] 
+        },
+        { "name": "site", "value": 56741, "totalSize": 4000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "name", "value": "text" }            
+            ] 
+        },
+        { "name": "sor_codes", "value": 42582, "totalSize": 29000, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "short_description", "value": "text" },
+                { "name": "priority_id", "value": "int4" },
+                { "name": "cost", "value": "float8" },
+                { "name": "trade_code", "value": "text" },
+                { "name": "enabled", "value": "bool" },
+                { "name": "long_description", "value": "text" },
+                { "name": "standard_minute_value", "value": "int4" },
+                { "name": "is_raisable", "value": "bool" },
+                { "name": "is_outofhours", "value": "bool" },
+                { "name": "operative_cost", "value": "float8" },
+                { "name": "income", "value": "float8" },
+                { "name": "display_priority", "value": "int4" }            
+            ] 
+        },
+        { "name": "sor_codes_tcp", "value": 199, "totalSize": 49, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "trade_code", "value": "text" },
+                { "name": "priority_id", "value": "int4" }            
+            ] 
+        },
+        { "name": "sor_contracts", "value": 255332, "totalSize": 45000, "children": [
+                { "name": "sor_code_code", "value": "text" },
+                { "name": "contract_reference", "value": "text" },
+                { "name": "cost", "value": "float8" }            
+            ] 
+        },
+        { "name": "sor_priorities", "value": 732, "totalSize": 90, "children": [
+                { "name": "priority_code", "value": "int4" },
+                { "name": "description", "value": "text" },
+                { "name": "days_to_complete", "value": "int4" },
+                { "name": "enabled", "value": "bool" },
+                { "name": "priority_character", "value": "text" },
+                { "name": "display_order", "value": "int4" }            
+            ] 
+        },
+        { "name": "trade", "value": 56598, "totalSize": 8000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "code", "value": "int4" },
+                { "name": "custom_code", "value": "text" },
+                { "name": "custom_name", "value": "text" },
+                { "name": "work_element_id", "value": "uuid" }            
+            ] 
+        },
+        { "name": "trades", "value": 101, "totalSize": 73, "children": [
+                { "name": "code", "value": "text" },
+                { "name": "name", "value": "text" }            
+            ] 
+        },
+        { "name": "unit", "value": 0, "totalSize": 32, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "address_id", "value": "int4" },
+                { "name": "key_safe_location", "value": "text" },
+                { "name": "key_safe_code", "value": "text" },
+                { "name": "property_class_id", "value": "int4" }            
+            ] 
+        },
+        { "name": "work_elements", "value": 56998, "totalSize": 10000, "children": [
+                { "name": "id", "value": "uuid" },
+                { "name": "contains_capital_work", "value": "bool" },
+                { "name": "service_charge_subject", "value": "int4" },
+                { "name": "work_order_id", "value": "int4" },
+                { "name": "job_status_update_id", "value": "int4" },
+                { "name": "work_order_complete_id", "value": "int4" }            
+            ] 
+        },
+        { "name": "work_order_completes", "value": 605, "totalSize": 90, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "closed_time", "value": "timestamp" }            
+            ] 
+        },
+        { "name": "work_order_operatives", "value": 1162, "totalSize": 204, "children": [
+                { "name": "work_order_id", "value": "int4" },
+                { "name": "operative_id", "value": "int4" },
+                { "name": "assignment_type", "value": "int4" },
+                { "name": "job_percentage", "value": "float8" }            
+            ] 
+        },
+        { "name": "work_orders", "value": 59033, "totalSize": 62000, "children": [
+                { "name": "id", "value": "int4" },
+                { "name": "description_of_work", "value": "text" },
+                { "name": "estimated_labor_hours", "value": "float8" },
+                { "name": "work_type", "value": "int4" },
+                { "name": "parking_arrangements", "value": "text" },
+                { "name": "location_of_repair", "value": "text" },
+                { "name": "date_reported", "value": "timestamp" },
+                { "name": "work_priority_priority_code", "value": "int4" },
+                { "name": "site_id", "value": "int4" },
+                { "name": "work_class_work_class_code", "value": "int4" },
+                { "name": "work_order_complete_id", "value": "int4" },
+                { "name": "access_information_description", "value": "text" },
+                { "name": "access_information_keysafe_code", "value": "text" },
+                { "name": "access_information_keysafe_location", "value": "text" },
+                { "name": "work_class_work_class_description", "value": "text" },
+                { "name": "work_class_work_class_sub_type_work_class_sub_type_description", "value": "text" },
+                { "name": "work_class_work_class_sub_type_work_class_sub_type_name", "value": "text" },
+                { "name": "work_priority_comments", "value": "text" },
+                { "name": "work_priority_number_of_days", "value": "float8" },
+                { "name": "work_priority_priority_description", "value": "text" },
+                { "name": "work_priority_required_completion_date_time", "value": "timestamp" },
+                { "name": "date_raised", "value": "timestamp" },
+                { "name": "assigned_to_primary_id", "value": "int4" },
+                { "name": "customer_id", "value": "int4" },
+                { "name": "instructed_by_id", "value": "int4" },
+                { "name": "agent_name", "value": "text" },
+                { "name": "status_code", "value": "int4" },
+                { "name": "reason", "value": "int4" },
+                { "name": "agent_email", "value": "text" },
+                { "name": "external_scheduler_reference", "value": "text" },
+                { "name": "prop_ref_test", "value": "text" },
+                { "name": "prop_addr_test", "value": "text" },
+                { "name": "closed_date", "value": "timestamp" },
+                { "name": "planner_comments", "value": "text" },
+                { "name": "is_split", "value": "bool" },
+                { "name": "is_overtime", "value": "bool" },
+                { "name": "last_drs_sync", "value": "timestamp" },
+                { "name": "payment_type", "value": "int4" },
+                { "name": "budget_code_id", "value": "int4" },
+                { "name": "multi_trade_work_order", "value": "bool" },
+                { "name": "start_time", "value": "timestamp" }            
+            ] 
+        }        
+    ]
+}
