@@ -16,10 +16,10 @@ const D3Hierarchy = ({data}) => {
             
             const columns = [
                 {
-                    label: "Space (KB)", 
+                    label: "Space (MB)", 
                     value: d => d.totalSize, 
-                    format, 
-                    // format: (value, d) => d.totalSize ? format(value) : "-",
+                    //format, 
+                    format: (value, d) => d.totalSize ? format(value/1000) : "-",
                     x: 375
                 },
                 {
