@@ -209,14 +209,22 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Data Dictionary',
+      items: [
+        'data_dictionary_dynamodb',
+        'data_dictionary_repairsdb',
+        'data_dictionary_hfs'
+      ]
+    },    
+    {
+      type: 'category',
       label: 'Support',
       items:[
         'creating_support_doc',
         'loading_reference_data',
         'reindexing_elasticsearch_data',
         'cors_issues',
-        'access_to_apis',
-        'data-dictionary'
+        'access_to_apis'
       ],
     },
     'FAQs',
