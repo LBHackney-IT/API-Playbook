@@ -1,17 +1,15 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import * as d3 from 'd3'
 
-import repairsdbData from '../assets/repairs_db';
-
-const D3Hierarchy = () => {
+const D3Hierarchy = ({data}) => {
     const ref = useRef();
 
     useEffect(() => {
-        if (repairsdbData) {
+        if (data) {
 
             const format = d3.format(",");
             const nodeSize = 17;
-            const root = d3.hierarchy(repairsdbData).eachBefore((i => d => d.index = i++)(0));
+            const root = d3.hierarchy(data).eachBefore((i => d => d.index = i++)(0));
             const nodes = root.descendants();
             const width = 928;
             const height = (nodes.length + 1) * nodeSize;
@@ -94,7 +92,7 @@ const D3Hierarchy = () => {
 
                 ref.current.append(svg.node());
         }
-    }, [repairsdbData]);
+    }, [data]);
 
     return <div id="diagram-container" ref={ref}/>
 };

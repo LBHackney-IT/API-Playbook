@@ -3,6 +3,6 @@ id: 'data_dictionary_repairsdb'
 title: 'Repairs'
 ---
 
-import D3Hierarchy from '../src/D3Hierarchy.js';
+import RepairsDiagram from '../src/components/RepairsDiagram.js';
 
-<D3Hierarchy/>
+<RepairsDiagram/>

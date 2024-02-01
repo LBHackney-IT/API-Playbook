@@ -1,19 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import * as d3 from 'd3'
 
-import dynamodbData from '../assets/dynamodb';
-
-const DataDictionary = () => {
+const D3Tree = ({data}) => {
     const ref = useRef();
 
     useEffect(() => {
-        if (dynamodbData) {
+        if (data) {
                 // canvas size
                 const width = 1600;
 
                 // Compute the tree height; this approach will allow the height of the
                 // SVG to scale according to the breadth (width) of the tree layout.
-                const root = d3.hierarchy(dynamodbData);
+                const root = d3.hierarchy(data);
                 const dx = 10;
                 const dy = width / (root.height + 1);
 
@@ -77,9 +75,9 @@ const DataDictionary = () => {
 
                 ref.current.append(svg.node());
         }
-    }, [dynamodbData]);
+    }, [data]);
 
     return <div id="diagram-container" ref={ref}/>
 };
 
-export default DataDictionary;
+export default D3Tree;
