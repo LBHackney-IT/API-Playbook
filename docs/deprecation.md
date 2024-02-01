@@ -24,7 +24,7 @@ If `deprecated` is set to `true`, the producer must describe what clients should
 Owners of APIs used in production must monitor usage of deprecated APIs until the API can be shut down in order to align deprecation and avoid uncontrolled breaking effects.
 ## SHOULD Add a Warning Header to Responses:
 
-During deprecation phase, the producer should add a `Warning` header (see [RFC 7234 - Warning header](https://tools.ietf.org/html/rfc7234#section-5.5)) field. When adding the `Warning` header, the `warn-code` must be `299` and the `warn-text` should be in form of *"The path/operation/parameter/…​{name} is deprecated and will be removed by {date}. Please see {link} for details."* with a link to a documentation describing why the API is no longer supported in the current form and what clients should do about it. Adding the `Warning` header is not sufficient to gain client consent to shut down an API.
+During deprecation phase, the producer should add a `Warning` header (see [RFC 7234 - Warning header](https://tools.ietf.org/html/rfc7234#section-5.5)) field. When adding the `Warning` header, the `warn-code` must be `299` and the `warn-text` should be in form of *"The path/operation/parameter/…​\{name} is deprecated and will be removed by \{date}. Please see \{link} for details."* with a link to a documentation describing why the API is no longer supported in the current form and what clients should do about it. Adding the `Warning` header is not sufficient to gain client consent to shut down an API.
 ## SHOULD Add Monitoring for Warning Header:
 
 Clients should monitor the `Warning` header in HTTP responses to see if an API will be deprecated in future.

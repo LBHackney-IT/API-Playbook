@@ -140,7 +140,8 @@ module.exports = {
         },
         {
           'API Versioning':[
-            'feature-toggle'
+            'feature-toggle',
+            'deprecation'
           ],
         },
       ],
@@ -215,7 +216,7 @@ module.exports = {
         'reindexing_elasticsearch_data',
         'cors_issues',
         'access_to_apis',
-        'data_dictionary'
+        'data-dictionary'
       ],
     },
     'FAQs',
