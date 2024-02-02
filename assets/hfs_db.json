@@ -2,12 +2,12 @@
     "name": "HFS SQL Server Database", "value": "", 
     "children": [
         { "name": "ActionDiaryAux", "value": 1355, "totalSize": 2552, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "Balance", "value": "decimal" },
                 { "name": "Username", "value": "nvarchar" },
                 { "name": "ActionDate", "value": "smalldatetime" },
                 { "name": "ActionCode", "value": "nvarchar" },
                 { "name": "RentAccount", "value": "nvarchar" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "TimeStamp", "value": "datetimeoffset" },
                 { "name": "ActionComment", "value": "nvarchar" },
                 { "name": "Action", "value": "nvarchar" },
@@ -15,6 +15,7 @@
             ] 
         },
         { "name": "ActionDiaryHistory", "value": 16785, "totalSize": 10184, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "IsRead", "value": "bit" },
                 { "name": "ActionComment", "value": "nvarchar" },
                 { "name": "Balance", "value": "decimal" },
@@ -23,7 +24,6 @@
                 { "name": "ActionCode", "value": "nvarchar" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "TenancyAgreementRef", "value": "nvarchar" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "TimeStamp", "value": "datetimeoffset" },
                 { "name": "ActionDate", "value": "smalldatetime" }            
             ] 
@@ -64,12 +64,12 @@
             ] 
         },
         { "name": "BatchReport", "value": 616, "totalSize": 280, "children": [
+                { "name": "Id", "value": "int" },
                 { "name": "IsSuccess", "value": "bit" },
                 { "name": "Link", "value": "varchar" },
                 { "name": "ReportDate", "value": "datetime" },
                 { "name": "ReportStartDate", "value": "datetime" },
                 { "name": "RentGroup", "value": "varchar" },
-                { "name": "Id", "value": "int" },
                 { "name": "EndTime", "value": "datetimeoffset" },
                 { "name": "ReportName", "value": "varchar" },
                 { "name": "ReportYear", "value": "int" },
@@ -97,17 +97,17 @@
             ] 
         },
         { "name": "CashSuspenseTransactionAux", "value": 0, "totalSize": 80, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "NewRentAccount", "value": "nvarchar" },
                 { "name": "Amount", "value": "decimal" },
                 { "name": "IdSuspenseTransaction", "value": "bigint" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "Date", "value": "smalldatetime" }            
             ] 
         },
         { "name": "Charges", "value": 653079, "totalSize": 84928, "children": [
-                { "name": "RentGroup", "value": "char" },
                 { "name": "Id", "value": "bigint" },
+                { "name": "RentGroup", "value": "char" },
                 { "name": "PropertyRef", "value": "nvarchar" },
                 { "name": "ChargePeriod", "value": "nvarchar" },
                 { "name": "ChargeType", "value": "char" },
@@ -118,8 +118,8 @@
             ] 
         },
         { "name": "ChargesAux", "value": 27, "totalSize": 592, "children": [
-                { "name": "RentGroup", "value": "nvarchar" },
                 { "name": "Id", "value": "bigint" },
+                { "name": "RentGroup", "value": "nvarchar" },
                 { "name": "PropertyRef", "value": "nvarchar" },
                 { "name": "DAT", "value": "decimal" },
                 { "name": "DBR", "value": "decimal" },
@@ -225,12 +225,12 @@
             ] 
         },
         { "name": "DirectDebit", "value": 4570, "totalSize": 592, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "Active", "value": "bit" },
                 { "name": "DueDay", "value": "tinyint" },
                 { "name": "TimeStamp", "value": "datetimeoffset" },
-                { "name": "Amount", "value": "decimal" },
-                { "name": "Id", "value": "bigint" }            
+                { "name": "Amount", "value": "decimal" }
             ] 
         },
         { "name": "DirectDebitAux", "value": 159930, "totalSize": 56048, "children": [
@@ -242,9 +242,9 @@
             ] 
         },
         { "name": "DirectDebitHistory", "value": 259004, "totalSize": 29656, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "TimeStamp", "value": "datetimeoffset" },
                 { "name": "Date", "value": "datetime" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "IsRead", "value": "bit" },
                 { "name": "Amount", "value": "decimal" },
                 { "name": "RentAccount", "value": "nvarchar" }            
@@ -861,12 +861,12 @@
             ] 
         },
         { "name": "SuspenseTransactionAux", "value": 0, "totalSize": 288, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "RentAccount", "value": "nvarchar" },
                 { "name": "Type", "value": "varchar" },
                 { "name": "NewRentAccount", "value": "nvarchar" },
                 { "name": "Amount", "value": "decimal" },
                 { "name": "IdSuspenseTransaction", "value": "bigint" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "Date", "value": "smalldatetime" }            
             ] 
         },
@@ -878,6 +878,7 @@
             ] 
         },
         { "name": "TenancyAgreementAux", "value": 3, "totalSize": 520, "children": [
+                { "name": "Id", "value": "bigint" },
                 { "name": "Title", "value": "nvarchar" },
                 { "name": "Address", "value": "nvarchar" },
                 { "name": "DateOfBirth", "value": "smalldatetime" },
@@ -886,7 +887,6 @@
                 { "name": "StartDate", "value": "smalldatetime" },
                 { "name": "NumBedrooms", "value": "int" },
                 { "name": "RentGroup", "value": "nvarchar" },
-                { "name": "Id", "value": "bigint" },
                 { "name": "EndDate", "value": "smalldatetime" },
                 { "name": "Forename", "value": "nvarchar" },
                 { "name": "TimeStamp", "value": "datetimeoffset" },
@@ -930,6 +930,8 @@
             ] 
         },
         { "name": "UHContacts", "value": 139224, "totalSize": 180816, "children": [
+                { "name": "tag_ref", "value": "char" },
+                { "name": "prop_ref", "value": "char" },
                 { "name": "con_key", "value": "int" },
                 { "name": "con_ref", "value": "char" },
                 { "name": "con_name", "value": "varchar" },
@@ -939,8 +941,6 @@
                 { "name": "con_phone3", "value": "char" },
                 { "name": "con_postcode", "value": "char" },
                 { "name": "con_type", "value": "char" },
-                { "name": "tag_ref", "value": "char" },
-                { "name": "prop_ref", "value": "char" },
                 { "name": "email_address", "value": "char" },
                 { "name": "app_ref", "value": "char" },
                 { "name": "contacts_sid", "value": "int" },
@@ -956,8 +956,8 @@
             ] 
         },
         { "name": "UHDebitItem", "value": 4175180, "totalSize": 796368, "children": [
-                { "name": "prop_ref", "value": "nvarchar" },
                 { "name": "tag_ref", "value": "nvarchar" },
+                { "name": "prop_ref", "value": "nvarchar" },
                 { "name": "deb_code", "value": "nvarchar" },
                 { "name": "eff_date", "value": "datetime" },
                 { "name": "term_date", "value": "datetime" },
@@ -991,6 +991,7 @@
             ] 
         },
         { "name": "UHHousehold", "value": 96836, "totalSize": 15280, "children": [
+                { "name": "prop_ref", "value": "char" },
                 { "name": "house_ref", "value": "char" },
                 { "name": "post_code", "value": "char" },
                 { "name": "telephone", "value": "char" },
@@ -998,7 +999,6 @@
                 { "name": "house_kids", "value": "numeric" },
                 { "name": "payment_method", "value": "char" },
                 { "name": "house_desc", "value": "char" },
-                { "name": "prop_ref", "value": "char" },
                 { "name": "email_address", "value": "varchar" },
                 { "name": "househ_sid", "value": "int" }            
             ] 
@@ -1074,6 +1074,7 @@
         },
         { "name": "UHProperty", "value": 66577, "totalSize": 49152, "children": [
                 { "name": "prop_ref", "value": "char" },
+                { "name": "house_ref", "value": "char" },
                 { "name": "major_ref", "value": "char" },
                 { "name": "man_scheme", "value": "char" },
                 { "name": "post_code", "value": "char" },
@@ -1085,7 +1086,6 @@
                 { "name": "subtyp_code", "value": "char" },
                 { "name": "letable", "value": "bit" },
                 { "name": "cat_type", "value": "char" },
-                { "name": "house_ref", "value": "char" },
                 { "name": "occ_stat", "value": "char" },
                 { "name": "post_preamble", "value": "char" },
                 { "name": "property_sid", "value": "int" },
@@ -1183,6 +1183,8 @@
             ] 
         },
         { "name": "uhtlive_contacts", "value": 139224, "totalSize": 185232, "children": [
+                { "name": "tag_ref", "value": "char" },
+                { "name": "prop_ref", "value": "char" },
                 { "name": "con_key", "value": "int" },
                 { "name": "con_ref", "value": "char" },
                 { "name": "con_name", "value": "varchar" },
@@ -1192,8 +1194,6 @@
                 { "name": "con_phone3", "value": "char" },
                 { "name": "con_postcode", "value": "char" },
                 { "name": "con_type", "value": "char" },
-                { "name": "tag_ref", "value": "char" },
-                { "name": "prop_ref", "value": "char" },
                 { "name": "email_address", "value": "char" },
                 { "name": "app_ref", "value": "char" },
                 { "name": "contacts_sid", "value": "int" },
@@ -1237,6 +1237,7 @@
             ] 
         },
         { "name": "UPCashLoadSuspenseAccounts", "value": 9016, "totalSize": 1408, "children": [
+                { "name": "Id", "value": "int" }            ,
                 { "name": "IsResolved", "value": "bit" },
                 { "name": "Timestamp", "value": "datetimeoffset" },
                 { "name": "CivicaCode", "value": "nvarchar" },
@@ -1246,8 +1247,7 @@
                 { "name": "PaymentSource", "value": "nvarchar" },
                 { "name": "NewRentAccount", "value": "nvarchar" },
                 { "name": "RentAccount", "value": "nvarchar" },
-                { "name": "UPCashDumpId", "value": "bigint" },
-                { "name": "Id", "value": "int" }            
+                { "name": "UPCashDumpId", "value": "bigint" }
             ] 
         },
         { "name": "UPHousingCashDump", "value": 1914172, "totalSize": 442200, "children": [

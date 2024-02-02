@@ -19,10 +19,10 @@
             ]
         },
         { "name": "appointments", "value": 1254, "totalSize": 417, "children": [
+                { "name": "id", "value": "int4" },
                 { "name": "day_id", "value": "int4" },
                 { "name": "work_order_id", "value": "int4" },
                 { "name": "date", "value": "timestamp" },
-                { "name": "id", "value": "int4" },
                 { "name": "end_time", "value": "timestamp" },
                 { "name": "start_time", "value": "timestamp" },
                 { "name": "appointment_reason", "value": "text" },
@@ -216,9 +216,9 @@
             ] 
         },
         { "name": "person_alias_names", "value": 0, "totalSize": 16, "children": [
+                { "name": "id", "value": "int4" },
                 { "name": "Column Name", "value": "Data Type" },
                 { "name": "person_id", "value": "int4" },
-                { "name": "id", "value": "int4" },
                 { "name": "full", "value": "text" },
                 { "name": "given", "value": "text" },
                 { "name": "family", "value": "text" },
@@ -229,8 +229,8 @@
             ] 
         },
         { "name": "person_communication", "value": 2482, "totalSize": 278, "children": [
-                { "name": "person_id", "value": "int4" },
                 { "name": "id", "value": "int4" },
+                { "name": "person_id", "value": "int4" },
                 { "name": "channel_medium", "value": "int4" },
                 { "name": "channel_code", "value": "int4" },
                 { "name": "value", "value": "text" },
