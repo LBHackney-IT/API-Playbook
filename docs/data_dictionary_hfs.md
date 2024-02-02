@@ -4,8 +4,9 @@ title: 'HFS'
 ---
 
 import HFSDiagram from '../src/components/HFSDiagram';
-
 <HFSDiagram/>
+
+## Tables
 
 ### ActionDiaryAux
 | Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |

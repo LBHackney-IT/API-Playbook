@@ -19,6 +19,8 @@ import DynamoDbDiagram from '../src/components/DynamoDbDiagram';
 
 <DynamoDbDiagram/>
 
+## Tables
+
 ### Accounts Table
 | Data Item            | Type   | Descriptor | Format          | Size | Description                                           |
 | -------------------- | ------ | ---------- | --------------- | ---- | ----------------------------------------------------- |
