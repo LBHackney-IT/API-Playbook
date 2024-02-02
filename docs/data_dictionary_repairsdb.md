@@ -4,13 +4,14 @@ title: 'Repairs'
 ---
 
 import RepairsDiagram from '../src/components/RepairsDiagram.js';
+
 <RepairsDiagram/>
 
 ## Tables
 
 ### ad_codes
-| ------------------------------------ | -------------------------------------------------------------- | ------------ | -------- |
 | Ordinal                              | Column Name                                                    | Data Type    | Nullable |
+| ------------------------------------ | -------------------------------------------------------------- | ------------ | -------- |
 | 1                                    | code                                                           | text         | YES      |
 | 2                                    | trade                                                          | text         | YES      |
 | 3                                    | short_description                                              | text         | YES      |

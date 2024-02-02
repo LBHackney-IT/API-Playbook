@@ -4,6 +4,7 @@ title: 'HFS'
 ---
 
 import HFSDiagram from '../src/components/HFSDiagram';
+
 <HFSDiagram/>
 
 ## Tables
