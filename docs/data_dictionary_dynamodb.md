@@ -19,9 +19,9 @@ import DynamoDbDiagram from '../src/components/DynamoDbDiagram';
 
 <DynamoDbDiagram/>
 
-Accounts Table
-| -------------------- | ------ | ---------- | --------------- | ---- | ----------------------------------------------------- |
+### Accounts Table
 | Data Item            | Type   | Descriptor | Format          | Size | Description                                           |
+| -------------------- | ------ | ---------- | --------------- | ---- | ----------------------------------------------------- |
 | id                   | String | Guid       | Guid            |      | Unique Account identifier                             |
 | account_balance      | Number | N          | Currency        |      |                                                       |
 | account_status       | String | S          |                 |      | Acount status                                         |
@@ -44,7 +44,7 @@ Accounts Table
 | tenure               | List   | L          |                 |      | List of Tenancy (Tenure) objects                      |
 
 
-Activty History Table
+### Activty History Table
 | Data Item           | Type        | Descriptor | Format   | Size | Description                                   |
 | ------------------- | ----------- | ---------- | -------- | ---- | --------------------------------------------- |
 | id                  | String      | Guid       | Guid     |      | Unique Activity History identifier            |
@@ -58,7 +58,7 @@ Activty History Table
 | targetId            | String      | Guid       | Guid     |      | Identifier of the record in the Target Source |
 | targetType          | String      | S          |          |      | Name of the source system                     |
 
-Assets Table
+### Assets Table
 | Data Item            | Type   | Descriptor | Format | Size | Description                                         |
 | -------------------- | ------ | ---------- | ------ | ---- | --------------------------------------------------- |
 | id                   | String | Guid       | Guid   |      | Asset unique identifier                             |
@@ -75,7 +75,7 @@ Assets Table
 | tenure               | Map    | M          |        |      | Tenancy Map                                         |
 | versionNumber        | Number | N          |        |      |                                                     |
 
-Contact Details Table
+### Contact Details Table
 | Data Item          | Type    | Descriptor | Format   | Size | Description                                    |
 | ------------------ | ------- | ---------- | -------- | ---- | ---------------------------------------------- |
 | id                 | String  | Guid       | Guid     |      | Sort key                                       |
@@ -88,7 +88,7 @@ Contact Details Table
 | createdBy          | Map     | M          |          |      | Create By Map                                  |
 | sourceServiceArea  | Map     | M          |          |      | Source Service Area Map                        |
 
-Equality Information Table
+### Equality Information Table
 | Data Item                  | Type   | Descriptor | Format | Size | Description                       |
 | -------------------------- | ------ | ---------- | ------ | ---- | --------------------------------- |
 | id                         | String | Guid       |        |      | Sort key                          |
@@ -110,7 +110,7 @@ Equality Information Table
 | religionOrBelief           | String | S          |        |      |                                   |
 | sexualOrientation          | String | S          |        |      |
 
-Housing Register Table
+### Housing Register Table
 | Data Item                  | Type   | Descriptor | Format   | Size | Description                                    |
 | -------------------------- | ------ | ---------- | -------- | ---- | ---------------------------------------------- |
 | id                         | String | Guid       | Guid     |      | Partition key                                  |
@@ -129,7 +129,7 @@ Housing Register Table
 | statusAssigneeKey          | String | S          |          |      |                                                |
 | submittedAt                | String | S          | DateTime |      |
 
-HousingRepairsOnline Table
+### HousingRepairsOnline Table
 | Data Item      | Type   | Descriptor | Format    | Size | Description                              |
 | -------------- | ------ | ---------- | --------- | ---- | ---------------------------------------- |
 | id             | String | S          | Numerical |      |                                          |
@@ -144,7 +144,7 @@ HousingRepairsOnline Table
 | sOR            | String | S          |           |      |                                          |
 | time           | Map    | M          |           |      |  Time Map                                |
 
-Notes Table
+### Notes Table
 | Data Item      | Type    | Descriptor | Format | Size | Description                               |
 | -------------- | ------- | ---------- | ------ | ---- | ----------------------------------------- |
 | id             | String  | Guid       | Guid   |      | Sort key                                  |
@@ -157,7 +157,7 @@ Notes Table
 | highlight      | Boolean | B          |        |      |                                           |
 | title          | String  | S          |        |      |
 
-Patch And Areas Table
+### Patch And Areas Table
 | Data Item           | Type   | Descriptor | Format | Size | Description                                         |
 | ------------------- | ------ | ---------- | ------ | ---- | --------------------------------------------------- |
 | id                  | String | Guid       | Guid   |      | Partition key                                       |
@@ -168,7 +168,7 @@ Patch And Areas Table
 | responsibleEntities | List   | L          |        |      |  List of ResonsibleEntity Map                       |
 | versionNumber       | Number | N          |        |      |
 
-Persons Table
+### Persons Table
 | Data Item           | Type   | Descriptor | Format   | Size | Description                                |
 | ------------------- | ------ | ---------- | -------- | ---- | ------------------------------------------ |
 | id                  | String | Guid       | Guid     |      | Partition key                              |
@@ -187,7 +187,7 @@ Persons Table
 | title               | String | S          |          |      |                                            |
 | tenures             | List   | L          |          |      |  List of Tenancy Map                       |
 
-Processes Table
+### Processes Table
 | Data Item       | Type   | Descriptor | Format | Size | Description                                      |
 | --------------- | ------ | ---------- | ------ | ---- | ------------------------------------------------ |
 | id              | String | Guid       | Guid   |      | Partition key                                    |
@@ -199,7 +199,7 @@ Processes Table
 | processName     | String | S          |        |      |                                                  |
 | relatedEntities | List   | L          |        |      | List of RelatedEntity Map                        |
 
-TenureInformation Table
+### TenureInformation Table
 | Data Item                       | Type    | Descriptor | Format   | Size | Description                                       |
 | ------------------------------- | ------- | ---------- | -------- | ---- | ------------------------------------------------- |
 | id                              | String  | Guid       | Guid     |      | Partition key                                     |
