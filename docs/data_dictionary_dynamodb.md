@@ -9,7 +9,7 @@ import DynamoDbDiagram from '../src/components/DynamoDbDiagram';
 
 <DynamoDbDiagram/>
 
-### Date Key
+### Data Key
 
 | Data Type       | Descriptor |
 | --------------- | ---------- |

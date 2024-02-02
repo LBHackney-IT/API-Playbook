@@ -12,7 +12,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 ## Tables
 
 ### ActionDiaryAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Balance                        | decimal          | YES      | NULL           | NULL                 |
 | 2                                   | Username                       | nvarchar         | YES      | NULL           | \-1                  |
@@ -27,7 +27,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 |                                     |                                |                  |          |                |                      |
 
 ### ActionDiaryHistory
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | IsRead                         | bit              | YES      | NULL           | NULL                 |
 | 2                                   | ActionComment                  | nvarchar         | YES      | NULL           | \-1                  |
@@ -43,7 +43,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 |                                     |                                |                  |          |                |                      |
 
 ### Adjustment
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | int              | NO       | NULL           | NULL                 |
 | 2                                   | PaymentRef                     | nvarchar         | YES      | NULL           | \-1                  |
@@ -55,7 +55,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 |                                     |                                |                  |          |                |                      |
 
 ### AdjustmentAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | int              | NO       | NULL           | NULL                 |
 | 2                                   | PaymentRef                     | nvarchar         | YES      | NULL           | \-1                  |
@@ -65,7 +65,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 6                                   | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### BatchLog
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | Type                           | nvarchar         | YES      | NULL           | \-1                  |
@@ -74,7 +74,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | IsSuccess                      | bit              | YES      | NULL           | NULL                 |
 
 ### BatchLogError
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | Type                           | nvarchar         | YES      | NULL           | \-1                  |
@@ -84,7 +84,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 
 
 ### BatchReport
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | IsSuccess                      | bit              | YES      | NULL           | NULL                 |
 | 2                                   | Link                           | varchar          | YES      | NULL           | \-1                  |
@@ -101,7 +101,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 13                                  | TransactionType                | varchar          | YES      | NULL           | 10                   |
 
 ### CalculatedCurrentBalance
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | TenancyAgreementRef            | char             | YES      | NULL           | 11                   |
 | 2                                   | RentAccount                    | char             | YES      | NULL           | 20                   |
@@ -119,7 +119,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 14                                  | Balance2024Wk1Wk52             | decimal          | YES      | NULL           | NULL                 |
 
 ### CashSuspenseTransactionAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentAccount                    | nvarchar         | NO       | NULL           | \-1                  |
 | 2                                   | NewRentAccount                 | nvarchar         | NO       | NULL           | \-1                  |
@@ -129,7 +129,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 6                                   | Date                           | smalldatetime    | NO       | NULL           | NULL                 |
 
 ### Charges
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentGroup                      | char             | YES      | NULL           | 3                    |
 | 2                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
@@ -142,7 +142,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 9                                   | Year                           | int              | YES      | NULL           | NULL                 |
 
 ### ChargesAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentGroup                      | nvarchar         | YES      | NULL           | \-1                  |
 | 2                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
@@ -200,7 +200,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 54                                  | Year                           | int              | YES      | NULL           | NULL                 |
 
 ### ChargesBatchYears
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | ProcessingDate                 | date             | YES      | NULL           | NULL                 |
@@ -208,7 +208,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | IsRead                         | bit              | YES      | NULL           | NULL                 |
 
 ### ChargesHistory
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | TenancyAgreementRef            | nvarchar         | YES      | NULL           | \-1                  |
@@ -225,7 +225,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 
 
 ### ChargesHistoryAdjustments
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | int              | NO       | NULL           | NULL                 |
 | 2                                   | StartDate                      | date             | NO       | NULL           | NULL                 |
@@ -236,14 +236,14 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 7                                   | ExclusionSetRef                | int              | YES      | NULL           | NULL                 |
 
 ### ChargesHistoryAdjustmentsExclusions
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | int              | NO       | NULL           | NULL                 |
 | 2                                   | ExclusionSetRef                | int              | NO       | NULL           | NULL                 |
 | 3                                   | PropertyRef                    | char             | NO       | NULL           | 12                   |
 
 ### CurrentBalance
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | TenancyAgreementRef            | char             | YES      | NULL           | 11                   |
 | 2                                   | RentAccount                    | char             | YES      | NULL           | 20                   |
@@ -257,7 +257,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 
 
 ### DirectDebit
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentAccount                    | nvarchar         | NO       | NULL           | \-1                  |
 | 2                                   | Active                         | bit              | NO       | NULL           | NULL                 |
@@ -267,7 +267,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 6                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 
 ### DirectDebitAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | RentAccount                    | nvarchar         | NO       | NULL           | \-1                  |
@@ -276,7 +276,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### DirectDebitHistory
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 | 2                                   | Date                           | datetime         | NO       | NULL           | NULL                 |
@@ -286,7 +286,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 6                                   | RentAccount                    | nvarchar         | NO       | NULL           | \-1                  |
 
 ### DirectDebitSuspenseAccounts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | DirectDebitHistoryId           | bigint           | NO       | NULL           | NULL                 |
@@ -298,7 +298,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 8                                   | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### DMTransactionEntity
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | id                             | uniqueidentifier | YES      | NULL           | NULL                 |
 | 2                                   | target_id                      | uniqueidentifier | YES      | NULL           | NULL                 |
@@ -322,7 +322,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 20                                  | fund                           | varchar          | YES      | NULL           | \-1                  |
 
 ### ErrorLog
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | TableName                      | nvarchar         | YES      | NULL           | \-1                  |
@@ -332,7 +332,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 6                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### GoogleFileSetting
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | int              | NO       | NULL           | NULL                 |
 | 2                                   | GoogleIdentifier               | nvarchar         | NO       | NULL           | \-1                  |
@@ -343,7 +343,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 7                                   | FileYear                       | int              | YES      | NULL           | NULL                 |
 
 ### MABalanceTransactionDetails
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | varchar          | YES      | NULL           | 20                   |
 | 2                                   | date                           | smalldatetime    | YES      | NULL           | NULL                 |
@@ -354,7 +354,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 7                                   | row_num                        | int              | YES      | NULL           | NULL                 |
 
 ### MAContacts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | YES      | (space((1)))   | 11                   |
 | 2                                   | con_name                       | varchar          | YES      | NULL           | 73                   |
@@ -363,7 +363,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | con_phone1                     | char             | YES      | (space((1)))   | 21                   |
 
 ### MAMember
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | house_ref                      | char             | NO       | (space((1)))   | 10                   |
 | 2                                   | person_no                      | numeric          | NO       | ((0))          | NULL                 |
@@ -379,7 +379,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 12                                  | dob                            | datetime         | YES      | NULL           | NULL                 |
 
 ### MAProperty
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | prop_ref                       | char             | NO       | NULL           | 12                   |
 | 2                                   | major_ref                      | char             | YES      | NULL           | 12                   |
@@ -403,7 +403,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 20                                  | post_desig                     | char             | YES      | NULL           | 60                   |
 
 ### MATenancyAgreement
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -435,14 +435,14 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 28                                  | agr_type                       | char             | YES      | NULL           | 1                    |
 
 ### MonthsByYear
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | YearNo                         | int              | YES      | NULL           | NULL                 |
 | 2                                   | MonthNo                        | int              | YES      | NULL           | NULL                 |
 | 3                                   | StartDate                      | datetime         | YES      | NULL           | NULL                 |
 
 ### OperatingBalance
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | 1                                   | rentgrp_desc                   | char             | YES      | NULL           | 16                   |
 | 2                                   | post_year                      | int              | YES      | NULL           | NULL                 |
 | 3                                   | post_prdno                     | decimal          | YES      | NULL           | NULL                 |
@@ -543,7 +543,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 98                                  | WON                            | numeric          | YES      | NULL           | NULL                 |
 
 ### RentGroupSumr
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentGroup                      | varchar          | YES      | NULL           | 3                    |
 | 2                                   | YearNo                         | int              | YES      | NULL           | NULL                 |
@@ -554,7 +554,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 |                                     |                                |                  |          |                |                      |
 
 ### rtrans2011-rtrans2021
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | YES      | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -569,7 +569,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 11                                  | trans_ref                      | char             | YES      | NULL           | 12                   |
 
 ### SpreadSheetNewPatches
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Lis                            | varchar          | YES      | NULL           | \-1                  |
 | 2                                   | Area                           | varchar          | YES      | NULL           | \-1                  |
@@ -592,7 +592,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 19                                  | Ward                           | varchar          | YES      | NULL           | \-1                  |
 
 ### SSCurrentRentPosition
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | PropertyRef                    | nvarchar         | YES      | NULL           | \-1                  |
@@ -648,7 +648,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 52                                  | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### SSMiniSumr
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | post_year                      | int              | YES      | NULL           | NULL                 |
@@ -660,7 +660,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 8                                   | tot_rec_adj                    | decimal          | YES      | NULL           | NULL                 |
 
 ### SSMiniTransaction
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | YES      | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -677,7 +677,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 13                                  | origin_desc                    | varchar          | YES      | NULL           | \-1                  |
 
 ### SSMiniTransactionHist
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | YES      | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -691,7 +691,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 10                                  | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### SSRentBreakdown
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | PropertyRef                    | nvarchar         | YES      | NULL           | \-1                  |
@@ -742,7 +742,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 47                                  | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### SSServiceChargePaymentsReceived
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | ArrearPatch                    | nvarchar         | YES      | NULL           | \-1                  |
@@ -776,7 +776,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 30                                  | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### SuspenseTransactionAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | RentAccount                    | nvarchar         | NO       | NULL           | \-1                  |
 | 2                                   | Type                           | varchar          | YES      | NULL           | 50                   |
@@ -787,7 +787,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 7                                   | Date                           | smalldatetime    | NO       | NULL           | NULL                 |
 
 ### tenagree_uh
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | u_saff_rentacc                 | char             | YES      | NULL           | 20                   |
@@ -795,7 +795,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | eot                            | smalldatetime    | YES      | NULL           | NULL                 |
 
 ### TenancyAgreementAux
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Title                          | nvarchar         | YES      | NULL           | \-1                  |
 | 2                                   | Address                        | nvarchar         | YES      | NULL           | \-1                  |
@@ -815,7 +815,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 16                                  | ShortAddress                   | nvarchar         | YES      | NULL           | \-1                  |
 
 ### UHAraction
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | action_set                     | int              | NO       | NULL           | NULL                 |
@@ -849,7 +849,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 30                                  | u_saff_araction_ref            | char             | YES      | NULL           | 30                   |
 
 ### UHContacts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | con_key                        | int              | YES      | NULL           | NULL                 |
 | 2                                   | con_ref                        | char             | YES      | NULL           | 12                   |
@@ -876,7 +876,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 23                                  | comp_display                   | char             | YES      | NULL           | 200                  |
 
 ### UHDebitItem
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | prop_ref                       | nvarchar         | YES      | NULL           | \-1                  |
 | 2                                   | tag_ref                        | nvarchar         | YES      | NULL           | \-1                  |
@@ -897,7 +897,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 17                                  | debrate                        | numeric          | YES      | NULL           | NULL                 |
 
 ### UHDebType
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | deb_code                       | char             | NO       | NULL           | 3                    |
 | 2                                   | deb_desc                       | char             | YES      | NULL           | 20                   |
@@ -913,7 +913,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 12                                  | void_charge                    | bit              | YES      | NULL           | NULL                 |
 
 ### UHHousehold
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | house_ref                      | char             | NO       | NULL           | 10                   |
 | 2                                   | post_code                      | char             | YES      | NULL           | 10                   |
@@ -927,14 +927,14 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 10                                  | househ_sid                     | int              | YES      | NULL           | NULL                 |
 
 ### uhlive_dob
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | house_ref                      | char             | NO       | NULL           | 10                   |
 | 2                                   | person_no                      | decimal          | NO       | NULL           | NULL                 |
 | 3                                   | dob                            | datetime         | NO       | NULL           | NULL                 |
 
 ### UHMember
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | house_ref                      | char             | NO       | NULL           | 10                   |
 | 2                                   | person_no                      | numeric          | NO       | NULL           | NULL                 |
@@ -950,7 +950,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 12                                  | dob                            | datetime         | YES      | NULL           | NULL                 |
 
 ### UHMiniSumr
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | post_year                      | int              | YES      | NULL           | NULL                 |
@@ -962,7 +962,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 8                                   | tot_rec_adj                    | decimal          | YES      | NULL           | NULL                 |
 
 ### UHMiniTransaction
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | YES      | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -977,7 +977,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 11                                  | trans_ref                      | char             | YES      | NULL           | 12                   |
 
 ### UHOccupiedStatus
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | occ_status                     | char             | NO       | NULL           | 3                    |
 | 2                                   | occ_desc                       | char             | YES      | NULL           | 16                   |
@@ -985,14 +985,14 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | occstat_sid                    | int              | YES      | NULL           | NULL                 |
 
 ### UHParis
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | PCRTransactionType             | varchar          | YES      | NULL           | 3                    |
 | 2                                   | UHTReceiptType                 | varchar          | YES      | NULL           | 3                    |
 | 3                                   | Description                    | varchar          | YES      | NULL           | 50                   |
 
 ### UHPostCode
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | post_code                      | char             | NO       | NULL           | 10                   |
 | 2                                   | address                        | varchar          | YES      | NULL           | 200                  |
@@ -1003,7 +1003,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 7                                   | postcode_sid                   | int              | YES      | NULL           | NULL                 |
 
 ### UHProperty
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | prop_ref                       | char             | NO       | NULL           | 12                   |
 | 2                                   | major_ref                      | char             | YES      | NULL           | 12                   |
@@ -1027,7 +1027,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 20                                  | post_desig                     | char             | YES      | NULL           | 60                   |
 
 ### UHPropertyType
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | pt_prop_code                   | char             | YES      | NULL           | 3                    |
 | 2                                   | pt_prop_desc                   | char             | YES      | NULL           | 40                   |
@@ -1035,7 +1035,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | proptype_sid                   | int              | NO       | NULL           | NULL                 |
 
 ### UHRecType
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | rec_code                       | char             | NO       | NULL           | 3                    |
 | 2                                   | rec_desc                       | char             | YES      | NULL           | 20                   |
@@ -1044,7 +1044,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | rec_dd                         | bit              | NO       | NULL           | NULL                 |
 
 ### UHRent
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | prop_ref                       | char             | NO       | NULL           | 12                   |
 | 2                                   | rentgrp_ref                    | char             | YES      | NULL           | 3                    |
@@ -1060,7 +1060,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 12                                  | rent_sid                       | int              | YES      | NULL           | NULL                 |
 
 ### UHRentGroup
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | rentgrp_ref                    | char             | NO       | NULL           | 3                    |
 | 2                                   | rentgrp_desc                   | char             | YES      | NULL           | 16                   |
@@ -1072,13 +1072,13 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 8                                   | spreadsheet_tab_name           | nvarchar         | YES      | NULL           | 40                   |
 
 ### UHRentSource
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | trans_src                      | char             | YES      | NULL           | 3                    |
 | 2                                   | src_desc                       | char             | YES      | NULL           | 30                   |
 
 ### UHTenancyAgreement
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | tag_ref                        | char             | NO       | NULL           | 11                   |
 | 2                                   | prop_ref                       | char             | YES      | NULL           | 12                   |
@@ -1112,7 +1112,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 30                                  | master_tag_ref                 | char             | YES      | NULL           | 11                   |
 
 ### UHTenure
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | ten_type                       | char             | NO       | NULL           | 3                    |
 | 2                                   | ten_desc                       | char             | YES      | NULL           | 15                   |
@@ -1121,7 +1121,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | leasehold                      | bit              | YES      | NULL           | NULL                 |
 
 ###uhtlive_contacts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | con_key                        | int              | YES      | NULL           | NULL                 |
 | 2                                   | con_ref                        | char             | YES      | NULL           | 12                   |
@@ -1148,7 +1148,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 23                                  | comp_display                   | char             | YES      | NULL           | 200                  |
 
 ### UPCashDump
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | FullText                       | nvarchar         | NO       | NULL           | \-1                  |
@@ -1157,7 +1157,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### UPCashDumpFileName
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | FileName                       | nvarchar         | NO       | NULL           | \-1                  |
@@ -1165,7 +1165,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### UPCashLoad
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | RentAccount                    | nvarchar         | YES      | NULL           | \-1                  |
@@ -1179,7 +1179,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 10                                  | IsRead                         | bit              | YES      | NULL           | NULL                 |
 
 ### UPCashLoadSuspenseAccounts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | IsResolved                     | bit              | YES      | NULL           | NULL                 |
 | 2                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
@@ -1194,7 +1194,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 11                                  | Id                             | int              | NO       | NULL           | NULL                 |
 
 ### UPHousingCashDump
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | FullText                       | nvarchar         | NO       | NULL           | \-1                  |
@@ -1203,7 +1203,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### UPHousingCashDumpFileName
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | FileName                       | nvarchar         | NO       | NULL           | \-1                  |
@@ -1211,7 +1211,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | Timestamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 
 ### UPHousingCashLoad
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | AcademyClaimRef                | nvarchar         | YES      | NULL           | \-1                  |
@@ -1228,7 +1228,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 13                                  | IsRead                         | bit              | YES      | NULL           | NULL                 |
 
 ### UPHousingCashLoadSuspenseAccounts
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 2                                   | AcademyClaimRef                | nvarchar         | YES      | NULL           | \-1                  |
@@ -1246,7 +1246,7 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 14                                  | IsResolved                     | bit              | YES      | NULL           | NULL                 |
 
 ### WeeksByYear
-| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Characrer Max Length |
+| Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
 | ----------------------------------- | ------------------------------ | ---------------- | -------- | -------------- | -------------------- |
 | 1                                   | YearNo                         | int              | YES      | NULL           | NULL                 |
 | 2                                   | WeekNo                         | int              | YES      | NULL           | NULL                 |
