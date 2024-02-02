@@ -24,7 +24,6 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 8                                   | ActionComment                  | nvarchar         | YES      | NULL           | \-1                  |
 | 9                                   | Action                         | nvarchar         | YES      | NULL           | \-1                  |
 | 10                                  | TenancyAgreementRef            | nvarchar         | YES      | NULL           | \-1                  |
-|                                     |                                |                  |          |                |                      |
 
 ### ActionDiaryHistory
 | Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
@@ -40,7 +39,6 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 9                                   | Id                             | bigint           | NO       | NULL           | NULL                 |
 | 10                                  | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
 | 11                                  | ActionDate                     | smalldatetime    | YES      | NULL           | NULL                 |
-|                                     |                                |                  |          |                |                      |
 
 ### Adjustment
 | Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
@@ -52,7 +50,6 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 5                                   | TransactionDate                | datetime         | YES      | NULL           | NULL                 |
 | 6                                   | IsRead                         | bit              | YES      | NULL           | NULL                 |
 | 7                                   | TimeStamp                      | datetimeoffset   | NO       | (getdate())    | NULL                 |
-|                                     |                                |                  |          |                |                      |
 
 ### AdjustmentAux
 | Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
@@ -551,7 +548,6 @@ import HFSDiagram from '../src/components/HFSDiagram';
 | 4                                   | TotalCharged                   | decimal          | YES      | NULL           | NULL                 |
 | 5                                   | TotalPaid                      | decimal          | YES      | NULL           | NULL                 |
 | 6                                   | TotalHB                        | decimal          | YES      | NULL           | NULL                 |
-|                                     |                                |                  |          |                |                      |
 
 ### rtrans2011-rtrans2021
 | Ordinal                             | Column Name                    | Data Type        | Nullable | Column Default | Character Max Length |
