@@ -5,7 +5,11 @@ title: 'DynamoDb'
 
 import DynamoDbDiagram from '../src/components/DynamoDbDiagram';
 
-## Date Key
+## Data Diagram
+
+<DynamoDbDiagram/>
+
+### Date Key
 
 | Data Type       | Descriptor |
 | --------------- | ---------- |
@@ -17,7 +21,6 @@ import DynamoDbDiagram from '../src/components/DynamoDbDiagram';
 | String DateTime | DT         |
 | String Guid     | Guid       |
 
-<DynamoDbDiagram/>
 
 ## Tables
 

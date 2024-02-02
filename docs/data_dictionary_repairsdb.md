@@ -5,6 +5,8 @@ title: 'Repairs'
 
 import RepairsDiagram from '../src/components/RepairsDiagram.js';
 
+## Data Diagram
+
 <RepairsDiagram/>
 
 ## Tables
