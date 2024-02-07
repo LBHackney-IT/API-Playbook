@@ -213,6 +213,7 @@ module.exports = {
       items: [
         'data_dictionary_dynamodb',
         'data_dictionary_repairsdb',
+        'data_dictionary_bonuscalc',
         'data_dictionary_hfs'
       ]
     },    
