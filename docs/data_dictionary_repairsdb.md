@@ -9,6 +9,10 @@ import RepairsDiagram from '../src/components/RepairsDiagram.js';
 
 <RepairsDiagram/>
 
+## ER Diagram
+
+![Repairs DB Entity Relationships](../static/repairs-db-db-production%20-%20public.png)
+
 ## Tables
 
 ### ad_codes
