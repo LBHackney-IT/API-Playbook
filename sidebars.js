@@ -32,15 +32,15 @@ module.exports = {
           ],
         },
         'api_compliance',
-        {
-          'Managing our code base and releases':[
-            {
-              'Code base management': [
+        // {
+        //   'Managing our code base and releases':[
+        //     {
+        //       'Code base management': [
 
-              ]
-            }
-          ]
-        }
+        //       ]
+        //     }
+        //   ]
+        // }
       ],
     },  
     {
@@ -140,7 +140,8 @@ module.exports = {
         },
         {
           'API Versioning':[
-            'feature-toggle'
+            'feature-toggle',
+            'deprecation'
           ],
         },
       ],
@@ -208,13 +209,23 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Data Dictionary',
+      items: [
+        'data_dictionary_dynamodb',
+        'data_dictionary_repairsdb',
+        'data_dictionary_bonuscalc',
+        'data_dictionary_hfs'
+      ]
+    },    
+    {
+      type: 'category',
       label: 'Support',
       items:[
         'creating_support_doc',
         'loading_reference_data',
         'reindexing_elasticsearch_data',
         'cors_issues',
-        'access_to_apis',
+        'access_to_apis'
       ],
     },
     'FAQs',
