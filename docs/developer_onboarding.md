@@ -5,7 +5,7 @@ title: Developer technical on-boarding
 
 ### Proposing changes
 We love innovation and are always open to learning, iterating and improving. To suggest improvements and changes to our existing standards and tech stack, please use our technical architecture, frontend and data communities of practice.
-- Currently adopted technologies and the ones in-trial can be found in our [tech radar](https://playbook.hackney.gov.uk/tech-radar).
+
 - Our preferred BE stack is documented [here](/preferred_tech_stack.md).
 
 ### Reusable components catalogue
