@@ -17,6 +17,7 @@ data "aws_caller_identity" "current" {}
 locals {
   environment_name = "development"
   origins = {
+    "tech-radar-frontend-${local.environment_name}"   = "tech-radar"
     "api-playbook-frontend-${local.environment_name}" = "API-Playbook"
   }
 }
