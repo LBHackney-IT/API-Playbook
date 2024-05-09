@@ -2,15 +2,18 @@
 id: unit_testing
 title: Writing Unit Tests
 ---
-## Introduction
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
+## Introduction:
 
 Unit tests are used to test the functionality of an individual function or a
 collection of functions. This will be a simple introduction to unit testing,
 where we use TDD to implement a basic greeter method.
 
-**This article assumes you are working in a repository forked from [LBHackney-IT/lbh-base-api](https://github.com/LBHackney-IT/lbh-base-api).**
-
-### Video Tutorial
+**This article assumes you are working in a repository forked from [LBHackney-IT/lbh-example-api](https://github.com/LBHackney-IT/lbh-example-api).**
+### Video Tutorial:
 
 Watch the video version of this page if you prefer:
 
@@ -18,11 +21,11 @@ Watch the video version of this page if you prefer:
   <iframe width="100%" src="https://www.youtube.com/embed/M-_F_Tr6paQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-### Create the Test File
+### Create the Test File:
 
 Create a new file somewhere, named `GreetingGatewayTests.cs`.
 
-```dotnet title="GreetingGatewayTests.cs"
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -39,7 +42,7 @@ This doesn't test anything yet! We need to add some more code.
 
 Create the test class, and the initial signature of the test method.
 
-```dotnet title="GreetingGatewayTests.cs" {7,9}
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -68,7 +71,7 @@ of the desired effect of calling the method.
 
 Now, add the actual test code!
 
-```dotnet title="GreetingGatewayTests.cs" {11,12}
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -97,12 +100,11 @@ provide.
 * Your IDE or Text Editor might complain when you write these lines, because
   neither the `GreetingGateway` nor its `GetGreetingForName` method exists yet.
   This is normal, and is actually part of the TDD process!
-
-#### Running the Test
+#### Running the Test:
 
 Now that we have some test code, we can try to run it.
 
-```bash title="Terminal" {7}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
@@ -121,10 +123,10 @@ error CS0103: The name 'GreetingGateway' does not exist in the current context [
 The output tells us that `GreetingGateway` doesn't exist. That's true - we
 haven't made it yet!
 
-### Create the Implementation
+### Create the Implementation:
 
 We will write the most minimal piece of code that will pass the test.
-```dotnet title="GreetingGateway.cs"
+```csharp
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -139,8 +141,7 @@ namespace TestApi.V1.Gateways
 
  * *We are using the same names for the class and method that we wrote into the
    test method.*
-
-#### Running the test
+#### Running the test:
 
 We have addressed the error in the previous test run's output by creating the
 class that didn't exist, `GreetingGateway` (and added the method pre-emptively,
@@ -170,8 +171,7 @@ break anything that already existed in the codebase. Good news?
 At this point, it probably seems like the method is wrong. It only works for
 James, and it should greet anyone. In reality, though, the method is fine -
 **it's the test that is wrong!**
-
-### Refactor the Test
+### Refactor the Test:
 
 We need to make sure that this greeting method works regardless of the name of
 the person it is greeting. Since this is a requirement of the feature, the test
@@ -180,7 +180,7 @@ should enforce it.
 What we want to do, is pass a name into `GetGreetingForName`, and have it return
 an appropriate greeting for that name.
 
-```dotnet title="GreetingGatewayTests.cs" {11-15}
+```csharp
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -205,7 +205,6 @@ namespace TestApi.Tests.V1.Gateways
    interpolation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)*
    in the *Assert*, so that whatever we set *`name`* to, will be what we test
    the *`result`* for.*
-
 #### *Running the tests*
 
 ```bash title="Terminal" {7}
@@ -226,7 +225,7 @@ written for the implementation doesn't take any arguments, but we are trying to
 use one in the test! Let's fix that.
 
 
-```dotnet title="GreetingGateway.cs" {5}
+```c#
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -241,7 +240,7 @@ namespace TestApi.V1.Gateways
 
 Now the method takes the name to be greeted as an argument.
 
-```bash title="Terminal" {7}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
@@ -257,7 +256,7 @@ use the parameter we added to the method.
 
 This can be done using exactly the same interpolation used in the test itself.
 
-```dotnet title="GreetingGateway.cs" {7}
+```c#
 namespace TestApi.V1.Gateways
 {
   public static class GreetingGateway
@@ -291,8 +290,7 @@ Passed!  - Failed:  0, Passed:  23, Skipped:  0, Total:  23, Duration: 908 ms - 
 ```
 
 This passes! 🎉
-
-### Refactoring the Test (Again)
+### Refactoring the Test (Again):
 
 To be pedantic, the test we currently have only ensures that the method will
 work for people named Lisa. This is a simple example, so we can see quite
@@ -305,7 +303,7 @@ uncover strange edge cases.
 
 We can use a library called Bogus to help with this.
 
-```dotnet title="GreetingGatewayTests.cs" {4,12}
+```c#
 using FluentAssertions;
 using NUnit.Framework;
 using TestApi.V1.Gateways;
@@ -331,7 +329,7 @@ In this example, we use Bogus to pick a random first name to assign to the
 `name` variable. Every time the test is run, we assert that the method runs for
 the random name.
 
-```bash title="Terminal" {14}
+```yml
 ~/tdd_practice$ dotnet test
 
   Determining projects to restore...
@@ -351,3 +349,5 @@ Passed!  - Failed:  0, Passed:  23, Skipped:  0, Total:  23, Duration: 939 ms - 
 
 Everything is still passing! The feature is complete and we have a robust test
 for it.
+
+</TextToSpeech>

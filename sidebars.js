@@ -1,91 +1,233 @@
 module.exports = {
   docs: [
-    'notes',
     {
       type: 'category',
-      label: 'Home',
-      items: ['index','api_standards', 'platform_api_vs_service_api', 'documentation',
-      {'Development Lifecycle':[
-      {
-        'Designing your API': ['api_implementation_guidelines','api_design_principles',
-          'error_codes']
-      },
-      {
-        'Implementation Guidelines': ['general_guidelines','security', 'compatibility', 'deprecation', 'naming_conventions', 'http', 'resources', 'pagination', 'data-formats', 'operation', 'references']
-      },
-      ]},
-    ],
+      label: 'Release Notes',
+      items:[
+        'release-notes-v3',
+        'release-notes-v4'
+      ],
     },
     {
       type: 'category',
-      label: 'Principles',
-      items: [],
-    },
-      {
-      type: 'category',
-      label: 'Development Process',
+      label: 'Introduction',
       items: [
-      {
-        'API Practices and Tools': ['linting','static_code_analysis']
-      },
-      {
-        'DevOps Practices': ['branching_strategies','deployment_pipeline', 'infrastructure']
-      },
+        'index',
+        'platform_api_vs_service_api',
+        'api_standards',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Governance',
+      items: [
+        'our_ways_of_working',
+        'developer_onboarding',
+        'developer_hub',
+        {
+          'API Documentation': [
+            'swagger_documentation',
+            'api_specification',
+            'adr'
+          ],
+        },
+        'api_compliance',
+        {
+          'Managing our code base and releases':[
+            {
+              'Code base management': [
 
-      {
-        type: 'category',
-        label: 'API Setup',
-        items: ['preferred_tech_stack', 'api_boilerplate', 'clean_architecture', 'serverless_lambda', 'entity_framework']
-      },
-      {
-        type: 'category',
-        label: 'Listeners',
-        items: ['listener_tech_stack', 'listener_boilerplate']
-      }
-  ]
-  },
-  {
-    type: 'category',
-    label: "How to build an API",
-    items: [{'Testing': ['tdd', 'unit_testing', 'mock_unit_tests', 'integration_tests']},{'Deploying your API': [ 'aws_ecs', 'lambda_best_practices', 'multiple_docker_containers']}]
-  },
-  {
-    type: 'category',
-    label: 'Monitoring',
-    items: ['alerting', 'application_logging', 'centralised_logging', 'performance_monitoring','uptime_monitoring', 'x_ray']
-  },
-  {
-    type: 'category',
-    label: 'Securing your API',
-    items: ['api_keys', 'lambda_authoriser']
-  },
-  {
-    type: 'category',
-    label: 'Event Driven Architecture',
-    items: ['eda']
-  },
-  {
-    type: 'category',
-    label: 'Production Checklist',
-    items: ['debugging_apis', 'production_testing']
-  },
-  {
-    type: 'category',
-    label: 'Data Migration',
-    items: ['data_migration','pipeline_implementation']
-  },
-  {
-    type: 'category',
-    label: 'Other Useful Information',
-    items: ['rds_access', 'ec2_access','postgresql']
-  },
-  {
-    type: 'category',
-    label: "End to End Training",
-    items: ['first_end_point_postgres', 'first_end_point_dynamo']
-  },
-  // 'developer_hub',
-  'FAQs',
-  'contact_us'
-]
-};
+              ]
+            }
+          ]
+        }
+      ],
+    },  
+    {
+      type: 'category',
+      label: "Development Lifecycle",
+      items: [
+        'development_lifecycle',
+        {
+          'Designing your API':[
+            'naming_conventions',
+            'api_design_principles',
+            'api_implementation_guidelines',
+          ],
+        },
+        {
+          'How to build an API': [
+            {
+              'Preferred tech stack': [
+                'serverless_lambda',
+                'entity_framework',
+                'open_search'
+              ],
+            },
+            'api_boilerplate',
+            'clean_architecture',
+          ],
+        },
+        {
+          'Implementing HTTP endpoints':[
+            {
+              'GET endpoint': [
+                'get_postgres',
+                'get_dynamodb',
+                'get_opensearch'
+              ],
+            },
+            {
+              'POST endpoint': [
+                'post_postgres',
+                'post_dynamodb',
+              ],
+            },
+            {
+              'PATCH endpoint': [
+                'patch_postgres',
+                'patch_dynamodb'
+              ],
+            },
+            {
+              'DELETE endpoint': [
+                'delete_postgres',
+                'delete_dynamodb'
+              ],
+            },
+          ],
+        },
+        {
+          'Listeners': [
+            'listener_intro',
+            'listener_tech_stack',
+            'listener_boilerplate'
+          ],
+        },
+        {
+          'Architecture principles':[
+            'eda',
+            {
+              'NuGet Packages':[
+                'nuget_packages',
+                'create_nuget_packages',
+                'shared-packages',
+                'core_packages'
+              ],
+            },
+            'target_type',
+          ],
+        },
+        {
+          'API Practices and tools':[
+            'linting',
+            'gitguardian',
+            'sonarcloud',
+            'serverless_safegaurd',
+            'terraform_compliance',
+            'accessibility_testing'
+          ],
+        },
+        {
+          'Securing your API':[
+            'api_keys',
+            {
+              'Lambda Authoriser': [
+                'generating_tokens'
+              ]
+            }
+          ]
+        },
+        {
+          'API Versioning':[
+            'feature-toggle'
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Testing',
+      items:[
+        'tdd',
+        {
+          'Unit Testing':[
+            'unit_testing'
+          ],
+        },
+        {
+          'End to End Testing':[
+            'integration_tests'
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'DevOps Practices',
+      items:[
+        {
+          'Introduction':[
+            'deployment_pipeline',
+          ],
+        },
+        {
+          'Infrastructure As Code':[
+            'infrastructure',
+            'terraform_compliance',
+          ]
+        },
+        'branching_strategies',
+        {
+          'Deploying your API':[
+            'lambda_best_practices',
+            'aws_ecs'
+          ]
+        },
+        {
+          'Monitoring':[
+            'alerting',
+            'application_logging',
+            'centralised_logging',
+            'performance_monitoring',
+            'uptime_monitoring',
+            'x_ray',
+            'cloudwatch-alarms',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Data migration',
+      items: [
+        'data_migration',
+        'pipeline_implementation',
+        'data_migration_playbook'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Support',
+      items:[
+        'creating_support_doc',
+        'loading_reference_data',
+        'reindexing_elasticsearch_data',
+        'cors_issues',
+        'access_to_apis',
+      ],
+    },
+    'FAQs',
+    {
+      type: 'category',
+      label: 'Other Useful Information',
+      items:[
+        'rds_access', 
+        'ec2_access',
+        'postgresql',
+        'ssm_secrets'
+      ],
+    },
+    'contact_us'
+  ],
+}  

@@ -3,7 +3,11 @@ id: postgresql
 title: Creating users in PostgreSQL
 ---
 
-## How to add a Read-Only User to a PostgreSQL Database
+import TextToSpeech from '../src/SpeechComponent.js';
+
+<TextToSpeech>
+
+## How to add a Read-Only User to a PostgreSQL Database:
 
 
 ** 1. Create a new user: **
@@ -40,7 +44,7 @@ For all tables in specific schema:
 GRANT SELECT ON ALL TABLES IN SCHEMA schema_name TO username;
 ```
 
-##  Optional
+##  Optional:
 
 If you want user to have select access to all new tables created in the future:
 
@@ -49,3 +53,4 @@ ALTER DEFAULT PRIVILEGES IN SCHEMA schema_name
 
 GRANT SELECT ON TABLES TO username;
 ```
+</TextToSpeech>
