@@ -1,6 +1,7 @@
 const generateAnnouncementBar = () => {
-  const environment = process.env.ENVIRONMENT
-  if (environment === 'production') return {}
+  const environment = process.env.ENVIRONMENT || 'development'
+  // The reponse must be 'undefined' else docusaurus attempts to retrieve the content field
+  if (environment === 'production') return undefined
   return {
     id: 'environment_banner',
     content: `You are currently viewing the <b style="color: ${
