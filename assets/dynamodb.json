@@ -1,0 +1,586 @@
+{
+    "name": "DynamoDb Tables", "value": "",
+    "children": [
+        {
+            "name": "Accounts", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "account_balance", "value": "N"},
+                {"name": "account_status", "value": "S"},
+                {"name": "account_type", "value": "S"},
+                {"name": "agreement_type", "value": "S"},
+                {"name": "consolidatedCharges", "value": "L", "children": 
+                    [
+                        {"name": "amount", "value": "N"},
+                        {"name": "frequency", "value": "S"},
+                        {"name": "type", "value": "S"}
+                    ]                
+                },
+                {"name": "consolidated_balance", "value": "N"},
+                {"name": "created_at", "value": "DT"},
+                {"name": "created_by", "value": "S"},
+                {"name": "end_date", "value": "DT"},
+                {"name": "end_reason_code", "value": "S"},
+                {"name": "last_updated_at", "value": "DT"},
+                {"name": "last_updated_by", "value": "S"},
+                {"name": "parent_account_id", "value": "Guid"},
+                {"name": "payment_reference", "value": "S"},
+                {"name": "rent_group_type", "value": "S"},
+                {"name": "start_date", "value": "S"},
+                {"name": "target_id", "value": "S"},
+                {"name": "target_type", "value": "S"},
+                {"name": "tenure", "value": "L", "children":
+                    [
+                        {"name": "tenureId", "value": "Guid"},
+                        {"name": "tenureType", "value": "M" , "children":
+                            [
+                                {"name": "code", "value": "S"},
+                                {"name": "description", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "primaryTenants", "value": "L", "children":
+                            [
+                                {"name": "id", "value": "S"},
+                                {"name": "fullName", "value": "S"}                                
+                            ]
+                        }
+                    ]
+                }       
+            ]
+        },
+        {
+            "name": "Activity History", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "authorDetails", "value": "M", "children":
+                    [
+                        {"name": "emailAddress", "value": "S"},
+                        {"name": "fullName", "value": "S"}                        
+                    ]
+                },
+                {"name": "sourceDomain", "value": "S"},
+                {"name": "newData", "value": "M" , "children":
+                    [
+                        {"name": "id", "value": "S"},
+                        {"name": "value", "value": "S"}
+                    ]
+                },
+                {"name": "oldData", "value": "M", "children":
+                    [
+                        {"name": "id", "value": "S"},
+                        {"name": "value", "value": "S"}
+                    ]
+                },
+                {"name": "timetoLiveForRecord", "value": "N"},
+                {"name": "createdAt", "value": "DT"},
+                {"name": "type", "value": "S"},
+                {"name": "targetId", "value": "Guid"},
+                {"name": "targetType", "value": "S"}
+            ]
+        },
+        {
+            "name": "Assets", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "areaId", "value": "Guid"},
+                {"name": "assetAddress", "value": "M", "children":
+                    [
+                        {"name": "addressLine1", "value": "S"},
+                        {"name": "addressLine2", "value": "S"},
+                        {"name": "addressLine3", "value": "S"},
+                        {"name": "addressLine4", "value": "S"},
+                        {"name": "postCode", "value": "S"},
+                        {"name": "postPreamble", "value": "S"},
+                        {"name": "uprn", "value": "S"}                        
+                    ]
+                },
+                {"name": "assetCharacteristics", "value": "M", "children":
+                    [
+                        {"name": "architecturalType", "value": "S"},
+                        {"name": "heating", "value": "S"},
+                        {"name": "numberOfBedrooms", "value": "N"},
+                        {"name": "numberOfDoubleBeds", "value": "N"},
+                        {"name": "numberOfFloors", "value": "N"},
+                        {"name": "numberOfLifts", "value": "N"},
+                        {"name": "numberOfLivingRooms", "value": "N"},
+                        {"name": "numberOfSingleBeds", "value": "N"},
+                        {"name": "propertyFactor", "value": "N"},
+                        {"name": "windowType", "value": "S"},
+                        {"name": "yearConstructed", "value": "S"}                        
+                    ]
+                },
+                {"name": "assetId", "value": "S"},
+                {"name": "assetType", "value": "S"},
+                {"name": "parentAssetIds", "value": "Guid"},
+                {"name": "rentGroup", "value": "S"},
+                {"name": "rootAsset", "value": "Guid"},
+                {"name": "assetLocation", "value": "M", "children":
+                    [
+                        {"name": "floorNo", "value": "S"},
+                        {"name": "parentAssets", "value": "L", "children":
+                            [
+                                {"name": "id", "value": "Guid"},
+                                {"name": "name", "value": "S"},
+                                {"name": "type", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "totalBlockFloors", "value": "N"}                        
+                    ]
+                },
+                {"name": "assetManagement", "value": "M", "children":
+                    [
+                        {"name": "agent", "value": "S"},
+                        {"name": "areaOfficeName", "value": "S"},
+                        {"name": "isCouncilProperty", "value": "B"},
+                        {"name": "isNoRepairsMaintenance", "value": "B"},
+                        {"name": "isTMOManaged", "value": "B"},
+                        {"name": "managingOrganisation", "value": "S"},
+                        {"name": "managingOrganisationId", "value": "Guid"},
+                        {"name": "owner", "value": "S"},
+                        {"name": "propertyOccupiedStatus", "value": "S"}                        
+                    ]
+                },
+                {"name": "tenure", "value": "M", "children":
+                    [
+                        {"name": "id", "value": "Guid"},
+                        {"name": "startOfTenureDate", "value": "DT"},
+                        {"name": "endOfTenureDate", "value": "DT"},
+                        {"name": "paymentReference", "value": "S"}
+                    ]            
+                },
+                {"name": "versionNumber", "value": "N"}        
+            ]
+        },
+        {
+            "name": "Contact Details", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "targetId", "value": "Guid"},
+                {"name": "targetType", "value": "S"},
+                {"name": "contactInformation", "value": "M", "children":
+                    [
+                        {"name": "contactType", "value": "S"},
+                        {"name": "description", "value": "S"},
+                        {"name": "subType", "value": "S"},
+                        {"name": "addressExtended", "value": "S"},
+                        {"name": "value", "value": "S"}                        
+                    ]
+                },
+                {"name": "isActive", "value": "B"},
+                {"name": "lastModified", "value": "DT"},
+                {"name": "recordValidUntil", "value": "DT"},
+                {"name": "createdBy", "value": "M", "children":
+                    [
+                        {"name": "createdAt", "value": "DT"},
+                        {"name": "emailAddress", "value": "S"},
+                        {"name": "fullName", "value": "S"}                        
+                    ]
+                },
+                {"name": "sourceServiceArea", "value": "M", "children":
+                    [
+                        {"name": "area", "value": "S"},
+                        {"name": "isDefault", "value": "B"}                        
+                    ]
+                }             
+            ]
+        },
+        {
+            "name": "Equity Information", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "targetId", "value": "Guid"},
+                {"name": "ageGroup", "value": "S"},
+                {"name": "armedForces", "value": "S"},
+                {"name": "caringResponsibilities", "value": "S"},
+                {"name": "communicationRequirements", "value": "S"},
+                {"name": "disabled", "value": "S"},
+                {"name": "economicSituation", "value": "S"},
+                {"name": "ethnicity", "value": "S"},
+                {"name": "gender", "value": "M", "children":
+                    [
+                        {"name": "genderDifferentToBirthSex", "value": "S"},
+                        {"name": "genderValue", "value": "S"},
+                        {"name": "genderValueIfOther", "value": "S"}                        
+                    ]
+                },
+                {"name": "homeSituation", "value": "S"},
+                {"name": "languages", "value": "S"},
+                {"name": "marriageOrCivilPartnership", "value": "S"},
+                {"name": "nationalInsuranceNumber", "value": "S"},
+                {"name": "nationality", "value": "S"},
+                {"name": "pregnancyOrMaternity", "value": "S"},
+                {"name": "religionOrBelief", "value": "S"},
+                {"name": "sexualOrientation", "value": "S"}                
+            ]
+        },
+        {
+            "name": "Housing Register", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "activeRecord", "value": "N"},
+                {"name": "assessment", "value": "M", "children":
+                    [
+                        {"name": "band", "value": "S"},
+                        {"name": "bedroomNeed", "value": "N"},
+                        {"name": "biddingNumber", "value": "S"},
+                        {"name": "effectiveDate", "value": "DT"},
+                        {"name": "generateBiddingNumber", "value": "B"},
+                        {"name": "informationReceivedDate", "value": "DT"},
+                        {"name": "reason", "value": "S"}                        
+                    ]
+                },
+                {"name": "assignedTo", "value": "S"},
+                {"name": "calculatedBedroomNeed", "value": "N"},
+                {"name": "createdAt", "value": "DT"},
+                {"name": "importedFromLegacyDatabase", "value": "N"},
+                {"name": "mainApplicant", "value": "M", "children":
+                    [
+                        {"name": "address", "value": "M", "children":
+                            [
+                                {"name": "addressLine1", "value": "S"},
+                                {"name": "addressLine2", "value": "S"},
+                                {"name": "addressLine3", "value": "S"},
+                                {"name": "addressType", "value": "S"},
+                                {"name": "postcode", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "contactInformation", "value": "M", "children":
+                            [
+                                {"name": "emailAddress", "value": "S"},
+                                {"name": "phoneNumber", "value": "S"},
+                                {"name": "preferredMethodOfContact", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "medicalNeed", "value": "Null"},
+                        {"name": "person", "value": "M", "children":
+                            [
+                                {"name": "id", "value": "Guid"},
+                                {"name": "age", "value": "N"},
+                                {"name": "dateOfBirth", "value": "S"},
+                                {"name": "title", "value": "S"},
+                                {"name": "firstName", "value": "S"},
+                                {"name": "middleName", "value": "S"},
+                                {"name": "surname", "value": "S"},
+                                {"name": "fullName", "value": "S"},
+                                {"name": "gender", "value": "S"},
+                                {"name": "genderDescription", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "questions", "value": "L", "children":
+                            [
+                                {"name": "id", "value": "S"},
+                                {"name": "answer", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "requiresMedical", "value": "B"}               
+                    ]
+                },
+                {"name": "otherMembers", "value": "L", "children":
+                    [
+                        {"name": "address", "value": "M", "children":
+                            [
+                                {"name": "addressLine1", "value": "S"},
+                                {"name": "addressLine2", "value": "S"},
+                                {"name": "addressLine3", "value": "S"},
+                                {"name": "addressType", "value": "S"},
+                                {"name": "postcode", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "contactInformation", "value": "M", "children":
+                            [
+                                {"name": "emailAddress", "value": "S"},
+                                {"name": "phoneNumber", "value": "S"},
+                                {"name": "preferredMethodOfContact", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "medicalNeed", "value": "Null"},
+                        {"name": "person", "value": "M", "children":
+                            [
+                                {"name": "id", "value": "Guid"},
+                                {"name": "age", "value": "N"},
+                                {"name": "dateOfBirth", "value": "S"},
+                                {"name": "title", "value": "S"},
+                                {"name": "firstName", "value": "S"},
+                                {"name": "middleName", "value": "S"},
+                                {"name": "surname", "value": "S"},
+                                {"name": "fullName", "value": "S"},
+                                {"name": "gender", "value": "S"},
+                                {"name": "genderDescription", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "questions", "value": "L", "children":
+                            [
+                                {"name": "id", "value": "S"},
+                                {"name": "answer", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "requiresMedical", "value": "B"} 
+                    ]
+                },
+                {"name": "reference", "value": "S"},
+                {"name": "sensitiveData", "value": "N"},
+                {"name": "sortKey", "value": "S"},
+                {"name": "status", "value": "S"},
+                {"name": "statusAssigneeKey", "value": "S"},
+                {"name": "submittedAt", "value": "S"}                
+            ]
+        },
+        {
+            "name": "Housing Repairs Online", "value": "table",
+            "children": [
+                {"name": "id", "value": "N"},
+                {"name": "address", "value": "M", "children":
+                    [
+                        {"name": "Display", "value": "S"},
+                        {"name": "LocationId", "value": "S"}                        
+                    ]
+                },
+                {"name": "contactDetails", "value": "M", "children":
+                    [
+                        {"name": "Type", "value": "S"},
+                        {"name": "Value", "value": "S"}                        
+                    ]
+                },
+                {"name": "contactPerson", "value": "M", "children":
+                    [
+                        {"name": "ContactNameValue", "value": "S"},
+                        {"name": "ContactNumberValue", "value": "S"}                        
+                    ]
+                },
+                {"name": "description", "value": "M", "children":
+                    [
+                        {"name": "Text", "value": "S"}                      
+                    ]
+                },
+                {"name": "issue", "value": "M", "children":
+                    [
+                        {"name": "Display", "value": "S"},
+                        {"name": "Value", "value": "S"}                        
+                    ]
+                },
+                {"name": "location", "value": "M", "children":
+                    [
+                        {"name": "Display", "value": "S"},
+                        {"name": "Value", "value": "S"}                        
+                    ]
+                },
+                {"name": "postcode", "value": "S"},
+                {"name": "problem", "value": "M", "children":
+                    [
+                        {"name": "Display", "value": "S"},
+                        {"name": "Value", "value": "S"}                        
+                    ]
+                },
+                {"name": "sOR", "value": "S"},
+                {"name": "time", "value": "M", "children":
+                    [
+                        {"name": "Display", "value": "S"},
+                        {"name": "EndDateTime", "value": "DT"},
+                        {"name": "StartDateTime", "value": "DT"}                
+                    ]
+                }
+            ]            
+        },
+        {
+            "name": "Notes", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "targetId", "value": "Guid"},
+                {"name": "targetType", "value": "S "},
+                {"name": "author", "value": "M", "children":
+                    [
+                        {"name": "email", "value": "S"},
+                        {"name": "fullName", "value": "S"}                        
+                    ]
+                },
+                {"name": "categorisation", "value": "M", "children":
+                    [
+                        {"name": "category", "value": "S"},
+                        {"name": "description", "value": "S"},
+                        {"name": "subCategory", "value": "S"}                
+                    ]
+                },
+                {"name": "createdAt", "value": "S "},
+                {"name": "description", "value": "S "},
+                {"name": "highlight", "value": "B"},
+                {"name": "title", "value": "S "}
+            ]            
+        },
+        {
+            "name": "Patch And Areas", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "domain", "value": "S "},
+                {"name": "name", "value": "S "},
+                {"name": "parentId", "value": "Guid"},
+                {"name": "patchType", "value": "S "},
+                {"name": "responsibleEntities", "value": "L", "children":
+                    [
+                        {"name": "id", "value": "Guid"},
+                        {"name": "contactDetails", "value": "M", "children":
+                            [
+                                {"name": "emailAddress", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "name", "value": "S"},
+                        {"name": "responsibleType", "value": "S"}                        
+                    ]
+                },
+                {"name": "versionNumber", "value": "N"}
+            ]            
+        },
+        {
+            "name": "Persons", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "dateOfBirth", "value": "S"},
+                {"name": "firstName", "value": "S"},
+                {"name": "lastModified", "value": "S"},
+                {"name": "links", "value": "L"},
+                {"name": "middleName", "value": "S"},
+                {"name": "personTypes", "value": "L", "children":
+                    [
+                        {"name": "type", "value": "S"}                        
+                    ]
+                },
+                {"name": "placeOfBirth", "value": "S"},
+                {"name": "preferredFirstName", "value": "S"},
+                {"name": "preferredMiddleName", "value": "S"},
+                {"name": "preferredSurname", "value": "S"},
+                {"name": "preferredTitle", "value": "S"},
+                {"name": "surname", "value": "S"},
+                {"name": "title", "value": "S"},
+                {"name": "tenures", "value": "L", "children":
+                    [
+                        {"name": "id", "value": "Guid"},
+                        {"name": "assetFullAddress", "value": "S"},
+                        {"name": "assetId", "value": "Guid"},
+                        {"name": "endDate", "value": "DT"},
+                        {"name": "paymentReference", "value": "S"},
+                        {"name": "startDate", "value": "DT"},
+                        {"name": "type", "value": "S"},
+                        {"name": "uprn", "value": "S"}                        
+                    ]
+                }
+            ]            
+        },
+        {
+            "name": "Processes", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "targetId", "value": "Guid"},
+                {"name": "targetType", "value": "S"},
+                {"name": "currentState", "value": "M", "children":
+                    [
+                        {"name": "assignment", "value": "M", "children":
+                            [
+                                {"name": "patch", "value": "S"},
+                                {"name": "type", "value": "S"},
+                                {"name": "value", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "state", "value": "S"},
+                        {"name": "createdAt", "value": "DT"},
+                        {"name": "updatedAt", "value": "DT"},
+                        {"name": "permittedTriggers", "value": "L", "children":
+                            [
+                                {"name": "RequestDocumentsDes", "value": "S"},
+                                {"name": "RequestDocumentsAppointment", "value": "S"},
+                                {"name": "CancelProcess", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "processData", "value": "M"}                        
+                    ]
+                },
+                {"name": "patchAssignment", "value": "M", "children":
+                    [
+                        {"name": "patchId", "value": "S"},
+                        {"name": "patchName", "value": "S"},
+                        {"name": "responsibleEntityId", "value": "S"},
+                        {"name": "responsibleName", "value": "S"}                        
+                    ]
+                },
+                {"name": "previousStates", "value": "L", "children":
+                    [
+                        {"name": "assignment", "value": "M", "children":
+                            [
+                                {"name": "patch", "value": "S"},
+                                {"name": "type", "value": "S"},
+                                {"name": "value", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "state", "value": "S"},
+                        {"name": "createdAt", "value": "DT"},
+                        {"name": "updatedAt", "value": "DT"},
+                        {"name": "permittedTriggers", "value": "L", "children":
+                            [
+                                {"name": "RequestDocumentsDes", "value": "S"},
+                                {"name": "RequestDocumentsAppointment", "value": "S"},
+                                {"name": "CancelProcess", "value": "S"}                                
+                            ]
+                        },
+                        {"name": "processData", "value": "M"}                        
+                    ]
+                },
+                {"name": "processName", "value": "S"},
+                {"name": "relatedEntities", "value": "L", "children":
+                    [
+                        {"name": "id", "value": "Guid"},
+                        {"name": "description", "value": "S"},
+                        {"name": "subType", "value": "S"},
+                        {"name": "targetType", "value": "S"}                        
+                    ]
+                }
+            ]            
+        },
+        {
+            "name": "Tenure Information", "value": "table",
+            "children": [
+                {"name": "id", "value": "Guid"},
+                {"name": "endOfTenureDate", "value": "DT"},
+                {"name": "startOfTenureDate", "value": "DT"},
+                {"name": "evictionDate", "value": "DT"},
+                {"name": "informHousingBenefitsForChanges", "value": "B"},
+                {"name": "isMutualExchange", "value": "B"},
+                {"name": "isSublet", "value": "B"},
+                {"name": "legacyReferences", "value": "L", "children":
+                    [
+                        {"name": "name", "value": "S"},
+                        {"name": "value", "value": "S"}                        
+                    ]
+                },
+                {"name": "notices", "value": "L", "children":
+                    [
+                        {"name": "effectiveDate", "value": "DT"},
+                        {"name": "endDate", "value": "DT"},
+                        {"name": "expiryDate", "value": "DT"},
+                        {"name": "type", "value": "S"}                        
+                    ]
+                },
+                {"name": "paymentReference", "value": "S"},
+                {"name": "potentialEndDate", "value": "S"},
+                {"name": "tenuredAsset", "value": "M", "children":
+                    [
+                        {"name": "id", "value": "Guid"},
+                        {"name": "fullAddress", "value": "S"},
+                        {"name": "propertyReference", "value": "S"},
+                        {"name": "type", "value": "S"},
+                        {"name": "uprn", "value": "S"}                        
+                    ]
+                },
+                {"name": "tenureType", "value": "M", "children":
+                    [
+                        {"name": "code", "value": "S"},
+                        {"name": "description", "value": "S"}                        
+                    ]
+                },
+                {"name": "terminated", "value": "M", "children":
+                    [
+                        {"name": "isTerminated", "value": "B"},
+                        {"name": "reasonForTermination", "value": "S"}                        
+                    ]
+                }
+            ]            
+        }
+    ]
+}
