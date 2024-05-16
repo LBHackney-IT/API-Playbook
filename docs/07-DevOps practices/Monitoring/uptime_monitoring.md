@@ -20,54 +20,54 @@ We can monitor the uptime performance of individual endpoints and APIs using AWS
   <iframe width="100%" src="https://www.youtube.com/embed/bYMdvCz0QUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-## AWS Canaries:
+## What are AWS Canaries?
 
-AWS canaries are accessible via the CloudWatch console. Amazon defines a canary as:
-> Configurable scripts that run on a schedule to monitor your endpoints and APIs.
+Canaries are programmable scripts that follow the same paths and do the same activities as customers, allowing you to validate your customer experience even when there is no client traffic on your apps. Canaries can be set to run on a set schedule.
 
-A canary can be configured to make scheduled requests to a health check endpoint.
+According to Amazon,  “Canaries are scripts written in Node.js or Python. They create Lambda functions in your account that use Node.js or Python as a framework. Canaries work over both HTTP and HTTPS protocols.”
 
-CloudWatch is the AWS console or dashboard for managing operational data such as logs, metrics and events.
-Canaries are used for all Platform API production environments.
+## The benefits
 
-Monitoring the health and performance of staging environments has no long-term benefit in relation to production environments. 
+- Canaries check the availability and latency of your endpoints;
+- It can store load time data and screenshots of the UI;
+- They monitor your REST APIs, URLs, and website content;
+- They can check for unauthorised changes from phishing, code injection and cross-site scripting;
 
-Production applications are public facing and any downtime should be immediately signalled and logged by the deployment environment. 
+## Why Canaries if useful for Hackney?
 
-When downtime is signalled we can investigate the cause via the CloudWatch logs. 
+As software deployments move at scale and velocity it becomes crucial to have a proper system in place that assess these releases before they damage the production environment leading to losses for our Organisation. Canary deployments provide an excellent approach to reducing the risk of introducing a defect into production, are relatively low cost, and do not slow the process much as long as appropriate automation is involved.
 
-Each Platform API canary calls a production environment API endpoint at a regular interval.
+## Set Up Automated Canaries - The Hackney Way
 
-## Canary Configuration:
+For a detailed example of how we set up automated canaries “The Hackney Way”, please visit the Github link below:
+<https://github.com/LBHackney-IT/processes-api/pull/8/files>
 
-Canaries can be configured to run once or on a user defined schedule. A scheduled canary can run for 24 hours a day as often as once per minute. 
+The process involves updating the serverless.yml file with the creation of canaries for both staging and production environments.
+ ![Pic](./doc-images/canaries1.png)
 
-A canary also has configurable alarm parameters. These are parameters which will set off an alarm in CloudWatch if the defined conditions are met.
+ We also have to ensure that the required properties are stated, including the S3Bucket and S3Key.
 
-Alarm parameters can be very specific and granular.
+ ![Pic](./doc-images/canaries2.png)
 
-A canary will require any authorization headers and values needed to access the API in the configuration.
+ The value for the environment variables including the host name, path and token also have to be updated accordingly. Within Hackney, we do not hard code the token instead we store the token within AWS Parameter store. This is inline with our Security compliance rules.  
 
-Accessing the dashboard for a Canary in CloudWatch lets you view the status of the Canary over a period of time.
+![Pic](./doc-images/canaries3.png)
 
-## Setting up Canaries:
+We can then add some customisation for the region.
 
-### Creating a canary which will ping an endpoint and check the response:
+![Pic](./doc-images/canaries4.png)
 
-- In the [AWS Console](https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Feu-west-2.console.aws.amazon.com%2Fcloudwatch%2Fhome%3Fregion%3Deu-west-2%26state%3DhashArgs%2523synthetics%253Acanary%252Flist%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fcloudwatch&forceMobileApp=0&code_challenge=afPX8AredTuJ4RR-8tmbbYoDccc2YpaukmzbN5Up2z4&code_challenge_method=SHA-256
-) go to CloudWatch then click on ** canaries ** .
+[Here is an example PR on how to automate canaries within our APIs](https://github.com/LBHackney-IT/patches-and-areas-api/pull/14/files)
 
-- Click on ** "Create Canary" ** , choose ** "Use a blueprint" ** and  ** "Heartbeat monitoring"** ;
+## Why we have automated the process
 
-- Give a name which makes it easily recognisable as whats it is (try and get the name of the API and the endpoint it's testing);
-### Checking a 200 response:
+Canary testing fits into the continuous delivery and continuous integration methodologies.  At Hackney Council we have been doing progressive delivery deployment for a while, and recently we observed an influx in queries from our developers and stakeholders wanting to learn how the automation of canaries can:
 
-TBC;
-### Altering the code to check a 404 is returned:
-
-TBC;
-## More Information:
-
-For more information, check out the [AWS documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Create.html).
+- Keep oversight in releases: which version(s) are deployed where and are any of them having problems?;
+- Compare releases and look out for architectural regressions by having transactional level version awareness;
+- Detect problematic Canary deployments quickly and trigger automated remediation;
+- Hackney Council integrates deep monitoring and automated testing into canary testing;
+- If a feature fails a monitoring check once it’s been deployed as a canary to a percentage of users, it will automatically roll back;
+- With continuous deployment and canary tests, our development team can release new functionality and code changes at scale more safely;
 
 </TextToSpeech>
