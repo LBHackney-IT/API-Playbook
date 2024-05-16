@@ -3,7 +3,7 @@ id: production_testing_checklist
 title: Production Testing Checklist
 ---
 
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 
