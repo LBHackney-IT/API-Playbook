@@ -2,7 +2,7 @@
 id: debugging_apis
 title: Debugging APIs in Production
 ---
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 
@@ -10,14 +10,14 @@ import TextToSpeech from '../src/SpeechComponent.js';
 
 1. Once your PR has been merged into master branch, head to the correct view in CircleCI - this is often easiest via clicking the check (or cross) symbol next to your merged PR in the GitHub repo’s list of master branch commits - use the “Details” links to go to the relevant CircleCI view:
 
-![GitHub CircleCI view](./doc-images/debugging_apis.png);
+![GitHub CircleCI view](../doc-images/debugging_apis.png);
 
 2. Once in CircleCI, make sure you’re viewing the entire workflow for the build by checking the submenu on the left, and making sure the view URL includes workflows in its path.
    * i.e. https://app.circleci.com/pipelines/github/LBHackney-IT/person-api;
 
 3. By navigating to the correct workflow, you can monitor the deployment of the application and manually permit the “Deploy to Staging” and “Deploy to Production” jobs if the prerequisite jobs (e.g. automated test runs, Terraform apply commands) succeed - or, if any jobs fail, you can click through to the job to debug the issue(s).
 
-![Manually permit Circle CI deployments](./doc-images/debugging_apis2.png);
+![Manually permit Circle CI deployments](../doc-images/debugging_apis2.png);
 
 ## Naming Conventions:
 
@@ -39,7 +39,7 @@ import TextToSpeech from '../src/SpeechComponent.js';
    * Visit the API Gateway dashboard within the correct region (e.g. https://eu-west-2.console.aws.amazon.com/apigateway/main/apis).
    * Select the API you’d like to test.
    * Click the “Any” resource option and then the “Test” button:
-   ![Testing endpoints in AWS](./doc-images/aws.png)
+   ![Testing endpoints in AWS](../doc-images/aws.png)
    * From the next view, you can choose a request method (such as GET), enter the path, set “stage variables” (like environment variables) and any request parameters, and then scroll down to click the “Test” button to see what the API’s response to your request is.
    * If the response is an error, you should be able to dig into the stack trace shown to begin debugging.
 
@@ -62,6 +62,6 @@ import TextToSpeech from '../src/SpeechComponent.js';
 2. See the [Production Testing Checklist](/production_testing) to complete this section!
 
 ## Errors:
-1. See the [Production Testing Checklist](/production_testing) to complete this section!
+1. See the [Production Testing Checklist](../06-Testing/production_checklist.md) to complete this section!
 
 </TextToSpeech>
