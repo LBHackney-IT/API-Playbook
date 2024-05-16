@@ -2,7 +2,7 @@
 id: preferred_tech_stack
 title: Preferred Tech Stack
 ---
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../../../src/SpeechComponent.js';
 
 <TextToSpeech>
 

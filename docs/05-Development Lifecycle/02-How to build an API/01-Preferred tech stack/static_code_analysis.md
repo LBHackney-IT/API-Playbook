@@ -3,7 +3,7 @@ id: static_code_analysis
 title: Static Code Analysis
 ---
 
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../../../src/SpeechComponent.js';
 
 <TextToSpeech>
 

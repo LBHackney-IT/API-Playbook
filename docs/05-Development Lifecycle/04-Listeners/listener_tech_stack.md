@@ -11,13 +11,13 @@ import TextToSpeech from '../../../src/SpeechComponent.js';
 - .NET Core 3.1 (C#);
 - AWS Lambda;
 - Serverless framework.
-  * [See more](/serverless_lambda);
+  - [See more](../02-How%20to%20build%20an%20API/01-Preferred%20tech%20stack/serverless_lambda.md);
 - FxCop for static code analysis.
-  * [See more](/static_code_analysis);
+  * [See more](../02-How%20to%20build%20an%20API/01-Preferred%20tech%20stack/static_code_analysis.md);
 - [Hackney.Core.xxx](https://github.com/LBHackney-IT/lbh-core).
   * Common Hackney NuGet packages providing common functionality;
 - dotnet-format for linting.
-  * [See more](/linting);
+  * [See more](../../05-Development%20Lifecycle/06-API%20Practices%20and%20tools/linting.md);
   
 ## Testing:
 

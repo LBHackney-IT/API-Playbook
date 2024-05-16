@@ -39,23 +39,23 @@ As software deployments move at scale and velocity it becomes crucial to have a 
 
 ## Set Up Automated Canaries - The Hackney Way
 
-For a detailed example of how we set up automated canaries “The Hackney Way”, please visit the Github link below:
-<https://github.com/LBHackney-IT/processes-api/pull/8/files>
+For a detailed example of how we set up automated canaries “The Hackney Way”, please visit this Github [link](https://github.com/LBHackney-IT/processes-api/pull/8/files).
+
 
 The process involves updating the serverless.yml file with the creation of canaries for both staging and production environments.
- ![Pic](./doc-images/canaries1.png)
+ ![Pic](../../doc-images/canaries1.png)
 
  We also have to ensure that the required properties are stated, including the S3Bucket and S3Key.
 
- ![Pic](./doc-images/canaries2.png)
+ ![Pic](../../doc-images/canaries2.png)
 
  The value for the environment variables including the host name, path and token also have to be updated accordingly. Within Hackney, we do not hard code the token instead we store the token within AWS Parameter store. This is inline with our Security compliance rules.  
 
-![Pic](./doc-images/canaries3.png)
+![Pic](../../doc-images/canaries3.png)
 
 We can then add some customisation for the region.
 
-![Pic](./doc-images/canaries4.png)
+![Pic](../../doc-images/canaries4.png)
 
 [Here is an example PR on how to automate canaries within our APIs](https://github.com/LBHackney-IT/patches-and-areas-api/pull/14/files)
 
