@@ -3,7 +3,7 @@ id: production_steps
 title: Details to complete production checklist
 ---
 
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 
