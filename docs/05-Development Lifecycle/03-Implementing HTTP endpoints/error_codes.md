@@ -3,7 +3,7 @@ id: error_codes
 title: Error Codes
 ---
 
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 
