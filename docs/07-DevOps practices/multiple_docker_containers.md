@@ -2,7 +2,7 @@
 id: multiple_docker_containers
 title: Composing Your Application With Multiple Docker Containers
 ---
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 

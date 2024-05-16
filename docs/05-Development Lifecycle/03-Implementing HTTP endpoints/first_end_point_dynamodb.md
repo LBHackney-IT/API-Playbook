@@ -2,7 +2,7 @@
 id: first_end_point_dynamo
 title: DynamoDB End to End Training
 ---
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../../src/SpeechComponent.js';
 
 <TextToSpeech>
 

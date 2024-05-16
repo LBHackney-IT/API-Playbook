@@ -3,7 +3,7 @@ id: mock_unit_tests
 title: Isolating Unit Tests
 ---
 
-import TextToSpeech from '../src/SpeechComponent.js';
+import TextToSpeech from '../../src/SpeechComponent.js';
 
 <TextToSpeech>
 
