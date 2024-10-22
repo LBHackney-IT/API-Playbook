@@ -134,14 +134,6 @@ jobs:
         steps:
             - terraform-init-then-apply:
                   environment: "production"
-        
-    build-deploy-development:
-        executor: node-executor
-        environment:
-            aws-region: eu-west-2
-        steps:
-            - build-and-deploy:
-                  environment: "development"
 
     build-deploy-staging:
         executor: node-executor
@@ -179,16 +171,8 @@ workflows:
                   filters:
                       branches:
                           ignore: /release\/.*/
-            - build-deploy-development:
-                  requires:
-                      - terraform-init-and-apply-to-development
-                  filters:
-                      branches:
-                          ignore: /release\/.*/
             - assume-role-staging:
                   context: api-assume-role-staging-context
-                  requires:
-                      - build-deploy-development
                   filters:
                       branches:
                           only: main
